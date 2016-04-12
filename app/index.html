@@ -7,57 +7,70 @@
 </head>
 <body>
   <header>
-    <div id="logo">
-				<h1>
-				    <a rel="home" href="/" title="Profite">
-					    <img src="static/images/profite_logo_novo.png" alt="Profite" title="Profite">
-				    </a>
-				</h1>
-    </div>
-    <div class="header-search">
-      <form id="headerSearchForm" action="/busca" method="GET">
-          <input type="text" name="busca" id="headerSearchInput" class="header-search__input" placeholder="Buscar por...">
-          <input id="headerSearchButton" type="button" class="header-search__button">
-      </form>
+    <div class="header-container">
+      <div class="header-logo">
+  				<h1>
+  				    <a rel="home" href="/" title="Profite">
+  					    <img src="../static/images/profite_logo_novo.png" alt="Profite" title="Profite">
+  				    </a>
+  				</h1>
+      </div>
+      <div class="header-login">
+        <p>Olá, Visitante</p>
+        <p><a>Cadastre-se</a> - <a>Login</a></p>
+      </div>
+      <div class="header-search">
+        <form id="headerSearchForm" action="/busca" method="GET">
+            <input type="text" name="busca" id="headerSearchInput" class="header-search__input" placeholder="Buscar por...">
+            <input id="headerSearchButton" type="button" class="header-search__button">
+        </form>
+      </div>
+      <div class="header-skype">
+        <div class="header-languages">
+          <a class="header-country-1"><img src="../static/images/bandeira1.png" alt="Bandeira 1" title="Bandeira 1"></a>
+          <a class="header-country-2"><img src="../static/images/bandeira2.png" alt="Bandeira 2" title="Bandeira 2"></a>
+          <a class="header-country-3"><img src="../static/images/bandeira3.png" alt="Bandeira 3" title="Bandeira 3"></a>
+        </div>
+        <a class="header-tel" href="tel+1133375618">11 33375618</a>
+      </div>
     </div>
   </header>
-  <div id="slider1" class="csslider infinity">
-    <input type="radio" name="slides" id="slides_1">
-    <input type="radio" name="slides" id="slides_2">
-    <input type="radio" name="slides" checked="checked" id="slides_3">
-    <input type="radio" name="slides" id="slides_4">
-    <input type="radio" name="slides" id="slides_5">
-    <ul>
-      <li>
-        <h1>Slide 1</h1>
-        <p>This is slide 1</p>
-      </li>
-      <li> <img src="1.png"> </li>
-      <li> <img src="2.png"> </li>
-      <li> <img src="3.png"> </li>
-      <li> <img src="4.png"> </li>
-      <li> <img src="5.png"> </li>
-    </ul>
-    <div class="arrows">
-      <label for="slides_1"></label>
-      <label for="slides_2"></label>
-      <label for="slides_3"></label>
-      <label for="slides_4"></label>
-      <label for="slides_5"></label>
-      <label for="slides_1" class="goto-first"></label>
-      <label for="slides_5" class="goto-last"></label>
-    </div>
-    <div class="navigation">
-      <div>
+  <div class="slider-container">
+    <div id="slider1" class="csslider infinity">
+      <input type="radio" name="slides" checked="checked" id="slides_1">
+      <input type="radio" name="slides" id="slides_2">
+      <input type="radio" name="slides" id="slides_3">
+      <input type="radio" name="slides" id="slides_4">
+      <input type="radio" name="slides" id="slides_5">
+      <ul>
+        <li> <img src="../static/images/banner1.jpg" data-src-mobile="../static/images/banner1_mobile.jpg"> </li>
+        <li> <img src="../static/images/banner2.jpg" data-src-mobile="../static/images/banner2_mobile.jpg"> </li>
+        <li> <img src="../static/images/banner3.jpg" data-src-mobile="../static/images/banner3_mobile.jpg"> </li>
+        <li> <img src="../static/images/banner4.jpg" data-src-mobile="../static/images/banner4_mobile.jpg"> </li>
+        <li> <img src="../static/images/banner5.jpg" data-src-mobile="../static/images/banner5_mobile.jpg"> </li>
+      </ul>
+      <div class="arrows">
         <label for="slides_1"></label>
         <label for="slides_2"></label>
         <label for="slides_3"></label>
         <label for="slides_4"></label>
         <label for="slides_5"></label>
+        <label for="slides_1" class="goto-first"></label>
+        <label for="slides_5" class="goto-last"></label>
+      </div>
+      <div class="navigation">
+        <div>
+          <label for="slides_1"></label>
+          <label for="slides_2"></label>
+          <label for="slides_3"></label>
+          <label for="slides_4"></label>
+          <label for="slides_5"></label>
+        </div>
       </div>
     </div>
   </div>
-
+  <div class="products-container">
+  </div>
   <script src="js/dist/main.js"></script>
 </body>
 </html>

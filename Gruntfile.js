@@ -7,17 +7,26 @@ module.exports = function (grunt) {
         }
       }
     }, // uglify
-
+    sass_import: {
+      options: {},
+      dist: {
+        files: {
+          'app/styles/src/main.scss': [
+            'app/styles/src/_variables.scss',
+            'app/styles/src/_reset.scss',
+            'app/styles/src/_header.scss',
+            'app/styles/src/_banner-slider.scss',
+            'app/styles/src/_styles.scss'
+          ]
+        }
+      }
+    },
     sass : {
       options : { style : 'compressed' },
       dist: {
-        files: [{
-            expand: true,
-            cwd: 'app/styles/src',
-            src: ['*.scss'],
-            dest: 'app/styles/dist',
-            ext: '.css',
-        }]
+        files: {
+          'app/styles/dist/styles.css':'app/styles/src/main.scss'
+        }
       }
     }, // sass
 
@@ -28,13 +37,14 @@ module.exports = function (grunt) {
           'app/styles/**/*'
         ],
 
-        tasks : [ 'uglify', 'sass']
+        tasks : [ 'uglify', 'sass_import', 'sass']
       }
     } // watch
   });
 
   // Grunt plugins
   grunt.loadNpmTasks( 'grunt-contrib-uglify' );
+  grunt.loadNpmTasks('grunt-sass-import');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
