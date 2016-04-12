@@ -1,0 +1,133 @@
+header {
+    height: $unit*9;
+    background: antiquewhite;
+}
+
+.header-container {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header-logo {
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+
+    h1 {
+      height: 100%;
+      width: 100%;
+      display: inline-block;
+      padding: $unit*3 0;
+      a img {
+          width: 100%;
+      }
+    }
+}
+
+.header-login {
+    display: inline-block;
+    p {
+      &:first-child {
+          font-family: 'ArialBD';
+          font-size: $large-font-size;
+      }
+      &:last-child {
+          font-family: 'Arial';
+      }
+    }
+}
+
+.header-search {
+    display: inline-block;
+
+}
+
+#headerSearchForm {
+    position: relative;
+}
+
+#headerSearchInput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 15px;
+  height: 20px;
+  padding: 5px 5px 5px 50px;
+  background-color: yellow;
+  border: none;
+
+  &::-webkit-input-placeholder {
+     color: black;
+     opacity: 1;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+     color: black;
+     opacity: 1;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+     color: black;
+     opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+     color: black;
+     opacity: 1;
+  }
+}
+#headerSearchButton {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 40px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  background-image: url(../../../static/images/icone_pesquisa.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  color: black;
+  background-position: center;
+}
+
+.header-skype {
+    display: inline-block;
+    width: 15%;
+    float: right;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.header-languages {
+    padding: 0 10%;
+
+    a {
+        display: inline-block;
+        width: 30%;
+
+        img {
+          width: 100%;
+        }
+    }
+}
+.header-tel {
+    text-decoration: none;
+    padding-top: 10px;
+    display: block;
+    color: aquamarine;
+
+    &:before {
+        content: '';
+        background-image: url(../../../static/images/skype.png);
+        background-size: contain;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin-left: -20px;
+    }
+}

@@ -1,0 +1,19 @@
+$unit: 10px;
+
+//Colors
+
+//Typography
+
+$font-size: 14px;
+$large-font-size: $font-size + 2;
+$small-font-size: $font-size - 2;
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../../../static/fonts/arial.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'ArialBD';
+  src: url('../../../static/fonts/arialbd.ttf')  format('truetype');
+}
