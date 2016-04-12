@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Teste com GruntJS</title>
+  <link href="app/css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div id="logo">
+				<h1>
+				    <a rel="home" href="/" title="Profite">
+					    <img src="assets/images/profite_logo_novo.png" alt="Profite" title="Profite">
+				    </a>
+				</h1>
+    </div>
+    <div class="header-search">
+      <form id="headerSearchForm" action="/busca" method="GET">
+          <input type="text" name="busca" id="headerSearchInput" class="header-search__input" placeholder="Buscar por...">
+          <input id="headerSearchButton" type="button" class="header-search__button">
+      </form>
+    </div>
+  </header>
+  <div id="slider1" class="csslider infinity">
+    <input type="radio" name="slides" id="slides_1">
+    <input type="radio" name="slides" id="slides_2">
+    <input type="radio" name="slides" checked="checked" id="slides_3">
+    <input type="radio" name="slides" id="slides_4">
+    <input type="radio" name="slides" id="slides_5">
+    <ul>
+      <li>
+        <h1>Slide 1</h1>
+        <p>This is slide 1</p>
+      </li>
+      <li> <img src="1.png"> </li>
+      <li> <img src="2.png"> </li>
+      <li> <img src="3.png"> </li>
+      <li> <img src="4.png"> </li>
+      <li> <img src="5.png"> </li>
+    </ul>
+    <div class="arrows">
+      <label for="slides_1"></label>
+      <label for="slides_2"></label>
+      <label for="slides_3"></label>
+      <label for="slides_4"></label>
+      <label for="slides_5"></label>
+      <label for="slides_1" class="goto-first"></label>
+      <label for="slides_5" class="goto-last"></label>
+    </div>
+    <div class="navigation">
+      <div>
+        <label for="slides_1"></label>
+        <label for="slides_2"></label>
+        <label for="slides_3"></label>
+        <label for="slides_4"></label>
+        <label for="slides_5"></label>
+      </div>
+    </div>
+  </div>
+
+  <script src="app/js/main.js"></script>
+</body>
+</html>
