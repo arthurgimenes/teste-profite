@@ -1,0 +1,26 @@
+{
+  "name": "teste-profite",
+  "version": "1.0.0",
+  "description": "* HTML e HTML5\r * CSS\r * Javascript e Jquery\r * GIT\r * Sites responsivos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aflaviax3/teste-profite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aflaviax3/teste-profite/issues"
+  },
+  "homepage": "https://github.com/aflaviax3/teste-profite#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
