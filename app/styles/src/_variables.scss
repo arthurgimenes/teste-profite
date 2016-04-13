@@ -3,17 +3,25 @@ $unit: 10px;
 //Colors
 
 //Typography
-
 $font-size: 14px;
 $large-font-size: $font-size + 2;
 $small-font-size: $font-size - 2;
 
 @font-face {
   font-family: 'Arial';
-  src: url('../../../static/fonts/arial.ttf')  format('truetype');
+  src: url('../../../static/fonts/arial.eot');//eot
+  src: url('../../../static/fonts/arial.eot') format('embedded-opentype'),//eot
+    url('../../../static/fonts/arial.woff2') format('woff2'),
+    url('../../../static/fonts/ArialMT.woff') format('woff'),
+    url('../../../static/fonts/arial.ttf')  format('truetype'),
+    url('../../../static/fonts/ArialMT.svg') format('svg');
 }
-
 @font-face {
   font-family: 'ArialBD';
-  src: url('../../../static/fonts/arialbd.ttf')  format('truetype');
+  src: url('../../../static/fonts/arialbd.eot');//eot
+  src: url('../../../static/fonts/arialbd.eot') format('embedded-opentype'),//eot
+    url('../../../static/fonts/arialbd.woff2') format('woff2'),
+    url('../../../static/fonts/Arial-BoldMT.woff') format('woff'),
+    url('../../../static/fonts/arialbd.ttf')  format('truetype'),
+    url('../../../static/fonts/Arial-BoldMT.svg') format('svg');
 }

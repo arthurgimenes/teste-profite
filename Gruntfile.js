@@ -3,7 +3,10 @@ module.exports = function (grunt) {
     uglify : {
       dist : {
         files : {
-          'app/js/dist/main.js' : [ 'app/js/src/scripts.js' ]
+          'app/js/dist/main.js' : [
+            'app/js/src/scripts.js',
+            'app/js/src/bindings.js'
+          ]
         }
       }
     }, // uglify
@@ -15,6 +18,7 @@ module.exports = function (grunt) {
             'app/styles/src/_variables.scss',
             'app/styles/src/_reset.scss',
             'app/styles/src/_header.scss',
+            'app/styles/src/_footer.scss',
             'app/styles/src/_banner-slider.scss',
             'app/styles/src/_product-slider.scss',
             'app/styles/src/_styles.scss'

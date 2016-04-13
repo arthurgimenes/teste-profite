@@ -1,40 +1,91 @@
 {
-  "products": {
-    "1": {
-      "id": 1,
-      "name": "Aging Potion",
-      "image": "aging-potion.png",
-      "hover-image": "aging-potion.png",
-      "zoom-image": "aging-potion.png",
-      "previous-price": null,
-      "price": 29.99
-    },
-    "2": {
-      "id": 2,
-      "name": "Bulgeye Potion",
-      "image": "bulgeye-potion.png",
-      "hover-image": "aging-potion.png",
-      "zoom-image": "aging-potion.png",
-      "previous-price": 19.99,
-      "price": 19.99
-    },
-    "3": {
-      "id": 3,
-      "name": "Dragon Tonic",
-      "image": "dragon-tonic.png",
-      "hover-image": "aging-potion.png",
-      "zoom-image": "aging-potion.png",
-      "previous-price": 64.99,
-      "price": 64.99
-    },
-    "4": {
-      "id": 4,
-      "name": "Love Potion",
-      "image": "love-potion.png",
-      "hover-image": "aging-potion.png",
-      "zoom-image": "aging-potion.png",
-      "previous-price": 29.99,
-      "price": 29.99
-    }
-  }
+	"products": [{
+		"id": 1,
+		"name": "Aging Potion",
+		"image": "aging-potion.png",
+		"hover-image": "aging-potion.png",
+		"zoom-image": "aging-potion.png",
+		"previous-price": null,
+		"price": 29.99,
+    "times": 4,
+    "sub-price": 5.99,
+    "save": 10.99
+	}, {
+		"id": 2,
+		"name": "Bulgeye Potion",
+		"image": "bulgeye-potion.png",
+		"hover-image": "aging-potion.png",
+		"zoom-image": "aging-potion.png",
+		"previous-price": 19.99,
+		"price": 19.99,
+    "times": 4,
+    "sub-price": 5.99,
+    "save": 10.99
+	}, {
+		"id": 3,
+		"name": "Dragon Tonic",
+		"image": "dragon-tonic.png",
+		"hover-image": "aging-potion.png",
+		"zoom-image": "aging-potion.png",
+		"previous-price": 64.99,
+		"price": 64.99,
+    "times": 4,
+    "sub-price": 5.99,
+    "save": 10.99
+	}, {
+		"id": 4,
+		"name": "Dragon Tonic",
+		"image": "dragon-tonic.png",
+		"hover-image": "aging-potion.png",
+		"zoom-image": "aging-potion.png",
+		"previous-price": 64.99,
+		"price": 64.99,
+    "times": 4,
+    "sub-price": 5.99,
+    "save": 10.99
+	}, {
+		"id": 5,
+		"name": "Dragon Tonic",
+		"image": "dragon-tonic.png",
+		"hover-image": "aging-potion.png",
+		"zoom-image": "aging-potion.png",
+		"previous-price": 64.99,
+		"price": 64.99,
+    "times": 4,
+    "sub-price": 5.99,
+    "save": 10.99
+	}, {
+		"id": 6,
+		"name": "Dragon Tonic",
+		"image": "dragon-tonic.png",
+		"hover-image": "aging-potion.png",
+		"zoom-image": "aging-potion.png",
+		"previous-price": 64.99,
+		"price": 64.99,
+    "times": 4,
+    "sub-price": 5.99,
+    "save": 10.99
+	}, {
+		"id": 7,
+		"name": "Dragon Tonic",
+		"image": "dragon-tonic.png",
+		"hover-image": "aging-potion.png",
+		"zoom-image": "aging-potion.png",
+		"previous-price": 64.99,
+		"price": 64.99,
+    "times": 4,
+    "sub-price": 5.99,
+    "save": 10.99
+  }, {
+		"id": 8,
+		"name": "Love Potion",
+		"image": "love-potion.png",
+		"hover-image": "aging-potion.png",
+		"zoom-image": "aging-potion.png",
+		"previous-price": 29.99,
+		"price": 29.99,
+    "times": 4,
+    "sub-price": 5.99,
+    "save": 10.99
+  }]
 }
