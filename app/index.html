@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width" />
   <title>Teste Profite</title>
   <link href="styles/dist/styles.css" rel="stylesheet" />
 </head>
@@ -80,16 +80,16 @@
       <input type="radio" name="bslides" id="bslides_7">
       <input type="radio" name="bslides" id="bslides_8">
       <ul id="products-list">
-        <li> <img src="../static/images/banner1.jpg" data-src-mobile="../static/images/banner1_mobile.jpg"> </li>
-        <li> <img src="../static/images/banner2.jpg" data-src-mobile="../static/images/banner2_mobile.jpg"> </li>
-        <li> <img src="../static/images/banner3.jpg" data-src-mobile="../static/images/banner3_mobile.jpg"> </li>
-        <li> <img src="../static/images/banner4.jpg" data-src-mobile="../static/images/banner4_mobile.jpg"> </li>
-        <li> <img src="../static/images/banner5.jpg" data-src-mobile="../static/images/banner5_mobile.jpg"> </li>
-        <li> <img src="../static/images/banner1.jpg" data-src-mobile="../static/images/banner1_mobile.jpg"> </li>
-        <li> <img src="../static/images/banner2.jpg" data-src-mobile="../static/images/banner2_mobile.jpg"> </li>
-        <li> <img src="../static/images/banner3.jpg" data-src-mobile="../static/images/banner3_mobile.jpg"> </li>
-        <li> <img src="../static/images/banner4.jpg" data-src-mobile="../static/images/banner4_mobile.jpg"> </li>
-        <li> <img src="../static/images/banner5.jpg" data-src-mobile="../static/images/banner5_mobile.jpg"> </li>
+        <li>
+          <img class="product-image" src="../static/images/calcado1.png" data-src-hover="../static/images/calcado1_hover.png">
+          <p class="product-title"><span>blablabla</span></p>
+          <span class="product-stars"></span>
+          <p class="product-previous-price">De: R$ 99,99</p>
+          <p class="product-price">Por: R$ 99,99</p>
+          <p class="product-price-times">ou <span>até 4X</span> de <span>R$ 99,99</span></p>
+          <a class="product-buy">Comprar</a>
+          <span class="product-save">Economize: R$ 99,99</span>
+        </li>
       </ul>
       <div class="arrows">
         <label for="bslides_1"></label>
@@ -123,6 +123,8 @@
       </div>
     </div>
   </footer>
+  <div id="white_content"></div>
+	<div id="black_overlay"></div>
   <script src="js/dist/main.js"></script>
 </body>
 </html>

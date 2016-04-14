@@ -1,5 +1,5 @@
 header {
-    height: $unit*9;
+    height: 144px;
     background: antiquewhite;
 }
 
@@ -7,14 +7,18 @@ header {
     height: 100%;
     width: 70%;
     margin: 0 auto;
+    //@media (max-width: 480px) {
+    //    background-color: red;
+    //}
 }
+
 
 .header-logo {
     height: 100%;
-    width: 25%;
+    width: 23%;
     display: inline-block;
     vertical-align: middle;
-
+    margin-right: 4%;
     h1 {
       height: 100%;
       width: 100%;
@@ -28,24 +32,29 @@ header {
 
 .header-login {
     display: inline-block;
+    width: 13%;
+    margin-right: 3%;
     p {
       &:first-child {
           font-family: 'ArialBD';
-          font-size: $large-font-size;
+          font-size: $font-size;
       }
       &:last-child {
           font-family: 'Arial';
+          font-size: $small-font-size;
       }
     }
 }
 
 .header-search {
     display: inline-block;
-
+    width: 36%;
+    margin-right: 6%;
 }
 
 #headerSearchForm {
     position: relative;
+
 }
 
 #headerSearchInput {
@@ -53,11 +62,12 @@ header {
   -moz-appearance: none;
   appearance: none;
   border-radius: 15px;
-  height: 20px;
+  height: 30px;
   padding: 5px 5px 5px 50px;
   background-color: yellow;
   border: none;
-
+  width: 100%;
+  font-size: $font-size;
   &::-webkit-input-placeholder {
      color: black;
      opacity: 1;
@@ -84,7 +94,7 @@ header {
   appearance: none;
   border-radius: 15px;
   height: 30px;
-  width: 40px;
+  width: 45px;
   background-color: #000;
   position: absolute;
   top: 0;
@@ -99,8 +109,7 @@ header {
 
 .header-skype {
     display: inline-block;
-    width: 15%;
-    float: right;
+    width: 12%;
     padding-top: 20px;
     text-align: center;
 }
@@ -110,7 +119,7 @@ header {
 
     a {
         display: inline-block;
-        width: 30%;
+        width: 25%;
 
         img {
           width: 100%;
@@ -122,14 +131,15 @@ header {
     padding-top: 10px;
     display: block;
     color: aquamarine;
+    font-size: $small-font-size;
 
     &:before {
         content: '';
         background-image: url(../../../static/images/skype.png);
         background-size: contain;
         display: inline-block;
-        height: 20px;
-        width: 20px;
-        margin-left: -20px;
+        height: 28px;
+        width: 28px;
+        margin-left: -28px;
     }
 }

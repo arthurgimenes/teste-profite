@@ -2,7 +2,7 @@ function loadJSON(callback) {
 
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'https://api.myjson.com/bins/3nkdc', true);
+    xobj.open('GET', 'https://api.myjson.com/bins/2a0hw', true);
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
@@ -12,6 +12,7 @@ function loadJSON(callback) {
  }
 
  function callLightbox(output){
+   console.log('callLightbox');
 	document.getElementById('white_content').innerHTML=output;
 	document.getElementById('white_content').style.display='block';
 	document.getElementById('black_overlay').style.display='block';
@@ -26,19 +27,51 @@ function closeLightbox(){
 	document.getElementById('black_overlay').style.display='none';
 }
 
+function bindLightbox(produtos){
+    console.log('bindLightbox');
+		for (var i = produtos.length - 1;  i >= 0;  --i) {
+			document.getElementById(produtos[i].id).onclick = function () {
+				var myid = this.id;
+				var newContent = "";
+
+				newContent+='<div id="close_lightbox">X</div>';
+
+				loadJSON(function(response) {
+					var actual_JSON = JSON.parse(response);
+					var actual_Potion = actual_JSON.products[myid];
+
+					newContent+='<img src="images/' + actual_Potion.zoomimage + '">';
+
+					//ABRE A LIGHTBOX
+					callLightbox(newContent);
+					});
+
+
+			};
+		}
+}
+
 function createProd(callback){
   var produtos;
 	//CRIA AS DIVS DOS PRODUTOS DINAMICAMENTE
 	loadJSON(function(response) {
 
 		var actual_JSON = JSON.parse(response);
-    console.log(actual_JSON);
+
 		for (var i in actual_JSON.products){
 			var newElement = document.createElement('li');
 			newElement.id = actual_JSON.products[i].id;
 			newElement.className = "prod";
 			newElement.innerHTML =
-			'<img src="images/' + actual_JSON.products[i].image + '">';
+			// '<img src="images/' + actual_JSON.products[i].image + '">';
+      '<img class="product-image" src="../static/images/' + actual_JSON.products[i].image + '" data-src-hover="../static/images/' + actual_JSON.products[i].hoverimage + '">' +
+      '<p class="product-title"><span>' + actual_JSON.products[i].name + '</span></p>' +
+      '<span class="product-stars"></span>' +
+      '<p class="product-previous-price">De: R$' + actual_JSON.products[i].previousprice +'</p>' +
+      '<p class="product-price">Por: R$' + actual_JSON.products[i].price + '</p>' +
+      '<p class="product-price-times">ou <span>até ' + actual_JSON.products[i].times + 'X</span> de <span>R$ ' + actual_JSON.products[i].subprice + '</span></p>' +
+      '<a class="product-buy">Comprar</a>' +
+      '<span class="product-save">Economize: R$ ' + actual_JSON.products[i].save + '</span>';
 
 			document.getElementById("products-list").appendChild(newElement);
 		}
@@ -50,44 +83,4 @@ function createProd(callback){
 	//fim json
 
 
-}
-
-function bindLightbox(produtos){
-
-		for (var i = produtos.length - 1;  i >= 0;  --i) {
-			document.getElementById(produtos[i].id).onclick = function () {
-				var myid = this.id;
-				var newContent = "";
-
-				newContent+='<div id="close_lightbox">X</div>';
-
-				loadJSON(function(response) {
-					var actual_JSON = JSON.parse(response);
-					var actual_Potion = actual_JSON.potions[myid];
-					var actual_Ing = actual_JSON.potions[myid].ingredients;
-
-					newContent+='<img src="images/' + actual_Potion.image + '">';
-					newContent+='<div class="description">';
-					newContent+='<p class="feature_titles">'+ actual_Potion.name + '</p>';
-					newContent+='<p class="feature_titles">Use/Effect:</p>';
-					newContent+='<p class="feature_desc">'+ actual_Potion.effect + '</p>';
-					newContent+='<p class="feature_titles">Ingredients:</p>';
-					newContent+='<ul>';
-
-					for (var j in actual_Ing){
-						newContent+='<li>'+ actual_Ing[j] + '</li>';
-					}
-
-					newContent+='</ul><br/>';
-					newContent+='<p class="feature_titles nomargin_padding">Price:</p>';
-					newContent+='<p class="feature_desc price_value">$'+ actual_Potion.price + '</p>';
-					newContent+='</div>';
-					newContent+='<div class="add_cart">ADD TO CART</div>'
-					//ABRE A LIGHTBOX
-					callLightbox(newContent);
-					});
-
-
-			};
-		}
 }

@@ -19,6 +19,7 @@ module.exports = function (grunt) {
             'app/styles/src/_reset.scss',
             'app/styles/src/_header.scss',
             'app/styles/src/_footer.scss',
+            'app/styles/src/_overlay.scss',
             'app/styles/src/_banner-slider.scss',
             'app/styles/src/_product-slider.scss',
             'app/styles/src/_styles.scss'
