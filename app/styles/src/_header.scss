@@ -1,6 +1,6 @@
 header {
     height: 144px;
-    background: antiquewhite;
+    background: white;
 }
 
 .header-container {
@@ -38,6 +38,7 @@ header {
       &:first-child {
           font-family: 'ArialBD';
           font-size: $font-size;
+          padding-bottom: $unit/2;
       }
       &:last-child {
           font-family: 'Arial';
@@ -115,7 +116,7 @@ header {
 }
 
 .header-languages {
-    padding: 0 10%;
+  padding: 0 25% 0 15%;
 
     a {
         display: inline-block;
@@ -127,19 +128,22 @@ header {
     }
 }
 .header-tel {
-    text-decoration: none;
-    padding-top: 10px;
-    display: block;
-    color: aquamarine;
-    font-size: $small-font-size;
+  text-decoration: none;
+  display: block;
+  color: $phone-color;
+  font-size: $small-font-size;
+  height: $unit*4;
+  line-height: $unit*3;
+  position: relative;
 
-    &:before {
-        content: '';
-        background-image: url(../../../static/images/skype.png);
-        background-size: contain;
-        display: inline-block;
-        height: 28px;
-        width: 28px;
-        margin-left: -28px;
-    }
+  &:before {
+      content: '';
+      background-image: url(../../../static/images/skype.png);
+      background-size: contain;
+      display: inline-block;
+      height: 25px;
+      width: 25px;
+      left: -$unit/2;
+      position: absolute;
+  }
 }

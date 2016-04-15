@@ -1,6 +1,20 @@
 .products-container {
     text-align: center;
-    background: antiquewhite;
+    background: white;
+
+    ul li {
+      background-color: white;
+      border-right: 1px solid $disabled-color;
+      &:hover {
+        background-color: $background-color;
+        .product-image {
+          opacity: 0;
+        }
+        .product-image-hover {
+          opacity: 1;
+        }
+      }
+    }
 }
 
 .product-image {
@@ -8,6 +22,17 @@
     height: auto !important;
     margin: 0 auto;
     display: block;
+    opacity: 1;
+}
+.product-image-hover {
+    width: 90% !important;
+    height: auto !important;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    opacity: 0;
 }
 .product-title {
     font-size: $small-font-size;
@@ -88,7 +113,7 @@
     width: 60%;
     font-size: 8px;
     text-align: center;
-    margin: 0 auto $unit*2;
+    margin: 0 auto $unit;
     border: 1px solid black;
 }
 
