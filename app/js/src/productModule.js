@@ -16,7 +16,7 @@ var productModule = (function(window, document) {
               radioInput.setAttribute('id', 'bslides_' + actual_JSON.products[i].id);
 
               var slider = document.getElementById('slider2');
-              
+
               slider.insertBefore(radioInput, slider.childNodes[0]);
             }
 
@@ -55,6 +55,15 @@ var productModule = (function(window, document) {
             document.getElementById('productSliderArrows').appendChild(firstArrow);
             document.getElementById('productSliderArrows').appendChild(lastArrow);
 
+
+            var price = document.querySelectorAll(".product-previous-price");
+
+            for (var i = 0;  i < price.length;  i++) {
+              if (price[i].innerHTML.length < 7) {
+                price[i].style.opacity = 0;
+              }
+            }
+            
         		produtos = document.querySelectorAll(".prod");
             if (typeof callback === "function") {
                 callback(produtos);
