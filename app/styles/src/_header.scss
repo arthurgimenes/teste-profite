@@ -1,132 +1,191 @@
 header {
-    height: 144px;
-    background: white;
+  height: 144px;
+  background: white;
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    height: $unit*19;
+  }
 }
 
 .header-container {
-    height: 100%;
-    width: 70%;
-    margin: 0 auto;
-    //@media (max-width: 480px) {
-    //    background-color: red;
-    //}
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+
+  div {
+    float: left;
+  }
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 
 .header-logo {
+  height: 100%;
+  width: 23%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4%;
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    height: 70%;
+    width: 100%;
+  }
+
+  h1 {
     height: 100%;
-    width: 23%;
+    width: 100%;
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 4%;
-    h1 {
-      height: 100%;
-      width: 100%;
-      display: inline-block;
-      padding: $unit*3 0;
-      a img {
-          width: 100%;
-      }
+    padding: $unit*3 0;
+
+    @media (min-width: 500px) and (max-width: 1000px) {
+      width: 30%;
+      margin: 0 auto;
+      display: block;
     }
+
+    a img {
+      width: 100%;
+    }
+  }
 }
 
 .header-login {
-    display: inline-block;
-    width: 13%;
-    margin-right: 3%;
-    p {
-      &:first-child {
-          font-family: 'ArialBD';
-          font-size: $font-size;
-          padding-bottom: $unit/2;
-      }
-      &:last-child {
-          font-family: 'Arial';
-          font-size: $small-font-size;
-      }
+  display: inline-block;
+  width: 13%;
+  margin-right: 3%;
+  padding-top: $sub-unit*9;
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    width: auto;
+    position: absolute;
+    top: $unit*4;
+    right: $unit*4;
+    padding-top: 0;
+  }
+
+  p {
+    &:first-child {
+      font-family: 'ArialBD', Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: $font-size;
+      padding-bottom: $unit/2;
     }
+    &:last-child {
+      font-family: 'Arial', Arial, Helvetica, sans-serif;
+      font-size: $small-font-size;
+    }
+  }
 }
 
 .header-search {
-    display: inline-block;
-    width: 36%;
-    margin-right: 6%;
+  display: inline-block;
+  width: 36%;
+  margin-right: 6%;
+  padding-top: $sub-unit*9;
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding-top: 0;
+    background: $background-color;
+  }
 }
 
 #headerSearchForm {
-    position: relative;
-
+  position: relative;
 }
 
 #headerSearchInput {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 15px;
-  height: 30px;
-  padding: 5px 5px 5px 50px;
-  background-color: yellow;
+  border-radius: $sub-unit*3;
+  height: $unit*3;
+  padding: $sub-unit $sub-unit $sub-unit $unit*5;
+  background-color: $background-color;
   border: none;
   width: 100%;
   font-size: $font-size;
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    border-radius: 0px;
+  }
+
   &::-webkit-input-placeholder {
-     color: black;
-     opacity: 1;
+    color: black;
+    opacity: 1;
   }
 
   &:-moz-placeholder { /* Firefox 18- */
-     color: black;
-     opacity: 1;
+    color: black;
+    opacity: 1;
   }
 
   &::-moz-placeholder {  /* Firefox 19+ */
-     color: black;
-     opacity: 1;
+    color: black;
+    opacity: 1;
   }
 
   &:-ms-input-placeholder {
-     color: black;
-     opacity: 1;
+    color: black;
+    opacity: 1;
   }
 }
+
 #headerSearchButton {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 15px;
-  height: 30px;
-  width: 45px;
+  border-radius: $sub-unit*3;
+  height: $unit*3;
+  width: $sub-unit*9;
   background-color: #000;
   position: absolute;
   top: 0;
   left: 0;
   border: none;
   background-image: url(../../../static/images/icone_pesquisa.png);
-  background-size: 15px;
+  background-size: $sub-unit*3;
   background-repeat: no-repeat;
   color: black;
   background-position: center;
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    border-radius: 0px;
+    width: $unit*3;
+    left: $sub-unit*3;
+  }
 }
 
 .header-skype {
-    display: inline-block;
-    width: 12%;
-    padding-top: 20px;
-    text-align: center;
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  padding-top: $unit*4;
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .header-languages {
   padding: 0 25% 0 15%;
 
-    a {
-        display: inline-block;
-        width: 25%;
+  a {
+    display: inline-block;
+    width: 25%;
+    max-width: $unit*2;
 
-        img {
-          width: 100%;
-        }
+    img {
+      width: 100%;
     }
+  }
 }
+
 .header-tel {
   text-decoration: none;
   display: block;
@@ -137,13 +196,14 @@ header {
   position: relative;
 
   &:before {
-      content: '';
-      background-image: url(../../../static/images/skype.png);
-      background-size: contain;
-      display: inline-block;
-      height: 25px;
-      width: 25px;
-      left: -$unit/2;
-      position: absolute;
+    content: '';
+    background-image: url(../../../static/images/skype.png);
+    background-size: contain;
+    display: inline-block;
+    height: $sub-unit*5;
+    width: $sub-unit*5;
+    left: calc(50% - #{$sub-unit*13});
+    bottom: -3px;
+    position: absolute;
   }
 }

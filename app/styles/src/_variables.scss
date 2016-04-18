@@ -1,8 +1,9 @@
 $unit: 10px;
+$sub-unit: 5px;
 
 //Colors
 $background-color: #fac437;
-$footer-color: #fcfcfc;
+$footer-color: #ebebeb;
 $disabled-color: #d0d0d0;
 $selected-color: #eaeaea;
 $phone-color: #d0ebfb;
@@ -11,6 +12,7 @@ $phone-color: #d0ebfb;
 $font-size: 14px;
 $large-font-size: $font-size + 2;
 $small-font-size: $font-size - 2;
+$smaller-font-size: $font-size - 4;
 
 @font-face {
   font-family: 'Arial';
@@ -21,6 +23,7 @@ $small-font-size: $font-size - 2;
     url('../../../static/fonts/arial.ttf')  format('truetype'),
     url('../../../static/fonts/ArialMT.svg') format('svg');
 }
+
 @font-face {
   font-family: 'ArialBD';
   src: url('../../../static/fonts/arialbd.eot');//eot

@@ -4,7 +4,9 @@ module.exports = function (grunt) {
       dist : {
         files : {
           'app/js/dist/main.js' : [
-            'app/js/src/scripts.js',
+            'app/js/src/jsonModule.js',
+            'app/js/src/lightboxModule.js',
+            'app/js/src/productModule.js',
             'app/js/src/bindings.js'
           ]
         }

@@ -20,6 +20,16 @@
   text-align: center;
 	z-index:1002;
 
+	@media (min-width: 725px) and (max-width: 1000px) {
+  	left: 15%;
+  	right: 15%;
+  }
+
+	@media (min-width: 500px) and (max-width: 724px) {
+		left: 10%;
+		right: 10%;
+  }
+	
   img {
     max-width: 100%;
     max-height: 100%
@@ -27,10 +37,10 @@
 }
 
 #closeLightbox {
-  background-image: url(../../../static/images/fechar.png) center center no-repeat;
+  background: url(../../../static/images/fechar.png) center center no-repeat;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: $sub-unit*3;
+  right: $sub-unit*3;
   width: $unit*3;
   height: $unit*3;
 }
