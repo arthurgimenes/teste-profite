@@ -11,12 +11,15 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-import Header from './components/header'
+import { Header, HomeSlider } from './components'
 
 class App extends Component {
   render() {
     return (
-      <Header />
+      <div className="page">
+        <Header />
+        <HomeSlider />
+      </div>
     )
   }
 }

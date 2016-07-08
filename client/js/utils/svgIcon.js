@@ -1,5 +1,5 @@
 /**
- * utils/svgIcon.js
+ * utils/SvgIcon.js
  *
  * @copyright Vinicius Hagamenon <vinicius@movedigital.com.br>
  * @author Vinicius Hagamenon <vinicius@movedigital.com.br>

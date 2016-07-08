@@ -1,5 +1,5 @@
 /**
- * utils/index.js
+ * compoenents/search.js
  *
  * @copyright Vinicius Hagamenon <vinicius@movedigital.com.br>
  * @author Vinicius Hagamenon <vinicius@movedigital.com.br>
@@ -8,4 +8,5 @@
  */
 'use strict'
 
-export {default as SvgIcon} from './SvgIcon'
+export {default as Header} from './Header'
+export {default as HomeSlider} from './HomeSlider'

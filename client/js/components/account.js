@@ -1,5 +1,5 @@
 /**
- * components/account.js
+ * components/Account.js
  *
  * @copyright Vinicius Hagamenon <vinicius@movedigital.com.br>
  * @author Vinicius Hagamenon <vinicius@movedigital.com.br>

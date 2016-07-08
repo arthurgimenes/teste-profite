@@ -1,0 +1,85 @@
+.home-banners {
+  background-color: $yellow;
+
+  .home-slider {
+    position: relative;
+
+    .slides-container {
+      overflow: hidden;
+    }
+
+    .slides-list {
+      white-space: nowrap;
+      transition: transform .3s ease;
+
+      .slider-item {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+
+    .bullets {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      text-align: center;
+
+      a {
+        text-indent: -9999px;
+        display: inline-block;
+        margin: 0 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        background-color: #d0d0d0;
+
+        &.active {
+          background-color: #eaeaea;
+        }
+      }
+    }
+
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      width: 15px;
+      height: 16px;
+      text-indent: -9999px;
+
+      &.prev {
+        left: 10px;
+        background-image: url('../images/seta_esquerda_branca.png');
+      }
+
+      &.next {
+        right: 10px;
+        background-image: url('../images/seta_direita_branca.png');
+      }
+    }
+
+    .slider-banner {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .home-slider {
+      margin: 0 auto;
+      width: 960px;
+
+      .slider-nav {
+        &.prev {
+          left: -25px;
+        }
+
+        &.next {
+          right: -25px;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 /**
- * components/header.js
+ * components/Header.js
  *
  * @copyright Vinicius Hagamenon <vinicius@movedigital.com.br>
  * @author Vinicius Hagamenon <vinicius@movedigital.com.br>
