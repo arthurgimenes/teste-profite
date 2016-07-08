@@ -1,5 +1,5 @@
 /**
- * compoenents/Search.js
+ * components/Search.js
  *
  * @copyright Vinicius Hagamenon <vinicius@movedigital.com.br>
  * @author Vinicius Hagamenon <vinicius@movedigital.com.br>

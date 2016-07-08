@@ -64,7 +64,7 @@
     display: none;
   }
 
-  @media only screen and (min-width: 641px) {
+  @media only screen and (min-width: $mobile-break) {
     .header-account {
       position: absolute;
       top: 50px;
@@ -74,7 +74,7 @@
     }
   }
 
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: $desktop-break) {
     padding: 36px 0;
 
     .container {

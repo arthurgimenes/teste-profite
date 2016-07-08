@@ -8,20 +8,19 @@
  */
 'use strict'
 
-import React, { Component } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { Header, HomeSlider } from './components'
+import { Header, Footer, HomeSlider } from './components'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="page">
-        <Header />
-        <HomeSlider />
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div className="page">
+      <Header />
+      <HomeSlider />
+      <Footer />
+    </div>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('app'))

@@ -1,5 +1,5 @@
 /**
- * compoenents/search.js
+ * components/index.js
  *
  * @copyright Vinicius Hagamenon <vinicius@movedigital.com.br>
  * @author Vinicius Hagamenon <vinicius@movedigital.com.br>
@@ -10,3 +10,4 @@
 
 export {default as Header} from './Header'
 export {default as HomeSlider} from './HomeSlider'
+export {default as Footer} from './Footer'
