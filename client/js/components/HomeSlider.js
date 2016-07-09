@@ -97,7 +97,7 @@ class HomeSlider extends Component {
 
     return (
       <section className="home-banners">
-        <div id="home-slider" className="home-slider">
+        <div className="home-slider">
           <div className="slides-container">
             <ul
               className="slides-list"
