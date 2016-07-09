@@ -12,102 +12,18 @@ import React, { Component } from 'react'
 
 import Product from './Product'
 
+import { Ajax } from '../utils'
+
+const API_URL = 'https://jsonblob.com/api/jsonBlob/57808151e4b0dc55a4e2ec9f'
+
 class ProductsSlider extends Component {
   constructor(props) {
     super(props)
 
-    this.products = [
-      {
-        name: 'Sandália Ferracini Ecologic',
-        images: {
-          normal: 'images/products/calcado1.png',
-          hover: 'images/products/calcado1_hover.png',
-          full: 'images/products/calcado1_zoom.png'
-        },
-        price: 95.92,
-        installments: 4
-      },
-      {
-        name: 'Chinelo Kildare',
-        images: {
-          normal: 'images/products/calcado2.png',
-          hover: 'images/products/calcado2_hover.png',
-          full: 'images/products/calcado2_zoom.png'
-        },
-        price: 99.90,
-        specialPrice: 79.92,
-        installments: 3
-      },
-      {
-        name: 'Tênis Ferracini Week',
-        images: {
-          normal: 'images/products/calcado3.png',
-          hover: 'images/products/calcado3_hover.png',
-          full: 'images/products/calcado3_zoom.png'
-        },
-        price: 229.90,
-        specialPrice: 183.92,
-        installments: 9
-      },
-      {
-        name: 'Tênis Democrata Fan',
-        images: {
-          normal: 'images/products/calcado4.png',
-          hover: 'images/products/calcado4_hover.png',
-          full: 'images/products/calcado4_zoom.png'
-        },
-        price: 219.90,
-        specialPrice: 159.92,
-        installments: 7
-      },
-      {
-        name: 'Sandália Ferracini Ecologic 2',
-        images: {
-          normal: 'images/products/calcado1.png',
-          hover: 'images/products/calcado1_hover.png',
-          full: 'images/products/calcado1_zoom.png'
-        },
-        price: 95.92,
-        installments: 4
-      },
-      {
-        name: 'Chinelo Kildare 2',
-        images: {
-          normal: 'images/products/calcado2.png',
-          hover: 'images/products/calcado2_hover.png',
-          full: 'images/products/calcado2_zoom.png'
-        },
-        price: 99.90,
-        specialPrice: 79.92,
-        installments: 3
-      },
-      {
-        name: 'Tênis Ferracini Week 2',
-        images: {
-          normal: 'images/products/calcado3.png',
-          hover: 'images/products/calcado3_hover.png',
-          full: 'images/products/calcado3_zoom.png'
-        },
-        price: 229.90,
-        specialPrice: 183.92,
-        installments: 9
-      },
-      {
-        name: 'Tênis Democrata Fan 2',
-        images: {
-          normal: 'images/products/calcado4.png',
-          hover: 'images/products/calcado4_hover.png',
-          full: 'images/products/calcado4_zoom.png'
-        },
-        price: 219.90,
-        specialPrice: 159.92,
-        installments: 7
-      }
-    ]
-
     this.state = {
+      products: [],
       activeSlide: 1,
-      totalSlides: this.products.length,
+      totalSlides: 0,
       sliderThreshold: 3,
       sliderFactor: -25
     }
@@ -118,6 +34,16 @@ class ProductsSlider extends Component {
   }
 
   componentDidMount() {
+    // custom ajax fetch.
+    Ajax.fetch(API_URL, (response) => {
+      let products = JSON.parse(response)
+
+      this.setState({
+        products: products,
+        totalSlides: products.length
+      })
+    })
+
     this.updateSliderConfig()
     window.addEventListener('resize', this.updateSliderConfig)
   }
@@ -165,8 +91,20 @@ class ProductsSlider extends Component {
     })
   }
 
+  renderLoading() {
+    return (
+      <section className="home-products">
+        <p className="products-loading">Carregando...</p>
+      </section>
+    )
+  }
+
   render() {
-    let { activeSlide, sliderFactor } = this.state
+    let { products, activeSlide, sliderFactor } = this.state
+
+    if (products.length <= 0) {
+      return this.renderLoading()
+    }
 
     return (
       <section className="home-products">
@@ -176,7 +114,7 @@ class ProductsSlider extends Component {
               className="products-list"
               style={{transform: `translateX(${(activeSlide - 1) * sliderFactor}%)`}}
             >
-              {this.products.map((product, index) => {
+              {products.map((product, index) => {
                 return <Product key={index} product={product} />
               })}
             </ul>

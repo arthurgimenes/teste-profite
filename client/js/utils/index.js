@@ -8,4 +8,5 @@
  */
 'use strict'
 
+export {default as Ajax} from './Ajax'
 export {default as SvgIcon} from './SvgIcon'

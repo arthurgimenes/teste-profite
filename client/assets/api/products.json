@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Sandália Ferracini Ecologic",
+    "images": {
+      "normal": "images/products/calcado1.png",
+      "hover": "images/products/calcado1_hover.png",
+      "full": "images/products/calcado1_zoom.png"
+    },
+    "price": 95.92,
+    "installments": 4
+  },
+  {
+    "name": "Chinelo Kildare",
+    "images": {
+      "normal": "images/products/calcado2.png",
+      "hover": "images/products/calcado2_hover.png",
+      "full": "images/products/calcado2_zoom.png"
+    },
+    "price": 99.9,
+    "specialPrice": 79.92,
+    "installments": 3
+  },
+  {
+    "name": "Tênis Ferracini Week",
+    "images": {
+      "normal": "images/products/calcado3.png",
+      "hover": "images/products/calcado3_hover.png",
+      "full": "images/products/calcado3_zoom.png"
+    },
+    "price": 229.9,
+    "specialPrice": 183.92,
+    "installments": 9
+  },
+  {
+    "name": "Tênis Democrata Fan",
+    "images": {
+      "normal": "images/products/calcado4.png",
+      "hover": "images/products/calcado4_hover.png",
+      "full": "images/products/calcado4_zoom.png"
+    },
+    "price": 219.9,
+    "specialPrice": 159.92,
+    "installments": 7
+  },
+  {
+    "name": "Sandália Ferracini Ecologic 2",
+    "images": {
+      "normal": "images/products/calcado1.png",
+      "hover": "images/products/calcado1_hover.png",
+      "full": "images/products/calcado1_zoom.png"
+    },
+    "price": 95.92,
+    "installments": 4
+  },
+  {
+    "name": "Chinelo Kildare 2",
+    "images": {
+      "normal": "images/products/calcado2.png",
+      "hover": "images/products/calcado2_hover.png",
+      "full": "images/products/calcado2_zoom.png"
+    },
+    "price": 99.9,
+    "specialPrice": 79.92,
+    "installments": 3
+  },
+  {
+    "name": "Tênis Ferracini Week 2",
+    "images": {
+      "normal": "images/products/calcado3.png",
+      "hover": "images/products/calcado3_hover.png",
+      "full": "images/products/calcado3_zoom.png"
+    },
+    "price": 229.9,
+    "specialPrice": 183.92,
+    "installments": 9
+  },
+  {
+    "name": "Tênis Democrata Fan 2",
+    "images": {
+      "normal": "images/products/calcado4.png",
+      "hover": "images/products/calcado4_hover.png",
+      "full": "images/products/calcado4_zoom.png"
+    },
+    "price": 219.9,
+    "specialPrice": 159.92,
+    "installments": 7
+  }
+]
