@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  &::after, &::before {
+    content: '';
+    @include clearfix(block, visible);
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+label {
+  display: none;
+}
+
+a {
+  text: {
+    decoration: none;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: darken(colors(bg, base), 100);
+  font: {
+    size: 1.3rem;
+  }
+}
+::-moz-input-placeholder {
+  color: darken(colors(bg, base), 100);
+  font: {
+    size: 1.3rem;
+  }
+}
+:-moz-input-placeholder {
+  color: darken(colors(bg, base), 100);
+  font: {
+    size: 1.3rem;
+  }
+}
+:-ms-input-placeholder {
+  color: darken(colors(bg, base), 100);
+  font: {
+    size: 1.3rem;
+  }
+}
+
+.btn {
+  background: darken(colors(bg, base), 100);
+  border: 0;
+  color: colors(text, base);
+  font: {
+    size: 1.2rem;
+  }
+  margin: {
+    left: 25%;
+  }
+  padding: {
+    top: .5rem;
+    bottom: .5rem;
+  }
+  position: relative;
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  width: 50%;
+  &::before {
+    background: {
+      image: url('../images/sapatos/carrinho.png');
+      size: 50%;
+      repeat: no-repeat;
+      position: center;
+    }
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 2.5rem;
+    left: 0;
+    top: 0;
+  }
+}
