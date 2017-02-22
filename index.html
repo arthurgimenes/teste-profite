@@ -14,29 +14,41 @@
         <div class="header-column"></div>
         <div class="fixed-size"><img src="topo/profite_logo_novo.png" alt="profite logo novo" id="logo"></div>
         <div class="fixed-size">
-            <h3>Olá, Visitante</h3>
-            <p><a href="#">Cadastre-se</a></p>
-            <p><a href="#">Login</a></p>
+            <p>
+                <a href="#" id="boasVindas">Olá, Visitante</a>
+                <br>
+                <a href="#" class="linksHeader">Cadastre-se</a> - <a href="#" class="linksHeader">Login</a>
+            </p>
         </div>
         <div class="fixed-size">
-            <label for=""><img src="topo/%C3%ADcone_pesquisa.png" alt="" id="">
+            <label>
+                <img src="topo/%C3%ADcone_pesquisa.png" alt="" id="">
                 <input type="text" id="search">
             </label>
         </div>
-        <div class="fixed-size"><img src="topo/bandeira1.png" alt="bandeira" class="bandeira">
+        <div class="fixed-size">
+            <img src="topo/bandeira1.png" alt="bandeira" class="bandeira">
             <img src="topo/bandeira2.png" alt="bandeira" class="bandeira">
             <img src="topo/bandeira3.png" alt="bandeira" class="bandeira">
-
-            <img src="topo/skype.png" alt="Skype" id="skype"></div>
+            <br>
+            <img src="topo/skype.png" alt="Skype" id="skype">11 33375618
+        </div>
     </header>
 
     <main>
         <div class="main-sidebar-one"></div>
         <div class="main-sidebar-two"></div>
         <div class="main-column">
-            <h2>Main Column</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum fugit veniam amet quae sint vitae numquam dolore sunt quod a odio officia voluptate doloribus, at. Cum quasi mollitia eaque. Voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti sequi voluptatum!</p>
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="banner/banner1.jpg">
+                <img class="mySlides" src="banner/banner2.jpg">
+                <img class="mySlides" src="banner/banner3.jpg">
+                <img class="mySlides" src="banner/banner4.jpg">
+
+                <a class="" onclick="plusDivs(-1)"><img src="banner/seta_esquerda.png" alt=""></a>
+                <a class="" onclick="plusDivs(1)"><img src="banner/seta_direita.png" alt=""></a>
+            </div>
+
         </div>
         <div class="main-sidebar-one"></div>
         <div class="main-sidebar-two"></div>
@@ -49,7 +61,6 @@
         <div class="fixed-size">4</div>
     </aside>
 
-    <!-- first example -->
     <footer>
         <div class="footer-sidebar-one"></div>
         <div class="footer-sidebar-two"></div>
@@ -60,6 +71,32 @@
         <div class="footer-sidebar-one"></div>
         <div class="footer-sidebar-two"></div>
     </footer>
+
+
+    <!-- Script menu -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
