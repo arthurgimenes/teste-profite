@@ -17,7 +17,6 @@ h3 {
 }
 
 /* Header */
-/* Aside */
 header {
     height: 50px;
     max-width: 700px;
@@ -42,17 +41,28 @@ header .fixed-size {
 }
 #boasVindas {
     padding: 10px 0px 0px 0px;
+    color: #000;
+    text-decoration: none;
 }
 .bandeira {
     width: 25px;
     height: 15px;
-    padding: 18px 0px;
+    padding: 18px 0px 0px 0px;
 }
-#skype {
+.skype {
     width: 24px;
     height: 24px;
-    padding: 5px 0px -20px 0px;
+    margin: 2px 3px -5px 0px;
+    color: #00AFF0;
 }
+
+.linksHeader {
+    padding: 0px 0px 0px 0px;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+}
+
 
 /* Main */
 main {
@@ -84,7 +94,7 @@ aside {
     max-width: 700px;
     margin: 40px auto 40px auto;
     background-color: #FFF;
-    padding: 30px 0;
+    padding: 30px 0px;
     display: flex;
 }
 aside .fixed-size {
@@ -100,28 +110,30 @@ aside .fixed-size {
 
 /* Footer */
 footer {
-    max-width: 1300px;
+    height: 50px;
+    max-width: 700px;
+    margin: 0px auto 40px auto;
     background-color: #FFF;
-    margin: 0px auto -40px auto;
-    line-height: 1.65;
-    padding: 20px 50px;
+    padding: 0px 0px 10px 0px;
     display: flex;
-    background-color: #F8F8F8;
-}
-.footer-column {
-    flex: 3;
-    order: 2;
-}
-.footer-sidebar-one {
-    flex: 1;
-    order: 1;
-}
-.footer-sidebar-two {
-    flex: 1;
-    order: 3;
 }
 
-.linksHeader {
-    padding: 0px 0px 0px 0px;
+footer .fixed-size {
+    width: 180px;
+    height: 100px;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer p {
     font-size: 12px;
+    margin: 0px 10px 50px 0px;
+}
+
+#logoRJ {
+    width: 35px;
+    height: 30px;
+    padding-top: 20px;
 }

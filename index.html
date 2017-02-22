@@ -10,8 +10,6 @@
 
 <body>
     <header>
-        <div class="header-row"></div>
-        <div class="header-column"></div>
         <div class="fixed-size"><img src="topo/profite_logo_novo.png" alt="profite logo novo" id="logo"></div>
         <div class="fixed-size">
             <p>
@@ -22,16 +20,16 @@
         </div>
         <div class="fixed-size">
             <label>
-                <img src="topo/%C3%ADcone_pesquisa.png" alt="" id="">
+                <img src="topo/%C3%ADcone_pesquisa.png" alt="Icone pesquisa" id="iconePesquisa">
                 <input type="text" id="search">
             </label>
         </div>
         <div class="fixed-size">
-            <img src="topo/bandeira1.png" alt="bandeira" class="bandeira">
-            <img src="topo/bandeira2.png" alt="bandeira" class="bandeira">
-            <img src="topo/bandeira3.png" alt="bandeira" class="bandeira">
+            <img src="topo/bandeira1.png" alt="Bandeira" class="bandeira">
+            <img src="topo/bandeira2.png" alt="Bandeira" class="bandeira">
+            <img src="topo/bandeira3.png" alt="Bandeira" class="bandeira">
             <br>
-            <img src="topo/skype.png" alt="Skype" id="skype">11 33375618
+            <img src="topo/skype.png" alt="Skype" class="skype"><span class="skype">11 33375618</span>
         </div>
     </header>
 
@@ -39,16 +37,13 @@
         <div class="main-sidebar-one"></div>
         <div class="main-sidebar-two"></div>
         <div class="main-column">
-            <div class="w3-content w3-display-container">
-                <img class="mySlides" src="banner/banner1.jpg">
-                <img class="mySlides" src="banner/banner2.jpg">
-                <img class="mySlides" src="banner/banner3.jpg">
-                <img class="mySlides" src="banner/banner4.jpg">
+                <img class="mySlides" src="banner/banner1.jpg" alt="Banner">
+                <img class="mySlides" src="banner/banner2.jpg" alt="Banner">
+                <img class="mySlides" src="banner/banner3.jpg" alt="Banner">
+                <img class="mySlides" src="banner/banner4.jpg" alt="Banner">
 
-                <a class="" onclick="plusDivs(-1)"><img src="banner/seta_esquerda.png" alt=""></a>
-                <a class="" onclick="plusDivs(1)"><img src="banner/seta_direita.png" alt=""></a>
-            </div>
-
+                <a onclick="plusDivs(-1)"><img src="banner/seta_esquerda.png" alt="Seta esquerda"></a>
+                <a onclick="plusDivs(1)"><img src="banner/seta_direita.png" alt="Seta direita"></a>
         </div>
         <div class="main-sidebar-one"></div>
         <div class="main-sidebar-two"></div>
@@ -62,41 +57,24 @@
     </aside>
 
     <footer>
-        <div class="footer-sidebar-one"></div>
-        <div class="footer-sidebar-two"></div>
-        <div class="footer-column">
-            <img src="footer/%C3%ADcone_sp.png" alt="">
-            <img src="footer/%C3%ADcone_rj.png" alt="">
+        <div class="fixed-size">
+            <p><img src="footer/%C3%ADcone_rj.png" alt="logo RJ" id="logoRJ">
+            Rua do acre, 77 - sala 1108</p>
+            <p></p>
         </div>
-        <div class="footer-sidebar-one"></div>
-        <div class="footer-sidebar-two"></div>
+        <div class="fixed-size">
+
+        </div>
+        <div class="fixed-size">
+
+        </div>
+        <div class="fixed-size">
+
+        </div>
     </footer>
 
-
     <!-- Script menu -->
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = x.length
-            }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
