@@ -3,10 +3,12 @@ body {
     padding: 0;
     margin: 0;
 }
+
 input {
     font-size: 14px;
     font-family: Helvetica, sans-serif;
 }
+
 body {
     font-family: Helvetica, sans-serif;
 }
@@ -16,10 +18,12 @@ h3 {
     margin: 0 0 .75em 0;
 }
 
+
 /* Header */
+
 header {
     height: 50px;
-    max-width: 700px;
+    max-width: 920px;
     margin: 0px auto 40px auto;
     background-color: #FFF;
     padding: 0px 0px 10px 0px;
@@ -27,7 +31,7 @@ header {
 }
 
 header .fixed-size {
-    width: 180px;
+    width: 500px;
     height: 100px;
     background-color: #FFF;
     color: #000;
@@ -39,16 +43,19 @@ header .fixed-size {
     height: 50px;
     padding-top: 20px;
 }
+
 #boasVindas {
-    padding: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     color: #000;
     text-decoration: none;
 }
+
 .bandeira {
     width: 25px;
     height: 15px;
     padding: 18px 0px 0px 0px;
 }
+
 .skype {
     width: 24px;
     height: 24px;
@@ -65,6 +72,7 @@ header .fixed-size {
 
 
 /* Main */
+
 main {
     max-width: 1300px;
     background-color: #FFF;
@@ -79,26 +87,31 @@ main {
     flex: 5;
     order: 2;
 }
+
 .main-sidebar-one {
     flex: 1;
     order: 1;
 }
+
 .main-sidebar-two {
     flex: 1;
     order: 3;
 }
 
+
 /* Aside */
+
 aside {
     height: 250px;
-    max-width: 700px;
+    max-width: 920px;
     margin: 40px auto 40px auto;
     background-color: #FFF;
     padding: 30px 0px;
     display: flex;
 }
+
 aside .fixed-size {
-    width: 180px;
+    width: 380px;
     height: 300px;
     background-color: dodgerblue;
     color: #FFF;
@@ -108,10 +121,12 @@ aside .fixed-size {
     margin-bottom: auto;
 }
 
+
 /* Footer */
+
 footer {
     height: 50px;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0px auto 40px auto;
     background-color: #FFF;
     padding: 0px 0px 10px 0px;
@@ -119,7 +134,7 @@ footer {
 }
 
 footer .fixed-size {
-    width: 180px;
+    width: 850px;
     height: 100px;
     background-color: #FFF;
     color: #000;
@@ -128,12 +143,47 @@ footer .fixed-size {
 }
 
 footer p {
-    font-size: 12px;
-    margin: 0px 10px 50px 0px;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #999;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify;
 }
 
 #logoRJ {
     width: 35px;
     height: 30px;
-    padding-top: 20px;
+    margin: 0px 10px 5px 0px;
+}
+
+.negritar {
+    color: #000;
+    font-weight: bold;
+}
+
+.espacar {
+    margin-left: 55px;
+}
+
+.btn {
+    background: #FFBC01;
+    background-image: -webkit-linear-gradient(top, #FFBC01, #FFBC01);
+    background-image: -moz-linear-gradient(top, #FFBC01, #FFBC01);
+    background-image: -ms-linear-gradient(top, #FFBC01, #FFBC01);
+    background-image: -o-linear-gradient(top, #FFBC01, #FFBC01);
+    background-image: linear-gradient(to bottom, #FFBC01, #FFBC01);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #000;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.btn p{
+    color: #000;
 }
