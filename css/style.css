@@ -1,0 +1,313 @@
+@font-face{
+    font-family: arialProjeto;
+    src: url(../Material/fonte/arial.ttf);
+}
+
+@font-face{
+    font-family: arialbdProjeto;
+    src: url(../Material/fonte/arialbd.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: arialProjeto;
+}
+
+body{
+    margin: 0;
+}
+
+.interface{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 60px;
+}
+
+
+.container div{
+    float: left;
+}
+
+#logo{
+    
+    width: 25%;
+}
+
+#login{
+    width: 18%;
+    
+}
+
+
+#busca{
+    width: 37%;
+}
+
+#contato{
+    width: 20%;
+    position: relative;
+   
+}
+
+
+/* Elementos de dentros das divs */
+
+#logo img{
+    width: 200px;
+}
+
+#login a{
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+#login a:hover{
+    text-decoration: underline;
+}
+
+#login h2{
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-family: arialdbProjeto;
+}
+
+
+#busca form{
+    margin-top: 15px;
+}
+
+
+
+#busca div{
+    background-color: black;
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    float: left;
+}
+
+#busca input[type=image]{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 50%;
+    margin-right: -10px;
+}
+
+#busca input[type=search]{
+    background-color: #ffdb4d;
+    border-radius: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 300px;
+    margin-left: -9px;
+    border: none;
+    padding-left: 15px;
+}
+
+
+
+ul.social{
+   margin-top: 10px;  
+   position: absolute;
+   right: 0;  
+}
+
+
+ul.social li{
+    display: inline-block;
+    margin-right: 6px;
+    
+}
+
+ul.social li img{
+    width: 30px;
+}
+
+div#contato p{
+    color: #00b8e6;
+    margin-top: 0;
+    margin-left: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 600;
+    }
+
+div#contato p::before{
+    content: url(../Material/topo/skype.png);
+}
+
+/*SECTION slide*/
+
+.banner{
+    clear: both;
+    background-color:#ffdb4d;
+}
+
+.slide{
+    position: relative;
+}
+
+.slide img#seta-esquerda{
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    margin-top: -7.5px;
+}
+
+.slide img#seta-direita{
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    margin-top: -7.5px;
+}
+
+.slide img{
+    max-width: 100%;
+}
+
+
+/*SECTION ITENS*/
+
+.itens{
+    position: relative;
+    }
+
+.itens img[alt=seta-esquerda-itens]{
+    position: absolute;
+    top: 107px;
+    left:-18px;
+}
+
+.itens img[alt=seta-direita-itens]{
+    position: absolute;
+    top: 107px;
+    right: -18px;
+}
+
+
+
+.sapatos{
+    width: 25%;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-right: 2px solid lightgray;
+}
+
+.sapatos:hover{
+    background-color: #ffdb4d;
+}
+
+
+.sapatos img[alt=estrelas]{
+    display: inline-block;
+    margin-bottom: 6px;
+
+}
+
+.sapatos h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 46px;
+}
+
+.sapatos h4{
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.sapatos h5{
+    color: gray;
+    font-style: italic;
+    text-decoration: line-through;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.preco{
+    height: 62px;
+}
+
+.button{
+    display: inline-block;
+    background-color: #262626;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    
+}
+
+.button h4{
+    display: inline;
+    
+}
+
+.button img{
+    height: 19px;
+    margin-top: 10px;
+    }
+
+.sapatos p{
+    display: inline-block;
+    width: 75%;
+    border: 2px solid lightgray;
+    font-size: 13px;
+    
+}
+
+
+/*FOOTER*/
+
+footer{
+    clear: both;
+    background-color: #e6e6e6;
+   
+}  
+
+
+
+.contato{
+    width: 30%;
+    display: inline-block;
+}
+    
+.contato img{
+    display: inline-block;
+}   
+
+.caixa-contato{
+    padding: 10px;
+    background: #ffdb4d;
+    margin-bottom: 10px;
+    text-align: center;
+    
+    width: 190px;
+    height: 54.5px;
+}
+
+.caixa-contato h4{
+    margin: 0;
+ 
+}
