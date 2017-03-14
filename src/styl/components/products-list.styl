@@ -1,0 +1,124 @@
+.products-list
+    display block
+    margin 0 auto
+    position relative
+    margin-top 1em
+    > .frame
+        width 960px
+        margin 0 auto
+        overflow hidden
+    .slides
+        display inline-block
+        transform: translate3d(-40px, 0px, 0px)
+        white-space nowrap
+    .product
+        display inline-flex
+        flex-direction column
+        flex-wrap wrap
+        max-width 240px
+        width 25vw
+        padding 0 15px
+        overflow hidden
+        position relative
+        text-align center
+        white-space normal
+        padding 0 1.8em
+        white-space normal
+        padding-top 2em
+        margin-bottom 4em
+        padding-bottom .3em
+        align-items stretch
+        &::before
+            content: ''
+            display inline-block
+            border-right 1px solid #e2e2e2
+            height 75%
+            position absolute
+            right 0
+            top -21%
+            transform translate(0,50%)
+        &:nth-child(4n+4)
+            &::before
+                display none
+            
+        > div:first-child
+            height 210px
+        > div:last-child
+            flex-wrap wrap
+            display inline-flex
+            div:first-child
+                width 100%
+        .buy-group
+            width 100%
+        .price-group
+            height 6.3em
+        .image
+            display block
+            max-width 100%
+            margin 0 auto
+        .name
+            font-size .9em
+        .oldprice
+            color #6a6e6d
+            font-size .7em
+            text-decoration line-through
+            font-style italic
+            display inline-block
+        .rating
+            &::before
+                content url('../../images/products/estrelas.png')
+                margin .6em 0
+                display inline-block
+        .price
+            font-weight bold
+        .price,
+        .installments
+            font-size .8em
+            margin-top .5em
+        .saveup
+            padding .2em .2em
+            margin-top 1em
+            width 12.2em
+            max-width 100%
+            display inline-block
+            font-size .7em
+            background #fff
+            border 1px solid #c5c5c5
+        &:hover
+            background #EEBB00
+    > .nav
+        position absolute
+        margin 0 auto
+        height 0
+        left 0
+        right 0
+        top 50%
+        transform translate(0,-50%)
+        width: calc(960px + 60px)
+        padding-right 5px
+        padding-left 5px
+        max-width 100%
+    .prev, 
+    .next
+        position absolute
+        top -50%
+        transform translate(0,-50%)
+        display block
+        cursor pointer
+        padding 10px
+    .next
+        right 0
+        &:after
+            content: url(../../images/products/seta_direita.png)
+    .prev
+        left 0
+        &:after
+            content: url(../../images/products/seta_esquerda.png)
+
+@media only screen and (max-width:975px)
+    .products-list
+        overflow hidden
+        .product
+            width 50vw
+            max-width 50vw
+            

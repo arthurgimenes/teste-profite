@@ -1,0 +1,196 @@
+{
+    "products":[
+        {
+            "name": "Sandália Ferracini Ecologic",
+            "amount": 9592,
+            "max_installments": 4,
+            "old_amount": null,
+            "image": {
+                "mini": "calcado1.png",
+                "hover": "calcado1_hover.png",
+                "zoom": "calcado1_zoom.png"
+            },
+            "saveup_amount": 4398
+        },
+        {
+            "name": "Chinelo Kildare",
+            "amount": 7992,
+            "max_installments": 3,
+            "old_amount": 9990,
+            "image": {
+                "mini": "calcado2.png",
+                "hover": "calcado2_hover.png",
+                "zoom": "calcado2_zoom.png"
+            },
+            "saveup_amount": 1998
+        },
+        {
+            "name": "Tênis Ferracini Week",
+            "amount": 18392,
+            "max_installments": 9,
+            "old_amount": 22990,
+            "image": {
+                "mini": "calcado3.png",
+                "hover": "calcado3_hover.png",
+                "zoom": "calcado3_zoom.png"
+            },
+            "saveup_amount": 4598
+        },
+        {
+            "name": "Tênis Democrata Fan",
+            "amount": 15992,
+            "max_installments": 7,
+            "old_amount": 21990,
+            "image": {
+                "mini": "calcado4.png",
+                "hover": "calcado4_hover.png",
+                "zoom": "calcado4_zoom.png"
+            },
+            "saveup_amount": 5998
+        },
+        {
+            "name": "Sandália Ferracini Ecologic",
+            "amount": 9592,
+            "max_installments": 4,
+            "old_amount": null,
+            "image": {
+                "mini": "calcado1.png",
+                "hover": "calcado1_hover.png",
+                "zoom": "calcado1_zoom.png"
+            },
+            "saveup_amount": 4398
+        },
+        {
+            "name": "Chinelo Kildare",
+            "amount": 7992,
+            "max_installments": 3,
+            "old_amount": 9990,
+            "image": {
+                "mini": "calcado2.png",
+                "hover": "calcado2_hover.png",
+                "zoom": "calcado2_zoom.png"
+            },
+            "saveup_amount": 1998
+        },
+        {
+            "name": "Tênis Ferracini Week",
+            "amount": 18392,
+            "max_installments": 9,
+            "old_amount": 22990,
+            "image": {
+                "mini": "calcado3.png",
+                "hover": "calcado3_hover.png",
+                "zoom": "calcado3_zoom.png"
+            },
+            "saveup_amount": 4598
+        },
+        {
+            "name": "Tênis Democrata Fan",
+            "amount": 15992,
+            "max_installments": 7,
+            "old_amount": 21990,
+            "image": {
+                "mini": "calcado4.png",
+                "hover": "calcado4_hover.png",
+                "zoom": "calcado4_zoom.png"
+            },
+            "saveup_amount": 5998
+        },
+        {
+            "name": "Sandália Ferracini Ecologic",
+            "amount": 9592,
+            "max_installments": 4,
+            "old_amount": null,
+            "image": {
+                "mini": "calcado1.png",
+                "hover": "calcado1_hover.png",
+                "zoom": "calcado1_zoom.png"
+            },
+            "saveup_amount": 4398
+        },
+        {
+            "name": "Chinelo Kildare",
+            "amount": 7992,
+            "max_installments": 3,
+            "old_amount": 9990,
+            "image": {
+                "mini": "calcado2.png",
+                "hover": "calcado2_hover.png",
+                "zoom": "calcado2_zoom.png"
+            },
+            "saveup_amount": 1998
+        },
+        {
+            "name": "Tênis Ferracini Week",
+            "amount": 18392,
+            "max_installments": 9,
+            "old_amount": 22990,
+            "image": {
+                "mini": "calcado3.png",
+                "hover": "calcado3_hover.png",
+                "zoom": "calcado3_zoom.png"
+            },
+            "saveup_amount": 4598
+        },
+        {
+            "name": "Tênis Democrata Fan",
+            "amount": 15992,
+            "max_installments": 7,
+            "old_amount": 21990,
+            "image": {
+                "mini": "calcado4.png",
+                "hover": "calcado4_hover.png",
+                "zoom": "calcado4_zoom.png"
+            },
+            "saveup_amount": 5998
+        },
+        {
+            "name": "Sandália Ferracini Ecologic",
+            "amount": 9592,
+            "max_installments": 4,
+            "old_amount": null,
+            "image": {
+                "mini": "calcado1.png",
+                "hover": "calcado1_hover.png",
+                "zoom": "calcado1_zoom.png"
+            },
+            "saveup_amount": 4398
+        },
+        {
+            "name": "Chinelo Kildare",
+            "amount": 7992,
+            "max_installments": 3,
+            "old_amount": 9990,
+            "image": {
+                "mini": "calcado2.png",
+                "hover": "calcado2_hover.png",
+                "zoom": "calcado2_zoom.png"
+            },
+            "saveup_amount": 1998
+        },
+        {
+            "name": "Tênis Ferracini Week",
+            "amount": 18392,
+            "max_installments": 9,
+            "old_amount": 22990,
+            "image": {
+                "mini": "calcado3.png",
+                "hover": "calcado3_hover.png",
+                "zoom": "calcado3_zoom.png"
+            },
+            "saveup_amount": 4598
+        },
+        {
+            "name": "Tênis Democrata Fan",
+            "amount": 15992,
+            "max_installments": 7,
+            "old_amount": 21990,
+            "image": {
+                "mini": "calcado4.png",
+                "hover": "calcado4_hover.png",
+                "zoom": "calcado4_zoom.png"
+            },
+            "saveup_amount": 5998
+        }
+    ]
+}

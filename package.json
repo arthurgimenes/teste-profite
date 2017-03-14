@@ -1,0 +1,43 @@
+{
+  "name": "teste-profite",
+  "version": "1.0.0",
+  "description": "###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp serve",
+    "prod": "./node_modules/webpack/bin/webpack.js -p && gulp css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogeralbinoi/teste-profite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogeralbinoi/teste-profite/issues"
+  },
+  "homepage": "https://github.com/rogeralbinoi/teste-profite#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "cssnano": "^3.10.0",
+    "eslint": "^3.17.1",
+    "eslint-plugin-react": "^6.10.0",
+    "gulp-live-server": "0.0.30",
+    "gulp-postcss": "^6.3.0",
+    "gulp-stylus": "^2.6.0",
+    "react-slidy": "^1.0.1",
+    "require-dir": "^0.3.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "lory.js": "^2.2.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}

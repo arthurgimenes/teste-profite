@@ -1,0 +1,30 @@
+.site-header
+    width 960px
+    max-width 100%
+    margin 0 auto
+    overflow hidden
+    .wrapper
+        display flex
+        flex-wrap wrap
+        align-items center
+        min-height 8.7em
+        padding 0 1em
+        margin-left -1em 
+        margin-right -1em
+    .item.--searchbox
+        flex 1
+        width 100%
+    .item.--flags
+        margin-left 1em
+
+@media only screen and (max-width: 860px)
+    .site-header
+        .wrapper
+            justify-content flex-end
+            padding 0
+        .item.--flags
+            display none
+        .logo
+            flex 1
+            text-align center
+            padding 0 1.3em

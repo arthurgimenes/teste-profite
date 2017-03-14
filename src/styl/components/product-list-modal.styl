@@ -1,0 +1,47 @@
+.product-list-modal
+    display flex
+    align-items center
+    justify-content center
+    margin 0 auto
+    background rgba(0,0,0,.4)
+    position fixed
+    top 0
+    right 0
+    bottom 0
+    left 0
+    z-index 999
+    visibility hidden
+    opacity 0
+    transition all .3s
+    scale 2
+    .btn-modal-close
+        position absolute
+        top 1em
+        right 1em
+        background none
+        border none
+        cursor pointer
+        &::before
+            content url('../../images/products/fechar.png')
+    &.active
+        visibility visible
+        scale 1
+        opacity 1
+.listModalBox
+    width 500px
+    max-width 95%
+    border none
+    position relative
+    z-index 2
+#imageProductListModal
+    max-width 100%
+.shadow-modal-close
+    z-index 1
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    width 100%
+    border none
+    background none
