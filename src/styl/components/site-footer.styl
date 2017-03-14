@@ -1,0 +1,41 @@
+.site-footer
+    max-width 100%
+    background url(../../images/footer/pattern.png)
+    > .fcontainer
+        display flex
+        flex-wrap wrap
+        min-height 12.9em
+        align-items top
+        padding-top 3em
+        padding-bottom 3em
+        margin 0 auto
+        max-width 820px
+        .addressgroup
+            display flex
+            flex 2
+            width 100%
+        .address-info
+            flex 1
+    > .fcontainer div
+        flex 1
+        margin .5em
+
+    .buttons-footer-group
+        align-items flex-end
+        display flex
+        flex-direction column
+
+@media only screen and (max-width: 820px)
+    .site-footer
+        > .fcontainer
+            flex-direction column
+            align-items flex-start
+            padding 1.5em
+@media only screen and (max-width: 590px)
+    .site-footer
+        > .fcontainer
+            flex-direction column
+            align-items flex-start
+            padding 1.5em
+            .addressgroup
+                flex-direction column

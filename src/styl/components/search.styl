@@ -1,0 +1,46 @@
+.header-search
+    display flex
+    max-width 346px
+    & > .button
+        position relative
+        z-index 1
+        width: 2.6em;
+        background #000
+        color #fff
+        border none
+        border-radius 10px
+        vertical-align top
+        &:after
+            display inline-block
+            vertical-align -12px
+            content url(../../images/header/icone_pesquisa.png)
+    & > .input
+        flex 1
+        position relative
+        margin-left -14px
+        background #fbc436
+        border none
+        border-radius 10px
+        text-indent calc(.5em + 14px)
+        height 2em
+        &::placeholder
+            color #000
+            font-size .9em
+
+@media only screen and (max-width:860px)
+    .header-search
+        display flex
+        width 860px
+        flex auto
+        max-width 100%
+        background #fbc436
+        & > .button
+            border-radius 0
+            margin-left 1.3em
+            width 2.2em
+        & > .input
+            border-radius 0
+            font-size 1.3em
+            height 1.6em
+            &::placeholder
+                font-size .9em

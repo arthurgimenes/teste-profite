@@ -1,0 +1,71 @@
+.banner-slider
+    background #fbc436
+    position relative
+    overflow hidden
+    > .frame
+        width 960px
+        margin 0 auto
+        position relative
+        font-size 0
+        line-height 0
+        overflow hidden
+        white-space nowrap
+    > .frame > .slides 
+        display inline-block
+    > .nav
+        position absolute
+        margin 0 auto
+        height 0
+        left 0
+        right 0
+        top 50%
+        transform translate(0,-50%)
+        width: calc(960px + 60px)
+        padding-right 5px
+        padding-left 5px
+        max-width 100%
+    > .js_dots
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        text-align center
+        margin 0
+        padding 0
+    > .js_dots > .dot 
+        display inline-block
+        padding 5px 5px
+        cursor pointer
+        &::after
+            content url(../../images/banner/slide_proximo.png)
+    > .js_dots > .dot.active 
+        display inline-block
+        &::after
+            content url(../../images/banner/slide_atual.png)
+    .js_slide
+        position relative
+        display inline-block
+        width 960px
+        max-width 100%
+        img
+            max-width 100vw
+    .prev, 
+    .next
+        position absolute
+        top -50%
+        transform translate(0,-50%)
+        display block
+        cursor pointer
+        padding 10px
+    .next
+        right 0
+        &:after
+            content: url(../../images/banner/seta_direita.png)
+    .prev
+        left 0
+        &:after
+            content: url(../../images/banner/seta_esquerda.png)
+
+@media only screen and (max-width: 860px)
+    .banner-slider
+        margin-top 15px

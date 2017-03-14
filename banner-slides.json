@@ -1,0 +1,29 @@
+{
+ "slides":   [
+        {
+            "alt": "Banner 1",
+            "image": "images/banner/banner1.jpg",
+            "mobile": "images/banner/banner1_mobile.jpg"
+        },
+        {
+            "alt": "Banner 1",
+            "image": "images/banner/banner2.jpg",
+            "mobile": "images/banner/banner2_mobile.jpg"
+        },
+        {
+            "alt": "Banner 1",
+            "image": "images/banner/banner3.jpg",
+            "mobile": "images/banner/banner3_mobile.jpg"
+        },
+        {
+            "alt": "Banner 1",
+            "image": "images/banner/banner4.jpg",
+            "mobile": "images/banner/banner4_mobile.jpg"
+        },
+        {
+            "alt": "Banner 1",
+            "image": "images/banner/banner5.jpg",
+            "mobile": "images/banner/banner5_mobile.jpg"
+        }
+    ]
+}
