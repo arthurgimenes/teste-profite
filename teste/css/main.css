@@ -1,0 +1,366 @@
+/*  DESENVOLVIDO POR: Simone Myrrha
+
+    Created on : 01/04/2017
+
+RESET
+Iniciar o CSS com todos as tags HTML sem qualquer estilo padrão definido pelo browser
+*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	text-decoration: none;
+ 
+    -webkit-box-sizing: border-box; /* Safari e chrome */
+    -moz-box-sizing: border-box; /* Firefox */
+    box-sizing: border-box
+}
+
+
+/* Limpa - CLEARFIX */
+.limpa{
+    clear: both;
+    overflow: hidden;
+    display: block
+}
+
+
+h1 {
+    padding: 5px
+}
+img {
+    border: 0;
+    padding: 5px;
+}
+img:hover {
+    opacity: .5
+}
+
+a {
+  color: #000;
+}
+ul li {
+    list-style: none;
+}
+
+/* base */
+.container {
+    width: 1013px;
+    margin: 0 auto;
+    max-width: 100%; 
+}
+
+header .container{
+    padding-top: 34px;
+    padding-bottom: 40px;
+}
+
+.flex-container{
+   list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start
+}
+
+.initial {
+    -webkit-flex: initial;
+    flex: initial;
+    width: 233px;
+}
+
+.none {
+    -webkit-flex: none;
+          flex: none;
+    width: 146px;
+}
+.flex1 {
+    -webkit-flex: none;
+    flex: none;
+    width: 134px;
+}
+.flex2 {
+   width: 379px;
+}
+/* Topo */
+/*LOGO*/
+h2 img{
+   width: 100%;
+   height: 69px;
+}
+
+#search{
+  background-color:#fac437;
+  border-radius:10px;
+  margin-top: 20px;
+}
+
+#txtsearch{
+ 
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    height: 32px;
+    padding-left: 10px;
+    padding-top: 1px;
+    width: 87%;
+    font-size: 14px;
+    color: #000;
+}
+
+#btnsearch{
+    background-color: #000;
+    border-radius: 10px;
+    float: left;
+    height: 33px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 42px;
+}
+
+.user {
+    margin-top: 13px;
+}
+.user p {
+    font-weight: bold;
+    font-size: 19.37px;
+}
+
+.user a {
+    font-style: regular;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav ul {
+    margin-left: 11px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li img{
+    width: 30px;
+    height: 23px;
+}
+
+nav span{
+    display: table;
+}
+nav span img{
+    display: table-cell;
+    vertical-align:middle;
+}
+nav span > span {
+    display: table-cell;  
+    vertical-align:bottom;
+    color: #00aff0;
+    font-size: 18.08px;
+    font-family: Myriad Pro Regular;
+
+}
+/*Fim do topo*/
+
+/*banner*/
+.banner {
+   background: #fac437; 
+}
+
+.banner .swiper-button-next {
+  background: url("../imagem/banner/seta_direita.png") no-repeat !important;
+  right: -12px !important;
+}
+.banner  .swiper-button-prev {
+  background: url("../imagem/banner/seta_esquerda.png") no-repeat !important;
+}
+
+#products .swiper-button-next, #mobile .swiper-button-next{
+  background: url("../imagem/sapatos/seta_direita.png") no-repeat !important;
+  right: -12px !important;
+}
+#products  .swiper-button-prev, #mobile .swiper-button-prev {
+  background: url("../imagem/sapatos/seta_esquerda.png") no-repeat !important;
+}
+/*Produtos*/
+.swiper-slide {
+  border-right: 1px solid #e1e1e1;
+}
+
+.swiper-slide:hover {
+  background: #fac437; 
+}
+#products, #mobile {
+  margin-top: 32px;
+  font-family: Arial;
+  text-align: center;
+}
+
+figure {
+  display: block; 
+  position: relative; 
+  overflow: hidden;
+}
+figure figcaption{
+  position:absolute;
+    padding: 10px 20px; 
+
+  opacity: 0;
+  bottom: 0; 
+  left: -30%;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
+figure figcaption:hover{
+  opacity:0;
+}
+
+h3 {
+    font-style: bold;
+    font-size: 14.05px;
+    font-family: Arial;
+
+}
+.oldprice {
+
+  font-style: italic;
+   text-decoration: line-through;
+   font-size: 10.51px;
+   text-align: center;
+   font-family: Arial;
+
+}
+.price {
+  font-family: Arial;
+  margin-bottom: 25px;
+}
+
+a.buy {
+  background: #000 url("carrinho.png") no-repeat scroll 11px center;
+  color: #fff;
+  font-family: Arial;
+  font-size: 17.07px;
+  padding: 15px 22px 15px 46px;
+  text-transform: uppercase;
+}
+.economy {
+  background: #fff;
+  border: 1px solid #c5c5c5;
+  font-family: Arial;
+  font-size: 10.33px;
+  margin: 25px auto;
+  padding: 4px;
+  width: 137px;
+
+}
+
+.rating {
+    color: #a9a9a9;
+    margin: 0;
+    padding: 0;
+}
+ul.rating {
+    display: inline-block;
+}
+.rating li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size:25px;
+}
+.rating .filled {
+    color: #fac437;
+}
+.clear{
+  margin-top:20px;
+}
+
+/*RODAPE*/
+
+footer{
+  background: url("../imagem/footer/bg_footer.png") repeat;
+  margin-top: 75px;
+  font-size: 13px;
+}
+
+footer .container{
+   padding: 52px 117px 52px 83px;
+}
+
+footer .rj, footer .sp{
+  width: 235px;
+  display: table;
+}
+footer img{
+  display: table-cell;
+  vertical-align:middle;
+}
+
+footer .rj p, footer .sp p{
+  display: table-cell;
+}
+
+footer .talk {
+  width: 190px;
+}
+
+footer .talk .contact, footer .talk .online {
+  background: #fac437;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.contact a {
+  display: table;
+}
+
+.online img {
+  float: left;
+}
+ #mobile { 
+      display: none;
+    }
+
+@media screen and (max-width: 640px) {
+    
+    #mobile { 
+      display: block;
+    }
+  
+    #search{
+        background-color:#fac437;
+        border-radius:0px;
+        width: 100%;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+
+    nav,  #products{ 
+        display: none;
+
+    }
+    footer .container{
+      padding: 5px;
+    }
+    footer .rj, footer .sp{
+      width: 180px;
+       font-size: 10px;
+    }
+    footer .talk .contact, footer .talk .online {
+      padding: 5px;
+      
+    }
+	
+}
