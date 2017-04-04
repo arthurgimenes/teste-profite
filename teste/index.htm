@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <!--Definindo formato de codificação de caractere-->
+        <meta charset="UTF-8">
+        <!--Titulo do site no navegador-->
+        <title>Profite - Teste Front-end </title>
+        <!--Define a descrição do site exibida nos resultados dos buscadores-->
+        <meta name="description" content="">
+        <!--Orienta os buscadores a indexar o conteúdo da página e seguir todos os links para descobrir novas páginas-->
+        <meta name="robots" content="index, follow"> 
+        <!--Adicionando folha de estilo-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!--Adicionando viewport para controlar o layout em navegadores de dispositivos móveis-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <!--O código abaixo serve para fazer com que IE antigos passem a reconhecer os novos elementos do HTML5-->
+        
+
+		<!--[if lt IE 9 &!(IEMobile)]>
+			<script src="js/html5shiv.js"></script>
+		    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+        <script>document.write("<base href=\"" + document.location + "\" />");</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="app.js"></script>
+    
+    </head>
+    <body>
+         <!-- Inicio topo -->
+        <header>
+            <div class="container flex-container">
+                <!-- Inicio logo -->
+                <h2 class="logo">
+                   <a href="#" title="Profite" class="initial">
+                    <img src="imagem/topo/logo.png" alt="" title="">
+                    </a>
+                </h2>
+                <!-- Fim logo -->
+
+                <div class="user none">
+                    <p>Olá, Visitante</p>
+                    <a href="#">Cadastre-se</a> - <a href="">Login</a>
+                </div>
+                <!-- Busca -->
+                <div id="search" class="flex2">
+                    <img src="imagem/topo/icon_search.png" id="btnsearch" alt="Buscar por"/>
+                    <input class="search" name="txtBusca" id="txtsearch"  placeholder="Buscar por ..." required="" type="search">
+                    
+                </div>
+                <!-- Fim busca -->
+                <!-- Inicio idiomas e contato -->
+                <nav class="langages flex1">
+                    <ul>
+                        <li><a href="#" title=""><img src="imagem/topo/bandeira1.png" alt=""></a></li>
+                        <li><a href="#" title=""><img src="imagem/topo/bandeira2.png" alt=""></a></li>
+                        <li><a href="#" title=""><img src="imagem/topo/bandeira3.png" alt=""></a></li>
+                    </ul>
+                    <span>
+                        <img src="imagem/topo/skype.png" alt="">
+                        <span>11 33375618</span>
+                    </span>
+                </nav>
+
+            </div>
+        </header>
+        <!-- Fim topo -->
+        <!--banner-->
+        <section class="banner">
+            <div class="container">
+            
+                <figure>
+
+                    <div class="swiper-container" ng-controller="Banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ng-repeat="slide in banner">
+                                <source media="(max-width: 640px)" srcset="{{slide.mobile}}">
+                                <img src="{{slide.image}}" alt="">
+                               
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                         
+                    </div>
+                </figure>
+            </div>
+        </section>
+        <!-- fim do banner-->
+
+        <!--Inicio sessão produtos-->
+        <section>
+            <div class="container" id="products">
+                <!-- Swiper -->
+                <div class="swiper-container" ng-controller="Productis">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide" ng-repeat="product in production">
+                            <a href="{{product.zoom}}" data-lightbox="roadtrip">
+                                 <figure>
+                                    <img src="{{product.image}}" alt="{{product.title}}">
+                                    <figcaption>
+                                        <img src="{{product.hover}}" alt="">
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <h3>{{product.title}}</h3>
+
+                            <div star-rating rating="starRating1" read-only="false" max-rating="5" click="click1(param)" mouse-hover="mouseHover1(param)" mouse-leave="mouseLeave1(param)"></div>        
+                           
+                            <p class="oldprice">{{product.oldprice}}</p>
+                             <p class="price">  
+                                <strong> Por: R$ {{product.price}} </strong> <br /> 
+                                <i>ou <strong>até {{product.divider.number}}X</strong> de <strong>R$ {{product.divider.value}}</strong></i></p>
+                            <a href="#" class="buy"> Comprar</a>
+                            <div class="economy">Economize: R$ {{product.economy}}</div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </section>
+        <!--Fim sessão produtos -->
+        <!--Inicio sessão produtos mobile-->
+        <section id="mobile">
+            <div class="container" id="products ">
+                <!-- Swiper -->
+                <div class="swiper-container" ng-controller="Productis">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide" ng-repeat="product in production">
+                            <a href="{{product.zoom}}" data-lightbox="roadtrip">
+                                 <figure>
+                                    <img src="{{product.image}}" alt="{{product.title}}">
+                                    <figcaption>
+                                        <img src="{{product.hover}}" alt="">
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <h3>{{product.title}}</h3>
+
+                            <div star-rating rating="starRating1" read-only="false" max-rating="5" click="click1(param)" mouse-hover="mouseHover1(param)" mouse-leave="mouseLeave1(param)"></div>        
+                           
+                            <p class="oldprice">{{product.oldprice}}</p>
+                             <p class="price">  
+                                <strong> Por: R$ {{product.price}} </strong> <br /> 
+                                <i>ou <strong>até {{product.divider.number}}X</strong> de <strong>R$ {{product.divider.value}}</strong></i></p>
+                            <a href="#" class="buy"> Comprar</a>
+                            <div class="economy">Economize: R$ {{product.economy}}</div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <!--Fim sessão produtos -->
+
+        <!--Inicio rodape-->
+        <footer>
+            <!-- Inicio div conteudo -->
+            <div class="container flex-container">
+
+                <div class="rj">
+                    <img src="imagem/footer/icon_rj.png" alt="">
+                    <p>Rua do Acre, 77 - sala 1108 Centro - Rio de Janeiro <br />
+                    <strong>tel: +55 (21) 2263.6044</strong></p>
+                </div>
+
+                <div class="sp">
+                    <img src="imagem/footer/icon_sp.png" alt="">
+                    <p>Rua Cardoso de Melo, 1750  6ª Andar - Vila Olímpica <br />
+                    <strong>tel: +55 (21) 2263.6044</strong></p>
+                    
+                </div>
+                <div class="talk">
+                    <div class="contact">
+                        <a href="#">
+                            <img src="imagem/footer/icon_contato.png" alt="">
+                            Entre em contato
+                        </a>
+                    </div>
+                    <div class="online limpa">
+                        <a href="#">
+                            <img src="imagem/footer/icon_consultor.png" alt="">
+                            Fale com o nosso <strong>consultor online</strong>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Fim div conteudo -->
+        </footer>
+        <!--Fim rodape-->
+
+
+        <!-- Scripts-->
+        <!--[if lte IE 8]><script src="js/respond.min.js"></script><![endif]-->
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+        <script>    
+            var swiper = new Swiper('figure > .swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30
+            });
+
+            var swiper = new Swiper('section > #products .swiper-container', {
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                slidesPerView: 4
+                
+            });
+
+            var swiper = new Swiper('#mobile .swiper-container', {
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                slidesPerView: 3,
+                spaceBetween: 20
+                
+            });
+
+        </script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    </body>
+</html>
