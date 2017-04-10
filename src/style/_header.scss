@@ -1,0 +1,159 @@
+header{
+
+	.logo{
+		width: 75%;
+		float: right;
+		padding:22px 0 0;
+	}
+
+	.profile{
+		padding:35px 0 0;
+		text-align:center;
+
+		p{
+			font-family: $regularFont;
+			b{
+				font-size:1.30em;
+				font-family: $featureFont;
+			}
+		}
+
+		ul{
+			li{
+				font-family: $regularFont;
+				font-size: 0.9em;
+				margin:0 2px;
+				a{
+					font-family: $regularFont;
+				}
+			}
+		}
+
+	}
+	.search{
+		margin:20px 0;
+		height: 30px;
+		background:$yellow;
+		padding:0 3%;
+
+		input{
+			border:none;
+			float: left;
+			color: $black;
+			&::placeholder {
+			  color: $black;
+			}
+
+			&.btn-busca{
+				width:10%;
+				height: 30px;
+				background:#000 url(../assets/img/icone_pesquisa.png) no-repeat center center / auto 60%;
+				cursor:pointer;
+			}
+			&.inputtext{
+				width: 86%;
+				height: 25px;
+				background:$yellow;
+				padding-left:2%;
+			}
+
+		}
+
+	}
+}
+
+
+// M
+@media (min-width: 768px) {
+	header{
+
+		.profile{
+			padding:54px 0 57px;
+		}
+
+		.search{
+			input{
+				border-radius:0px;
+			}
+		}
+
+	}
+}
+
+//  L
+@media (min-width: 1010px) {
+	header{
+
+		height: 145px;
+
+		.logo{
+			padding:48px 0 0;
+		}
+
+		.search{
+			margin:54px 0 57px;
+			padding:0px;
+			height: 35px;
+			background:none;
+			border-radius: 10px;
+			position:relative;
+			float: right;
+			width: 100%;
+
+
+			input{
+
+				border-radius: 12px;
+				position:relative;
+
+				&.btn-busca{
+					width:42px;
+					height: 35px;
+					background-size:auto 70%;
+					z-index: 1;
+				}
+				&.inputtext{
+					height: 33px;
+					width: 75%;
+					left:-20px;
+					padding-left:30px;
+					z-index: 0;
+				}
+
+			}
+		}
+
+		.fast-contact{
+			margin: 45px 0;
+			ul{
+				width: 110px;
+				margin:0 auto 5px;
+				clear: both;
+				display: table;
+				li{
+					width: 25px;
+					float: left;
+					margin:0 5px;
+					a{
+
+					}
+				}
+			}
+
+			.phone{
+				color: $azul-link;
+				font-size: 15px;
+				line-height: 28px;
+				margin: 0 auto;
+				width: 130px;
+				display: block;
+
+				&:before{
+					content: url(../assets/img/skype.png);
+					float: left;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

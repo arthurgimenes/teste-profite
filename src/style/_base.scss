@@ -1,0 +1,47 @@
+body {
+    color: $font-color-default;
+    font-family: $regularFont;
+    font-size: 14px;
+}
+
+a {
+    color: $font-color-default;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $featureFont;
+}
+
+h1 {
+    padding: 0.5em 0;
+}
+
+h2, h3, h4, h5, h6 {
+    padding: 0.25em 0;
+}
+
+
+.img-responsiva{
+	display: block; width: 100%; height: auto;
+}
+
+.inline {
+  li {display: inline;}
+}
+
+
+// S
+@media (min-width: 640px) {
+
+}
+
+// M
+@media (min-width: 768px) {
+
+}
+
+//  L
+@media (min-width: 1010px) {
+
+
+}

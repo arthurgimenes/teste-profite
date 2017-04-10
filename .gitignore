@@ -1,0 +1,10 @@
+node_modules/
+bower_components/
+typings/
+dist/
+.publish/
+
+*.swp
+npm-debug.log
+
+_normalize.scss

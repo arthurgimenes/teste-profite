@@ -1,0 +1,20 @@
+{
+  "name": "Profite",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Rafael Monetiro <rafaelmonteiro1@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "moment": "^2.14.1"
+  }
+}
