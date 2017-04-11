@@ -1,0 +1,47 @@
+[
+  {
+    "produto": "Sandália Ferracini Ecologic",
+    "de": null,
+    "por": "R$ 95,92",
+    "qtdParcelas":"4X",
+    "valorParcelado":"R$ 23,98",
+    "economize": null,
+    "foto":"assets/img/calcado1_hover.png",
+    "fotoHover":"assets/img/calcado1_hover.png",
+    "fotoLightbox":"assets/img/calcado1_zoom.png"
+  },
+  {
+    "produto": "Chinelo Kildare",
+    "de": "R$ 99,90",
+    "por": "R$ 79,92",
+    "qtdParcelas":"3X",
+    "valorParcelado":"R$ 26,64",
+    "economize": "R$ 19,98",
+    "foto":"assets/img/calcado2_hover.png",
+    "fotoHover":"assets/img/calcado2_hover.png",
+    "fotoLightbox":"assets/img/calcado2_zoom.png"
+  },
+  {
+    "produto": "Tênis Ferracini Week",
+    "de": "R$ 229,90",
+    "por": "R$ 183,92",
+    "qtdParcelas":"9X",
+    "valorParcelado":"R$ 20,43",
+    "economize": "R$ 45,98",
+    "foto":"assets/img/calcado3_hover.png",
+    "fotoHover":"assets/img/calcado3_hover.png",
+    "fotoLightbox":"assets/img/calcado3_zoom.png"
+  },
+  {
+    "produto": "Tênis Democrata Fan",
+    "de": "R$ 219,90",
+    "por": "R$ 159,92",
+    "qtdParcelas":"7X",
+    "valorParcelado":"R$ 22,84",
+    "economize": "R$ 59,98",
+    "foto":"assets/img/calcado4_hover.png",
+    "fotoHover":"assets/img/calcado4_hover.png",
+    "fotoLightbox":"assets/img/calcado4_zoom.png"
+  }
+
+]

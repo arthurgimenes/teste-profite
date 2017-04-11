@@ -1,0 +1,29 @@
+[
+  {
+    "texto": "banner1",
+    "banner": "assets/img/banner1.jpg",
+    "destino": "#banner1"
+
+  },
+  {
+    "texto": "banner2",
+    "banner": "assets/img/banner2.jpg",
+    "destino": "#banner2"
+
+  },
+  {
+    "texto": "banner3",
+    "banner": "assets/img/banner3.jpg",
+    "destino": "#banner3"
+  },
+  {
+    "texto": "banner4",
+    "banner": "assets/img/banner4.jpg",
+    "destino": "#banner4"
+  },
+  {
+    "texto": "banner5",
+    "banner": "assets/img/banner5.jpg",
+    "destino": "#banner5"
+  }
+]

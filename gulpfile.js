@@ -5,6 +5,7 @@ var gulp        = require('gulp'),
     connect     = require('gulp-connect'),
     flatten     = require('gulp-flatten'),
     ghPages     = require('gulp-gh-pages'),
+    jsonminify  = require('gulp-jsonminify'),
     minifyHTML  = require('gulp-minify-html'),
     rename      = require('gulp-rename'),
     replace     = require('gulp-replace'),
@@ -34,7 +35,14 @@ gulp.task('build-style', ['process-images','process-fonts'], function() {
             .pipe(connect.reload());
 });
 
-gulp.task('build-libs', [], function() {
+gulp.task('build-json', function () {
+    return gulp.src(['./src/script/json/*.json'])
+        .pipe(jsonminify())
+        .pipe(gulp.dest(DIST_WEB + '/json'))
+        .pipe(connect.reload());
+});
+
+gulp.task('build-libs', ['build-json'], function() {
     var libs = [
         './bower_components/react/react.min.js',
         './bower_components/react/react-dom.min.js',
@@ -61,6 +69,8 @@ gulp.task('build-script', ['build-libs'], function() {
 });
 
 
+
+
 gulp.task('run', function() {
    connect.server({
       root: DIST_WEB,
@@ -74,6 +84,7 @@ gulp.task('run', function() {
 gulp.task('watch', function() {
     gulp.watch('./src/script/jsx/*.jsx', ['build-react']);
     gulp.watch('./src/script/*.js', ['build-script']);
+    gulp.watch('./src/script/json/*.json', ['build-json']);
     gulp.watch('./src/*.html', ['build-html']);
     gulp.watch('./src/style/*.scss', ['build-style']);
 });
