@@ -1,0 +1,348 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	overflow-x: hidden;
+}
+img{
+  max-width: 100%;
+}
+strong {
+	font-weight: 600;
+}
+em {
+	font-style: italic;
+}
+input:focus{
+    outline: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+  opacity: 1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+  opacity: 1;
+}
+.container{
+	margin: 0 auto;
+	max-width: 967px;
+}
+/*-----HEADER-----*/
+header {
+	padding: 10px 0;
+	margin: 20px 0;
+}
+	.logo {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		text-align: center;
+		min-width: 233px;
+	}
+		@media (min-width: 450px) {
+			.logo {
+				width: 65%;
+				text-align: right;
+			}
+		}
+		@media (min-width: 900px) {
+			.logo {
+				width: 30%;
+				text-align: left;
+				padding-left: 10px;
+			}
+		}
+	.login {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		text-align: center;
+		min-width: 135px;
+		padding: 15px 0;
+	}
+		@media (min-width: 450px) {
+			.login {
+				width: 30%;
+				text-align: right;
+			}	
+		}
+		@media (min-width: 900px) {
+			.login {
+				width: 15%;
+				text-align: center;
+			}
+		}
+		.login p {
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 3px;
+		}
+		.login a {
+			font-size: 13px;
+			text-decoration: none;
+			color: #000;
+		}
+	.busca {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		background-color: #f4c437;
+	}
+	.busca input {
+		width: 100%;
+		border: 0px;
+		background-color: #f4c437;
+		height: 35px;
+		padding-left: 50px;
+		padding-right: 50px;
+		margin-left: 20px;
+		font-size: 17px;
+		background-image: url(../img/pesquisa.png);
+		background-repeat: no-repeat;
+	}
+		@media (min-width: 450px) {
+			.busca {
+				margin-top: 20px;
+			}	
+		}
+		@media (min-width: 900px) {
+			.busca {
+				width: 30%;
+				margin-top: 0px;
+				background-color: #fff;
+			}
+			.busca input {
+				height: 27px;
+				max-width: 180px;
+				font-size: 14px;
+				border-radius: 10px;
+				background-image: url(../img/pesquisa1.png);
+			}
+		}
+	.paises {
+		display: none;
+		box-sizing: border-box;
+		vertical-align: middle;
+	}
+		@media (min-width: 450px) {
+			.paises {
+				display: none;
+			}	
+		}
+		@media (min-width: 900px) {
+			.paises {
+				display: inline-block;
+				width: 22%;
+			}
+		}
+	.icones-paises {
+		text-align: center;
+	}
+		.icones-paises li {
+			display: inline-block;
+			margin-left: 5px;
+		}
+		.icones-paises a {
+			width: 25px;
+			height: 17px;
+			display: inline-block;
+			text-indent: -99999px;
+		}
+		.icones-paises .brasil {
+			background-image: url(../img/paises/brasil.png);
+		}
+		.icones-paises .argentina {
+			background-image: url(../img/paises/argentina.png);
+		}
+		.icones-paises .peru {
+			background-image: url(../img/paises/peru.png);
+		}
+	.skype {
+		margin-top: 7px;
+		margin-left: 40px;
+	}
+		.skype img {
+			float: left;
+		}
+		.skype span {
+			color: #00aff0;
+			font-weight: 600;
+			float: left;
+			margin: 7px 0 0 7px;
+		}
+/*-----BANNER-----*/
+.banner {
+	background-color: #f4c437;
+}
+/*-----PRODUTOS-----*/
+.produtos {
+	margin: 20px 20px 0px 20px;
+}
+	.produtos .prod {
+		vertical-align: middle;
+		box-sizing: border-box;
+		text-align: center;
+		padding: 15px;
+	}
+	.produtos .prod:hover {
+		background-color: #f4c437;
+	}
+	.produtos .prod .estrelas {
+		margin: 30px 0px 10px 0px;
+	}
+	.produtos .prod .preco_de {
+		font-size: 13px;
+		text-decoration: line-through;
+		color: #999;
+	}
+	.produtos .prod .parcelas {
+		margin: 5px 0 5px 0;
+	}
+	.produtos .prod .comprar {
+		margin: 15px 0;
+		display: inline-block;
+	}
+	.produtos .prod .comprar .carrinho  {
+		padding: 11px;
+		background-color: #000;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 13px;
+	}
+	.produtos .prod .comprar .carrinho img {  
+		display: inline-block;
+		vertical-align: middle;
+		background: #000;
+		background-image: url('../img/prod/carrinho.png');
+		background-repeat: no-repeat;
+		background-size: 80%;
+	}
+	.produtos .prod .economize {
+		margin: 10px 0;
+	}
+	.produtos .prod .economize span {
+		text-align: center;
+		background-color: #fff;
+		padding: 3px 10px;
+		font-size: 12px;
+		border: 1px solid #ccc;
+	}
+	.lightbox {
+		width: 100px;
+		height: 100px;
+		background-color: #000;
+		opacity: 0.5;
+	}
+	.detalhe {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 150px;
+		height: 150px;
+	}
+	
+/*-----FOOTER-----*/
+footer {
+	margin-top: 20px;
+	padding: 10px 0;
+	background: url(../img/footer/bg_footer.png);
+}
+	.endereco_rj {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		text-align: center;
+		padding: 15px;
+	}
+	.endereco_sp {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		text-align: center;
+		padding: 15px;
+	}
+	.contato {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		text-align: center;
+		padding: 15px;
+	}
+		@media (min-width: 450px) {
+			.endereco_rj {
+				width: 50%;
+				float: left;
+			}
+			.endereco_sp {
+				width: 50%;
+				float: left;
+			}
+			.contato {
+				width: 100%;
+			}
+		}
+		@media (min-width: 900px) {
+			.endereco_rj {
+				width: 33.33%;
+				float: left;
+			}
+			.endereco_sp {
+				width: 33.33%;
+				float: left;
+			}
+			.contato {
+				width: 33.33%;
+			}
+		}
+	.endereco {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: left;
+		color: #777;
+		margin: 13px 0 0 8px;
+	}
+		.endereco p {
+			
+			margin-top: 8px;
+		}
+		.endereco .tel {
+			color: #000;
+			font-weight: 600;
+		}
+	
+	.contato .box  {
+		width: 185px;
+		height: 40px;
+		margin: 0 auto;
+		background-color: #f4c437;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+		.contato .box  img {
+			float: left;
+			margin: 10px;
+		}
+		.contato .box  span.c1 {
+			float: left;
+			margin-top: 14px;
+		}
+		.contato .box  span.c2 {
+			float: left;
+			margin-top: 8px;
+		}

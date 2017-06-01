@@ -1,0 +1,56 @@
+[
+	{
+		"id" : 1,
+		"descr" : "Sandália Ferracini Ecologic",
+		"preco_de" : 139.90,
+		"preco_por" : 95.92,
+		"parcelas" : 4,
+		"foto" : "c1.png",
+		"foto_zoom" : "c1-zoom.png"
+	},
+	{
+		"id" : 2,
+		"descr" : "Chinelo Kildare",
+		"preco_de" : 99.90,
+		"preco_por" : 79.92,
+		"parcelas" : 3,
+		"foto" : "c2.png",
+		"foto_zoom" : "c2-zoom.png"
+	},
+	{
+		"id" : 3,
+		"descr" : "Tênis Ferracini Week",
+		"preco_de" : 229.90,
+		"preco_por" : 183.92,
+		"parcelas" : 9,
+		"foto" : "c3.png",
+		"foto_zoom" : "c3-zoom.png"
+	},
+	{
+		"id" : 4,
+		"descr" : "Tênis Democrata Fan",
+		"preco_de" : 219.90,
+		"preco_por" : 159.92,
+		"parcelas" : 7,
+		"foto" : "c4.png",
+		"foto_zoom" : "c4-zoom.png"
+	},
+	{
+		"id" : 5,
+		"descr" : "Sandália Ferracini Ecologic",
+		"preco_de" : 139.90,
+		"preco_por" : 95.92,
+		"parcelas" : 4,
+		"foto" : "c1.png",
+		"foto_zoom" : "c1-zoom.png"
+	},
+	{
+		"id" : 6,
+		"descr" : "Chinelo Kildare",
+		"preco_de" : 99.90,
+		"preco_por" : 79.92,
+		"parcelas" : 3,
+		"foto" : "c2.png",
+		"foto_zoom" : "c2-zoom.png"
+	}
+]

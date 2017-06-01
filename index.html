@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app="appProfite">
+<head>
+	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Profite">
+    <meta name="author" content="Luis Felipe Alves Magro">
+	
+	<title>Profite</title>
+	
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="lib/owl-carousel/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="lib/owl-carousel/css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="lib/fancybox/css/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+
+</head>
+
+<body ng-controller="mainController">
+
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="/#/"><img src="img/logo.png" alt="Logo" /></a>
+			</div>
+			<div class="login">
+				<p>Olá, Visitante</p>
+				<a href="">Cadastre-se - Login</a>
+			</div>
+			<div class="busca">
+				<input type="text" placeholder="Buscar por ..." />
+			</div>
+			<div class="paises">
+				<ul class="icones-paises">
+					<li><a class="brasil" href="javascript:void(0)">Brasil</a></li>
+					<li><a class="argentina" href="javascript:void(0)">Argentina</a></li>
+					<li><a class="peru" href="javascript:void(0)">Peru</a></li>
+				</ul>
+				<div class="skype">
+					<img src="img/skype.png" alt="Skype" />
+					<span>11 33375618</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<ng-view>
+	</ng-view>
+	
+	<footer>
+		<div class="container">
+			<div class="endereco_rj">
+				<img src="img/footer/icone_rj.png" alt="RJ" />
+				<div class="endereco">
+					<p>Rua do acre, 77 - sala 1108</p>
+					<p>Centro - Rio de janeiro</p>
+					<p class="tel">tel.: 55(21) 2263.6044</p>
+				</div>
+			</div>
+			<div class="endereco_sp">
+				<img src="img/footer/icone_sp.png" alt="SP" />
+				<div class="endereco">
+					<p>Rua cardoso de melo, 1750</p>
+					<p>6º Andar Vila Olímpica</p>
+					<p class="tel">tel.: 55(21) 2263.6044</p>
+				</div>
+			</div>
+			<div class="contato">
+				<div class="box">
+					<img src="img/footer/icone_contato.png" alt="Contato" />
+					<span class="c1">Entre em <strong>contato</strong></span>
+				</div>
+				<div class="box">
+					<img src="img/footer/icone_consultor.png" alt="Consultor" />
+					<span class="c2">Fale com o nosso<br /><strong>Consultor online</strong></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="lib/jquery/jquery-3.1.0.min.js"></script>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular/angular-locale_pt-br.js"></script>
+	<script src="lib/angular/angular-route.min.js"></script>
+	<script src="lib/owl-carousel/js/owl.carousel.min.js"></script>
+	<script src="lib/fancybox/js/jquery.fancybox.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/config/routeConfig.js"></script>
+	<script src="js/services/produtosService.js"></script>
+	<script src="js/controllers/mainController.js"></script>
+	<script src="js/controllers/homeController.js"></script>
+	<script src="js/directives/carouselBannerDirective.js"></script>
+	<script src="js/directives/carouselProdDirective.js"></script>
+	<script src="js/directives/fancyboxProdDirective.js"></script>
+
+</body>
+</html>
