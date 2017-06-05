@@ -1,0 +1,43 @@
+/* Mobile */
+@media (max-width: 990px) {
+  .banners {
+    margin-bottom: 10px;
+
+    .container {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .arrows-control {
+      top: 50%;
+
+      &.prev {
+        left: 10px;
+      }
+      &.next {
+        right: 10px;
+      }
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .banners {
+    margin-bottom: 20px;
+
+    .arrows-control {
+      top: 30%;
+
+      &.prev {
+        left: -20px;
+      }
+      &.next {
+        right: -20px;
+      }
+    }
+    .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.banners {
+  background-color: #fac437; }
+  .banners .container {
+    position: relative; }
+  .banners .swiper-slide img {
+    width: 100%;
+    vertical-align: middle; }
+  .banners .swiper-pagination-bullet {
+    background-color: #d0d0d0;
+    opacity: 0.7; }
+  .banners .swiper-pagination-bullet-active {
+    background-color: #eaeaea;
+    opacity: 1; }
+  .banners .arrows-control {
+    position: absolute;
+    z-index: 1; }
+    .banners .arrows-control:hover {
+      background-color: initial; }
+    .banners .arrows-control .arrow-left {
+      background-image: url(../images/icons/seta_esquerda.png);
+      width: 20px;
+      background-size: contain;
+      height: 15px;
+      background-repeat: no-repeat;
+      display: inline-block; }
+    .banners .arrows-control .arrow-right {
+      background-image: url(../images/icons/seta_direita.png);
+      width: 20px;
+      background-size: contain;
+      height: 15px;
+      background-repeat: no-repeat;
+      display: inline-block; }

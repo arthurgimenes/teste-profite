@@ -1,0 +1,39 @@
+.banners {
+  background-color: #fac437;
+  margin-bottom: 20px;
+  position: relative; }
+  .banners .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none; }
+    .banners .dots .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0px 4px;
+      background-color: #d0d0d0; }
+      .banners .dots .dot.active {
+        background-color: #eaeaea; }
+
+.banners img {
+  width: 100%;
+  vertical-align: middle; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }

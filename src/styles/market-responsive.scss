@@ -1,0 +1,53 @@
+/* Mobile */
+@media (max-width: 1120px) {
+  .market {
+    margin-bottom: 10px;
+
+    .item {
+      min-height: 350px;
+
+      img {
+        width: 60%;
+      }
+    }
+    .arrows-control {
+      top: 50%;
+
+      &.prev {
+        left: 1px;
+      }
+      &.next {
+        right: 1px;
+      }
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .market {
+    margin-bottom: 30px;
+
+    .item {
+      min-height: 400px;
+
+      &:hover {
+        background-color: #fac437;
+      }
+    }
+    .arrows-control {
+      top: 30%;
+
+      &.prev {
+        left: -20px;
+      }
+      &.next {
+        right: -20px;
+      }
+    }
+    .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

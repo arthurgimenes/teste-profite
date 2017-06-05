@@ -1,0 +1,73 @@
+header {
+  height: 145px; }
+  header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  header .logo-login {
+    display: flex;
+    align-items: center; }
+    header .logo-login .logo {
+      background-image: url("../images/icons/profite_logo_novo.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    header .logo-login .welcome-login p {
+      margin: 0; }
+      header .logo-login .welcome-login p:first-child {
+        font-weight: bold; }
+  header .search {
+    display: flex; }
+    header .search input {
+      background-color: #fac437;
+      border-radius: 7px;
+      border: 0;
+      padding: 7px 15px;
+      color: black;
+      width: 310px; }
+    header .search .ico {
+      width: 42px;
+      display: flex;
+      height: 32px;
+      background-color: black;
+      align-items: center;
+      justify-content: center;
+      margin-right: -10px;
+      z-index: 2; }
+    header .search .ico-search {
+      background-image: url("../images/icons/icone_pesquisa.png");
+      width: 20px;
+      background-size: contain;
+      height: 20px;
+      background-repeat: no-repeat; }
+  header .brands-phone .brands {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px; }
+    header .brands-phone .brands .ico {
+      width: 35px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 22px; }
+    header .brands-phone .brands .ico-br {
+      background-image: url("../images/icons/bandeira1.png"); }
+    header .brands-phone .brands .ico-arg {
+      background-image: url("../images/icons/bandeira2.png"); }
+    header .brands-phone .brands .ico-pr {
+      background-image: url("../images/icons/bandeira3.png"); }
+  header .brands-phone .phone {
+    display: flex;
+    align-items: center; }
+    header .brands-phone .phone .ico-skype {
+      width: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 30px;
+      margin-right: 8px;
+      background-image: url("../images/icons/skype.png"); }
+    header .brands-phone .phone p {
+      margin: 0;
+      color: #00aff0;
+      font-size: 18px; }

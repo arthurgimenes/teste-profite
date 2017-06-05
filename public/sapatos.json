@@ -1,0 +1,69 @@
+{
+  "produtos": [
+    {
+      "nome": "Sandália Ferracini Ecologic",
+      "preco": "R$ 95,92",
+      "parcela": "4X",
+      "preco_antigo": null,
+      "preco_parcelado": "R$ 23,98",
+      "imagens": {
+          "padrao": "images/sapatos/calcado1.png",
+          "hover": "images/sapatos/calcado1_hover.png",
+          "zoom": "images/sapatos/calcado1_zoom.png"
+      },
+      "economia": "R$ 43,98"
+    },
+    {
+      "nome": "Chinelo Kildare",
+      "preco": "R$ 79,92",
+      "parcela": "3X",
+      "preco_antigo": "R$ 99,90",
+      "preco_parcelado": "R$ 26,64",
+      "imagens": {
+          "padrao": "images/sapatos/calcado2.png",
+          "hover": "images/sapatos/calcado2_hover.png",
+          "zoom": "images/sapatos/calcado2_zoom.png"
+      },
+      "economia": "R$ 19,98"
+    },
+    {
+      "nome": "Tênis Ferracini Week",
+      "preco": "R$ 183,92",
+      "parcela": "9X",
+      "preco_antigo": "R$ 229,90",
+      "preco_parcelado": "R$ 20,43",
+      "imagens": {
+          "padrao": "images/sapatos/calcado3.png",
+          "hover": "images/sapatos/calcado3_hover.png",
+          "zoom": "images/sapatos/calcado3_zoom.png"
+      },
+      "economia": "R$ 45,98"
+    },
+    {
+      "nome": "Tênis Democrata Fan",
+      "preco": "R$ 159,92",
+      "parcela": "7X",
+      "preco_antigo": "R$ 219,90",
+      "preco_parcelado": "R$ 22,84",
+      "imagens": {
+          "padrao": "images/sapatos/calcado4.png",
+          "hover": "images/sapatos/calcado4_hover.png",
+          "zoom": "images/sapatos/calcado4_zoom.png"
+      },
+      "economia": "R$ 59,98"
+    },
+    {
+      "nome": "Sandália Ferracini Ecologic",
+      "preco": "R$ 95,92",
+      "parcela": "4X",
+      "preco_antigo": null,
+      "preco_parcelado": "R$ 23,98",
+      "imagens": {
+          "padrao": "images/sapatos/calcado1.png",
+          "hover": "images/sapatos/calcado1_hover.png",
+          "zoom": "images/sapatos/calcado1_zoom.png"
+      },
+      "economia": "R$ 43,98"
+    }
+  ]
+}

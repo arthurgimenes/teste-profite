@@ -1,0 +1,27 @@
+/* Mobile */
+@media (max-width: 990px) {
+  .banners {
+    margin-bottom: 10px; }
+    .banners .container {
+      padding-left: 0px;
+      padding-right: 0px; }
+    .banners .arrows-control {
+      top: 50%; }
+      .banners .arrows-control.prev {
+        left: 10px; }
+      .banners .arrows-control.next {
+        right: 10px; } }
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .banners {
+    margin-bottom: 20px; }
+    .banners .arrows-control {
+      top: 30%; }
+      .banners .arrows-control.prev {
+        left: -20px; }
+      .banners .arrows-control.next {
+        right: -20px; }
+    .banners .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px; } }
