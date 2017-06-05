@@ -1,0 +1,116 @@
+.market {
+  .container {
+    position: relative;
+  }
+  h3 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .item {
+    padding: 5px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .stars {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .price p {
+    margin: 0;
+  }
+  .price p.de {
+    text-decoration: line-through;
+    color: #70716b;
+    font-size: 10px;
+  }
+  .price p.por {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .price p.or {
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 12px;
+  }
+  .price p.or span {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-buy {
+    text-transform: uppercase;
+    background-color: #1c1c1c;
+    color: white;
+    border: 2px solid #2d2d2d;
+    margin: 5px auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 140px;
+  }
+  .arrows-control {
+    top: 30%;
+    position: absolute;
+
+    &.prev {
+      left: -50px;
+    }
+    &.next {
+      right: -50px;
+    }
+    &:hover {
+      background-color: initial;
+    }
+  }
+  .arrow-left {
+    background-image: url(../images/icons/seta_esquerda_amarelo.png);
+    width: 15px;
+    background-size: contain;
+    height: 15px;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  .arrow-right {
+    background-image: url(../images/icons/seta_direita_amarelo.png);
+    width: 15px;
+    background-size: contain;
+    height: 15px;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  .economize {
+    border: 1px solid #c5c5c5;
+    background-color: white;
+    margin: 10px auto;
+    width: 160px;
+  }
+}
+
+.container_a31snl {
+  background-color: rgba(0, 0, 0, 0.3)!important;
+
+  img {
+    max-height: calc(70vh - 90px)!important;
+  }
+  button {
+    position: absolute;
+    right: 15px;
+    top: 44px;
+  }
+  svg {
+    fill: #fac437;
+  }
+  .footer_1jyse7p {
+    display: none;
+  }
+}

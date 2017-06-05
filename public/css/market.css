@@ -1,0 +1,101 @@
+.market .container {
+  position: relative; }
+
+.market h3 {
+  margin: 0;
+  font-size: 14px; }
+
+.market .item {
+  padding: 5px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.market .stars {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .market .stars img {
+    margin-left: auto;
+    margin-right: auto; }
+
+.market .price p {
+  margin: 0; }
+
+.market .price p.de {
+  text-decoration: line-through;
+  color: #70716b;
+  font-size: 10px; }
+
+.market .price p.por {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 10px; }
+
+.market .price p.or {
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 12px; }
+
+.market .price p.or span {
+  font-weight: 600;
+  font-size: 14px; }
+
+.market .buttons {
+  display: flex;
+  flex-direction: column; }
+
+.market .btn-buy {
+  text-transform: uppercase;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid #2d2d2d;
+  margin: 5px auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 140px; }
+
+.market .arrows-control {
+  top: 30%;
+  position: absolute; }
+  .market .arrows-control.prev {
+    left: -50px; }
+  .market .arrows-control.next {
+    right: -50px; }
+  .market .arrows-control:hover {
+    background-color: initial; }
+
+.market .arrow-left {
+  background-image: url(../images/icons/seta_esquerda_amarelo.png);
+  width: 15px;
+  background-size: contain;
+  height: 15px;
+  background-repeat: no-repeat;
+  display: inline-block; }
+
+.market .arrow-right {
+  background-image: url(../images/icons/seta_direita_amarelo.png);
+  width: 15px;
+  background-size: contain;
+  height: 15px;
+  background-repeat: no-repeat;
+  display: inline-block; }
+
+.market .economize {
+  border: 1px solid #c5c5c5;
+  background-color: white;
+  margin: 10px auto;
+  width: 160px; }
+
+.container_a31snl {
+  background-color: rgba(0, 0, 0, 0.3) !important; }
+  .container_a31snl img {
+    max-height: calc(70vh - 90px) !important; }
+  .container_a31snl button {
+    position: absolute;
+    right: 15px;
+    top: 44px; }
+  .container_a31snl svg {
+    fill: #fac437; }
+  .container_a31snl .footer_1jyse7p {
+    display: none; }

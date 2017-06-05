@@ -1,0 +1,74 @@
+footer {
+  background-image: url(../images/icons/listra.png);
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .box-city {
+    display: flex;
+
+    .city-img {
+      margin-right: 10px;
+
+      .ico-sp {
+        background-image: url(../images/icons/icone_sp.png);
+        width: 40px;
+        background-size: contain;
+        height: 30px;
+        background-repeat: no-repeat;
+        display: inline-block;
+      }
+      .ico-rj {
+        background-image: url(../images/icons/icone_rj.png);
+        width: 40px;
+        background-size: contain;
+        height: 30px;
+        background-repeat: no-repeat;
+        display: inline-block;
+      }
+    }
+    .address p {
+      margin-top: 0;
+      margin-bottom: 5px;
+      color: #959595;
+    }
+    .address p:last-child {
+      font-weight: bold;
+      color: black;
+    }
+  }
+  .contact-us {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fac437;
+    display: flex;
+    align-items: center;
+
+    span {
+      background-image: url(../images/icons/icone_contato.png);
+      width: 20px;
+      background-size: contain;
+      height: 15px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+  .contact-online {
+    padding: 10px;
+    background-color: #fac437;
+    display: flex;
+    align-items: center;
+
+    span {
+      background-image: url(../images/icons/icone_consultor.png);
+      width: 20px;
+      background-size: contain;
+      height: 25px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}

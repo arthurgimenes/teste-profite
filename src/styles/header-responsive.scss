@@ -1,0 +1,62 @@
+/* Mobile */
+@media (max-width: 1200px) {
+  header {
+    .container {
+      display: block;
+      align-items: initial;
+      justify-content: initial;
+    }
+    .logo-login {
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 10px;
+
+      .logo {
+        width: 200px;
+        height: 45px;
+      }
+      .welcome-login {
+        .welcome {
+          font-size: 16px;
+        }
+        .login {
+          font-size: 13px;
+        }
+      }
+    }
+    .brands-phone {
+      display: none;
+    }
+    .search {
+      margin-top: 20px;
+    }
+    input {
+      width: 100%!important;
+      border-radius: 0!important;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  header {
+    .logo-login {
+      .logo {
+        width: 230px;
+        height: 61px;
+        margin-right: 15px;
+      }
+      .welcome-login {
+        .welcome {
+          font-size: 19px;
+        }
+        .login {
+          font-size: 14px;
+        }
+      }
+    }
+    .search .ico {
+      border-radius: 7px;
+    }
+  }
+}

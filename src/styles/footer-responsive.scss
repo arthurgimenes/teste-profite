@@ -1,0 +1,42 @@
+/* Mobile */
+@media (max-width: 1120px) {
+  footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .box-city {
+      flex-direction: column;
+      margin-right: 10px;
+      text-align: center;
+
+      .address {
+        font-size: 14px;
+      }
+    }
+    .contact-us {
+      font-size: 14px;
+      text-align: center;
+
+      span {
+        width: 30px;
+      }
+    }
+    .contact-online {
+      font-size: 14px;
+      text-align: center;
+
+      span {
+         width: 30px;
+         height: 30px;
+      }
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

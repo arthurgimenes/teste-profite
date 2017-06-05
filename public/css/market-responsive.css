@@ -1,0 +1,32 @@
+/* Mobile */
+@media (max-width: 1120px) {
+  .market {
+    margin-bottom: 10px; }
+    .market .item {
+      min-height: 350px; }
+      .market .item img {
+        width: 60%; }
+    .market .arrows-control {
+      top: 50%; }
+      .market .arrows-control.prev {
+        left: 1px; }
+      .market .arrows-control.next {
+        right: 1px; } }
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .market {
+    margin-bottom: 30px; }
+    .market .item {
+      min-height: 400px; }
+      .market .item:hover {
+        background-color: #fac437; }
+    .market .arrows-control {
+      top: 30%; }
+      .market .arrows-control.prev {
+        left: -20px; }
+      .market .arrows-control.next {
+        right: -20px; }
+    .market .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px; } }

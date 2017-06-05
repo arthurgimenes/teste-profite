@@ -1,0 +1,101 @@
+header {
+  height: 145px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-login {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      background-image: url("../images/icons/profite_logo_novo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .welcome-login {
+      p {
+        margin: 0;
+
+        &:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .search {
+    display: flex;
+
+    input {
+      background-color: #fac437;
+      border-radius: 7px;
+      border: 0;
+      padding: 7px 15px;
+      color: black;
+      width: 310px;
+    }
+    .ico {
+      width: 42px;
+      display: flex;
+      height: 32px;
+      background-color: black;
+      align-items: center;
+      justify-content: center;
+      margin-right: -10px;
+      z-index: 2;
+    }
+    .ico-search {
+      background-image: url('../images/icons/icone_pesquisa.png');
+      width: 20px;
+      background-size: contain;
+      height: 20px;
+      background-repeat: no-repeat;
+    }
+  }
+  .brands-phone {
+    .brands {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+
+      .ico {
+        width: 35px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 22px;
+      }
+      .ico-br {
+        background-image: url('../images/icons/bandeira1.png');
+      }
+      .ico-arg {
+        background-image: url('../images/icons/bandeira2.png');
+      }
+      .ico-pr {
+        background-image: url('../images/icons/bandeira3.png');
+      }
+    }
+    .phone {
+      display: flex;
+      align-items: center;
+
+      .ico-skype {
+        width: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 30px;
+        margin-right: 8px;
+        background-image: url('../images/icons/skype.png');
+      }
+      p {
+        margin: 0;
+        color: #00aff0;
+        font-size: 18px;
+      }
+    }
+  }
+}
