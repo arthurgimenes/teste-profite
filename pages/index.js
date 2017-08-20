@@ -1,21 +1,22 @@
 
 import React from 'react'
 import Link from 'next/link'
+import ProductList from '../components/ProductList'
 import 'isomorphic-fetch'
 
-export default class MyPage extends React.Component {
+export default class IndexPage extends React.Component {
   static async getInitialProps () {
     // eslint-disable-next-line no-undef
-    const res = await fetch('https://api.github.com/repos/zeit/next.js')
+    const res = await fetch('https://demo1457614.mockable.io/products')
     const json = await res.json()
-    return { stars: json.stargazers_count }
+    return { productList: json.products }
   }
 
   render () {
+    const products = this.props.productList;
     return (
       <div>
-        <p>Next.js has {this.props.stars} ⭐️</p>
-        <Link prefetch href='/preact'><a>How about preact?</a></Link>
+        <ProductList products={products} />
       </div>
     )
   }

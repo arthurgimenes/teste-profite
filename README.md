@@ -3,7 +3,7 @@
 ## How to run locally
 
 ```
-npm install && npm start
+npm install && npm run build && npm start
 ```
 
 ## You can see the application on this link
