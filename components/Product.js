@@ -23,7 +23,7 @@ export default class Product extends React.Component {
           </div>
           <div className="Product-info">
             <div className="Product-rating">
-              <img src="../image/rating.png"/>
+              <img src="/static/image/products/rating.png"/>
             </div>
             <div className="Product-price">
             {
@@ -44,7 +44,7 @@ export default class Product extends React.Component {
             </button>
           </div>
         </div>
-        <div className="Product-zoom">
+        <div className="Product-zoom -hide">
           <a className="close-lightbox"></a>
           <img src={image_zoom} className="Product-image"/>
         </div>

@@ -4,6 +4,8 @@ import Link from 'next/link'
 import ProductList from '../components/ProductList'
 import 'isomorphic-fetch'
 
+import stylesheet from 'styles/index.sass'
+
 export default class IndexPage extends React.Component {
   static async getInitialProps () {
     // eslint-disable-next-line no-undef
@@ -16,6 +18,7 @@ export default class IndexPage extends React.Component {
     const products = this.props.productList;
     return (
       <div>
+        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         <ProductList products={products} />
       </div>
     )
