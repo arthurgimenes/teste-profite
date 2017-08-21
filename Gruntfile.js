@@ -26,16 +26,28 @@ module.exports = function(grunt) {
           'public/css/layout_resp.min.css' : ['src/css/layout_responsivo.css']
         }
       }
+    },
+    watch: {
+      dist : {
+        files : [
+          'src/js/**',
+          'src/img/**',
+          'src/css/**',
+        ],
+        tasks : [ 'uglify', 'copy', 'cssmin' ]
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', function(target) {
     grunt.task.run('uglify');
     grunt.task.run('copy');
     grunt.task.run('cssmin');
+    grunt.task.run('watch');    
   });
 };
