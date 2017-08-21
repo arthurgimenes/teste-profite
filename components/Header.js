@@ -16,8 +16,6 @@ export default class Header extends React.Component {
         <Welcome name="Visitante"/>
         <Search />
         <HeaderOptions />
-
-
       </header>
     )
   }
