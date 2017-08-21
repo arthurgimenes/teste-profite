@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Teste Profite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" media="(min-width: 1000px)" type="text/css" href="/teste-profite/public/css/layout.css">
+	<link rel="stylesheet" media="(max-width: 1000px)" type="text/css" href="/teste-profite/public/css/layout_responsivo.css">
+	<link rel="stylesheet" type="text/css" href="/teste-profite/public/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/teste-profite/public/css/cabecalho.css">
+	<link rel="stylesheet" type="text/css" href="/teste-profite/public/css/modal.css">
+
+	<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous">		  	
+	</script>
+	
+	<script type="text/javascript" src="/teste-profite/public/js/jquery.bxslider.min.js"></script>	
+	<script type="text/javascript" src="/teste-profite/public/js/preencheProdutos.js"></script>
+	<script type="text/javascript" src="/teste-profite/public/js/inicio.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div id=cabecalho class="clearfix normalWidth" >
+				<div id="blocoLogo" class="bloco-cabecalho">
+					<img id='logo' src="/teste-profite/public/img/topo/profite_logo_novo.png"/>	
+				</div>
+				
+				<div id="blocoLogin" class="bloco-cabecalho">
+					<p>Olá, Visitante</p>
+					<a href="#">Cadastre-se</a> - <a href="#">Login</a>
+				</div>
+
+				<div id="blocoBusca" class="bloco-cabecalho">
+					<div id="divTxtBusca">
+						<img id='logo' src="/teste-profite/public/img/topo/ícone_pesquisa.png"/>		
+						<input type="text" name="busca" id="txtBusca" placeholder="Buscar por..." />	
+					</div>
+					
+				</div>
+				<div id="divContato" class="bloco-cabecalho">
+					<div>
+						<img src="/teste-profite/public/img/topo/bandeira1.png"/>	
+						<img src="/teste-profite/public/img/topo/bandeira2.png"/>	
+						<img src="/teste-profite/public/img/topo/bandeira3.png"/>		
+					</div>
+					<div>
+						<span id="contatoSkype">
+							<img src="/teste-profite/public/img/topo/skype.png"/>	
+							<span>1133375618</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+			<section id="secBanner">
+				<div class="normalWidth" >				  
+				    <div id="divBanner">
+						<div><img id="imgBanner" src="/teste-profite/public/img/banner/banner1.jpg"/></div>
+						<div><img id="imgBanner" src="/teste-profite/public/img/banner/banner2.jpg"/></div>
+						<div><img id="imgBanner" src="/teste-profite/public/img/banner/banner3.jpg"/></div>
+						<div><img id="imgBanner" src="/teste-profite/public/img/banner/banner4.jpg"/></div>
+				  </div>	
+				</div>
+			</section>
+			<section id="secProdutos" >
+				<div id="divProdutos" class="normalWidth inheritHeight" >
+				</div>
+			</section>		
+		<footer>
+			<div class="normalWidth">
+				<div class="divEnderecos">					
+						<img src="/teste-profite/public/img/footer/ícone_rj.png"/>
+						<p>Rua do acre, 77 - sala 1108</p>
+						<p>Centro - Rio de Janeiro</p>
+						<p class="bold">tel.: +55(21)2263.6044</p>					
+				</div>
+				<div class="divEnderecos">
+					<img src="/teste-profite/public/img/footer/ícone_sp.png"/>
+					<p>Rua Cardoso de Melo, 1750</p>
+					<p>6º Andar Vila Olímpica</p>
+					<p class="bold">tel.: +55(21)2263.6044</p>
+				</div>
+				<div class="divEnderecos">
+					<div class="btnBackground">
+						<img src="/teste-profite/public/img/footer/ícone_contato.png"/>
+						<span>ENTRE EM <label class="bold">CONTATO</label></span>
+
+					</div>
+					<div class="btnBackground">						
+						<img src="/teste-profite/public/img/footer/ícone_consultor.png"/>
+						<span>FALE COM NOSSO <label class="bold">CONSULTOR ONLINE<label></span>						
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	
+	<div id="myModal" class="modal">
+	  <div>		  
+		  <span class="close">
+		  	<img src="/teste-profite/public/img/sapatos/fechar.png">
+		  </span>
+		  <img class="modal-content" id="imgModal">
+	  </div>	
+	</div>
+
+	<div id="templateProduto" class="produto" >
+		<img class="imgProduto" />
+		<p class="descProduto"></p>
+		<img class="estrelasProduto" src="/teste-profite/public/img/sapatos/estrelas.png"/>
+		<p class="precoProduto vlAnterior">&nbsp;</p>
+		<p class="precoProduto vlAtual"></p>
+		<p class="parcProduto vlParcela"></p>
+		<div class="btnComprarProduto">
+			<img src="/teste-profite/public/img/sapatos/carrinho.png"/>
+			<span>COMPRAR</span>
+		</div>
+		<span class="economize"></span>
+	</div>
+</body>
+</html>
