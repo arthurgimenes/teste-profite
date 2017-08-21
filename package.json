@@ -1,0 +1,31 @@
+{
+  "name": "teste-profite",
+  "version": "1.0.0",
+  "description": "teste para dev-front",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasborges08/teste-profite.git"
+  },
+  "keywords": [
+    "grunt",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Lucas Borges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasborges08/teste-profite/issues"
+  },
+  "homepage": "https://github.com/lucasborges08/teste-profite#readme"
+}
