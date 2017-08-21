@@ -104,8 +104,12 @@ img#logo{
 		display: inline-block;		
 	}
 
-	#blocoLogin{
-		/*float: right;*/
+	#blocoLogin{	
+		font-size: small;		
+	}
+
+	#blocoLogo{
+		float: left;
 	}
 
 	#divTxtBusca{

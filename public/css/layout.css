@@ -12,6 +12,10 @@ header, section, footer{
 	padding-top: 15px;
 }
 
+.btnBackground > img{
+	float: left;
+}
+
 .btnBackground:hover{
 	cursor:pointer;
 }

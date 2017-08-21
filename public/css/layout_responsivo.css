@@ -121,6 +121,10 @@ footer .divEnderecos >  img{
 	float: left;
 }
 
+.btnBackground > img{
+	float: left;
+}
+
 footer  .divEnderecos{
 	display: table-cell;	
 	padding: 10px;
