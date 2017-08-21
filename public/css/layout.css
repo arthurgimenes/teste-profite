@@ -155,6 +155,10 @@ footer .divEnderecos > div{
 
 
 /*começo slider*/
+.bx-viewport{
+	max-height: 372px;
+}
+
 .bx-controls{
 	background-color: white;
 }
