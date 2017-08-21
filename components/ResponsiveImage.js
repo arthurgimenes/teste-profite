@@ -2,7 +2,7 @@ import React from 'react'
 
 export default class ReponsiveImage extends React.Component {
   render () {
-    const = {
+    const {
       image_mobile,
       image
     } = this.props

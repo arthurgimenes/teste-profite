@@ -2,6 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import ProductList from '../components/ProductList'
+import Header from '../components/Header'
 import 'isomorphic-fetch'
 
 import stylesheet from 'styles/index.sass'
@@ -19,6 +20,9 @@ export default class IndexPage extends React.Component {
     return (
       <div>
         <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+
+
+        <Header />
         <ProductList products={products} />
       </div>
     )
