@@ -12,6 +12,10 @@ header, section, footer{
 	padding-top: 15px;
 }
 
+.btnBackground:hover{
+	cursor:pointer;
+}
+
 .bold{
 	font-weight: bold;
 }
@@ -62,7 +66,7 @@ header, section, footer{
 }
 
 .produto > .imgProduto:hover{
-
+	cursor: pointer;
 }
 
 .produto > .descProduto{

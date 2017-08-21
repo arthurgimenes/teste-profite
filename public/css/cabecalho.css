@@ -59,7 +59,11 @@ img#logo{
 
 #divContato img{
 	height: 15px;
-	width: 20px;
+	width: 20px;	
+}
+
+#divContato img:hover{
+	cursor: pointer;
 }
 
 #divContato > span{
