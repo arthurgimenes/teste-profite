@@ -4,14 +4,15 @@ export default class ReponsiveImage extends React.Component {
   render () {
     const {
       image_mobile,
-      image
+      image,
+      dataIndex
     } = this.props
 
     return (
-      <picture>
-          <source srcset={image_mobile} media="(max-width: 768px)" />
-          <source srcset={image} />
-          <img srcset={image} />
+      <picture data-index={dataIndex}>
+          <source srcSet={image_mobile} media="(max-width: 768px)" />
+          <source srcSet={image} />
+          <img srcSet={image} />
       </picture>
     )
   }
