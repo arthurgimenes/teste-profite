@@ -9,9 +9,9 @@ $(document).ready(function(){
                 "vlAtual": "95,92",
                 "qtdParcela": "4",
                 "vlParcela": "23,98",
-                "imgProduto": "/teste-profite/public/img/sapatos/calçado1.png",
-                "imgHover": "/teste-profite/public/img/sapatos/calçado1_hover.png",
-                "imgModal": "/teste-profite/public/img/sapatos/calçado1_zoom.png",
+                "imgProduto": "/teste-profite/public/img/sapatos/calcado1.png",
+                "imgHover": "/teste-profite/public/img/sapatos/calcado1_hover.png",
+                "imgModal": "/teste-profite/public/img/sapatos/calcado1_zoom.png",
                 "economize": "43,98"
             },
             {
@@ -20,9 +20,9 @@ $(document).ready(function(){
                 "vlAtual": "79,92",
                 "qtdParcela": "3",
                 "vlParcela": "26,64",
-                "imgProduto": "/teste-profite/public/img/sapatos/calçado2.png",
-                "imgHover": "/teste-profite/public/img/sapatos/calçado2_hover.png",
-                "imgModal": "/teste-profite/public/img/sapatos/calçado2_zoom.png",
+                "imgProduto": "/teste-profite/public/img/sapatos/calcado2.png",
+                "imgHover": "/teste-profite/public/img/sapatos/calcado2_hover.png",
+                "imgModal": "/teste-profite/public/img/sapatos/calcado2_zoom.png",
                 "economize": "19,98"
             },
             {
@@ -31,9 +31,9 @@ $(document).ready(function(){
                 "vlAtual": "183,92",
                 "qtdParcela": "9",
                 "vlParcela": "20,43",
-                "imgProduto": "/teste-profite/public/img/sapatos/calçado3.png",
-                "imgHover": "/teste-profite/public/img/sapatos/calçado3_hover.png",
-                "imgModal": "/teste-profite/public/img/sapatos/calçado3_zoom.png",
+                "imgProduto": "/teste-profite/public/img/sapatos/calcado3.png",
+                "imgHover": "/teste-profite/public/img/sapatos/calcado3_hover.png",
+                "imgModal": "/teste-profite/public/img/sapatos/calcado3_zoom.png",
                 "economize": "45,98"
 
             },
@@ -43,9 +43,9 @@ $(document).ready(function(){
                 "vlAtual": "159,92",
                 "qtdParcela": "3",
                 "vlParcela": "22,84",
-                "imgProduto": "/teste-profite/public/img/sapatos/calçado4.png",
-                "imgHover": "/teste-profite/public/img/sapatos/calçado4_hover.png",
-                "imgModal": "/teste-profite/public/img/sapatos/calçado4_zoom.png",
+                "imgProduto": "/teste-profite/public/img/sapatos/calcado4.png",
+                "imgHover": "/teste-profite/public/img/sapatos/calcado4_hover.png",
+                "imgModal": "/teste-profite/public/img/sapatos/calcado4_zoom.png",
                 "economize": "59,98"
             }
         ]
