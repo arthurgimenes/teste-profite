@@ -1,5 +1,6 @@
 import React from 'react'
 import Product from './Product'
+import ProductZoom from './ProductZoom'
 import Slider from 'react-slick'
 
 function NextArrow(props) {
@@ -10,7 +11,7 @@ function NextArrow(props) {
       className={className}
       style={{...style, display: 'block'}}
       onClick={onClick}
-      />
+    />
     );
   }
 
@@ -41,22 +42,34 @@ export default class ProductList extends React.Component {
 
     return (
       <div className="Product-list">
-        <Slider {...settings}>
+        <div className="Product-list-container">
+          <Slider {...settings}>
+          {
+            products.map( (product, index) => 
+              <Product
+                key={product.SKU}
+                sku={product.SKU}
+                name={product.name}
+                price_old={product.price_old}
+                price_actual={product.price}
+                price_splitted={product.price_splitted}
+                image={product.image_url}
+                image_zoom={product.zoom_image}
+                dataIndex={index}
+              />
+            )
+          }
+          </Slider>
+        </div>
         {
           products.map( (product, index) => 
-            <Product
-              key={product.SKU}
-              name={product.name}
-              price_old={product.price_old}
-              price_actual={product.price}
-              price_splitted={product.price_splitted}
-              image={product.image_url}
-              image_zoom={product.zoom_image}
-              dataIndex={index}
+            <ProductZoom
+              sku={product.SKU}
+              key={`${product.SKU}-${index}`}
+              zoom_image={product.zoom_image}
             />
           )
         }
-        </Slider>
       </div>
     )
   }

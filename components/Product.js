@@ -1,9 +1,11 @@
 import React from 'react'
+import { saveCalc } from '../utils'
 
 export default class Product extends React.Component {
 
   render () {
     const {
+      sku,
       name,
       price_old,
       price_actual,
@@ -14,10 +16,16 @@ export default class Product extends React.Component {
     } = this.props
 
     return (
-      <div className="Product" data-index={dataIndex}>
+      <div 
+        className="Product" 
+        data-index={dataIndex}
+      >
         <div className="Product-detail">
           <div className="Product-header">
-            <img src={image} className="Product-image"/>
+            <img 
+              src={image} 
+              className="Product-image"
+            />
             <h3 className="Product-name">
               {name}
             </h3>
@@ -43,12 +51,16 @@ export default class Product extends React.Component {
             <button className="Product-buy">
               Comprar
             </button>
+            {
+            price_old &&
+            
+            <div className="Product-saving-flag">
+              Economize: {saveCalc(price_old, price_actual)}
+            </div>
+            }
           </div>
         </div>
-        <div className="Product-zoom -hide">
-          <a className="close-lightbox"></a>
-          <img src={image_zoom} className="Product-image"/>
-        </div>
+        
       </div>
     )
   }
