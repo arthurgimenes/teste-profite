@@ -1,3 +1,47 @@
 .main_banner
   .slick-track
     display: flex
+
+  .slick-dots
+    bottom: 0
+
+    li 
+      button:before 
+        width: rem(12)
+        height: rem(12)
+        border-radius: 50%
+        content: ''
+        text-align: center
+        background-color: lighten($gray, 40%)
+        transition: background 0.2s ease
+        opacity: 1
+
+      &.slick-active
+        button:before
+          background-color: $white 
+          opacity: 1
+  
+  .responsive-image
+    width: 100%
+    text-align: center
+    
+    &.slide-0
+      background-color: $yellow
+    
+    &.slide-1
+      background-color: #7e919f
+    
+    &.slide-2
+      background-color: #4cc0bf
+    
+    &.slide-3
+      background-color: #d4deeb
+    
+    &.slide-4
+      background-color: #5fc5ed
+    
+    picture
+      img
+        width: 100%
+        max-width: rem(980)
+      

@@ -9,11 +9,13 @@ export default class ReponsiveImage extends React.Component {
     } = this.props
 
     return (
-      <picture data-index={dataIndex}>
-          <source srcSet={image_mobile} media="(max-width: 768px)" />
-          <source srcSet={image} />
-          <img srcSet={image} />
-      </picture>
+      <div className={`responsive-image slide-${dataIndex}`} data-index={dataIndex}>
+        <picture>
+            <source srcSet={image_mobile} media="(max-width: 768px)" />
+            <source srcSet={image} />
+            <img srcSet={image} />
+        </picture>
+      </div>
     )
   }
 }
