@@ -24,7 +24,7 @@ export default class Address extends React.Component {
             href={`tel:+${phoneWithoutmask}`}
             className="address-content-phone"
           >
-            {phone}
+            tel.:{phone}
           </a>
         </address>
       </div>

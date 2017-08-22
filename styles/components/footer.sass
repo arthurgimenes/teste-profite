@@ -1,0 +1,31 @@
+.footer
+  background-image: url(/static/image/footer/background-footer.png)
+  padding: rem(40) 0
+
+  &-container
+    +container
+    display: flex
+    justify-content: space-between
+  
+  &-addresses
+    flex: 1 1 60%
+    display: flex
+    justify-content: space-around
+  
+  &-contact
+
+    &-button
+      width: rem(200)
+      background-color: $yellow
+      border: none
+      color: $black
+      text-transform: uppercase
+      padding: rem(10)
+      font-size: rem(14)
+      display: flex
+      margin-bottom: rem(8)
+      align-items: center
+
+      img
+        display: block
+        margin-right: rem(6)
