@@ -1,4 +1,5 @@
 import React from 'react'
+import {closeLightbox} from '../utils'
 
 export default class ProductZoom extends React.Component {
 
@@ -14,7 +15,12 @@ export default class ProductZoom extends React.Component {
       id={sku}>
         <div className="Product-zoom-overlay" />
         <div className="Product-zoom-content">            
-          <a className="close-lightbox"></a>
+          <a 
+            href="#" className="Product-zoom-close-lightbox"
+            onClick={(e) => {closeLightbox(e)}}
+          >
+            <img src="/static/image/products/fechar.png" />
+          </a>
           <img src={zoom_image} className="Product-image"/>
         </div>
       </div>

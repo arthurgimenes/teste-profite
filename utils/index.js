@@ -15,3 +15,16 @@ export function saveCalc(old, actual) {
   
   return saving.toString().replace('.', ','); 
 }
+
+/**
+ * Helper to close the lightbox
+ * 
+ * @export
+ * @param {objcet} e - event to close lightbox
+ */
+export function closeLightbox(e) {
+  e.preventDefault();
+  e.target.parentNode.parentNode.classList.contains('-opened') ?
+    e.target.parentNode.parentNode.classList.remove('-opened') :
+    e.target.parentNode.parentNode.parentNode.classList.remove('-opened') 
+}
