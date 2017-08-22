@@ -9,11 +9,12 @@ export default class Product extends React.Component {
       price_actual,
       price_splitted,
       image,
-      image_zoom
+      image_zoom,
+      dataIndex
     } = this.props
 
     return (
-      <div className="Product">
+      <div className="Product" data-index={dataIndex}>
         <div className="Product-detail">
           <div className="Product-header">
             <img src={image} className="Product-image"/>
