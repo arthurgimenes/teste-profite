@@ -31,7 +31,7 @@ export default class ProductList extends React.Component {
   render () {
     const { products } = this.props
     const  settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 4,

@@ -1,5 +1,5 @@
 import React from 'react'
-import { saveCalc } from '../utils'
+import { saveCalc, openLightbox } from '../utils'
 
 export default class Product extends React.Component {
 
@@ -19,6 +19,7 @@ export default class Product extends React.Component {
       <div 
         className="Product" 
         data-index={dataIndex}
+        onClick={(e) => openLightbox(e, sku)}
       >
         <div className="Product-detail">
           <div className="Product-header">

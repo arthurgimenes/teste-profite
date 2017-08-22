@@ -13,7 +13,10 @@ export default class ProductZoom extends React.Component {
       <div 
       className="Product-zoom"
       id={sku}>
-        <div className="Product-zoom-overlay" />
+        <div 
+          className="Product-zoom-overlay" 
+          onClick={(e) => {e.target.parentNode.classList.remove('-opened')}}
+        />
         <div className="Product-zoom-content">            
           <a 
             href="#" className="Product-zoom-close-lightbox"

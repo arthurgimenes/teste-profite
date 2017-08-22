@@ -28,3 +28,21 @@ export function closeLightbox(e) {
     e.target.parentNode.parentNode.classList.remove('-opened') :
     e.target.parentNode.parentNode.parentNode.classList.remove('-opened') 
 }
+
+/**
+ * Helper to verify if is Client side
+ */
+export const isClient = typeof window !== 'undefined';
+
+/**
+ * 
+ * @param {object} e - Click event
+ * @param {string} sku - Sku caught by API
+ */
+export const openLightbox = (e, sku) => {
+  e.preventDefault();
+  
+  const lightbox = document.getElementById(sku);
+
+  lightbox.classList.add('-opened');
+}
