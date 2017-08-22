@@ -64,18 +64,20 @@ export default class Banner extends React.Component {
 
     return (
       <section className="main_banner">
-        <Slider {...settings}>
-          {
-            slides.map( (slide, index) => 
-                <ResponsiveImage
-                  dataIndex={index}
-                  key={`slide${index}`}
-                  image_mobile={slide.image_mobile}
-                  image={slide.image}
-                />
-            )
-          }
-        </Slider>
+        <div className="main_banner-container">
+          <Slider {...settings}>
+            {
+              slides.map( (slide, index) => 
+                  <ResponsiveImage
+                    dataIndex={index}
+                    key={`slide${index}`}
+                    image_mobile={slide.image_mobile}
+                    image={slide.image}
+                  />
+              )
+            }
+          </Slider>
+        </div>
       </section>
     )
   }
