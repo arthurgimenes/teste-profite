@@ -6,7 +6,10 @@
   background-color: $white
   cursor: pointer
   transition: background-color 0.3s ease
-  
+
+  +below($screen-small)
+    flex: 1 1 33%
+    padding-bottom: rem(10)
   
   &-detail
     border-left: solid rem(1) $light-gray

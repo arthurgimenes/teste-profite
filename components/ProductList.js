@@ -36,7 +36,7 @@ export default class ProductList extends React.Component {
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 2,
-      responsive: [ { breakpoint: 768, settings: { slidesToShow: 3 } }],
+      responsive: [ { breakpoint: 768, settings: { slidesToShow: 3, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }],
       nextArrow: <NextArrow />,
       prevArrow: <PrevArrow />
     }

@@ -8,15 +8,21 @@
     justify-content: space-between
     padding-left: 6.65%
     padding-right: 9%
+    
+    +below($screen-small)
+      padding-right: rem(30)
+      padding-left: rem(30)
+      flex-wrap: wrap
   
   &-addresses
     flex: 1 1 60%
     display: flex
     justify-content: flex-start
+
+    +below($screen-small)
+      flex-wrap: wrap
   
   &-contact
-  
-
     &-button
       width: rem(200)
       background-color: $yellow

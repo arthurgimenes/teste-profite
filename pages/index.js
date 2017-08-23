@@ -25,6 +25,7 @@ export default class IndexPage extends React.Component {
     return (
       <div>
         <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+        <style dangerouslySetInnerHTML={{ __html: '<meta name="viewport" content="initial-scale=1.0, width=device-width" />' }} />
 
 
         <Header />

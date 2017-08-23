@@ -1,9 +1,3 @@
-=container 
-  width: 100%
-  max-width: rem(1040)
-  padding: 0 rem(25) 
-  margin: auto
-
 =above($width)
   @media screen and (min-width: $width)
     @content
@@ -11,3 +5,16 @@
 =below($width)
   @media screen and (max-width: $width)
     @content
+
+=between($min_width, $max_width)
+  @media screen and (min-width: $min_width) and (max-width: $max_width)
+    @content
+
+=container 
+  width: 100%
+  max-width: rem(1040)
+  padding: 0 rem(25) 
+  margin: auto
+
+  +below($screen-small)
+    padding: 0 rem(30)

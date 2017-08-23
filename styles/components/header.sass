@@ -4,10 +4,16 @@
     display: flex
     justify-content: space-between
     align-items: center
+    position: relative
+
+    +below($screen-small)
+      flex-wrap: wrap
+      justify-content: space-around
 
   &-brand
     max-width: rem(240)
     margin: rem(14) 0
+    justify-self: center
 
     &-image
       max-width: 100%

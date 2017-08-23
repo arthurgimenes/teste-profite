@@ -1,9 +1,14 @@
 @import '/vendor/slick.min.css'
 @import '/vendor/slick-theme.min.css'
 
-body
+body,
+html
   font-family: $sans-serif
   font-size: 100%
+  overflow-x: hidden
+
+  +below($screen-small)
+    font-size: 85%
 
 *
   box-sizing: border-box
