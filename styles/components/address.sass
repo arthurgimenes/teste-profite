@@ -1,6 +1,8 @@
 .address
   display: flex
   max-width: rem(250)
+  &:first-child
+      margin-right: 2.4%
   
   &-flag
     align-self: flex-start
@@ -8,12 +10,13 @@
   &-content
     font-style: normal
     font-size: rem(14)
-    margin-left: rem(10)
+    margin-left: rem(9)
+    padding-top: rem(6)
 
     &-detail
       color: $gray
       margin: rem(5) 0
-      line-height: 1.4
+      line-height: 1.5
     
     &-phone
       color: $black
