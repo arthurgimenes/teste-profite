@@ -57,6 +57,10 @@
     text-transform: uppercase
     border: none
     padding: rem(10) rem(15)
+    white-space: nowrap
+
+    +below($screen-small)
+      padding: rem(10)
 
     &:before
       content: ''
@@ -66,6 +70,7 @@
       display: inline-block
       width: rem(20)
       height: rem(14)
+    
   
   &-saving-flag
     border: 1px solid $light-gray
