@@ -1,60 +1,78 @@
 .Product
   flex: 1 1 25%
-  padding: 0 rem(35)
+  padding: rem(40) 0 0
   text-align: center
+  position: relative
+  background-color: $white
+  cursor: pointer
+  transition: background-color 0.3s ease
   
   
+  &-detail
+    border-left: solid rem(1) $light-gray
+    padding: 0 rem(40)
+
+    &.product-0
+      border-left: 0
+
+  &-price
+    padding: rem(10) 0
+
+    &-old,
+    &-actual,
+    &-splitted
+      margin: 0
+
+    &-old
+      color: $gray
+      font-style: italic
+      text-decoration: line-through
+      font-size: rem(11)
+      height: rem(14)
+
+    &-actual,
+    &-splitted
+      color: $black
+      font-size: rem(12)
+
+
   &-name
     font-size: rem(14)
     font-weight: bold
     min-height: rem(50)
-
   
-  &-zoom
-    position: fixed
-    top: -100vw
-    left: 0
-    z-index: 99
-    width: 100vw
-    height: 100vh
-    transition: top 0.2s ease-in-out
+  &-image
+    display: block
+    max-width: 100%
+    margin: auto
 
-    &-overlay 
-      position: absolute
-      width: 100%
-      height: 100%
-      z-index: 100
-      background-color: rgba(0,0,0,0.1)
+  &-buy
+    background-color: $black
+    color: $white
+    font-size: rem(16)
+    text-transform: uppercase
+    border: none
+    padding: rem(10) rem(15)
 
-    &-content
-      position: absolute
-      z-index: 101
-      width: 50%
-      height: 70%
-      left: 50%
-      top: 50%
-      transform: translate(-50%, -50%)
-      background-color: $white
-      display: flex
-      justify-content: center
-      align-items: center
-
-      .Product-image
-        display: block
-        max-width: 90%
-        max-height: 90%
-        height: auto
-        width: auto
+    &:before
+      content: ''
+      background-image: url('/static/image/products/carrinho.png')
+      background-size: contain
+      background-repeat: no-repeat
+      display: inline-block
+      width: rem(20)
+      height: rem(14)
   
-    &-close-lightbox
-      position: absolute
-      display: block
-      top: rem(15)
-      right: rem(15)
-      
-      a, 
-      img
-        display:block
-    
-    &.-opened
-      top: 0
+  &-saving-flag
+    border: 1px solid $light-gray
+    background-color: $white
+    display: inline-block
+    width: 80%
+    padding: rem(5) rem(15)
+    margin: rem(15) auto
+    font-size: rem(10)
+    color: $black
+
+  &:hover
+    background-color: $yellow
+  

@@ -21,7 +21,7 @@ export default class Product extends React.Component {
         data-index={dataIndex}
         onClick={(e) => openLightbox(e, sku)}
       >
-        <div className="Product-detail">
+        <div className={`Product-detail product-${dataIndex}`}>
           <div className="Product-header">
             <img 
               src={image} 
@@ -36,31 +36,32 @@ export default class Product extends React.Component {
               <img src="/static/image/products/rating.png"/>
             </div>
             <div className="Product-price">
-            {
-              price_old &&
               <p className="Product-price-old">
-                de {price_old}
+                {
+                  price_old &&
+
+                  `De ${price_old}`
+                }
               </p>
-            }
               <p className="Product-price-actual">
-                por {price_actual}
+                <strong> Por <em>{price_actual}</em> </strong>
               </p>
               <p className="Product-price-splitted">
-                ou até {price_splitted}
+                <em> ou até <strong>{price_splitted}</strong> </em>
               </p>
             </div>
             <button className="Product-buy">
               Comprar
             </button>
-            {
-            price_old &&
-            
-            <div className="Product-saving-flag">
-              Economize: {saveCalc(price_old, price_actual)}
-            </div>
-            }
           </div>
         </div>
+        {
+          price_old &&
+          
+          <div className="Product-saving-flag">
+            Economize: {saveCalc(price_old, price_actual)}
+          </div>
+        }
         
       </div>
     )
