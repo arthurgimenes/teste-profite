@@ -1,5 +1,13 @@
 =container 
   width: 100%
-  max-width: rem(1020)
-  padding: 0 0 0 rem(24) 
+  max-width: rem(1040)
+  padding: 0 rem(25) 
   margin: auto
+
+=above($width)
+  @media screen and (min-width: $width)
+    @content
+
+=below($width)
+  @media screen and (max-width: $width)
+    @content
