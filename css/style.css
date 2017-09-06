@@ -1,0 +1,318 @@
+/*defaults*/
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');*/
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: Arial, 'sans-serif';
+}
+
+
+/*header*/
+header{}
+header .container{
+	width: 990px;
+	padding:23px;
+	margin: 0 auto;
+	display:block;
+	
+}
+header .logo{
+	display: inline-block;
+}
+header .logo h1{
+	width: 233px;
+	height: 62px;
+	background:url('../img/icons/profite_logo_novo.png') center center no-repeat;
+	background-size: contain;
+	text-indent: -9999px;
+	top: -19px;
+	position: relative;
+}
+header .saudacao{
+	padding:0 34px;
+	display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+header .saudacao span{
+	font-size: 19px;
+	font-weight: bold;	
+}
+header .saudacao a{
+	font-size:14px;
+	text-decoration: none;
+	color:#000;
+}
+header .saudacao a:hover{
+	text-decoration: underline;
+}
+header .busca{
+	display: inline-block;
+}
+header .busca form{}
+header .busca form input[type="text"]{
+	width:288px;
+	height:32px;
+	padding-left: 15px;
+	float: right;
+	display:inline-block;
+	background: #fac437;
+	border:0;
+	border-radius:0px 8px 8px 0;
+}
+header .busca form input[type="submit"]{
+	width:42px;
+	height:32px;
+	float: right;
+	display:inline-block;
+	background:url('../img/icons/icone_pesquisa.png') #000 center center no-repeat;
+	background-size: contain;
+	border:0;
+	border-radius:8px 8px 8px 8px;
+	right:-10px;
+	position:relative;
+	cursor:pointer;
+	text-indent: -9999px;
+}
+header .contatos{
+	display: inline-block;
+	margin-left: 35px;
+}
+header .contatos img{
+	width:25px;
+	height: 17px;
+	margin-left:8px;
+	margin-bottom:8px;
+}
+header .contatos span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+header .contatos .telefone	{
+	font-size:18px;
+	color: #00aff0;
+	background:url('../img/icons/skype.png') top left no-repeat;
+	padding: 3px 0 2px 30px;
+}
+
+/* banners */
+
+#banner {
+	background: #fac437;
+	width: 100%;
+}
+#banner .container{
+	width:967px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	height:350px;
+}
+#banner .container div{
+	position:absolute;
+	top:0;
+	left:0;
+	opacity: 0;
+}
+#banner .container div.showing {
+    opacity: 1;
+    z-index: 2;
+}
+#banner .next, #banner .prev{
+	position:absolute;
+	top:175px;
+	width:16px;
+	height:16px;
+	background:url('../img/icons/seta_direita.png') center center no-repeat;
+	z-index:3;
+	border: none;
+	cursor: pointer;
+}
+#banner .next{	
+	right:-30px;
+}
+#banner .prev{
+	left:-30px;
+	background-image:url('../img/icons/seta_esquerda.png');
+}
+
+
+/* Produto */
+#produtos{
+	width:100%;
+}
+#produtos .container{
+	width:960px;
+	padding:30px 20px;
+	margin:0 auto;
+}
+#produtos .produtos-content{
+	width: 25%;
+	display: inline-block;	
+}
+#produtos .produtos-content .item{
+	padding:10px;
+	text-align: center;
+	border-right:1px solid #e1e1e1;
+}
+#produtos .produtos-content:last-child .item{
+	border:none;
+}
+#produtos .produtos-content:hover .item{
+	background:#fac437;
+}
+#produtos .produtos-content .item h2{
+	font-size:14px;
+	font-weight: bold;
+	margin-bottom:20px;
+}
+#produtos .produtos-content .item .estrelas{
+	margin-bottom:10px;
+}
+#produtos .produtos-content .item .preco{
+	font-size: 12px;
+}
+#produtos .produtos-content .item .preco strong{
+	font-weight: bold;
+	font-style: italic;
+}
+#produtos .produtos-content .item .preco-antigo{
+	color:#636465;
+	font-size:10.5px;
+	font-style: italic;
+	text-decoration: line-through;
+}
+#produtos .produtos-content .item .comprar{
+	background:url('../img/icons/carrinho.png') #222 10px center no-repeat;
+	color:#FFF;
+	font-size:16px;
+	text-transform: uppercase;
+	font-style: italic;
+	padding:10px 35px 10px 45px;
+	border:none;
+	margin:25px 0;
+	cursor:pointer ;
+}
+#produtos .produtos-content .item .comprar:hover{
+	background-color:#444;
+}
+.economize{
+	border:1px solid #c8c3c0;
+	padding:8px 24px;
+	font-size:10px;
+	color:#000;
+	display: inline-block;
+	background:#FFF;
+}
+#produtos .produtos-slider{
+	position: relative;
+}
+#produtos .next, #produtos .prev{
+	position:absolute;
+	top:175px;
+	width:16px;
+	height:16px;
+	background:url('../img/icons/seta_direita_y.png') center center no-repeat;
+	z-index:3;
+	border: none;
+	cursor: pointer;
+}
+#produtos .next{	
+	right:-30px;
+}
+#produtos .prev{
+	left:-30px;
+	background-image:url('../img/icons/seta_esquerda_y.png');
+}
+#zoom .overlay{
+	background:rgba(0,0,0,0.5);
+	width:100%;
+	height:100%;
+	position: fixed;
+	padding:20px;
+	top:0;
+	left:0;
+	z-index: 100;
+	display: none;
+}
+#zoom .foto{
+	position: absolute;
+	z-index:101;
+}
+#zoom .foto #close{
+	background:url('../img/icons/fechar.png') center center no-repeat;
+	width:27px;
+	height:27px;
+	display: inline-block;
+	right:20px;
+	top:20px;
+	position: absolute;
+	cursor:pointer ;
+}
+#zoom .overlay-content{
+	position: relative;
+}
+#zoom .foto img{
+	width:100%;
+	max-width:600px;
+}
+
+
+/*footer*/
+footer{
+	width:100%;
+	background:url(../img/icons/bg-footer.png) top left repeat-x;
+	padding:50px;
+}
+footer .container{
+	width:960px;
+	margin:0 auto;
+}
+footer .endereco{
+	width: 220px;
+	margin-right: 50px;
+	display: inline-block;
+	color:#666;
+	font-size:13px;
+	padding:13px 0 0 60px;
+	line-height:20px;
+	
+}
+footer .endrj{
+	background:url('../img/icons/icone_rj.png') top left no-repeat;
+	margin-left:80px;
+}
+footer .endsp{
+	background:url('../img/icons/icone_sp.png') top left no-repeat;
+}
+footer .footer-banners{
+	width:180px;
+	display: inline-block;
+}
+footer .footer-banners a{
+	width: 180px;
+	height:42px;
+	line-height: 42px;
+	color:#000;
+	font-size:11.3px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-left: 40px;
+}
+footer .footer-banners span{
+	font-weight: bold;
+}
+footer .footer-banners a.contato{
+	background:url('../img/icons/icone_contato.png') #fac437 5px center no-repeat;
+	margin-bottom:10px;
+}
+footer .footer-banners a.consultor{
+	background:url('../img/icons/icone_consultor.png') #fac437 5px center no-repeat;
+	line-height: 15px;
+	padding-top:6px;
+}
