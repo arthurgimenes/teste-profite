@@ -1,0 +1,44 @@
+{
+	"products": [
+		{
+			"id" : 1,
+			"imagem" : "calcado1_hover.png",
+			"titulo" : "Sandália Ferracini Ecologic",
+			"preco_antigo" : 219.90,
+			"preco_atual" : 95.92,
+			"qt_parcela" : 4,
+			"valor_parcela" : 23.28,
+			"imagemzoom" : "calcado1_zoom.png"
+		},
+		{
+			"id" : 2,
+			"imagem" : "calcado2_hover.png",
+			"titulo" : "Chinelo Kildare",
+			"preco_antigo" : 99.90,
+			"preco_atual" : 79.92,
+			"qt_parcela" : 3,
+			"valor_parcela" : 26.64,
+			"imagemzoom" : "calcado2_zoom.png"
+		},
+		{
+			"id" : 3,
+			"imagem" : "calcado3_hover.png",
+			"titulo" : "Tênis Ferracini Week",
+			"preco_antigo" : 229.90,
+			"preco_atual" : 183.92,
+			"qt_parcela" : 9,
+			"valor_parcela" : 20.43,
+			"imagemzoom" : "calcado3_zoom.png"
+		},
+		{
+			"id" : 4,
+			"imagem" : "calcado4_hover.png",
+			"titulo" : "Tênis Democrata fan",
+			"preco_antigo" : 219.00,
+			"preco_atual" : 159.92,
+			"qt_parcela" : 7,
+			"valor_parcela" : 22.84,
+			"imagemzoom" : "calcado4_zoom.png"
+		}
+	]
+}
