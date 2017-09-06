@@ -1,0 +1,140 @@
+@media screen and (min-width:601px) and (max-width:762px){
+
+	.container{
+		width:100% !important;
+		padding:0 10px;
+	}
+	header .container{
+		padding: 30px 0;
+	}
+	header .logo{
+		width:calc(100% - 260px);
+		padding-left: 40px;
+	}
+	header .saudacao{
+		width:200px;
+	}
+	header .contatos{
+		display: none;
+	}
+	header .busca{
+		width:100%;
+	}
+	header .busca form input[type="text"]{
+		width:calc(100% - 42px);
+	}
+	#banner img{
+		max-width: 100%;
+	}
+	#banner .next, #banner .prev{
+		left: 10px;
+		top: 50px;
+	}
+	#banner .next{
+		right:10px;
+		left: auto;
+	}
+
+	#produtos .produtos-content{
+		width:33%;
+	}
+
+	footer{
+		padding:50px 20px;
+	}
+
+	footer .endereco{
+		width: 32%;	
+		margin:0;
+	}
+	footer .footer-banners{
+		width: 33%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	#produtos .produtos-content:nth-child(3) .item{
+		border:none;
+	}
+
+	#produtos .produtos-content:last-child{
+		display: none;
+	}
+
+}
+@media screen and (max-width:600px) {
+	.container{
+		width:100% !important;
+		padding:0 10px;
+	}
+	header .container{
+		text-align: center;
+	}
+	header .logo{
+		text-align: center;
+	}
+	header .logo h1{
+		top:0;
+	}
+	header .saudacao{
+		width:100%;
+		text-align: center;
+		padding:30px 0;
+	}
+	header .busca{
+		width:100%;
+	}
+	header .busca form input[type="text"]{
+		width:calc(100% - 42px);
+	}
+	header .contatos{
+		width:100%;
+		text-align: center;
+		margin:20px 0;
+	}
+	header .contatos span{
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	header .contatos img{
+		float: none;
+	}
+	header .telefone{
+		display: inline;
+	}
+	#banner .container{
+		height: auto;
+	}
+	#banner img{
+		max-width: 100%;
+	}
+	#banner .next, #banner .prev{
+		left: 10px;
+		top: 50px;
+	}
+	#banner .next{
+		right:10px;
+		left: auto;
+	}
+	#produtos .produtos-content{
+		width:100%;
+	}
+	#produtos .produtos-content .item{
+		border-right: none;
+		border-bottom:1px solid #e1e1e1;
+		padding-bottom:50px;
+	}
+	footer{
+		padding:0;
+	}
+	footer .endereco{
+		width: calc(100% - 60px);
+		margin:20px 30px;
+	}
+	footer .footer-banners{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}

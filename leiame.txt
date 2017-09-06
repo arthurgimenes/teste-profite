@@ -1,0 +1,8 @@
+Olá, segue os arquivos.
+
+* Procurei não usar nenhum framework, até para brincar um pouco com JS Puro, porém isso gerou alguns pequenos erros;
+	* Existe um pequeno bug no zoom, não consegui identificar pq, tem algumas vezes que ele abre fora de posição.
+	* O zoom não funciona corretamente no responsivo.
+	* Não apliquei o slider dos produtos.
+* Não deu tempo de aplicar CSS Sprite
+
