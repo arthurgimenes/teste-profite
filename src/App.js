@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
+import './App.scss';
 
 const App = () => {
   return (
-    <div>TESTE</div>
+    <div className="page-wrap">Teste</div>
   )
 }
 
