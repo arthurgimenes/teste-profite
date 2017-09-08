@@ -1,0 +1,19 @@
+{
+  "name": "teste-profite",
+  "version": "1.0.0",
+  "description": "###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianeAlbuquerque/teste-profite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianeAlbuquerque/teste-profite/issues"
+  },
+  "homepage": "https://github.com/JulianeAlbuquerque/teste-profite#readme"
+}
