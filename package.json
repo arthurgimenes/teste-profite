@@ -27,14 +27,16 @@
   },
   "dependencies": {
     "bourbon": "^4.3.4",
-    "bourbon-neat": "^1.9.0",
+    "bourbon-neat": "^2.0.0",
     "css-loader": "^0.28.7",
+    "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "sass-loader": "^6.0.6"
   },
   "scripts": {
-    "start": "rm -rf ./dist && mkdir ./dist && webpack-dev-server --config webpack.config.js"
+    "prebuild": "mkdir -p dist/src/images && cp -R static/banner dist/src/images",
+    "start": "rm -rf ./dist && npm run prebuild && webpack-dev-server --config webpack.config.js"
   }
 }

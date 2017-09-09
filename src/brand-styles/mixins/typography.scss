@@ -1,0 +1,7 @@
+@mixin type-m {
+  font-size: 16px;
+
+  @media (max-width: $breakpoints-medium) {
+    font-size: 18px;
+  }
+}

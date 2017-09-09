@@ -1,0 +1,36 @@
+//-------------------------------------
+// Box-sizing reset
+//-------------------------------------
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: $font-size-base;
+}
+
+body {
+  @include type-m;
+
+  font-family: $font-family;
+  background-color: $color-white;
+  color: $color-darker;
+  font-weight: $font-weight-regular;
+  overflow-x: hidden;
+}
+
+//-------------------------------------
+// Images
+//-------------------------------------
+
+img {
+  display: block;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}

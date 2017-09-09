@@ -1,7 +1,11 @@
 @import "normalize",
   "bourbon",
-  "neat";
+  "neat",
+  "brand-styles/variables",
+  "brand-styles/mixins/index",
+  "brand-styles/base",
+  "brand-styles/convenience";
 
-body {
-  background-color: yellow;
+.page-wrap {
+  background-color: $color-white;
 }
