@@ -36,7 +36,7 @@
     "sass-loader": "^6.0.6"
   },
   "scripts": {
-    "prebuild": "mkdir -p dist/src/images && cp -R static/banner dist/src/images",
+    "prebuild": "mkdir -p dist/src/images && cp -R static/ dist/src/images",
     "start": "rm -rf ./dist && npm run prebuild && webpack-dev-server --config webpack.config.js"
   }
 }

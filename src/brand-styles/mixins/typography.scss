@@ -5,3 +5,11 @@
     font-size: 18px;
   }
 }
+
+@mixin type-s {
+  font-size: 13px;
+
+  @media (max-width: $breakpoints-medium) {
+    font-size: 14px;
+  }
+}

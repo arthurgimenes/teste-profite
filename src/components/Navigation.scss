@@ -1,5 +1,118 @@
 @import "../shared";
 
 .navigation {
+  &__wrap {
+    @include clearfix;
+    padding: $spacing-l 0;
+  }
 
+  &__logo {
+    @include grid-column(3);
+
+    img {
+      max-width: 235px;
+    }
+
+    @media (max-width: $breakpoints-medium) {
+      @include grid-column(7);
+
+      margin: 0;
+    }
+  }
+
+  &__login {
+    @include grid-column(2);
+    margin-top: 10px;
+
+    @media (max-width: $breakpoints-medium) {
+      @include grid-column(5);
+      text-align: center;
+    }
+
+    p {
+      @include type-m;
+      font-weight: $font-weight-medium;
+      margin: 0;
+    }
+
+    a {
+      @include type-s;
+      color: $color-darker;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__search {
+    @include grid-column(4);
+
+    @media (max-width: $breakpoints-medium) {
+      @include grid-column(12);
+
+      margin-top: 30px;
+    }
+
+    form {
+      width: 100%;
+      background-color: $color-brand;
+      border-radius: 10px;
+      margin-top: 8px;
+
+      button {
+        background-color: $color-darker;
+        border: 0;
+        padding: 21px 21px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      input {
+        @include type-s;
+        padding: 0 10px 15px;
+        background-color: $color-brand;
+        color: $color-darker;
+        border: 0;
+        outline: none;
+
+        &::placeholder { color: $color-darker; }
+      }
+    }
+  }
+
+  &__contact {
+    @include grid-column(3);
+    text-align: center;
+
+    @media (max-width: $breakpoints-medium) {
+      display: none;
+    }
+
+    &__country {
+      img {
+        display: inline-block;
+        width: 27px;
+        margin: 10px 5px;
+      }
+    }
+
+    p {
+      @include type-s;
+      color: $color-skype;
+      font-weight: $font-weight-medium;
+      margin: 0;
+    }
+
+    &__skype {
+      display: inline-block;
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 2px;
+    }
+  }
 }
