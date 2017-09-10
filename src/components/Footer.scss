@@ -43,6 +43,7 @@
     }
 
     a {
+      @include type-s;
       background-color: $color-brand;
       display: block;
       margin-top: 20px;
@@ -52,6 +53,7 @@
       background-position: 20px 10px;
       min-height: 40px;
       vertical-align: middle;
+      text-transform: uppercase;
 
       &:first-child {
         margin-top: 0;

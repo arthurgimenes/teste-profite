@@ -55,6 +55,10 @@ class SlideShow extends Component {
       'banner5.jpg'
     ]
 
+    const pathImages = 'dist/src/images/banner/';
+    const iconNext = `${pathImages}seta-direita.png`;
+    const iconPrev = `${pathImages}seta-esquerda.png`;
+
     const bannerList = banners.map((banner, index) => {
       return (
         <SlideShowImages banner={banner} key={index}/>
@@ -66,8 +70,16 @@ class SlideShow extends Component {
 
         {bannerList}
 
-        <a className="slideShow__prev" onClick={this.changeSlides.bind(this, -1)}></a>
-        <a className="slideShow__next" onClick={this.changeSlides.bind(this, 1)}></a>
+        <a
+          className="slideShow__prev"
+          onClick={this.changeSlides.bind(this, -1)}
+          style={{backgroundImage: `url(${iconPrev})`}}>
+        </a>
+        <a
+          className="slideShow__next"
+          onClick={this.changeSlides.bind(this, 1)}
+          style={{backgroundImage: `url(${iconNext})`}}>
+        </a>
 
         <nav className="slideShow__dots">
           {banners.map((banner, index) => {
