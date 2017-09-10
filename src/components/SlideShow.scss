@@ -4,9 +4,9 @@
   position: relative;
 
   &__slide {
-    img {
-      // display: none;
-    }
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.5s;
   }
 
   &__prev {
@@ -35,7 +35,7 @@
     background-color: red;
   }
 
-  &__current {
+  &__dots {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -44,11 +44,33 @@
 
     a {
       display: inline-block;
-      width: 12px;
-      height: 12px;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
-      margin: 0 12px;
+      margin: 5px;
       background-color: $color-light;
+      cursor: pointer;
+
+      &.active,
+      &:hover {
+        background-color: $color-lighter;
+      }
+    }
+
+
+    @media (max-width: $breakpoints-medium) {
+      display: none;
     }
   }
+}
+
+/* Fading animation */
+@-webkit-keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

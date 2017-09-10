@@ -2,4 +2,11 @@
 
 .header {
   background-color: $color-brand;
+
+  .container {
+    @media (max-width: $breakpoints-medium) {
+      background-color: pink;
+      padding: 0;
+    }
+  }
 }
