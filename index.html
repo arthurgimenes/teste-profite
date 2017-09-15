@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Profite</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="./css/master.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div id="templates-wrapper">
+        <div id="zoom-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <img src="./img/icons/fechar.png" alt="">
+                </button>
+
+                <img src="./img/products/shoe1_zoom.png" alt="" class="zoom-img">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-template="product" hidden>
+          <article class="item product">
+            <img src="./img/products/shoe1.png" alt="" class="product-img" data-fill="img_url">
+
+            <h2 class="product-name" data-fill="name">Sandália</h2>
+            <p class="stars" data-fill="stars"><img src="./img/icons/estrelas.png" alt=""></p>
+
+            <p class="product-desc">
+              <del class="old-price text-muted font-italic">De: <span data-fill="old_price"></span><br></del>
+              <strong class="price">
+                Por: <span class="font-italic" data-fill="price"></span>
+              </strong><br>
+              <span class="font-italic">
+                ou <span class="font-weight-bold">até <span data-fill="qtd_parcelas"></span>X</span>
+                de <span class="font-weight-bold" data-fill="valor_parcela"></span>
+              </span>
+            </p>
+
+            <button class="btn btn-dark buy-btn">Comprar</button>
+
+            <p class="discount">Economize: <span data-fill="discount"></span></p>
+          </article>
+        </div>
+      </div>
+
+      <header class="page-header">
+        <div class="container">
+          <div class="row">
+            <div class="brand-logo col-12 col-sm-8 col-lg-3">
+              <img src="img/icons/profite_logo_novo.png" alt="">
+              <h1 class="sr-only">Profite</h1>
+            </div>
+
+            <div class="col-12 col-sm-4 col-lg-3 text-center text-sm-left">
+              <p class="greeting">Olá, Visitante!</p>
+              <p class="login"><a href="#">Cadastre-se</a> - <a href="#">Login</a></p>
+            </div>
+
+            <div class="col-12 col-lg-3">
+              <form class="search-form">
+                <div class="input-group input-group-sm">
+                  <div class="input-group-btn">
+                    <button class="btn btn-dark"><img src="./img/icons/icone_pesquisa.png" alt=""></button>
+                  </div>
+                  <input type="search" name="" class="form-control" placeholder="Buscar por...">
+                </div>
+              </form>
+            </div>
+
+            <div class="col-12 col-lg-3 d-none d-lg-block text-right">
+              <p class="flags">
+                <img src="./img/icons/bandeira1.png" alt="">
+                <img src="./img/icons/bandeira2.png" alt="">
+                <img src="./img/icons/bandeira3.png" alt="">
+              </p>
+              <p class="skype"><img src="./img/icons/skype.png" alt="">11 33375618</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="banner-section">
+          <div class="container">
+            <div id="banner-carousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#banner-carousel" data-slide-to="1"></li>
+                <li data-target="#banner-carousel" data-slide-to="2"></li>
+                <li data-target="#banner-carousel" data-slide-to="3"></li>
+                <li data-target="#banner-carousel" data-slide-to="4"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/banner/banner1.jpg" alt="A taça é nossa" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./img/banner/banner2.jpg" alt="Criamos experiências de compras fantásticas" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./img/banner/banner3.jpg" alt="Slide 3" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./img/banner/banner4.jpg" alt="Slide 4" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./img/banner/banner5.jpg" alt="Slide 5" class="d-block w-100">
+                </div>
+              </div>
+
+              <a class="carousel-control-prev" href="#banner-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Slide anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#banner-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo slide</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="products-section">
+          <div class="container">
+            <div id="products-carousel" class="owl-carousel owl-theme"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+              <p class="contact contact-rj">
+                Rua do acre, 77 - sala 1108<br>
+                Centro - Rio de janeiro<br>
+                <a href="tel:+55-21-2263-6044">tel.: +55 (21) 2263.6044</a>
+              </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <p class="contact contact-sp">
+                Rua Cardoso de melo, 1750<br>
+                6° Andar Vila Olímpica<br>
+                <a href="tel:+55-21-2263-6044">tel.: +55 (21) 2263.6044</a>
+              </p>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="contact-btn-wrapper mb-2">
+                <a href="mailto:email@server.com" class="btn contact-btn contact-mail">
+                  Entre em <span class="font-weight-bold">contato</span>
+                </a>
+              </div>
+
+              <div class="contact-btn-wrapper">
+                <a href="#" class="btn contact-btn contact-consultant">
+                  Fale com o nosso<br>
+                  <span class="font-weight-bold">consultor online</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <script src="./vendor/owl-carousel/owl.carousel.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

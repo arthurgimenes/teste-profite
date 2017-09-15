@@ -1,0 +1,323 @@
+
+/*  Major styles
+  ================ */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/*  Header
+  =========== */
+
+.brand-logo {
+  padding: 1rem;
+  text-align: center;
+}
+
+.brand-logo img {
+  width: 240px;
+  max-width: 100%;
+}
+
+.greeting {
+  margin: 1.25rem 0 0;
+
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.login {
+  font-size: .8em;
+  line-height: 1;
+}
+
+.login a {
+  color: inherit;
+}
+
+.search-form {
+  background-color: #fac437;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .search-form {
+    margin-top: 1.75rem;
+    padding-left: 0;
+  }
+}
+
+.search-form img {
+  width: 1rem;
+}
+
+.search-form .form-control {
+  background-color: transparent;
+}
+
+.flags {
+  margin: 1.5rem 0 .5rem;
+}
+
+.flags img {
+  width: 2rem;
+  margin: 0 .125rem;
+}
+
+.skype {
+  color: #00aff0;
+  font-size: .875em;
+  text-align: right;
+}
+
+.skype img {
+  width: 1.5rem;
+  margin-right: .25rem;
+}
+
+
+/*  Main content
+  ================ */
+
+/* Banner section */
+.banner-section {
+  background-color: #fac437;
+}
+
+.banner-section .carousel-indicators li {
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+/* Products section */
+.products-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.products-section .owl-carousel {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 25%;
+
+  background-color: transparent;
+}
+
+.owl-theme .owl-nav .owl-prev {
+  left: -1rem;
+}
+
+.owl-theme .owl-nav .owl-next {
+  right: -1rem;
+}
+
+.product {
+  position: relative;
+  padding: .5rem;
+
+  text-align: center;
+}
+
+.owl-item.active + .owl-item.active .product::before {
+  position: absolute;
+  top: 10%;
+  left: 0;
+
+  background-color: #e1e1e1;
+  height: 80%;
+  width: 1px;
+
+  content: '';
+  display: block;
+}
+
+.product:hover {
+  background-color: #fac437;
+}
+
+.product-img {
+  width: 100%;
+  max-width: 170px;
+  margin: auto;
+
+  cursor: zoom-in;
+  display: block;
+}
+
+.product-name {
+  height: 2.5em;
+
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.product .stars img {
+  max-width: 100px;
+  margin: auto;
+}
+
+.product-desc {
+  height: 5em;
+  margin-bottom: .5rem;
+
+  font-size: .875rem;
+}
+
+.product-desc .old-price {
+  font-size: .875em;
+}
+
+.product .buy-btn {
+  position: relative;
+
+  padding-left: 2.25rem;
+
+  border-radius: 0;
+}
+
+.product .buy-btn::before {
+  position: absolute;
+  top: .625rem;
+  left: .625rem;
+
+  background: url('../img/icons/icone_carrinho.png') no-repeat center center / contain;
+  width: 1rem;
+  height: 1rem;
+
+  content: '';
+  display: block;
+}
+
+.product .discount {
+  background-color: #fff;
+  width: 80%;
+  margin: 1rem auto;
+  padding: .25rem;
+
+  font-size: .75rem;
+
+  border: 1px solid #c5c5c5;
+}
+
+/* Product zoom */
+#zoom-modal .modal-content {
+  border-radius: 0;
+}
+
+#zoom-modal .zoom-img {
+  max-width: 100%;
+}
+
+
+/*  Footer
+  =========== */
+
+.page-footer {
+  background-color: #dbdbdb;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  font-size: .875rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .page-footer {
+    font-size: .75rem;
+  }
+}
+
+.contact::before,
+.contact-btn::before {
+  position: absolute;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  content: '';
+  display: block;
+}
+
+/* Contact address */
+.contact {
+  position: relative;
+  padding: 1.5rem 0 0 3rem;
+}
+
+.contact::before {
+  top: 1rem;
+  left: 0;
+
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.contact a {
+  color: inherit;
+  font-weight: bold;
+}
+
+.contact.contact-rj::before {
+  background-image: url('../img/icons/icone_rj.png');
+}
+
+.contact.contact-sp::before {
+  background-image: url('../img/icons/icone_sp.png');
+}
+
+/* Contact buttons */
+.contact-btn-wrapper {
+  display: table;
+}
+
+.contact-btn {
+  position: relative;
+
+  background-color: #fac437;
+  height: 4em;
+
+  padding-left: 3rem;
+  padding-right: 1.5rem;
+
+  color: inherit;
+  font-size: .75rem;
+  text-transform: uppercase;
+
+  display: table-cell;
+}
+
+.contact-btn:hover {
+  color: inherit;
+}
+
+@media screen and (max-width: 991px) {
+  .contact-btn-wrapper {
+    width: 100%;
+  }
+}
+
+.contact-btn::before {
+  top: 1em;
+  left: 1em;
+
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.contact-btn.contact-mail::before {
+  background-image: url('../img/icons/icone_contato.png');
+}
+
+.contact-btn.contact-consultant::before {
+  background-image: url('../img/icons/icone_consultor.png');
+}
