@@ -8,7 +8,6 @@ var carrosselTenis = (function(){
         var value = 0;
         var carrosselTenis = document.querySelector('.carrosselTenis');
         var carrosselWidth = carrosselTenis.offsetWidth;
-        console.log(carrosselWidth)
 
         //Verifica se deve avançar ou voltar
         if(btn.getAttribute('class').toString() === 'btnCtrlNext'){
@@ -49,6 +48,11 @@ var carrosselTenis = (function(){
 
         //Aplica novo positionamento
         carrossel.style.transform = 'translateX('+value+'%)';     
+    }
+
+    //Em resize volta a posição 0 (para evitar bugs)
+    window.onresize = function(){
+        carrossel.style.transform = 'translateX(0)';
     }
 
     return{

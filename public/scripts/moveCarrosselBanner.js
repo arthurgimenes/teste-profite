@@ -24,9 +24,11 @@ var move = (function(){
     function widthToMove(){
         width = document.getElementById("carousel-inner").offsetWidth;
     }
+    
     setTimeout(function(){
         widthToMove();
-    }, 100)
+    }, 100);
+
     window.addEventListener("resize", widthToMove);
 
     function peloIndicador(indicador){
