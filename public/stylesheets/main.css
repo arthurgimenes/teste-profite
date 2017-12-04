@@ -377,6 +377,13 @@ input, button, a {
   outline: 0;
   border: none; }
 
+ul {
+  padding: 20px; }
+
+li {
+  padding: 0;
+  list-style-type: none; }
+
 /* P├íginas */
 .side-info {
   margin-top: 10px; }
@@ -488,6 +495,37 @@ input, button, a {
         @media (min-width: 992px) and (max-width: 1200px) {
           .user > ul > li a {
             font-size: 13px; } }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 10000000;
+  text-align: center;
+  right: 0;
+  font-size: 14px;
+  font-family: 'OpenSans', arial;
+  overflow: hidden;
+  height: 0;
+  transition: .5s; }
+  @media only screen and (min-width: 768px) {
+    .dropdown-content {
+      left: 0;
+      right: auto; } }
+  .dropdown-content label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px; }
+  .dropdown-content input {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 15px; }
+
+.autoHeight {
+  height: 260px; }
 
 .navbar-default {
   padding-top: 35px; }
@@ -650,6 +688,7 @@ input, button, a {
 .preco-economia {
   font-size: 7px;
   padding: 2px 5px;
+  background: #fff;
   border: 1px solid #ccc;
   display: block;
   margin: 0 auto; }

@@ -1,3 +1,13 @@
+var counter = 0;
+var seta = document.getElementById('automatico');
+setInterval(function(){
+    counter = counter+1;
+    console.log(counter);
+    if(counter > 4){
+        move.pelaSeta(seta);
+    }
+}, 1000);
+
 var move = (function(){
 
     //DOM
@@ -10,14 +20,18 @@ var move = (function(){
     var indPos;
     var itemPos;
 
+    //Define quanto o carrossel se moverá de acordo com width
     function widthToMove(){
         width = document.getElementById("carousel-inner").offsetWidth;
     }
-
-    widthToMove();
+    setTimeout(function(){
+        widthToMove();
+    }, 100)
     window.addEventListener("resize", widthToMove);
 
     function peloIndicador(indicador){
+        counter = 0;
+        
         //Desabilita interação por 0,5 seg
         desabilitaControles(indicators);
         desabilitaControles(ctrls);
@@ -25,6 +39,12 @@ var move = (function(){
         //Verifica posição de slide solicitado
         indPos = indicador.getAttribute("data-slide-to");
 
+        mudaIndicador(indPos);
+
+        mudaSlideInd(indPos);
+    }
+
+    function mudaIndicador(indPos){
         //Remove indicador preenchido no momento
         for(var i=0; i<indicators.length; i++){
             indicators[i].classList.remove("selected");    
@@ -32,7 +52,9 @@ var move = (function(){
 
         //Preenche indicador selecionado
         indicators[indPos].className += "selected";
+    }
 
+    function mudaSlideInd(indPos){
         //Remove slide ativo
         for(var i=0; i<items.length; i++){
             if(items[i].classList.contains("active")){
@@ -51,23 +73,23 @@ var move = (function(){
         //Se slide selecionado não for o mesmo que o atual
         if(itemPos !== indPos){
 
-            //Posiciona carrossel em -"+widthToMove+"px para gerar transição
+            //Posiciona carrossel em "width" para gerar transição
             carrosselBanner.style.transform = "translate(-"+width+"px)";
 
             //Se slide a ser removido ficar a direita do item atual
             if(indPos > itemPos){
-                slideDireitoInd(item);
+                animaDireitoInd(item);
 
             //Se slide a ser removido ficar a esquerda do item atual
             }else{
-                slideEsquerdoInd(item);
+                animaEsquerdoInd(item);
             }
 
         }
     }
 
-    function slideDireitoInd(item){
-        //Ativa transição (0px para -"+widthToMove+"px)
+    function animaDireitoInd(item){
+        //Ativa transição
         carrosselBanner.classList.remove("no-transition");
         
         //Após animação acima completar
@@ -76,20 +98,20 @@ var move = (function(){
             carrosselBanner.className += " no-transition";
             //Remove slide antigo
             item.classList.remove("active");
-            //Ajusta posição de slide novo (-"+widthToMove+"px para 0px)
+            //Ajusta posição de slide novo
             carrosselBanner.style.transform = "translate(0)";
         }, 500);
 
     }
     
-    function slideEsquerdoInd(item){
+    function animaEsquerdoInd(item){
         //Remove transição pra ajustar automaticamente
         carrosselBanner.className += " no-transition";
     
         setTimeout(function(){
             //Ativa transição
             carrosselBanner.classList.remove("no-transition");
-            //Ajusta posição de slide novo (-"+widthToMove+"px para 0px)
+            //Ajusta posição de slide novo
             carrosselBanner.style.transform = "translate(0)";
         }, 50);
     
@@ -100,12 +122,15 @@ var move = (function(){
     }
 
     function pelaSeta(direction){
+        counter = 0;
+
         //Verifica lado que deve ir
         var dirSel = direction.getAttribute("direction");
 
         //Desabilita interações por 0,5 seg
         desabilitaControles(indicators);
         desabilitaControles(ctrls);
+
         console.log(width);
         carrosselBanner.style.transform = "translate(-"+width+"px)";
 
@@ -239,8 +264,8 @@ var move = (function(){
         //Gera atributos
         elem.setAttribute("href", "#");
         elem.setAttribute("class", "item active");
-        //Verifica imagem e alt a ser gerada e append ao carrossel
 
+        //Verifica imagem e alt a ser gerada e append ao carrossel
         if(img == 'first'){
             elem.innerHTML = items[0].querySelector('img').outerHTML;
             carrosselBanner.appendChild(elem);
@@ -249,7 +274,6 @@ var move = (function(){
         elem.innerHTML = items[items.length-1].querySelector('img').outerHTML;
         carrosselBanner.prepend(elem);
     }
-
 
     function desabilitaControles(ctrl){
         //Desabilita controles
@@ -262,7 +286,7 @@ var move = (function(){
             for(var i = 0; i < ctrl.length; i++) {
                 ctrl[i].disabled = false;
             }
-        }, 500);
+        }, 600);
 
     }
 
@@ -272,12 +296,5 @@ var move = (function(){
     }
 
 })();
-// (function(){
-//     var seta = document.getElementById('automatico');
-//     setInterval(function(){
-//         //bota um counter que zera quando função é chamada. talvez com parametro move.pelaseta(seta, user) ou move.pelaseta(seta, auto)) pra determinar quem foi
-//         move.pelaSeta(seta);
-//     }, 5000);
-// }());
 
     

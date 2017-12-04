@@ -81,39 +81,39 @@
 
   				    			<!-- Dropdown com formulário de login -->
                                 <li class="dropdown">
-    				      			<a href="#">Login</a>
+    				      			<a href="#" onclick="menu.mudaMenu();">Login</a>
 
-          							<!-- <ul class="dropdown-menu"> -->
+          							<ul class="dropdown-content">
 
             							<!-- Caso usuário não esteja logado -->
-                						<!-- <li>
+                						<li>
                 						  	<form action="#" method="POST">
-                						    	<div class="form-group">
+                						    	<div class="usuario">
                 						    	  	<label>Usuário</label>
-                						    	  	<input type="text" class="form-control"
+                						    	  	<input type="text"
                 						    	           placeholder="Fulana1Profite"
                 						    	           required/>
                 						    	</div>
-                						    	<div class="form-group">
+                						    	<div class="senha">
                 						    	  	<label>Senha</label>
-                						    	  	<input type="password" class="form-control"
+                						    	  	<input type="password"
                 						    	           placeholder="SuperS3nh@123" 
                 						    	           required/>
                 						    	</div>
-                						    	<button type="submit" class="btn btn-warning">Entrar</button>
+                						    	<button type="submit" class="comprarBtn">Entrar</button>
                 						  	</form>
                 						</li>
-                						<li role="separator" class="divider"></li>
-                						<li><a href="#">Esqueci minha senha</a></li> -->
+                						<li><hr></li>
+                						<li><a href="#">Esqueci minha senha</a></li>
 
                 						<!-- Caso usuário esteja logado -->
-                						<!-- <li><a href="#">Link X</a></li>
-                						<li><a href="#">Link Y</a></li>
-                						<li><a href="#">Link Z</a></li>
-                						<li role="separator" class="divider"></li>
+                						<!-- <li><a href="#">Meu carrinho</a></li>
+                						<li><a href="#">Lista de desejos</a></li>
+                						<li><a href="#">Configurações</a></li>
+                						<li><hr></li>
                 						<li><a href="#">Sair</a></li> -->
 
-      				    			<!-- </ul> -->
+      				    			</ul>
 
       							</li>
 
@@ -144,9 +144,9 @@
   					<div class="col xs-6"></div>
 
     				<div class="col md-18 bandeiras">
-    					<a href="#"><img data-toggle="tooltip" title="Peru" src="./public/img/icones/bandeira3.png" alt="Bandeira do Peru"/></a>
-    					<a href="#"><img data-toggle="tooltip" title="Argentina" src="./public/img/icones/bandeira2.png" alt="Bandeira da Argentina"/></a>
-    					<a href="#"><img data-toggle="tooltip" title="Brasil" src="./public/img/icones/bandeira1.png" alt="Bandeira do Brasil"/></a>
+    					<a href="#"><img title="Peru" src="./public/img/icones/bandeira3.png" alt="Bandeira do Peru"/></a>
+    					<a href="#"><img title="Argentina" src="./public/img/icones/bandeira2.png" alt="Bandeira da Argentina"/></a>
+    					<a href="#"><img title="Brasil" src="./public/img/icones/bandeira1.png" alt="Bandeira do Brasil"/></a>
     					
     				</div>
 
@@ -273,6 +273,7 @@
     <script type="text/javascript" src="./public/scripts/mudaImgsBanner.js"></script>
     <script type="text/javascript" src="./public/scripts/modal.js"></script>
     <script type="text/javascript" src="./public/scripts/seedProdutos.js"></script>
+    <script type="text/javascript" src="./public/scripts/dropdown.js"></script>
 
     <!-- Data -->
     <script type="text/javascript">
