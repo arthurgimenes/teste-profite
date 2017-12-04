@@ -189,6 +189,7 @@ var move = (function(){
     }
 
     function insereSlideSeta(limite, num, indSel, pos){
+        console.log(limite, num, indSel, pos)
         //Percorre slides
         for(var i=0; i<items.length; i++){
             //Se slide está ativo
@@ -274,7 +275,7 @@ var move = (function(){
             return;
         }
         elem.innerHTML = items[items.length-1].querySelector('img').outerHTML;
-        carrosselBanner.prepend(elem);
+        carrosselBanner.insertBefore(elem, carrosselBanner.childNodes[0]);
     }
 
     function desabilitaControles(ctrl){
