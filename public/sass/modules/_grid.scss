@@ -1,0 +1,97 @@
+$mobile-sm: "only screen and (max-width: 550px)";
+$mobile-lg: "(min-width:551px) and (max-width:767px)";
+$mobile: "only screen and (max-width: 767px)";
+$not-mobile: "only screen and (min-width: 768px)";
+$desktops: "only screen and (min-width:992px)";
+$tablet: "(min-width:768px) and (max-width:992px)";
+$not-desktop: "only screen and (max-width:992px)";
+$desktop-sm: "(min-width:992px) and (max-width:1200px)";
+$desktop-bg: "only screen and (min-width:1200px)";
+
+$xs: xs-;
+$sm: sm-;
+$md: md-;
+$lg: lg-;
+$unidade: 4.16666666%;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  @media #{$desktops}{
+    width: 967px;
+  }
+}
+.col{
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
+
+@for $i from 24 through 0{
+  .#{$xs}#{$i}{
+    width: #{$i * $unidade};
+  }
+}
+@media #{$mobile} {
+  .xs-0{
+    display: none;
+  }
+}
+
+@media #{$not-mobile} {
+  @for $i from 24 through 0{
+  	.#{$sm}#{$i}{
+    	width: #{$i * $unidade};
+  	}
+	}
+  .sm-0{
+    display: none;
+  }
+}
+@media #{$desktops} {
+  @for $i from 24 through 0{
+  	.#{$md}#{$i}{
+    	width: #{$i * $unidade};
+  	}
+	}
+  .md-0{
+    display: none;
+  }
+}
+@media #{$desktop-bg} {
+  @for $i from 24 through 0{
+  	.#{$lg}#{$i}{
+    	width: #{$i * $unidade};
+  	}
+	}
+  .lg-0{
+    display: none;
+  }
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.container:after,
+.row:after {
+  clear: both;
+}

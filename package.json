@@ -1,0 +1,25 @@
+{
+  "name": "teste-profite",
+  "version": "1.0.0",
+  "description": "Teste para vaga de front-end pleno",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilaNuttoc/teste-profite.git"
+  },
+  "keywords": [
+    "teste",
+    "front-end",
+    "pleno",
+    "profite"
+  ],
+  "author": "CamilaNuttoc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilaNuttoc/teste-profite/issues"
+  },
+  "homepage": "https://github.com/CamilaNuttoc/teste-profite#readme"
+}

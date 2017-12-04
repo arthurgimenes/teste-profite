@@ -1,0 +1,23 @@
+body{
+	font-family: 'OpenSans';
+	margin: 0;
+	overflow-x: hidden;
+}
+
+a{
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button{
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+input, button, a{
+	outline: 0;
+	border: none;
+}

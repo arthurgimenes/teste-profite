@@ -1,0 +1,70 @@
+#carrosselBanner{
+    position: relative;
+}
+.fundoLaranja{
+    background: $laranja;
+    height: 98.5%;
+    position: absolute;
+    z-index: -10;
+    margin-left: -25%;
+    @media #{$desktops}{
+        width: 150%;
+    }
+}
+#carousel-inner{
+    overflow: hidden;
+}
+#carousel-block{
+    white-space: nowrap;
+    font-size: 0;
+    transition: .5s;
+    img{
+        width: 100%;
+    }
+}
+.no-transition{
+    transition: none !important;
+}
+.item{
+    display: none;
+    width: 100%;
+}
+.active{
+    display: inline-block;
+}
+.carousel-indicators{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    button{
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px solid white;
+        margin: 0 3px;
+    }
+    .selected{
+        background: white;
+    }
+}
+.carousel-control{
+    position: absolute;
+    top: 40%;
+    @media #{$mobile-sm}{
+        top: 30%;
+    }
+    padding: 20px;
+}
+[direction="next"]{
+    right: 0;
+    @media #{$desktop-bg}{
+      right: -50px;
+    }
+}
+[direction="prev"]{
+    @media #{$desktop-bg}{
+      left: -50px;
+    }
+}
