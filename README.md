@@ -51,3 +51,8 @@
 
 ### Final:
 Quando finalizar enviar o teste para: arthur@profite.com.br
+
+### Iniciar o Projeto
+No terminal rode:
+npm install
+grunt server
