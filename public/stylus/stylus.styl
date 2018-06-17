@@ -107,12 +107,39 @@ header
             top 0
 /*banner*/
 .banners
+    a
+        align-items: center
+        background-image url("../img/mobile-banner-bg.png")
+        background-position: center center
+        height 193px
+        display: flex
+        @media $mobile
+            background-image url("../img/desktop-banner.png")
+            height 425px
+        h1
+            color: white
+            font-size: 30px
+            font-weight: 700
+            margin-left: 10%
+            margin-bottom: 15px
+            width 90%
+            @media $mobile
+                font-size: 45px
+                width 50%
+            &:after
+                background: $color-dark-tangerine
+                content: ""
+                display: block
+                height 4px
+                margin-top: 9px
+                width: 32.5px
+.banners
     .owl-nav
         font-size: 60px
         position: absolute
         top calc(50% - 60px)
         z-index 10
-        width: 90%
+        width: 100%
         color: white
         .owl-next
             float: right 
@@ -123,12 +150,15 @@ header
         align-items: center
         display: flex
         justify-content: center
-        margin-bottom: 15px
+        margin-bottom: 5px
         padding: 5px 0
         position: absolute
         z-index: 9
         width: 100%
-        bottom: 20px
+        bottom: 5px
+        @media $mobile
+            bottom: 20px
+            margin-bottom: 15px
         .owl-dot
             background: $color-grey
             border-radius: 50%

@@ -24,16 +24,7 @@ module.exports = function(grunt) {
     usemin: {
         html: 'dist/**/*.html'
     },
-    /* Mimifica img */
-    imagemin: {
-        public: {
-            expand: true,
-            cwd: 'dist/img',
-            src: '**/*.{png,jpg,gif}',
-            dest: 'dist/img'
-        }
-    },
-
+    
     htmlmin: {
        dist: {
           options: {
@@ -84,7 +75,6 @@ module.exports = function(grunt) {
             files: 'public/stylus/**/*.styl',
             tasks: ['stylus:compilar' , 'autoprefixer:dev']
         },
-
     },
 
     browserSync: {
@@ -115,7 +105,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-usemin');
