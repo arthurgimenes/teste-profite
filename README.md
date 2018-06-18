@@ -1,3 +1,10 @@
+### Iniciar o Projeto
+* Clone o repositório
+* No terminal rode:
+* npm install
+* grunt server
+
+
 # SP Desenvolvedor Front-end - Pleno/Sênior
 
 ###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.
@@ -52,7 +59,4 @@
 ### Final:
 Quando finalizar enviar o teste para: arthur@profite.com.br
 
-### Iniciar o Projeto
-No terminal rode:
-npm install
-grunt server
+
