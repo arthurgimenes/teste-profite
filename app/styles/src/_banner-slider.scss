@@ -1,0 +1,263 @@
+.slider-container {
+  text-align: center;
+  background: $background-color;
+}
+
+#slider1 {
+  width: 70%;
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+      width: 100%;
+  }
+}
+
+.slider {
+  -moz-perspective: 1300px;
+  -ms-perspective: 1300px;
+  -webkit-perspective: 1300px;
+  perspective: 1300px;
+  display: block;
+  text-align: left;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slider > input {
+  display: none;
+}
+
+.slider > input:nth-of-type( 10):checked ~ ul li:first-of-type {
+  margin-left: -900%;
+}
+
+.slider > input:nth-of-type( 9):checked ~ ul li:first-of-type {
+  margin-left: -800%;
+}
+
+.slider > input:nth-of-type( 8):checked ~ ul li:first-of-type {
+  margin-left: -700%;
+}
+
+.slider > input:nth-of-type( 7):checked ~ ul li:first-of-type {
+  margin-left: -600%;
+}
+
+.slider > input:nth-of-type( 6):checked ~ ul li:first-of-type {
+  margin-left: -500%;
+}
+
+.slider > input:nth-of-type( 5):checked ~ ul li:first-of-type {
+  margin-left: -400%;
+}
+
+.slider > input:nth-of-type( 4):checked ~ ul li:first-of-type {
+  margin-left: -300%;
+}
+
+.slider > input:nth-of-type( 3):checked ~ ul li:first-of-type {
+  margin-left: -200%;
+}
+
+.slider > input:nth-of-type( 2):checked ~ ul li:first-of-type {
+  margin-left: -100%;
+}
+
+.slider > input:nth-of-type( 1):checked ~ ul li:first-of-type {
+  margin-left: 0%;
+}
+
+.slider > ul {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.slider > ul > li {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -moz-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: normal;
+
+  img {
+    width: 100%;
+  }
+}
+
+.slider > ul > li.scrollable {
+  overflow-y: scroll;
+}
+
+.slider > .navigation {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  z-index: 10;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slider > .navigation > div {
+  margin-left: -100%;
+}
+
+.slider > .navigation label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 4px;
+  padding: 6px;
+  background: $disabled-color;
+}
+
+.slider > .navigation label:hover:after {
+  opacity: 1;
+}
+
+.slider > .navigation label:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  background: $selected-color;
+  border-radius: 50%;
+  padding: 6px;
+  opacity: 0;
+}
+
+.slider > .arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slider.inside .navigation {
+  bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.slider.inside .navigation label {
+  border: 1px solid #7e7e7e;
+}
+
+.slider > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1):after,
+.slider > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2):after,
+.slider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3):after,
+.slider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4):after,
+.slider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5):after,
+.slider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6):after,
+.slider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7):after,
+.slider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8):after,
+.slider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after,
+.slider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after,
+.slider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after {
+  opacity: 1;
+}
+
+.slider > .arrows {
+  position: absolute;
+  left: -31px;
+  top: 50%;
+  width: 100%;
+  height: 26px;
+  padding: 0 31px;
+  z-index: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    left: 0;
+    padding:0;
+    z-index: 1;
+  }
+}
+
+.slider > .arrows label {
+  display: none;
+  position: absolute;
+  top: -50%;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.slider > .arrows label:before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 300%;
+  width: 300%;
+}
+
+.slider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+.slider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+.slider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+.slider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+.slider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+.slider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
+.slider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
+.slider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
+.slider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
+.slider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
+.slider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
+.slider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+  display: block;
+  left: 0;
+  right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../static/images/seta_esquerda.png);
+}
+
+.slider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+.slider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+.slider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+.slider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
+.slider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
+.slider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
+.slider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
+.slider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
+.slider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
+.slider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
+.slider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
+.slider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+  display: block;
+  right: 0;
+  left: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../static/images/seta_direita.png);
+}

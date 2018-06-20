@@ -1,0 +1,91 @@
+{
+	"products": [{
+		"id": 1,
+		"name": "Sandália Ferracini Ecologic",
+		"image": "calcado1.png",
+		"hoverimage": "calcado1_hover.png",
+		"zoomimage": "calcado1_zoom.png",
+		"previousprice": "",
+		"price": "95,92",
+    "times": 4,
+    "subprice": "5,99",
+    "save": "43,98"
+	}, {
+		"id": 2,
+		"name": "Chinelo Kildare",
+		"image": "calcado2.png",
+		"hoverimage": "calcado2_hover.png",
+		"zoomimage": "calcado2_zoom.png",
+		"previousprice": "99,90",
+		"price": "79,92",
+    "times": 3,
+    "subprice": "26,64",
+    "save": "19,98"
+	}, {
+		"id": 3,
+		"name": "Tênis Ferracini Week",
+		"image": "calcado3.png",
+		"hoverimage": "calcado3_hover.png",
+		"zoomimage": "calcado3_zoom.png",
+		"previousprice": "219,99",
+		"price": "159,22",
+    "times": 9,
+    "subprice": "20,43",
+    "save": "45,98"
+	}, {
+		"id": 4,
+		"name": "Tênis Democrata Fan",
+		"image": "calcado4.png",
+		"hoverimage": "calcado4_hover.png",
+		"zoomimage": "calcado4_zoom.png",
+		"previousprice": "219,90",
+		"price": "159,92",
+    "times": 7,
+    "subprice": "22,84",
+    "save": "59,98"
+	}, {
+		"id": 5,
+    "name": "Sandália Ferracini Ecologic 2",
+		"image": "calcado1.png",
+		"hoverimage": "calcado1_hover.png",
+		"zoomimage": "calcado1_zoom.png",
+		"previousprice": "",
+		"price": "95,92",
+    "times": 4,
+    "subprice": "5,99",
+    "save": "43,98"
+	}, {
+		"id": 6,
+    "name": "Chinelo Kildare 2",
+		"image": "calcado2.png",
+		"hoverimage": "calcado2_hover.png",
+		"zoomimage": "calcado2_zoom.png",
+		"previousprice": "99,90",
+		"price": "79,92",
+    "times": 3,
+    "subprice": "26,64",
+    "save": "19,98"
+	}, {
+		"id": 7,
+    "name": "Tênis Ferracini Week",
+		"image": "calcado3.png",
+		"hoverimage": "calcado3_hover.png",
+		"zoomimage": "calcado3_zoom.png",
+		"previousprice": "219,99",
+		"price": "159,22",
+    "times": 9,
+    "subprice": "20,43",
+    "save": "45,98"
+  }, {
+		"id": 8,
+    "name": "Tênis Democrata Fan",
+		"image": "calcado4.png",
+		"hoverimage": "calcado4_hover.png",
+		"zoomimage": "calcado4_zoom.png",
+		"previousprice": "219,90",
+		"price": "159,92",
+    "times": 7,
+    "subprice": "22,84",
+    "save": "59,98"
+  }]
+}
