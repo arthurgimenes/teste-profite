@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<!-- Configurações básicas -->
+    <meta charset="UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	  <title>Teste Profite Pleno</title>
+
+    <meta name="description" 
+          content="Teste para vaga de Front-end Pleno em Profite"/>
+    <meta name="keywords" 
+          content="Front-end, Pleno, Teste, Profite">
+    <meta name="author" 
+          content="Camila Nuttoc"/>
+  
+    <!-- Facebook -->
+    <meta property="og:image" 
+          content="banner/banner2.jpg"/>
+    <meta property="og:title" 
+          content="Teste para Front-end Pleno"/>
+    <meta property="og:description" 
+          content="Teste para vaga de Front-end Pleno em Profite"/>
+  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image" 
+          content="banner/banner2.jpg"/>
+    <meta name="twitter:title" 
+          content="Teste para Front-end Pleno"/>
+    <meta name="twitter:description" 
+          content="Teste para vaga de Front-end Pleno em Profite"/>
+  
+    <!-- Stylesheets -->
+    <link href="./public/stylesheets/main.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="./public/img/logo/favicon.png"/>
+
+</head>
+<body>
+  <div id="modal" onclick="modal.closeModal();">
+    <div id="modal-body" onclick="event.cancelBubble=true;">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" 
+                    aria-label="Close" onclick="modal.closeModal();">
+                <img src="./public/img/sapatos/fechar.png" alt="icone fechar">
+            </button>
+            <img src="./public/img/sapatos/calçado1_zoom.png" 
+                alt="Sandália Ferracini Ecologic">
+        </div>
+    </div>
+  </div>
+	<section class="container">
+
+		<header>
+
+			<nav class="navbar-default row">
+
+  				<div class="col lg-20 md-18 sm-16 xs-24">
+
+  				  	<!-- Elementos que não serão escondidos em mobile -->
+  				  	<div class="navbar-header">
+  				  		<div class="col lg-0 md-0 sm-0 xs-5"></div>
+  				    	<div class="col lg-8 md-8 sm-14 xs-12 logo">
+  				    		<a class="navbar-brand" href="#">
+  				    			<img src="./public/img/logo/profite_logo_novo.png" 
+  				    				 alt="Logo Profite"/>
+  				    		</a>
+  				    	</div>
+
+  				    	<div class="col lg-4 md-4 sm-6 xs-6 user">
+
+  				    		<h3>Olá, Visitante</h3>
+
+  				    		<ul>
+
+  				    			<li><a href="#">Cadastre-se – </a></li>
+
+  				    			<!-- Dropdown com formulário de login -->
+                                <li class="dropdown">
+    				      			<a href="#" onclick="menu.mudaMenu();">Login</a>
+
+          							<ul class="dropdown-content">
+
+            							<!-- Caso usuário não esteja logado -->
+                						<li>
+                						  	<form action="#" method="POST">
+                						    	<div class="usuario">
+                						    	  	<label>Usuário</label>
+                						    	  	<input type="text"
+                						    	           placeholder="Fulana1Profite"
+                						    	           required/>
+                						    	</div>
+                						    	<div class="senha">
+                						    	  	<label>Senha</label>
+                						    	  	<input type="password"
+                						    	           placeholder="SuperS3nh@123" 
+                						    	           required/>
+                						    	</div>
+                						    	<button type="submit" class="comprarBtn">Entrar</button>
+                						  	</form>
+                						</li>
+                						<li><hr></li>
+                						<li><a href="#">Esqueci minha senha</a></li>
+
+                						<!-- Caso usuário esteja logado -->
+                						<!-- <li><a href="#">Meu carrinho</a></li>
+                						<li><a href="#">Lista de desejos</a></li>
+                						<li><a href="#">Configurações</a></li>
+                						<li><hr></li>
+                						<li><a href="#">Sair</a></li> -->
+
+      				    			</ul>
+
+      							</li>
+
+      						</ul>
+
+  				    	</div>
+
+  				    	<div class="col lg-12 md-12 xs-24">
+
+  				    		<!-- Formulário de busca -->
+  				    		<form class="search-form">
+      						    <input type="text" placeholder="Buscar por ..."/>
+      						  	<button type="submit">
+                                    <img src="./public/img/icones/ícone_pesquisa.png" 
+                                        alt="Ícone de pesquisa"/>
+                                </button>
+      						</form>
+
+  				    	</div>
+
+  				  	</div>
+    				
+  				</div>
+
+				<!-- Itens que serão escondidos em mobile -->
+  				<div class="col lg-4 md-6 sm-7 xs-0 side-info">
+
+  					<div class="col xs-6"></div>
+
+    				<div class="col md-18 bandeiras">
+    					<a href="#"><img title="Peru" src="./public/img/icones/bandeira3.png" alt="Bandeira do Peru"/></a>
+    					<a href="#"><img title="Argentina" src="./public/img/icones/bandeira2.png" alt="Bandeira da Argentina"/></a>
+    					<a href="#"><img title="Brasil" src="./public/img/icones/bandeira1.png" alt="Bandeira do Brasil"/></a>
+    					
+    				</div>
+
+    				<div id="skype">
+    					<div class="tel">11 33375618</div>
+    					<img src="./public/img/icones/skype.png" 
+                            alt="Logo do Skype"/>
+    				</div>
+
+    			</div>
+
+				<div class="col lg-0 md-0 sm-2 xs-0"></div>
+
+			</nav>
+
+		</header>
+
+        <!-- Carrossel de Banners -->
+        <section id="carrosselBanner" class="carousel slide" data-ride="carousel">
+
+            <div class="fundoLaranja"></div>
+
+            <!-- Esconde o que passa da área do carrossel -->
+            <div id="carousel-inner">
+
+                <!-- Serve de container para itens -->
+                <div id="carousel-block">
+
+                    <a href="#" class="item active" slide="0">
+                        <img src="./public/img/banner/banner1_mobile.jpg" alt="Profite prêmios">
+                    </a>
+                    <a href="#" class="item" slide="1">
+                        <img src="./public/img/banner/banner2_mobile.jpg" alt="Experiências de compra">
+                    </a>
+                    <a href="#" class="item" slide="2">
+                        <img src="./public/img/banner/banner3_mobile.jpg" alt="Compra online mobile">
+                    </a>
+
+                </div>
+
+                <!-- Indicadores -->
+                <ol class="carousel-indicators">
+                    <button data-target="#carrosselBanner" data-slide-to="0" onclick="move.peloIndicador(this);" class="selected"></button>
+                    <button data-target="#carrosselBanner" data-slide-to="1" onclick="move.peloIndicador(this);"></button>
+                    <button data-target="#carrosselBanner" data-slide-to="2" onclick="move.peloIndicador(this);"></button>
+                </ol>
+
+
+            </div>
+        
+            <!-- Botões para navegação no carrossel -->
+            <button class="carousel-control" direction="prev" onclick="move.pelaSeta(this);">
+                <img src="./public/img/banner/seta_esquerda.png" alt="seta esquerda">
+            </button>
+            <button class="carousel-control" id="automatico" direction="next" onclick="move.pelaSeta(this);">
+                <img src="./public/img/banner/seta_direita.png" alt="seta direita">
+            </button>
+    
+        </section>
+
+        <!-- Carrossel de Tênis -->
+        <section class="carrosselTenis row">
+
+            <!-- Esconde o que passa da área do carrossel -->
+            <div class="carrossel-overfl">
+
+                <!-- Serve de container para itens -->
+                <div class="carrosselnw"></div>
+
+            </div>
+
+            <!-- Botões para navegação no carrossel -->
+            <button class="btnCtrlPrev" onclick="carrosselTenis.move(this);">
+                <img src="./public/img/sapatos/seta_esquerda.png"/>
+            </button>
+            <button class="btnCtrlNext" onclick="carrosselTenis.move(this);">
+                <img src="./public/img/sapatos/seta_direita.png"/>
+            </button>
+
+        </section>
+
+	</section>
+
+    <footer>
+
+        <div class="row">
+
+            <div class="col md-4 sm-4"></div>
+
+            <address class="col md-6 sm-7 xs-8">
+                <img src="./public/img/footer/ícone_rj.png" alt="icone rio de janeiro">
+                <p> Rua do Acre, 77 - sala 1108 </p>
+                <p> Centro - Rio de Janeiro </p>
+                <p><strong><abbr title="Telefone">tel.:</abbr> +55 (21) 2263-6944</strong></p>
+            </address>
+
+            <address class="col md-6 sm-6 xs-8">
+                <img src="./public/img/footer/ícone_sp.png" alt="icone são paulo">
+                <p> Rua Cardoso de Melo, 1750 </p>
+                <p> 6º Andar Vila Olímpia </p>
+                <p><strong><abbr title="Telefone">tel.:</abbr> +55 (11) 2263-6944</strong></p>
+            </address>
+
+            <section class="col md-4 sm-3 xs-6 btns">
+                <a href="#">
+                  <img src="./public/img/footer/ícone_contato.png" alt="icone contato"/>
+                  ENTRE EM <strong>CONTATO</strong>
+                </a>
+                <a href="#">
+                  <img src="./public/img/footer/ícone_consultor.png" alt="icone consultor"/>
+                  FALE COM NOSSO <br><strong>CONSULTOR ONLINE</strong>
+                </a>
+            </section>
+
+            <div class="col md-2 sm-0 xs-0"></div>
+
+        </div>
+
+  </footer>
+
+	<!-- Scripts -->
+    <script type="text/javascript" src="./public/scripts/moveCarrosselBanner.js"></script>
+    <script type="text/javascript" src="./public/scripts/mudaImgsBanner.js"></script>
+    <script type="text/javascript" src="./public/scripts/modal.js"></script>
+    <script type="text/javascript" src="./public/scripts/seedProdutos.js"></script>
+    <script type="text/javascript" src="./public/scripts/dropdown.js"></script>
+    <script type="text/javascript" src="./public/scripts/moveCarrosselTenis.js"></script>
+
+    <!-- Data -->
+    <script type="text/javascript">
+        var produtosArr = [{ 
+            "nome":"Sandália Ferracini Ecologic", 
+            "img":"./public/img/sapatos/calçado1_hover.png",
+            "precoOriginal": 95.92,
+            "precoPromocao": 95.92
+            },{
+            "nome":"Chinelo Kildare", 
+            "img":"./public/img/sapatos/calçado2_hover.png",
+            "precoOriginal": 99.90,
+            "precoPromocao": 79.92
+            },{
+            "nome":"Tênis Ferracini Week", 
+            "img":"./public/img/sapatos/calçado3_hover.png",
+            "precoOriginal": 229.90,
+            "precoPromocao": 183.92
+            },{
+            "nome":"Tênis Democrata Fan", 
+            "img":"./public/img/sapatos/calçado4_hover.png",
+            "precoOriginal": 219.90,
+            "precoPromocao": 159.92
+            },{ 
+            "nome":"Sandália Ferracini Ecologic", 
+            "img":"./public/img/sapatos/calçado1_hover.png",
+            "precoOriginal": 95.92,
+            "precoPromocao": 95.92
+            },{
+            "nome":"Chinelo Kildare", 
+            "img":"./public/img/sapatos/calçado2_hover.png",
+            "precoOriginal": 99.90,
+            "precoPromocao": 79.92
+            },{
+            "nome":"Tênis Ferracini Week", 
+            "img":"./public/img/sapatos/calçado3_hover.png",
+            "precoOriginal": 229.90,
+            "precoPromocao": 183.92
+            },{
+            "nome":"Tênis Democrata Fan", 
+            "img":"./public/img/sapatos/calçado4_hover.png",
+            "precoOriginal": 219.90,
+            "precoPromocao": 159.92
+            },{ 
+            "nome":"Sandália Ferracini Ecologic", 
+            "img":"./public/img/sapatos/calçado1_hover.png",
+            "precoOriginal": 95.92,
+            "precoPromocao": 95.92
+            },{
+            "nome":"Chinelo Kildare", 
+            "img":"./public/img/sapatos/calçado2_hover.png",
+            "precoOriginal": 99.90,
+            "precoPromocao": 79.92
+            },{
+            "nome":"Tênis Ferracini Week", 
+            "img":"./public/img/sapatos/calçado3_hover.png",
+            "precoOriginal": 229.90,
+            "precoPromocao": 183.92
+            },{
+            "nome":"Tênis Democrata Fan", 
+            "img":"./public/img/sapatos/calçado4_hover.png",
+            "precoOriginal": 219.90,
+            "precoPromocao": 159.92
+            }
+        ];
+        seedCarrossel(produtosArr);
+
+    </script>
+	
+</body>
+</html>

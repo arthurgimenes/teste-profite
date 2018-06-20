@@ -1,0 +1,87 @@
+.thumbnail{
+	border-right: 1px solid #ddd;
+	padding: 0 20px 20px 20px;
+	&:hover{
+		@media #{$desktops}{
+			background: #ffbc40;
+		}
+	}
+	a >img{
+		margin: 0 auto;
+		width: 90%;
+		display: block;
+		@media #{$not-mobile}{
+			width: 100%;
+		}
+	}
+	@media #{$mobile-sm}{
+		padding: 0;
+	}
+}
+.caption{
+	text-align: center;
+	margin: 0 18px;
+	p{
+		font-size: 7.5px;
+		margin: 4px 0;
+		@media #{$mobile-lg}{
+			font-size: 10.5px;
+		}
+		@media #{$not-mobile}{
+			font-size: 12.7px;
+		}
+	}
+}
+.produto-nome{
+	font-weight: 800;
+	height: 30px;
+	@media #{$mobile-lg}{
+		height: 40px;
+	}
+	@media #{$not-mobile}{
+		height: 50px;
+	}
+	+ img{
+	    padding-bottom: 8px;
+	    width: 70%;
+	    @media #{$not-mobile}{
+			width: auto;
+		}
+	}
+}
+.preco-original{
+	text-decoration: line-through;
+	color: #777;
+}
+.comprarBtn{
+	background: black;
+	color: #ddd;
+	margin-bottom: 9px;
+	padding: 6px 6px 6px;
+	font-size: 9px;
+	@media #{$not-mobile}{
+		padding: 7px 19px;
+		font-size: 13px;
+	}
+	img{
+		width: 15px;
+		margin-right: 4px;
+	}
+}
+.preco-economia{
+	font-size: 7px;
+    padding: 2px 5px;
+    background: #fff;
+	border: 1px solid #ccc;
+	display: block;
+	margin: 0 auto;
+	@media #{$mobile-lg}{
+		font-size: 8.5px;
+	}
+	@media #{$not-mobile}{
+		font-size: 9.5px;
+		padding: 2px 14px;
+		width: 130px;
+		height: 20px;
+	}
+}

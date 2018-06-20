@@ -1,0 +1,7 @@
+.navbar-brand img{
+	width: 90%;
+	padding-left: 10%;
+	@media #{$desktops}{
+		padding: 0;
+	}
+}

@@ -1,0 +1,42 @@
+.search-form{
+	position: relative;
+	margin: 19px 0;
+	@media #{$desktops}{
+		margin: 19px 0 19px 10px;
+		left: 0;
+		padding-right: 25px;
+	}
+	@media #{$desktop-sm}{
+		width: 130%;
+	}
+	button{
+		position: absolute;
+		top: 0;
+		background: black;
+		left: 45px;
+		@media #{$desktops}{
+			left: 0;
+			padding: 0 11px;
+		}
+		img{
+			width: 20px;
+		}
+	}
+	input{
+		background: $laranja;
+		width: 100%;
+		padding: 10px 10px 10px 85px;
+		@media #{$desktops}{
+			padding-left: 51px;
+		}
+		&::placeholder{
+			color: #000;
+		}
+	}
+	button, input{
+		height: 31px;
+		@media #{$desktops}{
+			border-radius: 11px;
+		}
+	}
+}

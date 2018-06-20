@@ -1,0 +1,49 @@
+@import "ctrl";
+@import "thumbnail";
+@import "modal";
+
+.carrosselTenis{
+	position: relative;
+	margin: 40px auto 0;
+	@media #{$not-mobile}{
+		margin-top: 80px;
+	}
+	@media #{$tablet}{
+		width: 757px;
+	}
+	@media #{$desktops}{
+		width: 890px;
+	}
+}
+
+.carrossel-overfl{
+	overflow: hidden;
+	width: 90%;
+    margin: 0 auto;
+	@media #{$tablet}{
+		width: 96%;
+	}
+	@media #{$desktops}{
+		width: 99.8%;
+	}
+}
+
+.carrosselnw{
+	white-space: nowrap;
+    width: 100.2%;
+    transition: .6s;
+	*{
+		white-space: normal;
+	}
+    .content{
+      display: inline-block;
+      float: none;
+    }
+	@media #{$tablet}{
+		width: 750px;
+	}
+	@media #{$desktops}{
+		width: 890px;
+	}
+}
+

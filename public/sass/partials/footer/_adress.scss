@@ -1,0 +1,22 @@
+address{
+	margin-top: 9px;
+	p{
+		margin-bottom: 5px;
+	}
+	strong{
+		color: #000;
+	}
+	img{
+		position: absolute;
+		left: -40px;
+		width: 35px;
+		@media #{$mobile-sm}{
+			left: 10%;
+			width: auto;
+		}
+		@media #{$desktops}{
+			left: -55px;
+			width: auto;
+		}
+	}
+}

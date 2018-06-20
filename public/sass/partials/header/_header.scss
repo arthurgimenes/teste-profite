@@ -1,0 +1,17 @@
+@import "sideInfo";
+@import "search";
+@import "logo";
+@import "userArea";
+
+.navbar-default{
+	padding-top: 35px;
+	@media #{$not-mobile}{
+		padding-bottom: 35px;
+	}
+}
+
+.navbar-header > div:nth-of-type(4){
+	@media #{$tablet}{
+		width: 150%;
+	}
+}
