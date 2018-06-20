@@ -1,0 +1,185 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    font-size: 14px;
+}
+
+h2,
+h3 {
+    margin: 0 0 .75em 0;
+}
+
+/* Header */
+header {
+    height: 50px;
+    max-width: 920px;
+    margin: 0px auto 40px auto;
+    background-color: #FFF;
+    padding: 0px 0px 10px 0px;
+    display: flex;
+}
+header .fixed-size {
+    width: 500px;
+    height: 100px;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+#logo {
+    height: 50px;
+    padding-top: 20px;
+}
+#boasVindas {
+    padding: 0px 0px 0px 0px;
+    color: #000;
+    text-decoration: none;
+}
+.bandeira {
+    width: 25px;
+    height: 15px;
+    padding: 18px 0px 0px 0px;
+}
+.skype {
+    width: 24px;
+    height: 24px;
+    margin: 2px 3px -5px 0px;
+    color: #00AFF0;
+}
+.linksHeader {
+    padding: 0px 0px 0px 0px;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+}
+.btnSearch {
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 4px 60px 4px 20px;
+    border: 1px solid #FFBC01;
+    border-radius: 8px;
+    font: normal 16px/normal Arial, Helvetica, sans-serif;
+    text-overflow: clip;
+    background: #FFBC01;
+    text-shadow: #000;
+    margin: 30px 0px 0px 0px;
+}
+
+/* Main */
+main {
+    max-width: 1300px;
+    background-color: #FFF;
+    margin: 0px auto -40px auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+    background-color: #FFBC01;
+}
+.main-column {
+    flex: 5;
+    order: 2;
+}
+.main-sidebar-one {
+    flex: 1;
+    order: 1;
+}
+.main-sidebar-two {
+    flex: 1;
+    order: 3;
+}
+
+/* Aside */
+aside {
+    height: 350px;
+    max-width: 920px;
+    margin: 40px auto 40px auto;
+    background-color: #FFF;
+    padding: 30px 0px;
+    display: flex;
+}
+aside .fixed-size {
+    width: 380px;
+    height: 400px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: auto;
+}
+#groups {
+    font-size: 12px;
+}
+.precoSapato {
+    font-size: 14px;
+    font-weight: 100;
+}
+.riscar {
+    text-decoration: line-through;
+    font-size: 12px;
+    padding: 0px;
+}
+.btnAside {
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    height: 50px;
+    max-width: 1000px;
+    margin: 0px auto 40px auto;
+    background-color: #FFF;
+    padding: 0px 0px 10px 0px;
+    display: flex;
+}
+footer .fixed-size {
+    width: 850px;
+    height: 130px;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+footer p {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #999;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify;
+}
+#logoRJ {
+    width: 35px;
+    height: 30px;
+    margin: 0px 10px 5px 0px;
+}
+.negritar {
+    color: #000;
+    font-weight: bold;
+}
+.espacar {
+    margin-left: 55px;
+}
+.btnFooter {
+    background: #FFBC01;
+    border-radius: 0px;
+    color: #000;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.btnFooter p {
+    color: #000;
+}
+#setaDireita {
+    float: right;
+}
