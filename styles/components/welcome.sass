@@ -1,0 +1,32 @@
+.welcome
+  text-align: center
+
+  +below($screen-small)
+
+  &-title
+    font-size: rem(20)
+    margin: rem(4) 0 rem(5)
+    letter-spacing: rem(0.6)
+
+  &-links
+    display: flex
+    font-size: rem(14)
+    margin: rem(5) 0
+
+    li
+      &:first-child
+        &:after
+          content: '–'
+          display: inline-block
+          margin: 0 rem(7)
+
+      a
+        color: $black
+        text-decoration: none
+
+        &:hover,
+        &:active,
+        &:focus
+          text-decoration: none
+          color: black
+          font-weight: bold

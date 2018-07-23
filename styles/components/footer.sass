@@ -1,0 +1,45 @@
+.footer
+  background-image: url(/static/image/footer/background-footer.png)
+  padding: rem(54) 0
+
+  &-container
+    +container
+    display: flex
+    justify-content: space-between
+    padding-left: 6.65%
+    padding-right: 9%
+    
+    +below($screen-small)
+      padding-right: rem(30)
+      padding-left: rem(30)
+      flex-wrap: wrap
+      justify-content: center
+  
+  &-addresses
+    flex: 1 1 60%
+    display: flex
+    justify-content: flex-start
+
+    +below($screen-small)
+      flex-wrap: wrap
+      justify-content: center
+  
+  &-contact
+    +below($screen-small)
+      margin-top: rem(20)
+
+    &-button
+      width: rem(200)
+      background-color: $yellow
+      border: none
+      color: $black
+      text-transform: uppercase
+      padding: rem(10)
+      font-size: rem(14)
+      display: flex
+      margin: rem(8) 0
+      align-items: center
+
+      img
+        display: block
+        margin-right: rem(6)

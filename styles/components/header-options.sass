@@ -1,0 +1,32 @@
+.header-options
+  +below($screen-small)
+    display: none
+  &-languages
+    display: flex
+    justify-content: center
+    margin: 0 0 rem(5)
+
+    &-flag
+      max-width: rem(25)
+      height: auto
+      margin: 0 rem(3)
+
+      img
+        max-width: 100%
+
+  &-contact
+    a
+      display: flex
+      align-items: flex-end
+      justify-content: center
+      color: $skype-blue
+      text-decoration: none
+
+      &:hover,
+      &:focus,
+      &:active
+        text-decoration: none
+        font-weight: bold
+      
+      img
+        margin-right: rem(7)

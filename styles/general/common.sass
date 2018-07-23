@@ -1,0 +1,35 @@
+@import '/vendor/slick.min.css'
+@import '/vendor/slick-theme.min.css'
+
+body,
+html
+  font-family: $sans-serif
+  font-size: 100%
+  overflow-x: hidden
+
+  +below($screen-small)
+    font-size: 85%
+
+*
+  box-sizing: border-box
+
+
+.-hide
+  display: none
+
+ul
+  padding: 0
+  li
+    list-style: none
+
+.slick-next,
+.slick-prev
+  width: rem(18)
+  height: rem(18)
+  z-index: 5
+
+// .slick-prev
+//   left: 0
+
+// .slick-next
+//   right: 0

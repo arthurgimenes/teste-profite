@@ -1,0 +1,48 @@
+.Product-zoom
+    position: fixed
+    top: -1000vw
+    left: 0
+    z-index: 99
+    width: 100vw
+    height: 100vh
+    transition: top 0.2s ease-in-out
+
+    &-overlay 
+      position: absolute
+      width: 100%
+      height: 100%
+      z-index: 100
+      background-color: rgba(0,0,0,0.1)
+
+    &-content
+      position: absolute
+      z-index: 101
+      width: 50%
+      height: 70%
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      background-color: $white
+      display: flex
+      justify-content: center
+      align-items: center
+
+      .Product-image
+        display: block
+        max-width: 90%
+        max-height: 90%
+        height: auto
+        width: auto
+  
+    &-close-lightbox
+      position: absolute
+      display: block
+      top: rem(15)
+      right: rem(15)
+      
+      a, 
+      img
+        display:block
+    
+    &.-opened
+      top: 0
