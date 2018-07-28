@@ -3,6 +3,8 @@
   align-items: stretch;
   justify-content: stretch;
   width: 100%;
+  @include header-top();
+  padding-top: 0;
 
   &__input {
     border: 0 none;
@@ -18,5 +20,12 @@
   &__button {
     padding-bottom: 4px;
     border-bottom: 1px solid $dark-gray;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: inline-flex;
+    order: 1;
+    flex: 3 1 auto;
+    width: auto;
   }
 }

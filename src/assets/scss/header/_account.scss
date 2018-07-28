@@ -9,9 +9,23 @@
     padding: 15px;
     background-color: $light-gray;
     border-radius: 5px;
+
+    @media (min-width: $desktop-breakpoint) {
+      @include header-top();
+      background-color: transparent;
+      border-radius: unset;
+    }
   }
 
   &__img {
     margin-right: 5px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: inline-flex;
+    flex: 1 1 auto;
+    width: auto;
+    margin-top: 0;
+    border-right: 1px solid $dark-gray;
   }
 }

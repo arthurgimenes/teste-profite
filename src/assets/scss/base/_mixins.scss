@@ -1,0 +1,8 @@
+@mixin header-top() {
+  padding-top: 15px;
+  padding-bottom: 5px;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 10px;
+  }
+}

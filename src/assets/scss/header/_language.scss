@@ -4,8 +4,15 @@
   justify-content: space-evenly;
   width: 100%;
   padding: 15px;
-
+  
   &__link {
     display: flex;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: inline-flex;
+    flex: 3 1 auto;
+    width: auto;
+    @include header-top();
   }
 }

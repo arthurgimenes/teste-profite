@@ -11,23 +11,29 @@ class Header extends Component {
     return (
       <header className="header">
         <div className="container">
-          <div className="row header__top">
+          <div className="row header__row">
             <Menu />
             <Logo />
             <Cart />
-          </div>
-          <div className="row header__bottom">
             <Search />
-          </div>
-          <div className="row header__offset">
-            <button className="header__offset-button" aria-label="Fechar">
-              <img className="header__offset-img"
-                src={require("../../assets/img/header/close.svg")}
-                alt="Fechar"
-              />
-            </button>
-            <Account />
-            <Language />
+
+            <div className="header__offset">
+              <div className="row">
+                <button className="header__offset-button" aria-label="Fechar">
+                  <img className="header__offset-img"
+                    src={require("../../assets/img/header/close.svg")}
+                    alt="Fechar"
+                  />
+                </button>
+                <div className="header__offset-content">
+                  <div className="row">
+                    <Account />
+                    <Language />
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </header>

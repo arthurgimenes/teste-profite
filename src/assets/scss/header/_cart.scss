@@ -1,4 +1,7 @@
 .cart {
+  display: inline-flex;
+  @include header-top();
+
   &__button {
     display: flex;
     align-items: center;
@@ -22,5 +25,11 @@
       color: $white;
       line-height: 1;
     }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    order: 2;
+    flex: 1 1 auto;
+    justify-content: flex-end;
   }
 }

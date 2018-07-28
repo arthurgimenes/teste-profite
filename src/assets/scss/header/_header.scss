@@ -1,17 +1,12 @@
 .header {
+  display: flex;
+  align-items: center;
+  height: 80px;
   background-color: $white;
-  
-  &__top {
-    padding-top: 15px;
-    padding-bottom: 6px;
+
+  &__row {
     justify-content: space-between;
     align-items: center;
-  }
-
-  &__bottom {
-    padding-top: 6px;
-    padding-bottom: 10px;
-    justify-content: center;
   }
 
   &__offset {
@@ -29,10 +24,32 @@
 
     &-button {
       display: flex;
+
+      @media (min-width: $desktop-breakpoint) {
+        display: none;
+      }
+    }
+
+    &-content {
+      display: flex;
+      width: 100%;
     }
 
     &--active {
       left: 0;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      order: 3;
+      flex: 1 1 auto;
+      align-items: center;
+      position: static;
+      top: unset;
+      left: unset;
+      width: unset;
+      height: unset;
+      padding: unset;
+      background-color: transparent;
     }
   }
 }
