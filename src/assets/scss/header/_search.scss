@@ -3,8 +3,6 @@
   align-items: stretch;
   justify-content: stretch;
   width: 100%;
-  @include header-top();
-  padding-top: 0;
 
   &__input {
     border: 0 none;
@@ -18,8 +16,13 @@
 
   &__input,
   &__button {
+    padding-top: 6px;
     padding-bottom: 4px;
     border-bottom: 1px solid $dark-gray;
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-top: 4px;
+    }
   }
 
   @media (min-width: $desktop-breakpoint) {

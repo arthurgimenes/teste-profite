@@ -1,9 +1,13 @@
+// Reset
 @import "../node_modules/normalize.css/normalize.css";
 
+// Base
 @import "./assets/scss/base/variables";
 @import "./assets/scss/base/mixins";
+@import "./assets/scss/base/animations";
 @import "./assets/scss/base/base";
 
+// Header
 @import "./assets/scss/header/header";
 @import "./assets/scss/header/menu";
 @import "./assets/scss/header/logo";
@@ -11,3 +15,6 @@
 @import "./assets/scss/header/search";
 @import "./assets/scss/header/account";
 @import "./assets/scss/header/language";
+
+// Banner
+@import "./assets/scss/banner/banner";

@@ -5,10 +5,12 @@ class Logo extends Component {
     return (
       <div className="logo">
         <h3 className="logo__heading">
-          <img className="logo__img"
-            src={require("../../assets/img/header/logo.svg")}
-            alt="Profite"
-          />
+          <a className="logo__link" href="#">
+            <img className="logo__img"
+              src={require("../../assets/img/header/logo.svg")}
+              alt="Profite"
+            />
+          </a>
         </h3>
       </div>
     );

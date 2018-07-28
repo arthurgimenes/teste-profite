@@ -1,6 +1,6 @@
 .menu {
   display: inline-flex;
-  @include header-top();
+  @include header-y();
 
   &__button {
     display: flex;

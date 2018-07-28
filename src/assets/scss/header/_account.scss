@@ -1,6 +1,5 @@
 .account {
   width: 100%;
-  margin-top: 15px;
 
   &__button {
     display: flex;
@@ -11,9 +10,10 @@
     border-radius: 5px;
 
     @media (min-width: $desktop-breakpoint) {
-      @include header-top();
+      @include header-y();
       background-color: transparent;
       border-radius: unset;
+      width: auto;
     }
   }
 
@@ -23,7 +23,6 @@
 
   @media (min-width: $desktop-breakpoint) {
     display: inline-flex;
-    flex: 1 1 auto;
     width: auto;
     margin-top: 0;
     border-right: 1px solid $dark-gray;
