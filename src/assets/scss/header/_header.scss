@@ -1,0 +1,38 @@
+.header {
+  background-color: $white;
+  
+  &__top {
+    padding-top: 15px;
+    padding-bottom: 6px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom {
+    padding-top: 6px;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+
+  &__offset {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: $white;
+
+    &-button {
+      display: flex;
+    }
+
+    &--active {
+      left: 0;
+    }
+  }
+}

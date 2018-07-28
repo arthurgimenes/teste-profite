@@ -1,0 +1,22 @@
+.search {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100%;
+
+  &__input {
+    border: 0 none;
+    width: 100%;
+  }
+
+  &__button {
+    display: flex;
+    padding-left: 4px;
+  }
+
+  &__input,
+  &__button {
+    padding-bottom: 4px;
+    border-bottom: 1px solid $dark-gray;
+  }
+}

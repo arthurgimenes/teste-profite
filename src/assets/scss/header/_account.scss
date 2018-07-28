@@ -1,0 +1,17 @@
+.account {
+  width: 100%;
+  margin-top: 15px;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: $light-gray;
+    border-radius: 5px;
+  }
+
+  &__img {
+    margin-right: 5px;
+  }
+}

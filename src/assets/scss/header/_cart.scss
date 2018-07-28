@@ -1,0 +1,26 @@
+.cart {
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 5px;
+  }
+
+  &__label {
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    background-color: $secondary;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-span {
+      color: $white;
+      line-height: 1;
+    }
+  }
+}
