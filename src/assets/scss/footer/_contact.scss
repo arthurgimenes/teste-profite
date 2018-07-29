@@ -1,0 +1,36 @@
+.contact {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    background-color: $primary;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  &__img {
+    margin-right: 15px;
+  }
+
+  &__span {
+    text-align: left;
+  }
+
+  &__city {
+    font-weight: bold;
+    font-size: 14px;
+  }
+}

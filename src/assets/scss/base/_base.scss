@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: sans;
   font-size: 13px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,4 +22,21 @@ button {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+}
+
+small {
+  font-size: 11px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+
+  &__span {
+    font-size: 16px;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+  }
 }
