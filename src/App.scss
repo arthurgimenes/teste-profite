@@ -1,11 +1,16 @@
-// Reset
+@charset "UTF-8";
+
+// Vendor
 @import "../node_modules/normalize.css/normalize.css";
+@import "../node_modules/slick-carousel/slick/slick.scss";
 
 // Base
 @import "./assets/scss/base/variables";
 @import "./assets/scss/base/mixins";
 @import "./assets/scss/base/animations";
+@import "./assets/scss/base/slick-theme"; // Aqui mesmo?
 @import "./assets/scss/base/base";
+@import "./assets/scss/base/grid";
 
 // Header
 @import "./assets/scss/header/header";

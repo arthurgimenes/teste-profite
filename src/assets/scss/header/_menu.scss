@@ -6,7 +6,7 @@
     display: flex;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $medium-breakpoint) {
     display: none;
   }
 }

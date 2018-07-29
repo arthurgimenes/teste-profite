@@ -1,6 +1,91 @@
 .banner {
+  background-color: $tertiary;
+
+  &__slide {
+    display: inline-flex;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    width: 100%;
+    background-color: transparent;
+
+    @media (min-width: $medium-breakpoint) {
+      padding-top: 150px;
+      padding-bottom: 165px;
+    }
+  }
+
+  &__bg {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+
+  &__spacer {
+    width: 0;
+
+    @media (min-width: $medium-breakpoint) {
+      width: 50%;
+    }
+  }
+
   &__img {
     width: 100%;
-    height: auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: $secondary;
+      mix-blend-mode: multiply;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (min-width: $medium-breakpoint) {
+      width: 50%;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+
+    :after {
+      position: relative;
+      content: '';
+      display: block;
+      width: 15%;
+      height: 4px;
+      background-color: $primary;
+      margin-top: 15px;
+      z-index: 2;
+
+      @media (min-width: $medium-breakpoint) {
+        width: 12.5%;
+        height: 5px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 30px;
+    position: relative;
+    color: $white;
+    z-index: 2;
+
+    @media (min-width: $medium-breakpoint) {
+      width: 50%;
+      font-size: 45px;
+    }
   }
 }

@@ -15,12 +15,12 @@
     color: $primary;
     height: 20px;
 
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: $medium-breakpoint) {
       height: auto;
     }
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $medium-breakpoint) {
     order: 0;
     flex: 1 1 auto;
   }

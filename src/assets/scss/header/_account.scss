@@ -9,7 +9,7 @@
     background-color: $light-gray;
     border-radius: 5px;
 
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: $medium-breakpoint) {
       @include header-y();
       background-color: transparent;
       border-radius: unset;
@@ -21,7 +21,7 @@
     margin-right: 5px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $medium-breakpoint) {
     display: inline-flex;
     width: auto;
     margin-top: 0;

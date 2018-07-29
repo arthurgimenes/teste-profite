@@ -14,7 +14,7 @@
     }
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $medium-breakpoint) {
     display: inline-flex;
     order: 2;
     width: auto;

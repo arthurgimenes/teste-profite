@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body,
 input,
 button {
@@ -15,20 +21,4 @@ button {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-}
-
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
 }

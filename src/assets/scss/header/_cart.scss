@@ -14,7 +14,7 @@
   &__label {
     width: 16px;
     height: 16px;
-    font-size: 11px;
+    font-size: 0.65rem;
     background-color: $secondary;
     border-radius: 14px;
     display: flex;
@@ -27,7 +27,7 @@
     }
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $medium-breakpoint) {
     order: 2;
     flex: 1 1 auto;
     justify-content: flex-end;
