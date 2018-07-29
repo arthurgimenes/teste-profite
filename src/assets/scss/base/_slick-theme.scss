@@ -1,6 +1,15 @@
 $slick-dot-color: $medium-gray;
 $slick-dot-color-active: $primary;
 
+// Slide
+.slick-slide {
+  transition: opacity ease 0.5s;
+
+  &:not(.slick-active) {
+    opacity: 0;
+  }
+}
+
 // Track
 
 .slick-track {
@@ -43,7 +52,6 @@ $slick-dot-color-active: $primary;
 
   &:before {
     content: '';
-    background-image: url('./assets/img/banner/arrow-left.svg');
   }
 
   @media (min-width: $medium-breakpoint) {
@@ -60,7 +68,6 @@ $slick-dot-color-active: $primary;
 
   &:before {
     content: '';
-    background-image: url('./assets/img/banner/arrow-right.svg');
   }
 
   @media (min-width: $medium-breakpoint) {
@@ -77,10 +84,8 @@ $slick-dot-color-active: $primary;
 .slick-dots {
   display: block;
   position: absolute;
-  bottom: 0;
   list-style: none;
   width: 100%;
-  height: 30px;
   padding: 0;
   margin: 0;
   text-align: center;

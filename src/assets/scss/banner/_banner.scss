@@ -117,3 +117,18 @@
     }
   }
 }
+
+.banner .slick-slider {
+  .slick-dots {
+    height: 30px;
+    bottom: 0;
+  }
+
+  .slick-prev:before {
+    background-image: url('./assets/img/banner/arrow-left.svg');
+  }
+
+  .slick-next:before {
+    background-image: url('./assets/img/banner/arrow-right.svg');
+  }
+}

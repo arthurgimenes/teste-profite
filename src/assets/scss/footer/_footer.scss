@@ -1,0 +1,15 @@
+.footer {
+  background-color: $tertiary;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 5px solid $secondary;
+  color: $white;
+
+  &__heading {
+    margin: 0;
+
+    &:after {
+      @include yellow-bar(10px, 10px, 10px);
+    }
+  }
+}

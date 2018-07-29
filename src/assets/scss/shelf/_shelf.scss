@@ -1,5 +1,6 @@
 .shelf {
   padding-top: 15px;
+  padding-bottom: 40px;
 
   &__heading {
     margin: 0;
@@ -10,17 +11,16 @@
     }
   }
 
-  &__container {
-    @include container(0, 40px);
-  }
-
   &__slider {
     margin-top: 30px;
   }
 
   &__product {
-    padding-left: 5px;
-    padding-right: 5px;
+    max-width: 181px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 
     &:hover {
@@ -60,5 +60,24 @@
 
   &__instalments {
     display: block;
+  }
+}
+
+.shelf .slick-slider {
+  .slick-list {
+    @include container(0, 40px);
+  }
+
+  .slick-dots {
+    height: 20px;
+    bottom: -30px;
+  }
+
+  .slick-prev:before {
+    background-image: url('./assets/img/shelf/arrow-left.svg');
+  }
+
+  .slick-next:before {
+    background-image: url('./assets/img/shelf/arrow-right.svg');
   }
 }
