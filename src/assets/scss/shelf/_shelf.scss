@@ -1,0 +1,64 @@
+.shelf {
+  padding-top: 15px;
+
+  &__heading {
+    margin: 0;
+    color: $tertiary;
+
+    &:after {
+      @include yellow-bar(10px, 10px, 10px);
+    }
+  }
+
+  &__container {
+    @include container(0, 40px);
+  }
+
+  &__slider {
+    margin-top: 30px;
+  }
+
+  &__product {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+
+    &:hover {
+      background-color: $light-gray;
+    }
+
+    @media (min-width: $medium-breakpoint) {
+      padding: 30px 15px 15px;
+      border-radius: 4px;
+    }
+  }
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__product-heading {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  &__old-price {
+    display: block;
+  }
+
+  &__price {
+    font-size: 18px;
+    color: $secondary;
+    font-weight: bold;
+  }
+
+  &__instalments {
+    display: block;
+  }
+}

@@ -1,15 +1,5 @@
 .container {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-
-  @media (min-width: $medium-breakpoint) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+  @include container(20px, 40px);
 }
 
 .row {

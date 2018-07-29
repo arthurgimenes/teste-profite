@@ -14,9 +14,10 @@ class Banner extends Component {
 
   render() {
     const settings = {
+      infinite: true,
       easing: 'ease',
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 3500,
       pauseOnDotsHover: true,
       pauseOnHover: false,
       dots: true,

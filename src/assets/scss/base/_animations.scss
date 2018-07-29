@@ -49,16 +49,6 @@
 }
 
 @keyframes stretch-x {
-  from {
-    transform: scaleX(0);
-  }
-
-  to {
-    transform: scaleX(1);
-  }
-}
-
-@keyframes stretch-x-delayed {
   0% {
     transform: scaleX(0);
   }

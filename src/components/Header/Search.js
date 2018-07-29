@@ -4,7 +4,7 @@ class Search extends Component {
   render() {
     return (
       <form className="search">
-        <input className="search__input" type="search"
+        <input className="search__input" type="text"
           placeholder="O que está procurando?"
         />
         <button className="search__button" type="submit">
