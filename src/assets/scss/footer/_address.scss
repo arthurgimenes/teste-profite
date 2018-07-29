@@ -6,6 +6,10 @@
 
   &__address {
     font-style: normal;
+
+    @media (min-width: $medium-breakpoint) {
+      margin-right: 40px;
+    }
   }
 
   &__span {
@@ -15,5 +19,9 @@
   &__city {
     font-weight: bold;
     font-size: 14px;
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    justify-content: flex-start;
   }
 }

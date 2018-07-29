@@ -5,11 +5,21 @@
   border-bottom: 6px solid $secondary;
   color: $white;
 
+  &__row {
+    @media (min-width: $medium-breakpoint) {
+      flex-wrap: nowrap;
+    }
+  }
+
   &__heading {
     margin: 0;
 
     &:after {
       @include yellow-bar(10px, 10px, 10px);
     }
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    padding-bottom: 30px;
   }
 }

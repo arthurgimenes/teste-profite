@@ -9,6 +9,10 @@
     &:after {
       @include yellow-bar(10px, 10px, 10px);
     }
+
+    @media (min-width: $medium-breakpoint) {
+      margin-top: 15px;
+    }
   }
 
   &__slider {
@@ -23,13 +27,13 @@
     margin-right: auto;
     text-align: center;
 
-    &:hover {
-      background-color: $light-gray;
-    }
-
     @media (min-width: $medium-breakpoint) {
       padding: 30px 15px 15px;
       border-radius: 4px;
+
+      &:hover {
+        background-color: $light-gray;
+      }
     }
   }
 

@@ -11,7 +11,7 @@ class Footer extends Component {
         <div className="container">
           <h2 className="footer__heading">Localização</h2>
 
-          <div className="row">
+          <div className="row footer__row">
             <Address />
             <Contact />
             <Credits />

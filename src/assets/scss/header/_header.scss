@@ -7,6 +7,10 @@
   &__row {
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: $medium-breakpoint) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__offset {
