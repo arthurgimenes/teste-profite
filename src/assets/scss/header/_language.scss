@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: flex-end;
   flex: 1 1 auto;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   
   &__link {
     display: flex;
@@ -18,6 +19,7 @@
     display: inline-flex;
     order: 2;
     width: auto;
+    padding-left: 15px;
     @include header-y();
   }
 }

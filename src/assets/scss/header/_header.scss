@@ -36,12 +36,14 @@
       left: 0;
       animation-duration: 0.5s;
       animation-name: slide-in;
+      animation-timing-function: ease;
     }
 
     &--inactive {
       left: -100%;
       animation-duration: 0.5s;
       animation-name: slide-out;
+      animation-timing-function: ease;
     }
   
     @media (min-width: $medium-breakpoint) {

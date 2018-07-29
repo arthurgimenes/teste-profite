@@ -17,3 +17,67 @@
     left: -100%;
   }
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.95);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-left {
+  from {
+    right: -5%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes stretch-x {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes stretch-x-delayed {
+  0% {
+    transform: scaleX(0);
+  }
+
+  65% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes banner-heading {
+  from {
+    top: 45px;
+  }
+
+  to {
+    top: 0;
+  }
+}

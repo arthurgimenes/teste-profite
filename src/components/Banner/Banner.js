@@ -2,21 +2,35 @@ import React, { Component } from 'react';
 import Slider from "react-slick";
 
 class Banner extends Component {
+  splitWords(phrase) {
+    const splitString = phrase.split(' ');
+
+    return splitString.map((word, i) => (
+      <div className="banner__word" key={i}>
+        <span className="banner__span">{word}&nbsp;</span>
+      </div>
+    ));
+  }
+
   render() {
     const settings = {
+      easing: 'ease',
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnDotsHover: true,
+      pauseOnHover: false,
       dots: true,
       arrows: true,
-      infinite: true,
       speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      swipeToSlide: false,
+      draggable: false,
+      touchMove: false,
       responsive: [
         {
           breakpoint: 800,
           settings: {
             arrows: false,
-            swipeToSlide: true,
+            draggable: true,
+            touchMove: true,
           }
         },
       ]
@@ -39,7 +53,7 @@ class Banner extends Component {
               </div>
               <div className="container banner__container">
                 <h3 className="banner__heading">
-                  Nossa especialidade: experiência de compra.
+                  {this.splitWords('Nossa especialidade: experiência de compra.')}
                 </h3>
               </div>
             </div>
