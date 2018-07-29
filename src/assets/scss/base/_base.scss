@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./assets/fonts/ubuntu-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./assets/fonts/ubuntu-medium-webfont.woff2") format("woff2"),
+    url("./assets/fonts/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./assets/fonts/ubuntu-bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/ubuntu-bold-webfont.woff") format("woff");
+  font-weight: 700;
+}
+
 *,
 *::before,
 *::after {
@@ -5,7 +26,7 @@
 }
 
 body {
-  font-family: sans;
+  font-family: 'Ubuntu', sans;
   font-size: 13px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
