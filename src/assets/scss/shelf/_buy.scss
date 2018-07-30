@@ -1,9 +1,8 @@
 .buy {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-
   &__button {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     margin-top: 5px;
     background-color: $secondary;
     width: 100%;

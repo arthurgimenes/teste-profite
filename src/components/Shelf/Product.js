@@ -8,7 +8,7 @@ class Product extends Component {
 
     return (
       <div className="product">
-        <a className="product__link" href="/">
+        <a className="product__link" href="#">
           <div className={
             product.oldPrice
               ? "product__info product__info--off"

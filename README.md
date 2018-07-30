@@ -14,6 +14,7 @@ Para rodar localmente, basta executar o comando `npm start` na pasta raiz.
 - Webpack
 - NPM Scripts
 - Slick
+- Fake API
 
 ## Coisas que eu faria se tivesse mais tempo
 

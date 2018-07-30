@@ -8,7 +8,7 @@ class Credits extends Component {
 
         <div className="credits__credit">
           <small className="credits__small">Created by</small>
-          <a href="/" title="Profite">
+          <a href="#" title="Profite">
             <img className="credits__img"
               src={require("../../assets/img/footer/profite.svg")}
               alt="Profite"
@@ -18,7 +18,7 @@ class Credits extends Component {
 
         <div className="credits__credit">
           <small className="credits__small">Powered by</small>
-          <a href="/" title="VTEX">
+          <a href="#" title="VTEX">
             <img className="credits__img"
               src={require("../../assets/img/footer/vtex.svg")}
               alt="VTEX"
