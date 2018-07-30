@@ -7,7 +7,7 @@ class Shelf extends Component {
     const settings = {
       infinite: false,
       easing: 'ease',
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 4000,
       dots: false,
       arrows: true,
