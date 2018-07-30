@@ -1,5 +1,6 @@
 # Comentários
 
+- Rating
 - Animations: tudo para transition.
 - Fake API
-- Rating
+- Botões para SVG?

@@ -17,7 +17,7 @@ class Product extends Component {
                 <h3 className="product__heading">Tênis Couro Puma R698 Q4 V2</h3>
               </figcaption>
             </figure>
-            <Rating />
+            <Rating rating={2} />
             <s className="product__old-price">de R$ 299,00</s>
             <span className="product__price">por R$ 399,00</span>
             <span className="product__instalments">ou em 3x de R$ 133,00</span>
