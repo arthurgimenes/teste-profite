@@ -92,29 +92,27 @@
   }
 }
 
-.slick-active.slick-current {
-  .banner {
-    &__img {
-      animation-duration: 0.75s;
-      animation-name: fade-in, zoom-in;
-      animation-timing-function: ease-in-out;
+.slick-active.slick-current .banner {
+  &__img {
+    animation-duration: 0.75s;
+    animation-name: fade-in, zoom-in;
+    animation-timing-function: ease-in-out;
 
-      @media (min-width: $medium-breakpoint) {
-        animation-name: fade-in, zoom-left;
-      }
+    @media (min-width: $medium-breakpoint) {
+      animation-name: fade-in, zoom-left;
     }
+  }
 
-    &__container:after {
-      animation-duration: 1.25s;
-      animation-name: stretch-x;
-      animation-timing-function: ease-in-out;
-    }
+  &__container:after {
+    animation-duration: 1.25s;
+    animation-name: stretch-x;
+    animation-timing-function: ease-in-out;
+  }
 
-    &__span {
-      animation-duration: 1s;
-      animation-name: banner-heading;
-      animation-timing-function: ease;
-    }
+  &__span {
+    animation-duration: 1s;
+    animation-name: banner-heading;
+    animation-timing-function: ease;
   }
 }
 

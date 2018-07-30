@@ -26,6 +26,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    position: relative;
 
     @media (min-width: $medium-breakpoint) {
       padding: 30px 15px 15px;
@@ -64,6 +65,14 @@
 
   &__instalments {
     display: block;
+  }
+}
+
+.slick-active .shelf {
+  &__product {
+    animation-duration: 0.5s;
+    animation-name: fade-in, zoom-in;
+    animation-timing-function: ease-in-out;
   }
 }
 

@@ -5,9 +5,9 @@ import Buy from './Buy';
 class Shelf extends Component {
   render() {
     const settings = {
-      infinite: false,
-      easing: 'ease',
-      autoplay: true,
+      useCSS: false,
+      useTransform: false,
+      // autoplay: true,
       autoplaySpeed: 4000,
       dots: false,
       arrows: true,
