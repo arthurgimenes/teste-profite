@@ -67,16 +67,16 @@ class Header extends Component {
                 alt="Fechar"
               />
             </button>
-            <Language />
             <Account />
+            <Language />
           </div>
         </div>
       );
     } else {
       return (
         <React.Fragment>
-          <Language />
           <Account />
+          <Language />
         </React.Fragment>
       );
     }

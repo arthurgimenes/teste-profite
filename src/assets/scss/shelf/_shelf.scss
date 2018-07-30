@@ -35,10 +35,8 @@
 
   @for $i from 1 through 4 {
     &:nth-child(#{$i}n) {
-      .shelf {
-        &__product {
-          animation-duration: #{$i*0.25}s;
-        }
+      .product {
+        animation-duration: #{$i*0.25}s;
       }
     }
   }

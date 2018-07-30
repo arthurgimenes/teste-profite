@@ -14,6 +14,7 @@
     border-bottom: 1px solid $dark-gray;
     transition: border 0.333s;
 
+    &:hover,
     &:focus,
     &:active {
       outline: 0;

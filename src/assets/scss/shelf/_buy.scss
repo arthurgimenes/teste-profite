@@ -13,7 +13,19 @@
     &:hover,
     &:focus,
     &:active {
+      outline: 0;
       background-color: darken($secondary, 12.5%);
+    }
+
+    @media (min-width: $medium-breakpoint) {
+      opacity: 0;
+      transition: opacity, background-color 0.333s ease;
+  
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 1;
+      }
     }
   }
 

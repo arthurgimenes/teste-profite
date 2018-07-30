@@ -6,11 +6,17 @@
     &:hover,
     &:focus,
     &:active {
+      outline: 0;
+
+      .product__info {
+        background-color: $light-gray;
+      }
+
       .product__img {
         transform: translateY(-10px);
       }
 
-      .product__buy {
+      .buy__button {
         @media (min-width: $medium-breakpoint) {
           animation-duration: 0.5s;
           animation-name: fade-in, slide-in-bottom;
@@ -29,6 +35,7 @@
     margin-right: auto;
     text-align: center;
     position: relative;
+    transition: background-color 0.333s ease;
 
     &:before,
     &:after {
@@ -61,11 +68,6 @@
     @media (min-width: $medium-breakpoint) {
       padding: 30px 15px 15px;
       border-radius: 4px;
-      transition: background-color 0.5s ease;
-
-      &:hover {
-        background-color: $light-gray;
-      }
     }
   }
 
@@ -100,12 +102,5 @@
 
   &__instalments {
     display: block;
-  }
-
-  &__buy {
-    @media (min-width: $medium-breakpoint) {
-      opacity: 0;
-      transition: opacity 0.5s ease;
-    }
-  }
+  } 
 }
