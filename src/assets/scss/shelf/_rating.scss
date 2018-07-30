@@ -1,0 +1,15 @@
+.rating {
+  padding-top: 2px;
+  padding-bottom: 4px; 
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      display: inline-flex;
+      padding: 0 1px;
+    }
+  }
+}

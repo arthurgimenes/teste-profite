@@ -19,80 +19,8 @@
     margin-top: 30px;
   }
 
-  &__product {
-    max-width: 181px;
-    padding-left: 7px;
-    padding-right: 7px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    position: relative;
-
-    &:before,
-    &:after {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    &:before {
-      content: '';
-      border-color: transparent;
-      border-style: solid;
-      border-width: 30px;
-      border-right-color: $primary;
-      border-top-color: $primary;
-      border-radius: 0 4px 0 0;
-    }
-    
-    &:after {
-      content: 'OFF';
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 35px;
-      height: 35px;
-      color: $white;
-      font-weight: 500;
-    }
-
-    @media (min-width: $medium-breakpoint) {
-      padding: 30px 15px 15px;
-      border-radius: 4px;
-
-      &:hover {
-        background-color: $light-gray;
-      }
-    }
-  }
-
-  &__figure {
-    margin: 0;
-  }
-
-  &__img {
-    width: 100%;
-    height: auto;
-  }
-
-  &__product-heading {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-  }
-
-  &__old-price {
-    display: block;
-  }
-
-  &__price {
-    font-size: 18px;
-    color: $secondary;
-    font-weight: bold;
-  }
-
-  &__instalments {
-    display: block;
+  @media (min-width: $medium-breakpoint) {
+    padding-bottom: 20px;
   }
 }
 
@@ -124,6 +52,10 @@
   .slick-dots {
     height: 20px;
     bottom: -30px;
+
+    @media (min-width: $medium-breakpoint) {
+      bottom: 0;
+    }
   }
 
   .slick-prev:before {

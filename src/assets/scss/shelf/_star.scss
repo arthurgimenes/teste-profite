@@ -1,0 +1,13 @@
+.star {
+  &__path {
+    
+    stroke: $primary;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    fill: transparent;
+
+    &--full {
+      fill: $primary;
+    }
+  }
+}

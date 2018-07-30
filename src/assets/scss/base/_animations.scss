@@ -18,6 +18,16 @@
   }
 }
 
+@keyframes slide-in-bottom {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
