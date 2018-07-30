@@ -6,18 +6,8 @@ class Banner extends Component {
     super(props);
     this.state = {
       error: null,
-      slides: [],
-      bannerHeight: "auto"
+      slides: []
     };
-  }
-
-  updateBannerHeight() {
-    const bannerHeight = document.getElementById("banner").clientHeight;
-    const containers = document.getElementsByClassName("banner__container");
-
-    for (let index = 0; index < containers.length; index++) {
-      containers[index].setAttribute("style", "height: " + bannerHeight + "px");
-    }
   }
 
   componentDidMount() {
@@ -27,16 +17,15 @@ class Banner extends Component {
         (result) => { this.setState({ slides: result }); },
         (error) => { this.setState({ error }); }
       );
-
-    window.addEventListener('resize', this.updateBannerHeight);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateBannerHeight);
   }
 
   componentDidUpdate() {
-    this.updateBannerHeight();
+    const bannerHeight = document.getElementById("banner").clientHeight;
+    const containers = document.getElementsByClassName("banner__container");
+
+    for (let index = 0; index < containers.length; index++) {
+      containers[index].setAttribute("style", "height: " + bannerHeight + "px");
+    }
   }
 
   splitWords(phrase) {
@@ -52,11 +41,10 @@ class Banner extends Component {
   render() {
     const slides = this.state.slides;
     const error = this.state.error;
-    // const bannerHeight = this.state.bannerHeight;
     const settings = {
       useCSS: false,
       useTransform: false,
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 3000,
       pauseOnDotsHover: true,
       pauseOnHover: false,

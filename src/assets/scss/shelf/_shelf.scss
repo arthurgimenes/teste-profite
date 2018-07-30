@@ -24,6 +24,10 @@
   }
 }
 
+.shelf .slick-track {
+  align-items: flex-start;
+}
+
 .slick-active {
   .product {
     animation-name: fade-in, zoom-right;
@@ -42,7 +46,7 @@
 .shelf .slick-slider {
   .slick-list {
     @media (min-width: $large-breakpoint) {
-      @include container(0, 0);
+      @include container(40px, 40px);
     }
   }
 
