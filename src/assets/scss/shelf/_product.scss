@@ -8,7 +8,7 @@
     &:active {
       .product__buy {
         @media (min-width: $medium-breakpoint) {
-          animation-duration: 0.25s;
+          animation-duration: 0.5s;
           animation-name: fade-in, slide-in-bottom;
           animation-timing-function: ease;
           opacity: 1;
@@ -57,7 +57,7 @@
     @media (min-width: $medium-breakpoint) {
       padding: 30px 15px 15px;
       border-radius: 4px;
-      transition: background-color 0.25s ease;
+      transition: background-color 0.5s ease;
 
       &:hover {
         background-color: $light-gray;
@@ -97,7 +97,7 @@
   &__buy {
     @media (min-width: $medium-breakpoint) {
       opacity: 0;
-      transition: opacity 0.25s ease;
+      transition: opacity 0.5s ease;
     }
   }
 }

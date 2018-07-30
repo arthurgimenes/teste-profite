@@ -28,6 +28,16 @@
   }
 }
 
+@keyframes big-slide-in-bottom {
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -41,6 +51,16 @@
 @keyframes zoom-in {
   from {
     transform: scale(0.95);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes big-zoom-in {
+  from {
+    transform: scale(0);
   }
 
   to {

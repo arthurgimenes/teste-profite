@@ -41,6 +41,22 @@
       animation-duration: 0.5s;
       animation-name: slide-in-right;
       animation-timing-function: ease;
+
+      .account {
+        &__button {
+          animation-duration: 0.5s;
+          animation-name: fade-in, big-slide-in-bottom;
+          animation-timing-function: ease;
+        }
+      }
+
+      .language {
+        &__img {
+          animation-duration: 0.5s;
+          animation-name: fade-in, big-zoom-in;
+          animation-timing-function: ease;
+        }
+      }
     }
 
     &--inactive {

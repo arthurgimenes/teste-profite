@@ -7,12 +7,6 @@ class Search extends Component {
         <input className="search__input" type="text"
           placeholder="O que está procurando?"
         />
-        <button className="search__button" type="submit">
-          <img className="search__img"
-            src={require("../../assets/img/header/search.svg")}
-            alt="Procurar"
-          />
-        </button>
       </form>
     );
   }

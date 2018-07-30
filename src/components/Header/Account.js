@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import AccountIcon from './AccountIcon';
 
 class Account extends Component {
   render() {
     return (
       <div className="account">
         <button className="account__button">
-          <img className="account__img"
-            src={require("../../assets/img/header/account.svg")}
-            alt="Minha Conta"
-          />
+          <div className="account__icon">
+            <AccountIcon />
+          </div>
           <span className="account__span">Minha Conta</span>
         </button>
       </div>

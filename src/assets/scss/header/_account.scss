@@ -8,6 +8,22 @@
     padding: 10px;
     background-color: $light-gray;
     border-radius: 5px;
+    position: relative;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: 0;
+
+      .account-icon {
+        fill: $primary;
+      }
+    }
+
+    .account-icon {
+      transition: fill 0.333s;
+      fill: $tertiary;
+    }
 
     @media (min-width: $medium-breakpoint) {
       @include header-y();
@@ -17,7 +33,7 @@
     }
   }
 
-  &__img {
+  &__icon {
     margin-right: 5px;
   }
 

@@ -7,18 +7,18 @@
   &__input {
     border: 0 none;
     width: 100%;
-  }
-
-  &__button {
-    display: flex;
-    padding-left: 4px;
-  }
-
-  &__input,
-  &__button {
+    background: url('./assets/img/header/search.svg') center right scroll no-repeat transparent;
     padding-top: 6px;
     padding-bottom: 4px;
+    padding-right: 22px;
     border-bottom: 1px solid $dark-gray;
+    transition: border 0.333s;
+
+    &:focus,
+    &:active {
+      outline: 0;
+      border-bottom-color: $primary;
+    }
 
     @media (min-width: $medium-breakpoint) {
       padding-top: 4px;
