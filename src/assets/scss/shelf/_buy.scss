@@ -8,6 +8,13 @@
     background-color: $secondary;
     width: 100%;
     padding: 8px 15px;
+    transition: background-color 0.333s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($secondary, 12.5%);
+    }
   }
 
   &__img {

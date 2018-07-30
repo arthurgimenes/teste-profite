@@ -6,8 +6,8 @@ class Product extends Component {
   render() {
     return (
       <div className="product">
-        <a className="product__link" href="/">
-          <div className="product__info">
+        <div className="product__info">
+          <a className="product__link" href="/">
             <figure className="product__figure">
               <img className="product__img"
                 src={require("../../assets/img/shelf/product-1.png")}
@@ -24,8 +24,8 @@ class Product extends Component {
             <div className="product__buy">
               <Buy />
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     );
   }
