@@ -30,6 +30,14 @@
     padding: 10px 20px;
     margin-top: 12px;
     margin-bottom: 12px;
+    transition: background-color 0.333s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: 0;
+      background-color: darken($primary, 12.5%);
+    }
 
     @media (min-width: $medium-breakpoint) {
       margin-top: unset;
