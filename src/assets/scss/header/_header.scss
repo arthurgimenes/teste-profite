@@ -20,13 +20,15 @@
     align-items: flex-start;
     position: fixed;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
     padding-left: 20px;
     padding-right: 20px;
     background-color: $white;
     z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
   
     &-button {
       display: flex;
@@ -37,10 +39,7 @@
     }
 
     &--active {
-      left: 0;
-      animation-duration: 0.5s;
-      animation-name: slide-in-right;
-      animation-timing-function: ease;
+      transform: translateX(0);
 
       .account {
         &__button {
@@ -60,10 +59,7 @@
     }
 
     &--inactive {
-      left: -100%;
-      animation-duration: 0.5s;
-      animation-name: slide-out-left;
-      animation-timing-function: ease;
+      transform: translateX(-100%);
     }
   
     @media (min-width: $medium-breakpoint) {

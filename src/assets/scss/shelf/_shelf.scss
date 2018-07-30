@@ -25,16 +25,13 @@
 }
 
 .slick-active {
-  .shelf {
-    &__product {
-      animation-duration: 0.5s;
-      animation-name: fade-in, zoom-right;
-      animation-timing-function: ease;
-    }
+  .product {
+    animation-name: fade-in, zoom-right;
+    animation-timing-function: ease;
   }
 
   @for $i from 1 through 4 {
-    &:nth-child(#{$i}n) {
+    &:nth-child(4n+#{$i}) {
       .product {
         animation-duration: #{$i*0.25}s;
       }
