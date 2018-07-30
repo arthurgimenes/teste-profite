@@ -8,7 +8,7 @@
     background-color: $secondary;
     width: 100%;
     padding: 8px 15px;
-    transition: background-color 0.333s ease;
+    transition: opacity 0.333s ease, background-color 0.333s ease;
 
     &:hover,
     &:focus,
@@ -19,7 +19,6 @@
 
     @media (min-width: $medium-breakpoint) {
       opacity: 0;
-      transition: opacity, background-color 0.333s ease;
   
       &:hover,
       &:focus,

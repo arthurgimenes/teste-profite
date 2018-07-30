@@ -45,7 +45,7 @@ class Banner extends Component {
       useCSS: false,
       useTransform: false,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 5000,
       pauseOnDotsHover: true,
       pauseOnHover: false,
       dots: true,

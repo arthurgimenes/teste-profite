@@ -26,8 +26,9 @@ class Shelf extends Component {
     const settings = {
       useCSS: false,
       useTransform: false,
-      // autoplay: true,
-      autoplaySpeed: 4000,
+      autoplay: true,
+      autoplaySpeed: 3333,
+      pauseOnHover: true,
       dots: false,
       arrows: true,
       speed: 500,
