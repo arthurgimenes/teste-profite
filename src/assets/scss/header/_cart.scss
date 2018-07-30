@@ -27,9 +27,11 @@
   }
 
   @media (min-width: $medium-breakpoint) {
-    order: 2;
-    flex: 1 1 auto;
+    order: 3;
+    flex: 0 1 auto;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-right: 1px solid $dark-gray;
   }
 }

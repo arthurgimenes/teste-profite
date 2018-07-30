@@ -9,9 +9,29 @@ import Language from './Language';
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = { menuActive: null }
+    this.state = {
+      menuActive: null,
+      innerWidth: window.innerWidth,
+    }
+
+    this.updateDimensions = this.updateDimensions.bind(this);
     this.handleMenuState = this.handleMenuState.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.offsetMenu = this.offsetMenu.bind(this);
+  }
+
+  updateDimensions() {
+    this.setState({
+      innerWidth: window.innerWidth,
+    });
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions);
   }
 
   handleMenuState(menuActive) {
@@ -34,6 +54,34 @@ class Header extends Component {
     return className;
   }
 
+  offsetMenu(menuActive) {
+    if (this.state.innerWidth < 800) {
+      return (
+        <div className={this.toggleMenuClass(menuActive)}>
+          <div className="row">
+            <button className="header__offset-button" aria-label="Fechar"
+              onClick={() => this.handleClick()}
+            >
+              <img className="header__offset-img"
+                src={require("../../assets/img/header/close.svg")}
+                alt="Fechar"
+              />
+            </button>
+            <Language />
+            <Account />
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <React.Fragment>
+          <Language />
+          <Account />
+        </React.Fragment>
+      );
+    }
+  }
+
   render() {
     const menuActive = this.state.menuActive;
 
@@ -45,24 +93,7 @@ class Header extends Component {
             <Logo />
             <Cart />
             <Search />
-
-            <div className={this.toggleMenuClass(menuActive)}>
-              <div className="row">
-                <button className="header__offset-button" aria-label="Fechar"
-                  onClick={() => this.handleClick()}
-                >
-                  <img className="header__offset-img"
-                    src={require("../../assets/img/header/close.svg")}
-                    alt="Fechar"
-                  />
-                </button>
-
-                <Language />
-                <Account />
-
-              </div>
-            </div>
-
+            {this.offsetMenu(menuActive)}
           </div>
         </div>
       </header>
