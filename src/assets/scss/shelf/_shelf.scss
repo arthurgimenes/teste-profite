@@ -28,6 +28,34 @@
     text-align: center;
     position: relative;
 
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &:before {
+      content: '';
+      border-color: transparent;
+      border-style: solid;
+      border-width: 30px;
+      border-right-color: $primary;
+      border-top-color: $primary;
+      border-radius: 0 4px 0 0;
+    }
+    
+    &:after {
+      content: 'OFF';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      color: $white;
+      font-weight: 500;
+    }
+
     @media (min-width: $medium-breakpoint) {
       padding: 30px 15px 15px;
       border-radius: 4px;
