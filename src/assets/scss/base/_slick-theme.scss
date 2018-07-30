@@ -1,6 +1,3 @@
-$slick-dot-color: $medium-gray;
-$slick-dot-color-active: $primary;
-
 // Slide
 .slick-slide {
   transition: opacity ease 0.5s;
@@ -48,14 +45,24 @@ $slick-dot-color-active: $primary;
 }
 
 .slick-prev {
-  left: 2px;
+  left: 4px;
+  transform: translateX(0);
+  transition: transform 0.333s ease;
+
+  &:hover {
+    transform: translateX(-2px);
+  }
 
   &:before {
     content: '';
   }
 
   @media (min-width: $medium-breakpoint) {
-    left: 6px;
+    left: 10px;
+
+    &:hover {
+      transform: translateX(-4px);
+    }
   }
 
   @media (min-width: $large-breakpoint) {
@@ -64,14 +71,25 @@ $slick-dot-color-active: $primary;
 }
 
 .slick-next {
-  right: 2px;
+  right: 4px;
+  transform: translateX(0);
+  transition: transform 0.333s ease;
 
+  &:hover {
+    transform: translateX(-2px);
+  }
+  
   &:before {
     content: '';
   }
 
   @media (min-width: $medium-breakpoint) {
-    right: 6px;
+    right: 10px;
+    transition: transform 0.333s ease;
+
+    &:hover {
+      transform: translateX(4px);
+    }
   }
 
   @media (min-width: $large-breakpoint) {
@@ -99,7 +117,7 @@ $slick-dot-color-active: $primary;
 
     button {
       border: 0;
-      background-color: $slick-dot-color;
+      background-color: $medium-gray;
       display: block;
       height: 8px;
       width: 8px;
@@ -109,6 +127,7 @@ $slick-dot-color-active: $primary;
       font-size: 0px;
       color: transparent;
       cursor: pointer;
+      transition: opacity 0.333s ease;
 
       @media (min-width: $medium-breakpoint) {
         height: 10px;
@@ -118,7 +137,15 @@ $slick-dot-color-active: $primary;
     }
     
     &.slick-active button {
-      background-color: $slick-dot-color-active;
+      background-color: $primary;
+    }
+
+    &:not(.slick-active) button {
+      transition: background-color 0.333s ease;
+
+      &:hover {
+        background-color: $dark-gray;
+      }
     }
 
     @media (min-width: $medium-breakpoint) {
