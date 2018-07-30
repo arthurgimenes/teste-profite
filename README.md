@@ -1,6 +1,8 @@
 # Profite
 
-Para rodar localmente, basta rodar o comando `npm run`.
+[https://glauberm.github.io/profite](https://glauberm.github.io/profite)
+
+Para rodar localmente, basta executar o comando `npm start` na pasta raiz.
 
 ## Tecnologias utilizadas
 
