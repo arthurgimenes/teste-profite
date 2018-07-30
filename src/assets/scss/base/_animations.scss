@@ -48,6 +48,16 @@
   }
 }
 
+@keyframes zoom-right {
+  from {
+    left: -5%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
 @keyframes stretch-x {
   0% {
     transform: scaleX(0);

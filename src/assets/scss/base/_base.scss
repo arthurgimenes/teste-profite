@@ -38,10 +38,14 @@ button {
   color: $dark-gray;
 }
 
+input,
+button {
+  background-color: transparent;
+}
+
 button {
   border: 0 none;
   padding: 0;
-  background-color: transparent;
   cursor: pointer;
 }
 
