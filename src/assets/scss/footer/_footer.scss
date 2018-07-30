@@ -15,7 +15,7 @@
     margin: 0;
 
     &:after {
-      @include yellow-bar(10px, 10px, 10px);
+      @include yellow-bar(10px, 10px, 10px, 15%, 10%, 6%);
     }
   }
 

@@ -9,9 +9,9 @@
     width: 100%;
     background-color: transparent;
 
-    @media (min-width: $medium-breakpoint) {
-      padding-top: 150px;
-      padding-bottom: 165px;
+    @media (min-width: $large-breakpoint) {
+      padding-top: 50px;
+      padding-bottom: 65px;
     }
   }
 
@@ -58,14 +58,10 @@
   }
 
   &__container {
+    display: flex;
+    align-items: center;
     position: relative;
     z-index: 1;
-
-    &:after {
-      @include yellow-bar(15px, 20px, 20px);
-      z-index: 2;
-      transform-origin: left center;
-    }
   }
 
   &__heading {
@@ -74,6 +70,12 @@
     position: relative;
     color: $white;
     z-index: 2;
+
+    &:after {
+      @include yellow-bar(15px, 20px, 20px, 21%, 19%, 12%);
+      z-index: 2;
+      transform-origin: left center;
+    }
 
     @media (min-width: $medium-breakpoint) {
       width: 50%;
@@ -103,7 +105,7 @@
     }
   }
 
-  &__container:after {
+  &__heading:after {
     animation-duration: 1.25s;
     animation-name: stretch-x;
     animation-timing-function: ease-in-out;

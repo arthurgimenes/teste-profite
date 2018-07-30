@@ -22,11 +22,11 @@
   }
 }
 
-@mixin yellow-bar($marginTop, $mediumMarginTop, $largeMarginTop) {
+@mixin yellow-bar($marginTop, $mediumMarginTop, $largeMarginTop, $width, $mediumWidth, $largeWidth) {
   position: relative;
   content: '';
   display: block;
-  width: 15%;
+  width: $width;
   height: 4px;
   left: 0;
   text-align: left;
@@ -34,13 +34,13 @@
   margin-top: $marginTop;
 
   @media (min-width: $medium-breakpoint) {
-    width: 10%;
+    width: $mediumWidth;
     height: 5px;
     margin-top: $mediumMarginTop;
   }
 
   @media (min-width: $large-breakpoint) {
-    width: 6%;
+    width: $largeWidth;
     height: 5px;
     margin-top: $largeMarginTop;
   }
