@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import BuyIcon from './BuyIcon';
 
 class Buy extends Component {
   render() {
     return (
       <div className="buy">
         <button className="button buy__button">
-          <img className="buy__img"
-            src={require("../../assets/img/shelf/buy.svg")}
-            alt="Adicionar ao Carrinho"
-          />
+          <div className="buy__icon">
+            <BuyIcon />
+          </div>
           <span className="button__span buy__span">Comprar</span>
         </button>
       </div>

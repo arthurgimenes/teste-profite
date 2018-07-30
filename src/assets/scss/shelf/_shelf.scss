@@ -41,7 +41,9 @@
 
 .shelf .slick-slider {
   .slick-list {
-    @include container(0, 40px);
+    @media (min-width: $large-breakpoint) {
+      @include container(0, 0);
+    }
   }
 
   .slick-dots {

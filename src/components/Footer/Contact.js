@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import EnvelopeIcon from './EnvelopeIcon';
+import HeadsetIcon from './HeadsetIcon';
 
 class Contact extends Component {
 
@@ -8,20 +10,18 @@ class Contact extends Component {
 
         <div className="contact__wrapper">
           <button className="button contact__button">
-            <img className="contact__img"
-              src={require("../../assets/img/footer/contact-1.svg")}
-              alt="Entre em contato"
-            />
+            <div className="contact__icon">
+              <EnvelopeIcon />
+            </div>
             <span className="button__span contact__span">Entre em contato</span>
           </button>
         </div>
 
         <div className="contact__wrapper">
           <button className="button contact__button">
-            <img className="contact__img"
-              src={require("../../assets/img/footer/contact-2.svg")}
-              alt="Fale com o nosso consultor online"
-            />
+            <div className="contact__icon">
+              <HeadsetIcon />
+            </div>
             <span className="button__span contact__span">Fale com o nosso consultor online</span>
           </button>
         </div>
