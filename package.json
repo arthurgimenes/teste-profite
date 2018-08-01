@@ -1,0 +1,33 @@
+{
+  "name": "profite",
+  "version": "1.0.0",
+  "description": "###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasaugustofrontend/teste-profite.git"
+  },
+  "author": "Lucas Augusto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucasaugustofrontend/teste-profite/issues"
+  },
+  "homepage": "https://github.com/lucasaugustofrontend/teste-profite#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-html-validator": "0.0.5",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-svgo": "^5.2.0",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  }
+}

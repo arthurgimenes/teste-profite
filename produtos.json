@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Sandália Ferracini Ecologic",
+    "price": 95.92,
+    "divider": 4,
+    "image": "assets/images/sapatos/calçado1_hover.png"
+  },
+  {
+    "name": "Chinelo Kildare",
+    "price_old": 99.90,
+    "price_new": 79.92,
+    "divider": 3,
+    "image": "assets/images/sapatos/calçado2_hover.png"
+  },
+  {
+    "name": "Tênis Ferracini Week",
+    "price_old": 229.90,
+    "price_new": 183.92,
+    "divider": 9,
+    "image": "assets/images/sapatos/calçado3_hover.png"
+  },
+  {
+    "name": "Tênis Democrata Fan",
+    "price_old": 219.90,
+    "price_new": 159.92,
+    "divider": 7,
+    "image": "assets/images/sapatos/calçado4_hover.png"
+  }
+]

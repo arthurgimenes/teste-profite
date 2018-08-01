@@ -1,0 +1,15 @@
+@mixin clearfix($display, $visible) {
+  box-sizing: border-box;
+  clear: both;
+  display: $display;
+  visibility: $visible;
+}
+
+%text-center {
+  text: {
+    align: center;
+  }
+}
+%center {
+  margin: 0 auto;
+}

@@ -1,0 +1,395 @@
+@import 'partials/mixins',
+        'partials/palete_color',
+        'partials/reset',
+        'partials/grid';
+
+html, body {
+  overflow-x: hidden;
+}
+body {
+  font: {
+    family: 'Verdana', sans-serif;
+  }
+}
+
+.header {
+  padding: {
+    bottom: .5rem;
+    top: .5rem;
+  }
+  .logo {
+    padding: {
+      bottom: .5rem;
+    }
+    img {
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+  .login {
+    margin: {
+      bottom: .5rem;
+      top: .5rem;
+    }
+    .user {
+      display: inline-block;
+    }
+    p, span {
+      font: {
+        size: 1.2rem;
+      }
+      @extend %text-center;
+    }
+    p:nth-child(2){
+      margin: {
+        top: .5rem;
+      }
+    }
+    a {
+      color: darken(colors(bg, base), 100);
+    }
+  }
+  .search {
+    background: darken(colors(bg, second), 5);
+    border: {
+      radius: .5rem;
+    }
+    padding: .5rem;
+    position: relative;
+    height: 3rem;
+    input {
+      background: transparent;
+      border: none;
+      margin: {
+        left: 6rem;
+      }
+      width: 60%;
+      height: 2rem;
+    }
+    &::before {
+      background: {
+        color: darken(colors(bg, base), 100);
+        size: 60%;
+        repeat: no-repeat;
+        position: center;
+        image: url('../images/topo/ícone_pesquisa.png');
+      };
+      border: {
+        top: {
+          right: {
+            radius: .5rem;
+          }
+        }
+        bottom: {
+          right: {
+            radius: .5rem;
+          }
+        }
+      }
+      color: white;
+      width: 2.5rem;
+      height: 100%;
+      position: absolute;
+      left: 1rem;
+      top: 0rem;
+      @media(min-width: 1280px) {
+        border-radius: .5rem;
+        left: 0;
+      }
+    }    
+  }
+  .switchLanguage {
+    display: none;
+    @media(min-width: 1280px) {
+      display: block;
+      img {
+        display: inline-block;
+        width: 6%;
+        margin: {
+          right: .5rem;
+        }
+        cursor: pointer;
+        &:first-child {
+          margin: {
+            left: 1.7rem;
+          }
+        }
+      }
+      .skype {
+        a {
+          color: #00aff2;
+          position: relative;
+          font: {
+            size: 1.2rem;
+          }
+          vertical-align: middle;
+          padding: {
+            top: .35rem;
+            left: 2rem;
+          }
+          &::before {
+            background: {
+              image: url('../images/topo/skype.png');
+              size: 80%;
+              position: center;
+              repeat: no-repeat;
+            }
+            position: absolute;
+            height: 2rem;
+            width: 2rem;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  background: colors(bg, second);
+  margin: {
+    top: 1rem;
+  }
+  .wrapper {
+    margin: 0 auto;
+    @media(min-width: 1280px) {
+      width: 80%;
+    }
+  }
+  #slider {
+    position: relative;
+  }
+  .nivo-control,
+  .nivo-nextNav,
+  .nivo-prevNav {
+    color: transparent;
+  }
+  .theme-default .nivo-controlNav {
+    @media(min-width: 1280px) {
+      & {
+        position: absolute;
+        top: 70%;
+        left: 49%;
+        z-index: 9;
+      }
+    }
+  }
+}
+
+.content {
+  margin: {
+    top: 1rem;
+  }
+}
+
+.products {
+  @media(min-width: 1280px) {
+    & {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+  .product {
+    position: relative;
+      &::before {
+      background: darken(colors(bg, medium), 10);
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: .1rem;
+    }
+    &:last-child {
+      &::before {
+        @include clearfix(block, hidden);
+      }
+    }
+    &:hover {
+      background: darken(colors(bg, second), 10);
+    }
+  }
+  .image {
+    img {
+      @extend %center;
+    }
+  }
+  .stars {
+    padding: {
+      top: .5rem;
+      bottom: .5rem;
+    }
+    img {
+      @extend %center;
+    }
+  }
+  .info {
+    .price_old {
+      color: colors(bg, medium);
+      font: {
+        size: .8rem;
+      }
+      position: relative;
+      width: 30%;
+      &::before {
+        background: darken(colors(bg, medium), 30);
+        height: 2px;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        width: 60%;
+      }
+    }
+    
+    .price_old, .price_new, .price_divider {
+      display: block;
+      width: 30%;
+      @extend %center;
+    }
+    .price_new, .price_divider {
+      font: {
+        weight: bold;
+      }
+    }
+    .price_divider {
+      width: 50%;
+    }
+    .price {
+      display: inline-block;
+    }
+  }
+  .economy {
+    padding: {
+      top: 1rem;
+    }
+    p {
+      border: .13rem solid darken(colors(bg, medium), 5);
+      font: {
+        size: .8rem;
+      }
+      width: 70%;
+      padding: .2rem;
+      @extend %center;
+    }
+  }
+  .name {
+    font: {
+      size: 1.2rem;
+      weight: bold;
+    }
+  }
+  .price {
+    display: inline-block;
+  }
+}
+
+.footer {
+  background: colors(bg, medium);
+  margin: {
+    top: 5rem;
+  }
+  padding: 3rem 0;
+  .address {
+    padding: {
+      left: 3.2rem;
+    }
+    ~ .address {
+      margin: {
+        top: 1rem;
+      }
+      @media(min-width: 768px) {
+        & {
+          margin: {
+            top: 0;
+          }
+        }
+      }
+    }
+    position: relative;
+    &::before {
+      background: {
+        size: 50%;
+        repeat: no-repeat;
+        position: center;
+      }
+      height: 3rem;
+      left: 0;
+      position: absolute;
+      top: -1rem;
+      width: 4rem;
+    }
+    &.rio {
+      &::before {
+        background-image: url('../images/footer/ícone_rj.png');
+      }
+    }
+    &.sp {
+      &::before {
+        background-image: url('../images/footer/ícone_sp.png');
+      }
+    }
+  }
+  span {
+    display: inline-block;
+    font: {
+      weight: bold;
+    }
+    text: {
+      transform: uppercase;
+    }
+  }
+  .contact, .consultant {
+    background: colors(bg, second);
+    margin: {
+      left: 1rem;
+    }
+    font: {
+      size: .8rem;
+    }
+    padding: {
+      left: 6rem;
+      top: .8rem;
+      bottom: .5rem;
+    }
+    line-height: 1;
+    position: relative;
+    vertical-align: middle;
+    &::before {
+      background: {
+        size: 7%;
+        repeat: no-repeat;
+        position: center;
+      }
+      height: 2.5rem;
+      left: -30%;
+      position: absolute;
+      top: 5%;
+      width: 100%;
+    }
+  }
+  .contact {
+    margin: {
+      top: 1rem;
+    }
+    @media(min-width: 1440px) {
+      & {
+        margin: {
+          top: 0;
+        }
+      }
+    }
+    &::before {
+      background-image: url('../images/footer/ícone_contato.png');
+      top: 0;
+    }
+  }
+  .consultant {
+    &::before {
+      background-image: url('../images/footer/ícone_consultor.png');
+      top: 15%;
+    }
+    margin: {
+      top: .5rem;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@function colors($color, $type: base) {
+  $colors: (
+    bg: (
+      base: #fff,
+      medium: #e4e4e4,
+      second: #f9c438
+    ),
+    text: (
+      base: #fff,
+      dark: #000
+    )
+  );
+  $returnColor: map-get($colors, $color);
+  @return map-get($returnColor, $type);
+}

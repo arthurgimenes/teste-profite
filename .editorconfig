@@ -1,0 +1,18 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_of_newline = true
+
+[*.html]
+indent_style = tab
+indent_size = 4
+
+[assets/stylesheets/*.css]
+indent_style = tab
+indent_size = 4
+
+[assets/javascripts/*.js]
+indent_style = space
+indent_size = 2
