@@ -1,0 +1,183 @@
+.home-products {
+  margin: 50px 0;
+
+  .products-loading {
+    text-align: center;
+  }
+
+  .products-slider {
+    position: relative;
+
+    .products-container {
+      overflow: hidden;
+    }
+
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      width: 15px;
+      height: 16px;
+      text-indent: -9999px;
+
+      &.prev {
+        left: 10px;
+        background-image: url('../images/seta_esquerda.png');
+      }
+
+      &.next {
+        right: 10px;
+        background-image: url('../images/seta_direita.png');
+      }
+    }
+  }
+
+  .products-list {
+    white-space: nowrap;
+    transition: transform .6s ease;
+
+    li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      padding: 0 20px;
+      text-align: center;
+      white-space: normal;
+      transition: all .3s;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: -1px;
+        bottom: 30px;
+        width: 1px;
+        background-color: $grey;
+      }
+
+      &:first-child:before {
+        display: none;
+      }
+
+      &:hover {
+        background-color: $yellow;
+
+        .product-image .image-hover {
+          opacity: 0;
+        }
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+
+    .product-image {
+      display: block;
+      position: relative;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .image-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: opacity .3s;
+      }
+    }
+
+    .product-name {
+      padding: 0 10px;
+      height: 40px;
+      font-weight: bold;
+    }
+
+    .star-rating {
+      .icon {
+        margin: 0 2px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .product-price-box {
+      margin-top: 10px;
+      height: 60px;
+
+      .product-old-price {
+        font-size: 10px;
+        font-style: italic;
+        color: $dark-grey;
+        text-decoration: line-through;
+      }
+    }
+
+    .product-buy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
+      width: 130px;
+      height: 38px;
+      color: $white;
+      background-color: $black;
+      text-decoration: none;
+
+      .icon {
+        margin-right: 6px;
+        width: 24px;
+      }
+
+      span {
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+
+    .product-savings {
+      margin: 10px auto;
+      width: 134px;
+      height: 20px;
+      font-size: 12px;
+      border: 1px solid $grey;
+      background-color: $white;
+    }
+  }
+
+  @media only screen and (min-width: $mobile-break) {
+    .products-list {
+      li {
+        width: 33.33%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $desktop-break) {
+    .products-slider {
+      margin: 0 auto;
+      width: 960px;
+
+      .slider-nav {
+        &.prev {
+          left: -25px;
+        }
+
+        &.next {
+          right: -25px;
+        }
+      }
+    }
+
+    .products-list {
+      li {
+        width: 25%;
+      }
+    }
+  }
+}

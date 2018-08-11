@@ -1,0 +1,131 @@
+.main-header {
+  padding: 36px 0 26px 0;
+
+  .header-logo {
+    text-align: center;
+
+    h1 {
+      margin: 0;
+    }
+
+    .header-logo-image {
+      display: inline-block;
+      width: 234px;
+      height: 62px;
+      text-indent: -9999px;
+      background-image: url('../images/profite_logo_novo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .header-account {
+    margin: 20px auto;
+    text-align: center;
+
+    strong {
+      font-size: 20px;
+    }
+    span, a {
+      font-size: 14px;
+    }
+  }
+
+  .header-search {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+
+    .search-button {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      border: none;
+      color: $white;
+      background-color: $black;
+      width: 42px;
+      height: 30px;
+      padding: 8px 6px;
+      cursor: pointer;
+    }
+    .search-input {
+      border: none;
+      font-size: 14px;
+      color: $black;
+      background-color: $yellow;
+      width: 100%;
+      height: 30px;
+      padding: 4px 8px 5px 70px;
+    }
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  @media only screen and (min-width: $mobile-break) {
+    .header-account {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  @media only screen and (min-width: $desktop-break) {
+    padding: 36px 0;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-account {
+      position: relative;
+      top: auto;
+      right: auto;
+    }
+
+    .header-search {
+      margin-top: 0;
+      width: 348px;
+
+      .search-button {
+        left: 0;
+        padding: 8px 6px;
+        border-radius: 10px;
+      }
+      .search-input {
+        padding: 4px 8px 5px 50px;
+        border-radius: 10px;
+      }
+    }
+
+    .header-actions {
+      display: block;
+
+      .flags {
+        text-align: center;
+
+        a {
+          margin: 0 5px;
+          display: inline-block;
+          width: 25px;
+          height: 17px;
+        }
+      }
+      .phone {
+        font-size: 18px;
+        color: $blue;
+
+        img, span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
