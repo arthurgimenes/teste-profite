@@ -1,0 +1,47 @@
+{	
+	"produtos": [{
+		"id": 1,
+    	"nome": "Nike SB Check Solar Preto",
+    	"precoAntigo": 250.00,
+    	"precoAtual": 199.00,
+    	"rating": 4,
+        "imagem": "https://static.netshoes.com.br/produtos/tenis-nike-sb-check-solar-cnvs-masculino/26/D12-2759-026/D12-2759-026_zoom1.jpg"
+    }, {
+    	"id": 2,
+    	"nome": "Nike SB Check Solar Preto",
+        "precoAntigo": 250.00,
+        "precoAtual": 199.00,
+        "rating": 4,
+        "imagem": "https://static.netshoes.com.br/produtos/tenis-nike-sb-check-solar-cnvs-masculino/26/D12-2759-026/D12-2759-026_zoom1.jpg",
+        "off": true
+    }, {
+    	"id": 3,
+    	"nome": "Nike SB Check Solar Preto",
+        "precoAntigo": 250.00,
+        "precoAtual": 199.00,
+        "rating": 4,
+        "imagem": "https://static.netshoes.com.br/produtos/tenis-nike-sb-check-solar-cnvs-masculino/26/D12-2759-026/D12-2759-026_zoom1.jpg"
+    }, {
+    	"id": 4,
+    	"nome": "Nike SB Check Solar Preto",
+        "precoAntigo": 250.00,
+        "precoAtual": 199.00,
+        "rating": 4,
+        "imagem": "https://static.netshoes.com.br/produtos/tenis-nike-sb-check-solar-cnvs-masculino/26/D12-2759-026/D12-2759-026_zoom1.jpg"
+    }, {
+    	"id": 5,
+    	"nome": "Nike SB Check Solar Preto",
+        "precoAntigo": 250.00,
+        "precoAtual": 199.00,
+        "rating": 4,
+        "imagem": "https://static.netshoes.com.br/produtos/tenis-nike-sb-check-solar-cnvs-masculino/26/D12-2759-026/D12-2759-026_zoom1.jpg",
+        "off": true
+    },{
+    	"id": 6,
+    	"nome": "Nike SB Check Solar Preto",
+        "precoAntigo": 250.00,
+        "precoAtual": 199.00,
+        "rating": 4,
+        "imagem": "https://static.netshoes.com.br/produtos/tenis-nike-sb-check-solar-cnvs-masculino/26/D12-2759-026/D12-2759-026_zoom1.jpg"
+    }]
+}
