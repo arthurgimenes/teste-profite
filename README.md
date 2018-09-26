@@ -7,7 +7,7 @@
 ###### O perfil que procuramos é de uma pessoa ligada no 220v, que respire a cultura mobile first e que seja capaz de defender ideias e apresentá-las de forma clara e objetiva. De fácil relacionamento, organizado(a) e comprometido(a) com prazos e qualidade das entregas.
 
 
-### Requisitos:
+### Requisitos
 * HTML e HTML5
 * CSS
 * Javascript e Jquery
@@ -15,11 +15,11 @@
 * Sites responsivos
 * Experiência com algum CMS (Wordpress, Drupal etc)
 
-#
-
-### Diferenciais
+#### Diferenciais
 * Vtex
+* ES6
 * React
+
 
 ### Benefícios
 *  Vale-refeição
@@ -30,15 +30,13 @@
 *  Folga de aniversário
 
 
-### Como concorrer a vaga:
-* Forka esse projeto;
-* No seu fork, codifique o [layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1) seguindo as instruções abaixo;
-* Faça um pull request.
+### Como concorrer a vaga
+* Forka esse projeto
+* Envie um email com o prazo de entrega para helio@profite.com.br
+* No seu fork, codifique o [layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1) seguindo as instruções abaixo
+* Faça um pull request
+* Quando finalizar, fazer o pull request e enviar o teste para: helio@profite.com.br
 
-### Instruções para o teste:
-
-##### [Link do layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1)
-#
 ##### Obrigatório
 * HTML5 e CSS3
 * Não usar Framework :(
@@ -47,10 +45,9 @@
 ##### Bônus
 * Javascript sem plugins e modular
 * Grunt, Gulp ou similar
-* Responsividade
 * REACT
 
-##### O que iremos analisar
+#### O que iremos analisar
 * Qualidade visual (está como o layout?)
 * Prazo de entrega (se prazo orçado é muito longo? A deadline foi respeitada?)
 * Commits (refletem as alterações no código?)
@@ -58,6 +55,3 @@
 * Uso de task runner (grunt/gulp)
 * Responsividade
 * Estrutura DOM (HTML)
-
-### Final:
-Quando finalizar, fazer o pull request e enviar o teste para: helio@profite.com.br
