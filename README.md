@@ -1,4 +1,4 @@
-# SP Desenvolvedor Front-end - Pleno/Sênior
+# RJ Desenvolvedor Front-end - Pleno/Sênior
 
 ###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.
 
@@ -13,6 +13,7 @@
 * Javascript e Jquery
 * GIT
 * Sites responsivos
+* Experiência com algum CMS (Wordpress, Drupal etc)
 
 #
 
@@ -49,5 +50,14 @@
 * Responsividade
 * REACT
 
+##### O que iremos analisar
+* Qualidade visual (está como o layout?)
+* Prazo de entrega (se prazo orçado é muito longo? A deadline foi respeitada?)
+* Commits (refletem as alterações no código?)
+* Modularidade
+* Uso de task runner (grunt/gulp)
+* Responsividade
+* Estrutura DOM (HTML)
+
 ### Final:
-Quando finalizar enviar o teste para: arthur@profite.com.br
+Quando finalizar, fazer o pull request e enviar o teste para: helio@profite.com.br
