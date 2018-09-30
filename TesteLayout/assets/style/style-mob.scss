@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    header{
+        width: calc(100% - 20px);
+        height: 80px;
+        margin: 15px auto;
+        .top{
+            div{
+                display: inline-block;
+                width: 33.33%;
+            }
+            .logo{
+                img{
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+        .down{
+            .search{
+                margin-top: 10px;
+            }
+            input{
+                margin-top: 15px;
+                width: 100%;
+                height: 22px;
+                border: unset;
+                border-bottom: 1px solid #7A7A7A;
+                font-size: 13px;
+                &[type="button"]{
+                    position: relative;
+                    bottom: 39px;
+                    background: url(../imgs/search.png) no-repeat;
+                    color: transparent;
+                    width: 18px;
+                    height: 18px;
+                    border: unset;
+                    float: right
+                }
+            }
+        }
+    }
+    .mobile{        
+        .boxbanner{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .slick-dots{
+            list-style: none;
+            position: absolute;
+            top: 198px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: unset;
+            li{
+                display: inline-block;
+                margin-right: 5px;
+                &.slick-active{
+                    button{
+                        background: #FF9F1C;
+                        border: #FF9F1C;
+                    }
+                }
+                button{
+                    border-radius: 40px;
+                    color: transparent;
+                    background: #BDBDBD;
+                    border: #BDBDBD;
+                    height: 12px;
+                    width: 7px;
+                }
+            }
+        }
+    }
+    .desk{
+        display: none;
+    }
+    .vitrine{
+        padding: 5px;
+        
+        .title{
+            font-size: 18px;
+            font-weight: 600;
+            padding-left: 20px;
+        }
+        .line{
+            border: 3.5018px solid #FF9F1C;
+            width: 32.5px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .prateleira{
+            .prod{
+                width: 46%;
+                text-align: center;
+                padding: 5px;
+                display: inline-block;
+                .prod-img{
+                    img{
+                        margin: 0 auto;
+                        display: block;
+                    }
+                }
+                .prod-flag{
+                    span{
+                        position: absolute;
+                        top: 0;
+                        margin-left: 49px;
+                    }
+                }
+                .prod-name{
+                    font-size: 10px;
+                    font-weight: 500;
+                    color: #7A7A7A;
+                }
+                .prod-rating{
+                    img{
+                        margin: 0 auto;
+                    }
+                }
+                .prod-info{
+                    .de{
+                        font-size: 11px;
+                        text-decoration-line: line-through;
+                        color: #7A7A7A;
+                        margin-bottom: 5px;
+                    }
+                    .por{
+                        font-size: 16px;
+                        color: #2EC4B6;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+                    .parc{
+                        font-size: 11px;
+                        color: #7A7A7A;
+                        margin-bottom: 5px;
+                    }
+                }
+                .btn-buy{
+                    background: #2EC4B6;
+                    border-radius: 5.56992px;
+                    width: 100%;
+                    height: 36px;
+                    a{
+                        line-height: 36px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-decoration: unset;
+                        svg{
+                            position: relative;
+                            top: 5px;                        
+                        }
+                        &:hover{
+                            text-decoration: unset;
+                        }
+                    }
+                }
+            }
+            .slick-dots{
+                list-style: none;
+                position: relative;
+                left: 82%;
+                transform: translateX(-50%);
+                li{
+                    display: inline-block;
+                    margin-right: 5px;
+                    &.slick-active{
+                        button{
+                            background: #FF9F1C;
+                            border: #FF9F1C;
+                        }
+                    }
+                    button{
+                        border-radius: 40px;
+                        color: transparent;
+                        background: #BDBDBD;
+                        border: #BDBDBD;
+                        height: 12px;
+                        width: 7px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        padding: 20px;
+        background: #011627;
+        border-bottom: 5px solid #2EC4B6;
+        color: #fff;
+        h2{
+            font-size: 17.509px;
+        }
+        .line{
+            border: 3.5018px solid #FF9F1C;
+            width: 32.5px;
+        }
+        .location{
+            width: 49%;
+            font-size: 14px;
+            display: inline-block;
+            .title{
+                font-weight: 600;
+            }
+        }
+        .contato{
+            .button{
+                margin: 0 auto;
+                width: 198px;
+                height: 38.6px;
+                background: #FF9F1C;
+                margin-bottom: 10px;
+                border-radius: 5.0782px;
+                &:nth-child(2){
+                    .icon{
+                        display: inline-block;
+                        height: 38.6px;
+                        line-height: 38.6px;
+                    }
+                    span{
+                        display: inline-block;
+                        text-align: right;
+                        line-height: 13px;
+                        padding-top: 6px;
+                    }
+                    a{
+                        line-height: 10px;
+                    }
+                }
+                a{
+                    line-height: 38.6px;
+                    padding-left: 10px;
+                    color: #fff;
+                    text-decoration: unset;
+                    
+                }
+            }
+        }
+        .selos{
+            div{
+                display: inline-block;
+                width: 49%;
+            }
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
