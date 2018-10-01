@@ -2502,6 +2502,7 @@ ul.row, ul.row-sm {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000313}}
 .price-old {
+  font-size: 12px;
   color: #999; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000315}}
@@ -2628,7 +2629,7 @@ ul.row, ul.row-sm {
 /* ================= RATINGS ============== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000396}}
 .label-rating {
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   display: inline-block;
   vertical-align: middle; }
 
