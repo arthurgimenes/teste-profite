@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Lucas Tavares - Front-End">
+      <title>eCcommerce AJAX</title>
+      <link rel="shortcut icon" type="image/x-icon" href="images/icons/flag-kr.png">
+      <!-- jQuery -->
+      <script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+      <!-- Bootstrap4 files-->
+      <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+      <link href="css/bootstrap-custom.css" rel="stylesheet" type="text/css"/>
+      <!-- Font awesome 5 -->
+      <link href="fonts/fontawesome/css/fontawesome-all.min.css" type="text/css" rel="stylesheet">
+      <!-- plugin: fancybox  -->
+      <!-- <script src="plugins/fancybox/fancybox.min.js" type="text/javascript"></script>
+      <link href="plugins/fancybox/fancybox.min.css" type="text/css" rel="stylesheet"> -->
+      <!-- custom style -->
+      <link href="css/profite.css" rel="stylesheet" type="text/css"/>
+      <link href="css/uikit.css" rel="stylesheet" type="text/css"/>
+      <link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
+      <!-- plugin: owl carousel  -->
+      <link href="plugins/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+      <link href="plugins/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
+      <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
+      <!-- plugin: slickslider -->
+      <!-- <link href="plugins/slickslider/slick.css" rel="stylesheet" type="text/css" />
+      <link href="plugins/slickslider/slick-theme.css" rel="stylesheet" type="text/css" />
+      <script src="plugins/slickslider/slick.min.js"></script> -->
+      <!-- custom javascript -->
+   </head>
+   <body class="relative" data-spy="scroll" data-target=".navbar-landing">
+      <header class="section-header">
+         <nav class="navbar navbar-landing navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+               <a class="navbar-brand" href="#">
+                  <!-- <img class="logo" src="https://www.profite.com.br/wp-content/themes/profite-v2/dist/images/logo-header.png"> -->
+                  <img class="logo" src="images/logos/logo5.png">
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="col-lg-8-24 col-sm-12 ajsearch">
+                  <form action="#" class="py-1">
+                     <div class="input-group w-100">
+                        <input type="text" class="form-control" style="width:50%;" placeholder="O que você está procurando?">
+                        <div class="input-group-append">
+                           <button class="btn" type="submit">
+                           <i class="fa fa-search"></i> 
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6 col-25-small">
+                  <div class="widgets-wrap float-right row no-gutters py-1">
+                     <div class="col-auto d-none d-xs-block d-sm-block d-md-block d-lg-block">
+                        <div class="widget-header dropdown">
+                           <a href="#" data-toggle="dropdown" data-offset="20,10">
+                              <div class="icontext">
+                                 <div class="icon-wrap"><i class="text-info icon-xs fa fa-user"></i></div>
+                                 <div class="text-wrap text-dark">
+                                    Minha Conta
+                                 </div>
+                              </div>
+                           </a>
+                           <div class="dropdown-menu">
+                              <form class="px-4 py-3">
+                                 <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" placeholder="email@example.com">
+                                 </div>
+                                 <div class="form-group">
+                                    <label>Senha</label>
+                                    <input type="password" class="form-control" placeholder="Digite sua senha">
+                                 </div>
+                                 <button type="submit" class="btn btn-info">Logar</button>
+                              </form>
+                              <hr class="dropdown-divider">
+                              <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <a href="#" class="widget-header">
+                           <div class="icontext">
+                              <div class="icon-wrap"><i class="text-info icon-xs fa fa-shopping-cart"></i></div>
+                              <div class="text-wrap text-dark"><span class="small round badge badge-secondary">0</span></div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-auto d-none d-lg-block flags">
+                        <div href="#" class="widget-header">
+                           <div class="icontext">
+                              <div class="text-wrap text-dark">
+                                 <ul class="list-icon row">
+                                    <li class=""><a href="#" onclick=""><img src="images/icons/flag-usa.png"><span></span></a></li>
+                                    <li class=""><a href="#" onclick=""><img src="images/icons/flag-in.png"><span></span></a></li>
+                                    <li class=""><a href="#" onclick=""><img src="images/icons/flag-tr.png"><span></span></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section class="container-fluid mt80">
+         <div id="carousel2_indicator" class="carousel slide carousel-fade container-fluid" data-ride="carousel">
+            <div class="carousel-inner">
+               <ol class="carousel-indicators">
+                   <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                   <li data-target="#carousel" data-slide-to="1"></li>
+                   <li data-target="#carousel" data-slide-to="2"></li>
+                 </ol>
+               <div class="carousel-item active">
+                  <img id="desk" class="d-block w-100" src="https://picsum.photos/1200/450/?random" alt="1 slide">
+                  <img id="mobi" class="d-block w-100" src="https://picsum.photos/450/450/?random" alt="1 slide">
+                  <article class="carousel-caption">
+                     <h5>1 slide label</h5>
+                     <p>1 Lorem ipsum dolor sit amet.</p>
+                  </article>
+               </div>
+               <div class="carousel-item">
+                  <img id="desk" class="w-100" src="https://picsum.photos/1200/450/?random" alt="2 slide">
+                  <img id="mobi" class="d-block w-100" src="https://picsum.photos/450/450/?random" alt="2 slide">
+                  <article class="carousel-caption">
+                     <h5>2 slide label</h5>
+                     <p>2 Lorem ipsum dolor sit amet.</p>
+                  </article>
+               </div>
+               <div class="carousel-item">
+                  <img id="desk" class="w-100" src="https://picsum.photos/1200/450/?random" alt="3 slide">
+                  <img id="mobi" class="d-block w-100" src="https://picsum.photos/450/450/?random" alt="3 slide">
+                  <article class="carousel-caption">
+                     <h5>3 slide label</h5>
+                     <p>3 Lorem ipsum dolor sit amet.</p>
+                  </article>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel2_indicator" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel2_indicator" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div>
+      </section>
+      <section class="container adj_items">
+         <h4 class="title-text">Produtos</h4>
+         <div id="product-loading">
+            <p>Produtos maravilhosos serão carregados aqui, aguarde...</p>
+         </div>
+         <div class="owl-carousel owl-init slide-items" id="products" data-items="4" data-margin="20" data-dots="true" data-nav="true">
+         </div>
+      </section>
+      <footer class="section-footer bg-dark white border-f">
+         <div class="container">
+            <section class="footer-bottom row">
+               <div class="col-sm-6">
+                  <p> Made in <3</p>
+               </div>
+               <div class="col-sm-6">
+                  <p class="text-sm-right">
+                     Copyright &copy 2018 <br>
+                  </p>
+               </div>
+            </section>
+         </div>
+      </footer>
+      <script type="text/template" id="productTemplate-1" style='display:none'>
+         <div class="item-slide">
+            <figure class="card card-product">
+               <div class="img-wrap">
+                  <img src="##IMAGE_URL##" />
+               </div>
+               <figcaption class="info-wrap">
+                  <h4 class="title">##TITLE##</h4>
+                  <p class="desc">##DESC##</p>
+                  <div class="rating-wrap">
+                     <ul class="rating-stars">
+                        <li style="width:80%" class="stars-active">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"> </i>
+                           <i class="fa fa-star"></i></li><li><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </li>
+                     </ul>
+                  <div class="label-rating"></div><div class="label-rating"></div></div>
+               </figcaption>
+               <div class="bottom-wrap">
+                  <div class="price-wrap h5">
+                     <span class="price-new">R$ ##PRICE##</span>
+                     <del class="price-old">R$ ##OLD_PRICE##</del>
+                  </div>
+                  <a href="" class="btn btn-sm btn-info">COMPRAR</a>
+               </div>
+            </figure>
+         </div>
+      </script>
+
+      <script type="text/template" id="productTemplate-2" style='display:none'>
+         <div class="item-slide">
+            <figure class="card card-product">
+               <div class="img-wrap">
+                  <img src="##IMAGE_URL##" />
+               </div>
+               <figcaption class="info-wrap">
+                  <h4 class="title">##TITLE##</h4>
+                  <p class="desc">##DESC##</p>
+               </figcaption>
+            </figure>
+         </div>
+      </script>
+
+      <script type="text/template" id="productTemplate-3" style='display:none'>
+         <div class="item-slide">
+            <figure class="card card-product">
+               <figcaption class="info-wrap">
+                  <h4 class="title">##TITLE##</h4>
+               </figcaption>
+            </figure>
+         </div>
+      </script>
+      <script type="text/javascript" src="js/consult.js"></script>
+      <script type="text/javascript">
+         window.onload = function() {
+            fetch('https://api.myjson.com/bins/p754g').then((response) => {
+               return response.json()
+            }).then((data) => {
+               // debugger
+               var templateMode = '1'
+               var matches = document.location.search.match(/v=(\d+)/)
+
+               if(matches) {
+                  templateMode = matches[1]
+               }
+
+               var finalTemplate = 'productTemplate-' + templateMode
+               var productTemplateBase = document.getElementById(finalTemplate).innerHTML
+               var renderedHTML = renderAllProducts(productTemplateBase, data.products)
+               document.getElementById('products').innerHTML = renderedHTML
+               document.getElementById('product-loading').style.display = 'none';
+               loadCarrousel()
+            })
+         }
+      </script>
+      <script src="js/script.js" type="text/javascript"></script>
+   </body>
+</html>
