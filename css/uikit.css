@@ -1,0 +1,2748 @@
+/* ========================
+UIkit bootstrap-ecommerce.com 
+===================== */
+/* ================== HELPERS  =================== */
+/* ==================== INCLUDE FONTS ======================= */
+@import url("../fonts/roboto/font.css");
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_base\.scss}line{font-family:\000036}}
+html {
+  font-size: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\000032}}
+a:hover {
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\000036}}
+.img-wrap {
+  text-align: center;
+  display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\000037}}
+  .img-wrap img {
+    max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\000039}}
+.icon-wrap {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000311}}
+.zoom-in {
+  -webkit-transition: -webkit-transform ease .3s;
+  transition: -webkit-transform ease .3s;
+  transition: transform ease .3s;
+  transition: transform ease .3s, -webkit-transform ease .3s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000312}}
+.zoom-wrap:hover .zoom-in {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform ease .3s;
+  transition: -webkit-transform ease .3s;
+  transition: transform ease .3s;
+  transition: transform ease .3s, -webkit-transform ease .3s; }
+
+/* =================  DEFINED VARIABLES =================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000316}}
+.icon-xs, .icon-sm, .icon-md, .icon-lg {
+  display: inline-block;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000317}}
+.icon-xs {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000318}}
+.icon-sm {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 22px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000319}}
+.icon-md {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 32px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000320}}
+.icon-lg {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 42px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000322}}
+.img-xs, .img-sm, .img-md, .img-lg {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000323}}
+.img-xs {
+  width: 40px;
+  height: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000324}}
+.img-sm {
+  width: 80px;
+  height: 80px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000325}}
+.img-md {
+  width: 160px;
+  height: 160px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000326}}
+.img-lg {
+  width: 400px;
+  height: 300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000329}}
+.center-xy {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000330}}
+.center-y {
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000331}}
+.center-x {
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000333}}
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000334}}
+.overflow-h {
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000335}}
+.flip-h {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000337}}
+.card-body-lg {
+  padding: 2rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000340}}
+.shadow-in {
+  -webkit-box-shadow: inset 0 2px 4px rgba(51, 51, 51, 0.4);
+          box-shadow: inset 0 2px 4px rgba(51, 51, 51, 0.4); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000342}}
+.vh-100 {
+  height: 100vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000343}}
+.vh-90 {
+  height: 90vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000344}}
+.vh-80 {
+  height: 80vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000345}}
+.vh-70 {
+  height: 70vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000346}}
+.vh-60 {
+  height: 60vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000347}}
+.vh-50 {
+  height: 50vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000349}}
+[class*="hover-"] {
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000350}}
+.hover-shadow:hover {
+  -webkit-box-shadow: 0 4px 15px rgba(51, 51, 51, 0.5);
+          box-shadow: 0 4px 15px rgba(51, 51, 51, 0.5);
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000351}}
+.hover-bg:hover {
+  background: #007bff;
+  /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left top, right bottom, from(#007bff), to(#007bff));
+  background: linear-gradient(to bottom right, #007bff, #007bff);
+  /* Standard syntax */
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000352}}
+.hover-zoom:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+
+/* ========== input with icon ==========  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000358}}
+.input-icon {
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000359}}
+  .input-icon i + input, .input-icon i + select {
+    padding-left: 36px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000360}}
+  .input-icon i {
+    position: absolute;
+    color: #ccc;
+    z-index: 9;
+    left: 7px;
+    top: 4px;
+    width: 24px;
+    text-align: center;
+    padding: 7px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000369}}
+.form-inline .form-control-sm[type="number"] {
+  max-width: 100px; }
+
+/* ========== borders ========== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000372}}
+.border {
+  border: 1px solid #eee; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000373}}
+.border-left-white {
+  border-left: 1px solid rgba(255, 255, 255, 0.3); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000374}}
+.border-right-white {
+  border-right: 1px solid rgba(255, 255, 255, 0.3); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000375}}
+.border-top-white {
+  border-top: 1px solid rgba(255, 255, 255, 0.3); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000376}}
+.border-bottom-white {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000378}}
+.circle {
+  border-radius: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000379}}
+.round {
+  border-radius: 200px; }
+
+/* ============== spacing ============== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000384}}
+.padding-y {
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000385}}
+.padding-top {
+  padding-top: 32px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000386}}
+.padding-bottom {
+  padding-bottom: 32px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000388}}
+.padding-y-lg {
+  padding-top: 60px;
+  padding-bottom: 50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000389}}
+.padding-top-lg {
+  padding-top: 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000390}}
+.padding-bottom-lg {
+  padding-bottom: 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000392}}
+.padding-y-sm {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000393}}
+.padding-top-sm {
+  padding-top: 16px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000394}}
+.padding-bottom-sm {
+  padding-bottom: 16px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000396}}
+.nopadding {
+  padding: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000396}}
+.p0 {
+  padding: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000396}}
+.p5 {
+  padding: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000396}}
+.p7 {
+  padding: 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000396}}
+.p10 {
+  padding: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000397}}
+.p15 {
+  padding: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000397}}
+.p20 {
+  padding: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000397}}
+.p30 {
+  padding: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000397}}
+.p40 {
+  padding: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000397}}
+.p50 {
+  padding: 50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\0000398}}
+.p60 {
+  padding: 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003100}}
+.nomargin {
+  margin: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003100}}
+.m0 {
+  margin: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003100}}
+.m5 {
+  margin: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003100}}
+.m7 {
+  margin: 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003100}}
+.m10 {
+  margin: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003101}}
+.m15 {
+  margin: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003101}}
+.m30 {
+  margin: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003101}}
+.m40 {
+  margin: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003101}}
+.m50 {
+  margin: 50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003102}}
+.m60 {
+  margin: 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003106}}
+.relative {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003107}}
+.absolute {
+  position: absolute; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003109}}
+var {
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003110}}
+figure {
+  margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003114}}
+.form-noborder input, .form-noborder select, .form-noborder .btn {
+  border: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003115}}
+.form-noborder select.form-control-lg:not([size]):not([multiple]) {
+  height: 2.875rem; }
+
+/* all clearfix */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003119}}
+article:after,
+.form-group:after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003127}}
+.border-cols:not(:last-child) {
+  border-bottom: 1px solid #eee; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003128}}
+.border-cols > [class*="col-"] {
+  overflow: hidden;
+  border-color: #eee;
+  border-width: 0 0 0 1px;
+  border-style: solid; }
+
+/* -------------------- small grid gutter --------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003136}}
+.row-sm {
+  margin-right: -7px;
+  margin-left: -7px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_helper-classes\.scss}line{font-family:\00003143}}
+.row-sm > [class^="col"] {
+  padding-left: 7px;
+  padding-right: 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\000033}}
+.bg-white {
+  background-color: #fff !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\000035}}
+.bg-white-50 {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\000036}}
+.bg-dark-50 {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\000038}}
+.bg-grad-primary {
+  background: #3395ff;
+  /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left top, right bottom, from(#0062cc), to(#3395ff));
+  background: linear-gradient(to bottom right, #0062cc, #3395ff);
+  /* Standard syntax */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000310}}
+.bg {
+  background-color: #f8f8f8 !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000311}}
+.bg2 {
+  background-color: #eceded !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000312}}
+.bg-purple {
+  background-color: #6f42c1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000313}}
+.bg-orange {
+  background-color: #fd7e14; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000314}}
+.bg-green {
+  background-color: #28a745; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000315}}
+.bg-blue {
+  background-color: #007bff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000317}}
+.bg-pattern {
+  background-image: url(../images/banners/bg-pattern.svg), linear-gradient(135deg, #007bff, #0062cc);
+  background-size: cover, auto;
+  background-repeat: no-repeat, repeat;
+  background-position: 0px 0px, 50% 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000325}}
+.bg-img {
+  overflow: hidden;
+  background-color: #ddd;
+  background-image: linear-gradient(135deg, rgba(51, 149, 255, 0.8), rgba(0, 98, 204, 0.9)), url("../images/banners/bg-cpu.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000333}}
+.overlay-grad {
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000334}}
+  .overlay-grad:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #e83e8c;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: -webkit-gradient(linear, left top, right bottom, from(#007bff), to(#e83e8c));
+    background: linear-gradient(to bottom right, #007bff, #e83e8c);
+    /* Standard syntax */
+    opacity: .6;
+    -webkit-transition: .5s;
+    transition: .5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_bg\.scss}line{font-family:\0000337}}
+  .overlay-grad:hover:before {
+    opacity: .9; }
+
+/* --------------------- titles ---------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\000032}}
+.section-heading {
+  margin-bottom: 20px;
+  margin-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\000033}}
+.title-section {
+  padding-right: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\000034}}
+.title-text {
+  margin-top: 45px;
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\000035}}
+.title-category {
+  margin: 0;
+  padding: 1rem 1rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\000036}}
+.title-bg {
+  padding: 7px 15px;
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\000038}}
+.font-title {
+  font-family: "Roboto", sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000310}}
+.text-lg {
+  font-size: 125%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000311}}
+.word-limit {
+  height: 40px;
+  line-height: 20px; }
+
+/* ==================  title element ================ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000316}}
+.heading-line {
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000317}}
+  .heading-line .title-section {
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+    background-color: inherit;
+    z-index: 2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000325}}
+.heading-line::before {
+  top: 43%;
+  border-top-style: solid;
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 0;
+  width: 100%;
+  height: 0;
+  border: 3px solid #E9EAEF;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000338}}
+.b {
+  font-weight: 600; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000340}}
+.white {
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000341}}
+.black, .dark {
+  color: #000; }
+
+/* ==================  title helpers ================ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000344}}
+.rtl {
+  direction: rtl; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000345}}
+.ltr {
+  direction: ltr; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000348}}
+.lh-sm {
+  line-height: 1.2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_typography\.scss}line{font-family:\0000349}}
+.lh-lg {
+  line-height: 1.6; }
+
+/*! 
+ * grid for 24 of 1 
+ * made by bootstrap-ecommerce.com
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\000035}}
+.col-1-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 4.1666666667%;
+          flex: 0 0 4.1666666667%;
+  max-width: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\000039}}
+.col-2-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 8.3333333333%;
+          flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000313}}
+.col-3-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12.5%;
+          flex: 0 0 12.5%;
+  max-width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000317}}
+.col-4-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.6666666667%;
+          flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000321}}
+.col-5-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20.8333333333%;
+          flex: 0 0 20.8333333333%;
+  max-width: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000325}}
+.col-6-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000329}}
+.col-7-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 29.1666666667%;
+          flex: 0 0 29.1666666667%;
+  max-width: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000333}}
+.col-8-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3333333333%;
+          flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000337}}
+.col-9-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 37.5%;
+          flex: 0 0 37.5%;
+  max-width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000341}}
+.col-10-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.6666666667%;
+          flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000345}}
+.col-11-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45.8333333333%;
+          flex: 0 0 45.8333333333%;
+  max-width: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000349}}
+.col-12-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000353}}
+.col-13-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 54.1666666667%;
+          flex: 0 0 54.1666666667%;
+  max-width: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000357}}
+.col-14-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.3333333333%;
+          flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000361}}
+.col-15-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 62.5%;
+          flex: 0 0 62.5%;
+  max-width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000365}}
+.col-16-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.6666666667%;
+          flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000369}}
+.col-17-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70.8333333333%;
+          flex: 0 0 70.8333333333%;
+  max-width: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000373}}
+.col-18-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+  max-width: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000377}}
+.col-19-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 79.1666666667%;
+          flex: 0 0 79.1666666667%;
+  max-width: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000381}}
+.col-20-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 83.3333333333%;
+          flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000385}}
+.col-21-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 87.5%;
+          flex: 0 0 87.5%;
+  max-width: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000389}}
+.col-22-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 91.6666666667%;
+          flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000393}}
+.col-23-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 95.8333333333%;
+          flex: 0 0 95.8333333333%;
+  max-width: 95.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\0000397}}
+.col-24, .col-24-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003101}}
+.offset-1-24 {
+  margin-left: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003104}}
+.offset-2-24 {
+  margin-left: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003107}}
+.offset-3-24 {
+  margin-left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003110}}
+.offset-4-24 {
+  margin-left: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003113}}
+.offset-5-24 {
+  margin-left: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003116}}
+.offset-6-24 {
+  margin-left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003119}}
+.offset-7-24 {
+  margin-left: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003122}}
+.offset-8-24 {
+  margin-left: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003125}}
+.offset-9-24 {
+  margin-left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003128}}
+.offset-10-24 {
+  margin-left: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003131}}
+.offset-11-24 {
+  margin-left: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003134}}
+.offset-12-24 {
+  margin-left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003137}}
+.offset-13-24 {
+  margin-left: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003140}}
+.offset-14-24 {
+  margin-left: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003143}}
+.offset-15-24 {
+  margin-left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003146}}
+.offset-16-24 {
+  margin-left: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003149}}
+.offset-17-24 {
+  margin-left: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003152}}
+.offset-18-24 {
+  margin-left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003155}}
+.offset-19-24 {
+  margin-left: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003158}}
+.offset-20-24 {
+  margin-left: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003161}}
+.offset-21-24 {
+  margin-left: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003164}}
+.offset-22-24 {
+  margin-left: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003167}}
+.offset-23-24 {
+  margin-left: 95.8333333333%; }
+
+@media (min-width: 576px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003172}}
+  .col-sm-1-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 4.1666666667%;
+            flex: 0 0 4.1666666667%;
+    max-width: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003176}}
+  .col-sm-2-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003180}}
+  .col-sm-3-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%;
+    max-width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003184}}
+  .col-sm-4-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003188}}
+  .col-sm-5-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20.8333333333%;
+            flex: 0 0 20.8333333333%;
+    max-width: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003192}}
+  .col-sm-6-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003196}}
+  .col-sm-7-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 29.1666666667%;
+            flex: 0 0 29.1666666667%;
+    max-width: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003200}}
+  .col-sm-8-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003204}}
+  .col-sm-9-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 37.5%;
+            flex: 0 0 37.5%;
+    max-width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003208}}
+  .col-sm-10-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003212}}
+  .col-sm-11-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45.8333333333%;
+            flex: 0 0 45.8333333333%;
+    max-width: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003216}}
+  .col-sm-12-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003220}}
+  .col-sm-13-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 54.1666666667%;
+            flex: 0 0 54.1666666667%;
+    max-width: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003224}}
+  .col-sm-14-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003228}}
+  .col-sm-15-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 62.5%;
+            flex: 0 0 62.5%;
+    max-width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003232}}
+  .col-sm-16-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003236}}
+  .col-sm-17-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70.8333333333%;
+            flex: 0 0 70.8333333333%;
+    max-width: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003240}}
+  .col-sm-18-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003244}}
+  .col-sm-19-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 79.1666666667%;
+            flex: 0 0 79.1666666667%;
+    max-width: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003248}}
+  .col-sm-20-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003252}}
+  .col-sm-21-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 87.5%;
+            flex: 0 0 87.5%;
+    max-width: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003256}}
+  .col-sm-22-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003260}}
+  .col-sm-23-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95.8333333333%;
+            flex: 0 0 95.8333333333%;
+    max-width: 95.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003264}}
+  .col-sm-24, .col-sm-24-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003268}}
+  .offset-sm-1-24 {
+    margin-left: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003271}}
+  .offset-sm-2-24 {
+    margin-left: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003274}}
+  .offset-sm-3-24 {
+    margin-left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003277}}
+  .offset-sm-4-24 {
+    margin-left: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003280}}
+  .offset-sm-5-24 {
+    margin-left: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003283}}
+  .offset-sm-6-24 {
+    margin-left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003286}}
+  .offset-sm-7-24 {
+    margin-left: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003289}}
+  .offset-sm-8-24 {
+    margin-left: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003292}}
+  .offset-sm-9-24 {
+    margin-left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003295}}
+  .offset-sm-10-24 {
+    margin-left: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003298}}
+  .offset-sm-11-24 {
+    margin-left: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003301}}
+  .offset-sm-12-24 {
+    margin-left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003304}}
+  .offset-sm-13-24 {
+    margin-left: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003307}}
+  .offset-sm-14-24 {
+    margin-left: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003310}}
+  .offset-sm-15-24 {
+    margin-left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003313}}
+  .offset-sm-16-24 {
+    margin-left: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003316}}
+  .offset-sm-17-24 {
+    margin-left: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003319}}
+  .offset-sm-18-24 {
+    margin-left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003322}}
+  .offset-sm-19-24 {
+    margin-left: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003325}}
+  .offset-sm-20-24 {
+    margin-left: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003328}}
+  .offset-sm-21-24 {
+    margin-left: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003331}}
+  .offset-sm-22-24 {
+    margin-left: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003334}}
+  .offset-sm-23-24 {
+    margin-left: 95.8333333333%; } }
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003340}}
+  .col-md-1-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 4.1666666667%;
+            flex: 0 0 4.1666666667%;
+    max-width: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003344}}
+  .col-md-2-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003348}}
+  .col-md-3-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%;
+    max-width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003352}}
+  .col-md-4-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003356}}
+  .col-md-5-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20.8333333333%;
+            flex: 0 0 20.8333333333%;
+    max-width: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003360}}
+  .col-md-6-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003364}}
+  .col-md-7-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 29.1666666667%;
+            flex: 0 0 29.1666666667%;
+    max-width: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003368}}
+  .col-md-8-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003372}}
+  .col-md-9-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 37.5%;
+            flex: 0 0 37.5%;
+    max-width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003376}}
+  .col-md-10-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003380}}
+  .col-md-11-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45.8333333333%;
+            flex: 0 0 45.8333333333%;
+    max-width: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003384}}
+  .col-md-12-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003388}}
+  .col-md-13-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 54.1666666667%;
+            flex: 0 0 54.1666666667%;
+    max-width: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003392}}
+  .col-md-14-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003396}}
+  .col-md-15-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 62.5%;
+            flex: 0 0 62.5%;
+    max-width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003400}}
+  .col-md-16-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003404}}
+  .col-md-17-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70.8333333333%;
+            flex: 0 0 70.8333333333%;
+    max-width: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003408}}
+  .col-md-18-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003412}}
+  .col-md-19-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 79.1666666667%;
+            flex: 0 0 79.1666666667%;
+    max-width: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003416}}
+  .col-md-20-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003420}}
+  .col-md-21-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 87.5%;
+            flex: 0 0 87.5%;
+    max-width: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003424}}
+  .col-md-22-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003428}}
+  .col-md-23-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95.8333333333%;
+            flex: 0 0 95.8333333333%;
+    max-width: 95.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003432}}
+  .col-md-24, .col-md-24-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003436}}
+  .offset-md-1-24 {
+    margin-left: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003439}}
+  .offset-md-2-24 {
+    margin-left: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003442}}
+  .offset-md-3-24 {
+    margin-left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003445}}
+  .offset-md-4-24 {
+    margin-left: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003448}}
+  .offset-md-5-24 {
+    margin-left: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003451}}
+  .offset-md-6-24 {
+    margin-left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003454}}
+  .offset-md-7-24 {
+    margin-left: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003457}}
+  .offset-md-8-24 {
+    margin-left: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003460}}
+  .offset-md-9-24 {
+    margin-left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003463}}
+  .offset-md-10-24 {
+    margin-left: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003466}}
+  .offset-md-11-24 {
+    margin-left: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003469}}
+  .offset-md-12-24 {
+    margin-left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003472}}
+  .offset-md-13-24 {
+    margin-left: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003475}}
+  .offset-md-14-24 {
+    margin-left: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003478}}
+  .offset-md-15-24 {
+    margin-left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003481}}
+  .offset-md-16-24 {
+    margin-left: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003484}}
+  .offset-md-17-24 {
+    margin-left: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003487}}
+  .offset-md-18-24 {
+    margin-left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003490}}
+  .offset-md-19-24 {
+    margin-left: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003493}}
+  .offset-md-20-24 {
+    margin-left: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003496}}
+  .offset-md-21-24 {
+    margin-left: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003499}}
+  .offset-md-22-24 {
+    margin-left: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003502}}
+  .offset-md-23-24 {
+    margin-left: 95.8333333333%; } }
+@media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003508}}
+  .col-lg-1-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 4.1666666667%;
+            flex: 0 0 4.1666666667%;
+    max-width: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003512}}
+  .col-lg-2-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003516}}
+  .col-lg-3-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%;
+    max-width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003520}}
+  .col-lg-4-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003524}}
+  .col-lg-5-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20.8333333333%;
+            flex: 0 0 20.8333333333%;
+    max-width: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003528}}
+  .col-lg-6-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003532}}
+  .col-lg-7-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 29.1666666667%;
+            flex: 0 0 29.1666666667%;
+    max-width: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003536}}
+  .col-lg-8-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003540}}
+  .col-lg-9-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 37.5%;
+            flex: 0 0 37.5%;
+    max-width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003544}}
+  .col-lg-10-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003548}}
+  .col-lg-11-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45.8333333333%;
+            flex: 0 0 45.8333333333%;
+    max-width: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003552}}
+  .col-lg-12-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003556}}
+  .col-lg-13-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 54.1666666667%;
+            flex: 0 0 54.1666666667%;
+    max-width: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003560}}
+  .col-lg-14-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003564}}
+  .col-lg-15-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 62.5%;
+            flex: 0 0 62.5%;
+    max-width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003568}}
+  .col-lg-16-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003572}}
+  .col-lg-17-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70.8333333333%;
+            flex: 0 0 70.8333333333%;
+    max-width: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003576}}
+  .col-lg-18-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003580}}
+  .col-lg-19-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 79.1666666667%;
+            flex: 0 0 79.1666666667%;
+    max-width: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003584}}
+  .col-lg-20-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003588}}
+  .col-lg-21-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 87.5%;
+            flex: 0 0 87.5%;
+    max-width: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003592}}
+  .col-lg-22-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003596}}
+  .col-lg-23-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95.8333333333%;
+            flex: 0 0 95.8333333333%;
+    max-width: 95.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003600}}
+  .col-lg-24, .col-lg-24-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003604}}
+  .offset-lg-1-24 {
+    margin-left: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003607}}
+  .offset-lg-2-24 {
+    margin-left: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003610}}
+  .offset-lg-3-24 {
+    margin-left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003613}}
+  .offset-lg-4-24 {
+    margin-left: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003616}}
+  .offset-lg-5-24 {
+    margin-left: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003619}}
+  .offset-lg-6-24 {
+    margin-left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003622}}
+  .offset-lg-7-24 {
+    margin-left: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003625}}
+  .offset-lg-8-24 {
+    margin-left: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003628}}
+  .offset-lg-9-24 {
+    margin-left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003631}}
+  .offset-lg-10-24 {
+    margin-left: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003634}}
+  .offset-lg-11-24 {
+    margin-left: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003637}}
+  .offset-lg-12-24 {
+    margin-left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003640}}
+  .offset-lg-13-24 {
+    margin-left: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003643}}
+  .offset-lg-14-24 {
+    margin-left: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003646}}
+  .offset-lg-15-24 {
+    margin-left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003649}}
+  .offset-lg-16-24 {
+    margin-left: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003652}}
+  .offset-lg-17-24 {
+    margin-left: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003655}}
+  .offset-lg-18-24 {
+    margin-left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003658}}
+  .offset-lg-19-24 {
+    margin-left: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003661}}
+  .offset-lg-20-24 {
+    margin-left: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003664}}
+  .offset-lg-21-24 {
+    margin-left: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003667}}
+  .offset-lg-22-24 {
+    margin-left: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003670}}
+  .offset-lg-23-24 {
+    margin-left: 95.8333333333%; } }
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003675}}
+  .col-xl-1-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 4.1666666667%;
+            flex: 0 0 4.1666666667%;
+    max-width: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003679}}
+  .col-xl-2-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003683}}
+  .col-xl-3-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%;
+    max-width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003687}}
+  .col-xl-4-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003691}}
+  .col-xl-5-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20.8333333333%;
+            flex: 0 0 20.8333333333%;
+    max-width: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003695}}
+  .col-xl-6-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003699}}
+  .col-xl-7-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 29.1666666667%;
+            flex: 0 0 29.1666666667%;
+    max-width: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003703}}
+  .col-xl-8-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003707}}
+  .col-xl-9-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 37.5%;
+            flex: 0 0 37.5%;
+    max-width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003711}}
+  .col-xl-10-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003715}}
+  .col-xl-11-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45.8333333333%;
+            flex: 0 0 45.8333333333%;
+    max-width: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003719}}
+  .col-xl-12-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003723}}
+  .col-xl-13-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 54.1666666667%;
+            flex: 0 0 54.1666666667%;
+    max-width: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003727}}
+  .col-xl-14-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003731}}
+  .col-xl-15-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 62.5%;
+            flex: 0 0 62.5%;
+    max-width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003735}}
+  .col-xl-16-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003739}}
+  .col-xl-17-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70.8333333333%;
+            flex: 0 0 70.8333333333%;
+    max-width: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003743}}
+  .col-xl-18-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003747}}
+  .col-xl-19-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 79.1666666667%;
+            flex: 0 0 79.1666666667%;
+    max-width: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003751}}
+  .col-xl-20-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003755}}
+  .col-xl-21-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 87.5%;
+            flex: 0 0 87.5%;
+    max-width: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003759}}
+  .col-xl-22-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003763}}
+  .col-xl-23-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95.8333333333%;
+            flex: 0 0 95.8333333333%;
+    max-width: 95.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003767}}
+  .col-xl-24, .col-xl-24-24 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003772}}
+  .offset-xl-1-24 {
+    margin-left: 4.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003775}}
+  .offset-xl-2-24 {
+    margin-left: 8.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003778}}
+  .offset-xl-3-24 {
+    margin-left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003781}}
+  .offset-xl-4-24 {
+    margin-left: 16.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003784}}
+  .offset-xl-5-24 {
+    margin-left: 20.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003787}}
+  .offset-xl-6-24 {
+    margin-left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003790}}
+  .offset-xl-7-24 {
+    margin-left: 29.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003793}}
+  .offset-xl-8-24 {
+    margin-left: 33.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003796}}
+  .offset-xl-9-24 {
+    margin-left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003799}}
+  .offset-xl-10-24 {
+    margin-left: 41.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003802}}
+  .offset-xl-11-24 {
+    margin-left: 45.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003805}}
+  .offset-xl-12-24 {
+    margin-left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003808}}
+  .offset-xl-13-24 {
+    margin-left: 54.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003811}}
+  .offset-xl-14-24 {
+    margin-left: 58.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003814}}
+  .offset-xl-15-24 {
+    margin-left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003817}}
+  .offset-xl-16-24 {
+    margin-left: 66.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003820}}
+  .offset-xl-17-24 {
+    margin-left: 70.8333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003823}}
+  .offset-xl-18-24 {
+    margin-left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003826}}
+  .offset-xl-19-24 {
+    margin-left: 79.1666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003829}}
+  .offset-xl-20-24 {
+    margin-left: 83.3333333333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003832}}
+  .offset-xl-21-24 {
+    margin-left: 87.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003835}}
+  .offset-xl-22-24 {
+    margin-left: 91.6666666667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003838}}
+  .offset-xl-23-24 {
+    margin-left: 95.8333333333%; } }
+/* by default 24 grid cols full width */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003844}}
+[class^="col-"][class*="-24"] {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+/* nogutter for 24 grid cols */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/helpers\/_grid-24\.scss}line{font-family:\00003853}}
+.no-gutters > [class*="col-"] {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+/* ================== SECTIONS =================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\000031}}
+.navbar-top {
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\000033}}
+.navbar-landing {
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\000034}}
+.navbar-landing.fixed-top {
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding-top: 7px;
+  padding-bottom: 7px; }
+
+/* ================== header main ==================  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\000037}}
+.header-main {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\000039}}
+.brand-wrap .logo, .navbar-brand .logo {
+  margin-right: 7px;
+  max-height: 35px;
+  display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\0000310}}
+.brand-wrap .logo-text, .navbar-brand .logo-text {
+  margin: 0;
+  display: inline-block;
+  font-size: 22px;
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\0000313}}
+.header-main {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\0000315}}
+.widget-header {
+  margin-left: 7px;
+  margin-right: 7px;
+  display: inline-block;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\0000316}}
+  .widget-header form {
+    min-width: 280px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\0000317}}
+  .widget-header .title {
+    display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_header\.scss}line{font-family:\0000318}}
+  .widget-header .notify {
+    position: absolute;
+    top: -3px;
+    right: -10px; }
+
+/* desktop only */
+/* desktop only .end */
+/* ================ SECTION-FOOTER ==================  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_footer\.scss}line{font-family:\000034}}
+.section-footer ul a {
+  color: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_footer\.scss}line{font-family:\000037}}
+.footer-top .title {
+  font-weight: 600; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/sections\/_footer\.scss}line{font-family:\000039}}
+.footer-bottom {
+  padding: 15px 0; }
+
+/* ================== PAGES =================== */
+/* ================ PAGES HEADER ================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/pages\/_page-common\.scss}line{font-family:\000032}}
+.section-pagetop {
+  padding: 45px 0;
+  background-repeat: no-repeat;
+  background-size: cover; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/pages\/_page-common\.scss}line{font-family:\000034}}
+  .section-pagetop .title-page {
+    color: #fff;
+    opacity: .6; }
+
+/* ================== PAGE DETAILS ==================  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/pages\/_page-detail\.scss}line{font-family:\000033}}
+.gallery-wrap .img-big-wrap {
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/pages\/_page-detail\.scss}line{font-family:\000035}}
+  .gallery-wrap .img-big-wrap a {
+    text-align: center;
+    display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/pages\/_page-detail\.scss}line{font-family:\000036}}
+  .gallery-wrap .img-big-wrap img {
+    height: 450px;
+    width: auto;
+    display: inline-block;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/pages\/_page-detail\.scss}line{font-family:\000038}}
+.gallery-wrap .img-small-wrap {
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/pages\/_page-detail\.scss}line{font-family:\000039}}
+  .gallery-wrap .img-small-wrap .item-gallery {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 7px 2px;
+    display: inline-block;
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/pages\/_page-detail\.scss}line{font-family:\0000310}}
+  .gallery-wrap .img-small-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4px;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/pages\/_page-detail\.scss}line{font-family:\0000312}}
+    .gallery-wrap .img-small-wrap img:hover {
+      -webkit-filter: brightness(1.1);
+              filter: brightness(1.1);
+      cursor: -webkit-zoom-in;
+      cursor: zoom-in; }
+
+/* ================== COMPONENTS =================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\000032}}
+.owl-prev, .owl-next {
+  z-index: 9;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\000039}}
+.owl-prev {
+  left: -30px;
+  content: "<"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\0000310}}
+.owl-next {
+  right: -30px;
+  content: ">"; }
+
+/* slider main */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\0000314}}
+.slider-main .owl-prev, .slider-main .owl-next {
+  padding: 18px 7px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.4); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\0000315}}
+.slider-main .owl-nav [class*='owl-']:hover {
+  background: #869791;
+  color: #FFF; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\0000316}}
+.slider-main .owl-prev {
+  left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\0000317}}
+.slider-main .owl-next {
+  right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\0000318}}
+.slider-main .item-slide {
+  height: 325px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\0000320}}
+  .slider-main .item-slide img {
+    min-width: 100%;
+    min-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+/* slide items  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_plugin-styles\.scss}line{font-family:\0000326}}
+.slide-items .owl-prev, .slide-items .owl-next {
+  top: 42%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_buttons\.scss}line{font-family:\000032}}
+.btn-facebook {
+  background-color: #405D9D;
+  color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_buttons\.scss}line{font-family:\000032}}
+  .btn-facebook:hover {
+    color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_buttons\.scss}line{font-family:\000033}}
+.btn-instagram {
+  background-color: #E52D27;
+  color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_buttons\.scss}line{font-family:\000033}}
+  .btn-instagram:hover {
+    color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_buttons\.scss}line{font-family:\000034}}
+.btn-youtube {
+  background-color: #C8046C;
+  color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_buttons\.scss}line{font-family:\000034}}
+  .btn-youtube:hover {
+    color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_buttons\.scss}line{font-family:\000035}}
+.btn-twitter {
+  background-color: #42AEEC;
+  color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_buttons\.scss}line{font-family:\000035}}
+  .btn-twitter:hover {
+    color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\000032}}
+.itembox .icon-wrap {
+  margin-bottom: 15px;
+  margin-top: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\000033}}
+.itembox img {
+  max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\000036}}
+.itemside {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\000037}}
+  .itemside .text-wrap {
+    padding-left: 15px;
+    padding-right: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\000038}}
+  .itemside .img-wrap {
+    position: relative;
+    border-radius: 0.25rem 0 0 0.25rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\0000310}}
+  .itemside img {
+    -o-object-fit: contain;
+       object-fit: contain; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\0000311}}
+  .itemside p, .itemside .title {
+    margin-bottom: 0.5rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\0000313}}
+  .itemside .img-bg {
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 100px;
+    bottom: 0;
+    z-index: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\0000314}}
+  .itemside .card-body {
+    position: relative;
+    z-index: 3; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\0000318}}
+.items-bordered-wrap .itemside:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_items\.scss}line{font-family:\0000323}}
+.itemlist {
+  padding: 20px;
+  border-bottom: 1px solid #eee; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\000031}}
+.list-inline {
+  margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\000033}}
+.list-inline-item {
+  vertical-align: middle; }
+
+/* --------- description list --------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\000036}}
+[class*="dlist-"] {
+  margin-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\000038}}
+  [class*="dlist-"] dd {
+    margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000312}}
+.dlist-inline dt, .dlist-inline dd {
+  display: inline-block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000316}}
+.dlist-align dt {
+  width: 90px;
+  float: left;
+  word-wrap: break-word; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000317}}
+.dlist-align dd {
+  margin-left: 120px;
+  vertical-align: baseline; }
+
+/* -------------------- list.row--------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000320}}
+ul.row, ul.row-sm {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0; }
+
+/* ================= lists ================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000323}}
+[class*="list-"] li:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  overflow: hidden;
+  height: 0;
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000332}}
+.list-lg li {
+  margin-bottom: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000335}}
+.list-icon {
+  list-style: none;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000336}}
+  .list-icon li {
+    /*margin-bottom: 10px;*/ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000337}}
+  .list-icon img {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000338}}
+  .list-icon .icon {
+    width: 22px;
+    margin-right: 15px;
+    vertical-align: middle;
+    font-size: 20px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000339}}
+  .list-icon span {
+    vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000342}}
+.list-bullet {
+  list-style: none;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000343}}
+.list-bullet li {
+  margin-bottom: 7px;
+  position: relative;
+  padding-left: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000344}}
+.list-bullet li::before {
+  content: " ";
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  margin: 0px 10px 0px 0px;
+  background: #FE935F;
+  border-radius: 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000355}}
+.list-dots > li {
+  list-style: none;
+  position: relative;
+  font-family: 'Font Awesome 5 Free'; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000356}}
+.list-dots > li::before {
+  position: absolute;
+  top: 10px;
+  content: "\25CF";
+  color: #ccc; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000363}}
+.list-icon {
+  list-style: none;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000364}}
+  .list-icon li {
+    position: relative;
+    padding-left: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_lists\.scss}line{font-family:\0000365}}
+  .list-icon .icon {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 13px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\000031}}
+.card-product {
+  margin-bottom: 1rem;
+  text-align: center;
+  /* btn-overlay-bottom */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\000032}}
+  .card-product:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\000034}}
+  .card-product .img-wrap {
+    border-radius: 0.2rem 0.2rem 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000310}}
+    .card-product .img-wrap img {
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      display: inline-block;
+      -o-object-fit: cover;
+         object-fit: cover; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000312}}
+  .card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000313}}
+  .card-product .action-wrap {
+    padding-top: 4px;
+    margin-top: 4px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000314}}
+  .card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #eee; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000315}}
+  .card-product .title {
+    margin-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000317}}
+  .card-product .btn-overlay {
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.5); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000324}}
+  .card-product:hover .btn-overlay {
+    opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000325}}
+  .card-product:hover {
+    -webkit-box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+            box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+    -webkit-transition: .5s;
+    transition: .5s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000329}}
+.card-sm .img-wrap {
+  height: 180px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000332}}
+.card-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 0.25rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000334}}
+  .card-banner .card-body {
+    background-size: cover;
+    position: relative;
+    z-index: 10; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000335}}
+  .card-banner .img-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+    max-width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000339}}
+  .card-banner .overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+    padding: 1.25rem;
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000340}}
+  .card-banner .overlay.bottom {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000341}}
+  .card-banner .overlay.top {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000342}}
+  .card-banner .overlay-cover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000343}}
+  .card-banner .overlay.left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000345}}
+  .card-banner .text-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 7px 20px;
+    padding-top: 30px;
+    border-radius: 0 0 0.25rem 0.25rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_cards-product\.scss}line{font-family:\0000353}}
+.banner-size-lg {
+  height: 350px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\000032}}
+.card .img-wrap {
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\000035}}
+.icontext {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\000037}}
+  .icontext .icon-wrap {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\000038}}
+  .icontext .text-wrap {
+    line-height: 1.2;
+    padding-left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\000039}}
+  .icontext small, .icontext .title {
+    display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000312}}
+.price-new, .price {
+  margin-right: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000313}}
+.price-old {
+  font-size: 12px;
+  color: #999; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000315}}
+.notify {
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  display: inline-block;
+  padding: .25em .6em;
+  font-size: 75%;
+  line-height: 1;
+  text-align: center;
+  border-radius: 3rem;
+  color: #fff;
+  background-color: #dc3545; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000324}}
+.icon-action {
+  margin-top: 5px;
+  float: right;
+  font-size: 80%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000327}}
+.list-group .list-group-item {
+  padding-bottom: .5rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000328}}
+.list-group .title {
+  margin-top: 5px;
+  margin-bottom: 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000333}}
+.card-header .title {
+  margin-bottom: 0;
+  line-height: 1.5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000336}}
+.card-group-item {
+  border-bottom: 1px solid #eee; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000337}}
+  .card-group-item .card-header {
+    border-bottom: 0;
+    background-color: #f9f9f9; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000338}}
+  .card-group-item:last-child {
+    border-bottom: 0; }
+
+/* ====================== shopping-cart ==================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000344}}
+.shopping-cart-wrap img {
+  max-width: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000345}}
+.shopping-cart-wrap thead th {
+  border-top: 0;
+  border-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000346}}
+.shopping-cart-wrap .price {
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+  display: block; }
+
+/* ====================== block ==================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000350}}
+.box {
+  padding: 1rem 1.2rem;
+  display: block;
+  background: #fff;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 0 1px 3px rgba(51, 51, 51, 0.1);
+          box-shadow: 0 1px 3px rgba(51, 51, 51, 0.1); }
+
+/* --------- media element --------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000357}}
+.media .img-wrap {
+  margin-right: 1rem; }
+
+/* =================  ELEMENTS FOR PRODUCT =================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000362}}
+.badge-new {
+  top: 7px;
+  left: 7px;
+  position: absolute;
+  display: block;
+  z-index: 10;
+  padding: 2px 7px;
+  font-size: 12px;
+  background-color: #ef5f5f;
+  color: #fff;
+  border-radius: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000369}}
+.badge-offer {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000371}}
+  .badge-offer b {
+    background: #ef5f5f;
+    padding: 4px;
+    font-family: 'Bebas';
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    height: 36px;
+    width: 50px;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000383}}
+  .badge-offer b:after {
+    border-top: 7px solid #ef5f5f;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 36px;
+    width: 0; }
+
+/* ================= RATINGS ============== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000396}}
+.label-rating {
+  /*margin-right: 10px;*/
+  display: inline-block;
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000398}}
+.stars-simple {
+  margin-bottom: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\0000399}}
+  .stars-simple i {
+    color: orange; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\00003100}}
+  .stars-simple small {
+    color: #999;
+    margin-left: 5px; }
+
+/* rating-list */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\00003104}}
+.rating-stars {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1;
+  white-space: nowrap;
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\00003106}}
+  .rating-stars i {
+    font-size: 14px;
+    color: #ccc;
+    display: inline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\00003107}}
+  .rating-stars li {
+    display: block;
+    text-overflow: clip;
+    white-space: nowrap;
+    z-index: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\00003109}}
+  .rating-stars li.stars-active {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\00003110}}
+    .rating-stars li.stars-active i {
+      color: orange; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\00003114}}
+.divider-text {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\00003119}}
+  .divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_elements\.scss}line{font-family:\00003127}}
+  .divider-text span {
+    background-color: #fff;
+    padding: 7px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_menu\.scss}line{font-family:\000031}}
+.menu-category {
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_menu\.scss}line{font-family:\000032}}
+  .menu-category li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #eee; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_menu\.scss}line{font-family:\000034}}
+  .menu-category > li > a {
+    display: block;
+    padding: 10px 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_menu\.scss}line{font-family:\000036}}
+  .menu-category .submenu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 250px;
+    background: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_menu\.scss}line{font-family:\000038}}
+    .menu-category .submenu li {
+      list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_menu\.scss}line{font-family:\0000310}}
+    .menu-category .submenu li a {
+      padding: 7px 15px;
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_menu\.scss}line{font-family:\0000313}}
+  .menu-category li:hover {
+    background: #f8f8f8;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/UUI\/bootstrap-ecommerce-kit\/bootstrap-ecommerce\/main\/sass\/components\/_menu\.scss}line{font-family:\0000316}}
+  .menu-category li:hover .submenu {
+    display: block;
+    margin-left: 0px; }
+
+/*# sourceMappingURL=uikit.css.map */
