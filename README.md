@@ -4,8 +4,6 @@
 
 Para rodar localmente, basta executar o comando `npm start` na pasta raiz.
 
-## Tecnologias utilizadas
-
 - HTML5
 - CSS3
 - JavaScript (ES6)
