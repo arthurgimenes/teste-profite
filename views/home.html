@@ -1,0 +1,51 @@
+
+<section class="banner">
+	<div class="container">
+		<div class="owl-carousel owl-theme" ng-carousel-banner>
+			<div class="item"><img src="img/banners/banner1.jpg" /></div>
+			<div class="item"><img src="img/banners/banner2.jpg" /></div>
+			<div class="item"><img src="img/banners/banner3.jpg" /></div>
+			<div class="item"><img src="img/banners/banner4.jpg" /></div>
+			<div class="item"><img src="img/banners/banner5.jpg" /></div>
+		</div>
+	</div>
+</section>
+
+<section class="produtos">
+	<div class="container">
+		<div class="owl-carousel owl-theme" ng-carousel-prod load="{{load}}">
+			<div class="prod" ng-repeat="produto in produtos">
+				<figure>
+					<a href="../img/sapatos/{{produto.foto_zoom}}" ng-fancybox>
+						<img ng-src="../img/sapatos/{{produto.foto}}" alt="{{produto.descr}}" />
+					</a>
+					<figcaption>
+						<strong>{{produto.descr}}</strong>
+					</figcaption>
+				</figure>
+				<div class="estrelas">
+					<img src="img/prod/estrelas.png" />
+				</div>
+				<div class="preco_de">
+					<em>De: {{produto.preco_de | currency}}</em>
+				</div>
+				<div class="preco_por">
+					<strong>Por: {{produto.preco_por | currency}}</strong>
+				</div>
+				<div class="parcelas">
+					<em>ou <strong>até {{produto.parcelas}}X </strong>de <strong>{{produto.preco_por / produto.parcelas | currency}}</strong></em>
+				</div>
+				<div class="comprar">
+					<a href="javascript:void(0)" class="carrinho">               
+						<img width="30" height="24"/>
+						<span>comprar</span>
+					</a>
+				</div>
+				<div class="economize">
+					<span>Economize: {{produto.preco_de - produto.preco_por | currency}}</span>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+
