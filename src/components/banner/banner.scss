@@ -1,0 +1,113 @@
+@import '../../fonts/fonts.scss';
+@import '../app-principal/colors.scss';
+
+.banner{
+    height: 430px;
+    width: 100%;
+    position: relative;
+
+    .acutal-banner{
+        position: absolute;
+        width: 100%;
+
+        .banner-img{
+            width: 100%;   
+            height: 430px;
+        }
+
+        .banner-title{
+            font-family: ubuntu-b;
+            position: absolute;
+            color: white;
+            font-size: 45px;
+            top: calc(50% - 61px);
+            left: 20%;
+            height: 122px;
+
+            .banner-title-sub{
+                width: 65px;
+                position: absolute;
+                height: 5px;
+                background-color: $orange;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .arrows{
+        .arrow{
+            width: 14px;
+            height: 22px;
+            position: absolute;
+            top: calc(50% - 11px);
+            cursor: pointer;
+
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+        .arrow-left{
+            left: 18%;
+        }
+
+        .arrow-right{
+            right: 18%;
+        }
+    }
+
+    .banner-selector{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        bottom: 35px;
+        right: calc(50% - 46px);
+
+        .banner-selector-ball{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $gray;
+            margin: 6.5px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $orange;
+                opacity: 0.5;
+            }
+        }
+
+        .banner-selector-ball.selected{
+            background-color: $orange;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .banner{
+
+        height: 190px;
+        .arrows{
+            display: none;
+        }
+
+        .acutal-banner{
+            .banner-img{
+                background-position: 70%;
+            }
+
+            .banner-title{
+                font-size: 30px;
+                top: 20px;
+                width: 50%;
+                left: 20px;
+                height: 150px;
+            }
+        }
+
+        .banner-selector{
+            bottom: -10px;
+        }
+    }
+}

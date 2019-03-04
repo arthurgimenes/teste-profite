@@ -1,0 +1,149 @@
+@import '../../fonts/fonts.scss';
+@import '../app-principal/colors.scss';
+
+.footer{
+    height: calc(213px - 50px);
+    border-bottom: 10px solid $green;
+    background-color: #011627;
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .adresses{
+        margin-left: calc(50% - 612px);
+
+        .adresses-area-title{
+            color:white;
+            font-size: 20px;
+            font-family: ubuntu-l;
+            font-weight: 700;
+        }
+
+        .adresses-area-sub{
+            width: 45px;
+            height: 4px;
+            margin-top: 20px;
+            background-color: $orange;
+        }
+        .adresses-found{
+            display: flex;
+            flex-wrap: wrap;
+            
+            .adress{
+                color: white;
+                margin-top: 20px;
+                height: 102px;
+                margin-right: 42px;
+                font-size: 13px;
+                
+                .adress-city{
+                    font-family: ubuntu-l;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                    font-size: 15px;
+                }
+
+                .adress-info{
+                    font-family: ubuntu-l;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .contact-buttons{
+        margin: 0px 350px 0px 165px;
+        margin-top: 65px;
+
+        .contact-button{
+            width: 195px;
+            height: 38px;
+            background:  $orange;
+            border-radius: 5px;
+            color: white;          
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            font-size: 12px;
+            font-family: ubuntu-l;
+            font-weight: 700;
+            cursor: pointer;
+
+            .contact-button-icon{
+                height: 18px;
+                width: 18px;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 10px 18px;
+            }
+
+            .contact-button-text{               
+                text-transform: uppercase;
+                padding: 12px 0px;
+            }
+
+            .contact-button-text.phone{
+                padding: 6px 0px;
+            }
+
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .createdby{     
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 130px;
+        
+        .createdby-img{
+            height: 38px;
+            width: 80px;
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: center;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .footer{       
+        height: unset;
+        display: flex;
+        justify-content: center;
+
+        .adresses{
+            margin-left: 20px;
+            
+            .adresses-found{
+                .adress{
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .contact-buttons{
+            margin: 20px calc(50% - 97.5px);
+        }
+
+        .createdby{
+            margin-top: 30px;
+            padding: 0px 20px;
+            position: relative;
+            width: 100%;
+
+            .createdby-img{
+                position: absolute;
+                bottom: 0;
+                left: 20px;
+
+                &.vtex{
+                    right: 20px;
+                    left: unset;
+                }
+            }
+        }
+    }
+}

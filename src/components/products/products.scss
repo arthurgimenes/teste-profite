@@ -1,0 +1,101 @@
+@import '../app-principal/colors.scss';
+@import '../../fonts/fonts.scss';
+
+.products-area{
+    background-color: white;
+    padding: 20px 16.5%;
+    margin: 20px 0px;
+    position: relative;
+
+    .arrow-products{
+        position: absolute;
+        top: calc(50% - 11px);
+        width: 14px;
+        height: 22px;
+        cursor: pointer;
+
+        &.right{
+            right: 16.5%;
+        }
+        
+        &.left{
+            left: 16.5%;
+        }
+
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+
+    .products-area-title{
+        color: $areaTitle;
+        font-size: 20px;
+        font-family: ubuntu-b;
+        font-weight: 7500;
+        margin-left: 55px;
+    }
+
+    .products-area-sub{
+        width: 65px;
+        height: 4px;
+        margin-top: 6px;
+        background-color: $orange;
+        margin-left: 55px;
+    }
+
+    .products-list{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .products-selector{
+        display: none;
+        position: absolute;
+        justify-content: center;
+        flex-wrap: wrap;
+        bottom: 5px;
+        right: calc(50% - 46px);
+
+        .products-selector-ball{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $gray;
+            margin: 6.5px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $orange;
+                opacity: 0.5;
+            }
+        }
+
+        .products-selector-ball.selected{
+            background-color: $orange;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .products-area{
+        padding: 20px 0px;
+
+        .arrow-products{
+            display: none;
+        }
+
+        .products-list{
+            flex-wrap: unset;
+            width: 100%;
+            overflow: auto;
+            justify-content: unset;    
+        }
+
+        .products-selector{
+            display: flex;
+        }
+    }
+}
