@@ -1,7 +1,13 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+  <div class="hello container">
+    <div class="row">
+      <div class="col-md-2">
+        <h1>{{ msg }}</h1>
+      </div>
+      <div class="col-md-6">
+        <h2>Essential Links</h2>
+      </div>
+    </div>
     <ul>
       <li>
         <a
