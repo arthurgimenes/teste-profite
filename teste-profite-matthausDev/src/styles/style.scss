@@ -1,9 +1,18 @@
 
+/*component HeaderNav*/
 $header-height: 60px;
 $align-middle: middle !important;
 $border-none: none;
 $border-bottom: 1px solid;
 $bottom: 55px;
+$input-width: 220px;
+$display-input: inline-block;
+$relative: relative;
+$absolute: absolute;
+$header-auto: 0 auto;
+$header-left: 200px;
+$header-left-cart: 400px;
+
 @font-face {
   font-family: "FontAwesome";
   font-weight: normal;
@@ -16,25 +25,84 @@ $bottom: 55px;
               url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
 }
 
-.input-align {
-  vertical-align: $align-middle;
-  border: $border-none;
-  border-bottom: $border-bottom;
-  margin-bottom: $bottom;
-  width: 160px
+#header{
+  margin: $header-auto;
 }
 
-.input-wrapper {
-  display:inline-block;
-  position: relative
-}
-.input-wrapper:after {
-  font-family: 'FontAwesome';
-  content: '';
-  position: absolute;
-  left: 150px;
+#logo {
+  margin-left: $header-left;
 }
 
-.header-height {
-  height: $header-height;
+#search {
+  margin-left: $header-left;
 }
+
+#userIcon {
+  margin-left: $header-left;
+  position: $absolute;
+  margin-top: 20px;
+}
+
+#userCart {
+  margin-left: $header-left-cart;
+  position: $absolute;
+  margin-top: 20px;
+}
+
+  .input-align {
+    vertical-align: $align-middle;
+    border: $border-none;
+    border-bottom: $border-bottom;
+    margin-bottom: $bottom;
+    width: $input-width;
+  }
+
+  .input-wrapper {
+    display: $display-input;
+    position: $relative;
+  }
+  .input-wrapper:after {
+    font-family: 'FontAwesome';
+    content: '';
+    position: $absolute;
+    left: 208px;
+  }
+
+
+  .input-wrapper-user {
+    display: $display-input;
+    position: $relative;
+  }
+  .input-wrapper-user:before {
+    font-family: 'FontAwesome';
+    content: '';
+    position: $absolute;
+    right: 100px;
+  }
+
+
+  .input-wrapper-cart {
+    display: $display-input;
+    position: $relative;
+  }
+  .input-wrapper-cart:before {
+    font-family: 'FontAwesome';
+    content: '';
+    position: $absolute;
+    right: 30px;
+  }
+
+  .circle{
+    border-radius:100%;
+    width:12px;
+    height:12px;
+    background-color: #23a9dd;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: aliceblue;
+}
+
+  .header-height {
+    height: $header-height;
+  }
