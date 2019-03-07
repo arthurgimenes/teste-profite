@@ -10,8 +10,10 @@ $display-input: inline-block;
 $relative: relative;
 $absolute: absolute;
 $header-auto: 0 auto;
-$header-left: 200px;
-$header-left-cart: 400px;
+$header-left: 50px;
+$header-left-logo: 200px;
+$header-left-cart: 200px;
+$top: 20px;
 
 @font-face {
   font-family: "FontAwesome";
@@ -30,7 +32,7 @@ $header-left-cart: 400px;
 }
 
 #logo {
-  margin-left: $header-left;
+  margin-left: $header-left-logo;
 }
 
 #search {
@@ -60,12 +62,13 @@ $header-left-cart: 400px;
   .input-wrapper {
     display: $display-input;
     position: $relative;
+    margin-top: $top;
   }
   .input-wrapper:after {
     font-family: 'FontAwesome';
     content: '';
     position: $absolute;
-    left: 208px;
+    left: 260px;
   }
 
 
@@ -105,4 +108,8 @@ $header-left-cart: 400px;
 
   .header-height {
     height: $header-height;
+  }
+
+  .margin-bandeiras {
+    margin-top: $top;
   }
