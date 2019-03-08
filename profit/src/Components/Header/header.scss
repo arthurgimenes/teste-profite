@@ -1,0 +1,141 @@
+.header {
+    padding: 10px 0;
+
+    &-logo {
+        a {
+            line-height: 0;
+            display: block;
+
+            h1 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    &-search {
+
+        input {
+            border: none;
+            box-shadow: 0;
+            color: #000;
+            font-size: 13px;
+            border-bottom: 1px solid #000;
+            border-radius: 0;
+
+            &:focus {
+                outline: none;
+                border-color: transparent;
+
+            }
+
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: #7A7A7A;
+            }
+
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                color: #7A7A7A;
+            }
+
+            &:-ms-input-placeholder {
+                /* IE 10+ */
+                color: #7A7A7A;
+            }
+
+            &:-moz-placeholder {
+                /* Firefox 18- */
+                color: #7A7A7A;
+            }
+        }
+
+        button {
+            border: none;
+            box-shadow: 0;
+            color: #000;
+            font-size: 13px;
+            border-bottom: 1px solid #000;
+            border-radius: 0;
+            padding-bottom: 7px;
+
+            &:hover {
+                background: 0;
+
+            }
+
+            &:focus,
+            &:active {
+                outline: white;
+                border-color: transparent;
+                background-color: transparent;
+
+            }
+        }
+    }
+
+    &-account {
+        padding: 10px 0;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 13px;
+        text-align: right;
+
+        a {
+            color: #7A7A7A;
+        }
+
+        img {
+            margin: 0 10px;
+        }
+    }
+
+    &-cart {
+        display: inline-block;
+        margin-left: 20px;
+        a {
+            color :#fff;
+        }
+        &-icon-counter {
+            line-height: 15px;
+            display: inline-block;
+            background: #2EC4B6;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 10px;
+        }
+    }
+
+    &-languages {
+        position: relative;
+
+        &-menu {
+            list-style: none;
+            padding: 10px 0;
+            text-align: right;
+
+            &-item {
+                display: inline-block;
+                margin: 0 10px;
+
+                &:last-child {
+                    margin: 0 0 0 10px;
+                }
+            }
+        }
+
+        &:after {
+            content: '';
+            height: 90%;
+            width: 1px;
+            background: #000;
+            position: absolute;
+            left: 35px;
+            top: 0;
+        }
+    }
+
+}
