@@ -6,32 +6,42 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Banner = (props) => {
     const banners = [
-        { 'title': 'title', 'link': '/' , 'img': banner1 },
-        { 'title': 'title2', 'link': '/' , 'img': banner1 },
-        { 'title': 'title3', 'link': '/' , 'img': banner1 }
+        { 'title': 'Nossa especialidade em experiência de compra.', 'link': '/' , 'img': banner1 },
+        { 'title': 'Nossa especialidade em experiência de compra.', 'link': '/' , 'img': banner1 },
+        { 'title': 'Nossa especialidade em experiência de compra.', 'link': '/' , 'img': banner1 }
     ]
     const settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         arrows : true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay : true,
+      
       };
-    return (
+        return (
+        
         <section className="banner">
+      
         <Slider {...settings}>
         {banners.map((itens, key) => {
                 return (
-                    <div key={key} className="banner-itens-item" style={{overflow : 'hidden'}}>
+                    <div key={key} className="banner-itens-item" >
                         <a href={itens.link}>
-                            <div className="col-6">
-                                <h3>{itens.title}</h3>
+                            <div className="container-fluid">
+                            <div className="row">
+                                <div className="col-6">
+                                    <div className="banner-itens-item-banner-content">
+                                        <div className="banner-itens-item-banner-content-text">
+                                         <h2>{itens.title}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-6">
+                                    <div className="banner-itens-item-overlay" style={{backgroundImage: `url(${itens.img})` }} >
+                                    </div>
+                                </div>
                             </div>
-                            <div className="col-6">
-                                <div className="banner-itens-item-overlay"></div>
-                                <figure className="banner-itens-item-image">
-                                    <img src={itens.img} alt={itens.title} />
-                                </figure>
                             </div>
                         </a>
                     </div>
