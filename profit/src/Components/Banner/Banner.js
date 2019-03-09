@@ -1,37 +1,43 @@
 import React from 'react';
-import banner1 from './img-banner1.svg'
-import banner2 from './img-banner1.svg'
-import banner3 from './img-banner1.svg'
+import './banner.scss';
+import banner1 from './banner.png'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 const Banner = (props) => {
     const banners = [
-        { 'title': 'title', 'link': props.link, 'img': banner1 },
-        { 'title': 'title2', 'link': props.link, 'img': banner2 },
-        { 'title': 'title3', 'link': props.link, 'img': banner3 }
+        { 'title': 'title', 'link': '/' , 'img': banner1 },
+        { 'title': 'title2', 'link': '/' , 'img': banner1 },
+        { 'title': 'title3', 'link': '/' , 'img': banner1 }
     ]
+    const settings = {
+        dots: true,
+        infinite: false,
+        arrows : true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      };
     return (
         <section className="banner">
-            <ul className="banner-itens">
-                {banners.map((itens, key) => {
-                    return (
-                        <li key={key} className="banner-itens-item">
-                            <a href={itens.link}>
-                                <div className="container-fluid">
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            {itens.title}
-                                        </div>
-                                        <div className="col-md-6">
-                                            <figure className="banner-itens-item-image">
-                                                <img src={itens.img} alt={itens.title} />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    )
-                })}
-            </ul>
+        <Slider {...settings}>
+        {banners.map((itens, key) => {
+                return (
+                    <div key={key} className="banner-itens-item" style={{overflow : 'hidden'}}>
+                        <a href={itens.link}>
+                            <div className="col-6">
+                                <h3>{itens.title}</h3>
+                            </div>
+                            <div className="col-6">
+                                <div className="banner-itens-item-overlay"></div>
+                                <figure className="banner-itens-item-image">
+                                    <img src={itens.img} alt={itens.title} />
+                                </figure>
+                            </div>
+                        </a>
+                    </div>
+                )
+            })}
+            </Slider>
         </section>
     )
 
