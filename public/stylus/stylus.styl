@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700')
+$mobile = "only screen and (min-width: 426px)"
+$tablet = "only screen and (min-width: 427px)"
+$desktop = "only screen and (min-width: 769px)"
+$color-light-sea-green = #2ec4b6
+$color-grey = #7a7a7a
+$color-dark-tangerine = #ff9f1c
+$color-white-smoke = #f2f2f2
+$color-black-pearl = #011627
+*,
+*:after,
+*:before
+    margin 0
+    padding 0
+    box-sizing border-box
+/*base*/
+body
+    margin 0
+    font-family Ubuntu
+    font-weight 400
+    font-size 18px
+    color $color-withe
+a
+    text-decoration: none
+/*header*/
+header
+    padding-left: 20px
+    padding-right: 20px
+    padding-bottom: 11px
+    max-width: 1200px
+    margin: 0 auto
+    .menu
+        @media $desktop
+            display: none
+    .row:first-child
+        align-items: center
+        display: flex
+        justify-content space-between
+        padding-top: 15px
+        padding-bottom: 15px
+        /*search*/
+        .search
+            display: none
+            width 40%
+            max-width 450px
+            @media $desktop
+                display block
+        .collumn
+            display: flex
+            align-items: center
+            justify-content: center
+        /*my-account*/
+        .my-account
+            color: $color-grey
+            display: none
+            font-size: 13px
+            margin-right: 20px
+            @media $desktop
+                display flex
+                align-items: center
+                img 
+                    margin-right: 5px
+        /*cart*/
+        .cart
+            align-items: center
+            display: flex
+            div
+                align-items: center
+                background $color-light-sea-green
+                border-radius 50%
+                color white
+                display: flex
+                font-size: 10px
+                height 14px
+                width: 14px
+                span 
+                    text-align: center
+                    width: 100%
+        /*lang*/
+        .lang
+            display none
+            @media $desktop
+                border-left: solid 1px $color-grey
+                display flex
+                align-items: center
+                height 30px
+                padding-left: 20px
+                margin-left 25px
+            a
+                &:first-child
+                    margin-right: 20px
+                &:last-child
+                    margin-left: 20px
+    .search
+        position relative
+        @media $desktop
+            display: none
+        input
+            background: none
+            border none
+            border-bottom: 1px solid black
+            padding-bottom: 5px
+            width: 100%
+        a
+            position: absolute
+            right 0
+            top 0
+/*banner*/
+.banners
+    a
+        align-items: center
+        background-image url("../img/mobile-banner-bg.png")
+        background-position: center center
+        height 193px
+        display: flex
+        @media $mobile
+            background-image url("../img/desktop-banner.png")
+            height 425px
+        h1
+            color: white
+            font-size: 30px
+            font-weight: 700
+            margin-left: 10%
+            margin-bottom: 15px
+            width 90%
+            @media $mobile
+                font-size: 45px
+                width 50%
+            &:after
+                background: $color-dark-tangerine
+                content: ""
+                display: block
+                height 4px
+                margin-top: 9px
+                width: 32.5px
+.banners
+    .owl-nav
+        font-size: 60px
+        position: absolute
+        top calc(50% - 60px)
+        z-index 10
+        width: 100%
+        color: white
+        .owl-next
+            float: right 
+    .owl-stage-outer
+        position relative
+        z-index 9
+    .owl-dots
+        align-items: center
+        display: flex
+        justify-content: center
+        margin-bottom: 5px
+        padding: 5px 0
+        position: absolute
+        z-index: 9
+        width: 100%
+        bottom: 5px
+        @media $mobile
+            bottom: 20px
+            margin-bottom: 15px
+        .owl-dot
+            background: $color-grey
+            border-radius: 50%
+            height 10px
+            width 10px
+            margin: 0 5px
+        .active
+            background: $color-dark-tangerine
+/*product-list*/
+.product-list
+    padding-top: 16.52px
+    max-width: 1200px
+    margin: 0 auto
+    h2
+        font-size: 18px
+        font-weight: 700
+        margin-left: 20px
+        margin-bottom: 15px
+        &:after
+            background: $color-dark-tangerine
+            content: ""
+            display: block
+            height 4px
+            margin-top: 9px
+            width: 32.5px
+    .products 
+        display: flex
+        align-items: center
+        position relative
+        .owl-nav
+            font-size: 60px
+            left -4px
+            margin-left: -15px
+            margin-right: -15px
+            position: absolute
+            top calc(50% - 60px)
+            z-index 1
+            width 100%
+            .owl-next
+                float: right 
+        .owl-stage-outer
+            position relative
+            z-index 9
+            width 97%
+        .owl-dots
+            align-items: center
+            display: flex
+            justify-content: center
+            margin-bottom: 15px
+            padding: 5px 0
+            position relative
+            z-index 9
+            .owl-dot
+                background: $color-grey
+                border-radius: 50%
+                height 7px
+                width 7px
+                margin: 0 4px
+            .active
+                background: $color-dark-tangerine
+    .product-item
+        text-align: center
+        width 140px
+        padding: 29px 5px 15px 5px
+        position: relative
+        margin 10px
+        &:before
+            border-bottom: 50px solid transparent 
+            border-right: 50px solid $color-dark-tangerine
+            color: white
+            content: "OFF"
+            display: inline-block
+            font-size: 11px
+            font-weight: bold
+            position absolute
+            text-indent: 20px
+            right 0
+            top: 0
+            width: 0 
+            height: 0
+        figure
+            a
+                display: block
+                text-align: center
+                img 
+                    margin: 0 auto
+        @media $desktop
+            width 216px
+        &:hover
+            background: $color-white-smoke
+        .product-title
+            color: $color-grey
+            display: block
+            font-size: 10px
+            font-weight: 500
+            margin-top: 17px
+            text-transform: uppercase
+            @media $desktop
+                font-size: 12px
+        .product-stars
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-top: 6px
+            margin-bottom: 8px
+            img 
+                margin 0 3px
+        .product-price-promo
+            color: $color-grey
+            display: block
+            font-size: 11px
+            text-decoration: line-through
+            @media $desktop
+                font-size: 12px
+        .product-price
+            color: $color-light-sea-green
+            display block
+            font-size 16px
+            font-weight: 500
+            margin: 5px 0 10px 0
+            @media $desktop
+                font-size: 16px
+        .product-parcel
+            color: $color-grey
+            display: block
+            font-size: 11px
+        .product-action
+            align-items: center
+            justify-content: center
+            background: $color-light-sea-green
+            border-radius: 5px
+            color: white
+            display: flex
+            font-size: 18px
+            text-transform: uppercase
+            padding-top: 8px
+            padding-bottom: 8px
+            margin-top 9px
+            img 
+                margin-right: 8px
+footer
+    background: $color-black-pearl
+    color: white
+    padding: 27px 18.5px
+    border-bottom: 5px solid $color-light-sea-green
+    .content 
+        max-width: 1200px
+        margin: 0 auto
+    h2
+        font-size: 18px
+        font-weight: 700
+        margin-bottom: 15px
+        &:after
+            background: $color-dark-tangerine
+            content: ""
+            display: block
+            height 4px
+            margin-top: 9px
+            width: 32.5px
+    
+    .wrapper 
+        display: grid
+        grid-template-columns: 50% 50%
+        color: white
+        @media $desktop
+             grid-template-columns: 15% 15% 35% 35%
+        address
+            font-size: 11px
+            line-height: 16px
+            font-style: normal
+            strong
+                font-size: 14px
+            @media $desktop
+                font-size: 13px
+                line-height: 18px
+                strong
+                    font-size: 16px
+        .column-a 
+            grid-column: 1 / span 2
+            .btn-footer
+                align-items: center
+                background: $color-dark-tangerine
+                border-radius: 5px
+                display: flex
+                color: #fff
+                font-size: 12px
+                justify-content: center
+                padding: 5px 0
+                margin 25px auto 25px auto
+                min-height: 38px
+                text-transform: uppercase
+                text-align: center
+                width: 200px
+                &:last-child
+                    margin-bottom: 0
+                @media $desktop
+                    margin 0 auto 25px auto
+                img 
+                    margin-right: 18px
+            @media $desktop
+                grid-column: 3
+        .column-b 
+            grid-column: 1 / span 2
+            font-size: 10px
+            display: flex
+            justify-content: center
+            figure
+                margin: 0 10px
+            @media $desktop
+                align-items: end 
+                grid-column: 4
