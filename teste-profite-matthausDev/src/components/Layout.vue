@@ -2,18 +2,21 @@
   <div class="hello container-fluid">
     <HeaderNav/>
     <MainContent/>
+    <Products/>
   </div>
 </template>
 
 <script>
 import HeaderNav from './HeaderNav.vue'
 import MainContent from './MainContent.vue'
+import Products from './Products.vue'
 
 export default {
-  name: 'HelloWorld',
+  name: 'Layout',
   components: {
     HeaderNav,
-    MainContent
+    MainContent,
+    Products
   },
   data () {
     return {
