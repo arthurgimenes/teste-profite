@@ -1,0 +1,16 @@
+.default-title {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 20px;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 65px;
+    bottom: -10px;
+    height: 4px;
+    background: #FF9F1C;
+  }
+
+}

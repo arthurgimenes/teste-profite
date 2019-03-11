@@ -1,0 +1,64 @@
+.banner {
+  &-itens {
+    &-item {
+      
+      .col-6 {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        @media screen and(max-width : 768px) {
+           width: 100%; 
+           &:first-child{
+            position: absolute;
+            background: transparent;
+          }
+        }
+      }
+
+      &-banner-content {
+        background: #011627;
+        vertical-align: top;
+        height: 460px;
+        position: relative;
+
+        &-text {
+          min-width: 521px;
+          top: 36%;
+          left: 58%;
+          transform: translate(-50%, 0);
+          position: absolute;
+          z-index: 8;
+
+          h2 {
+            margin: 0;
+            color: #fff;
+            font-weight: bold;
+            line-height: normal;
+            position: relative;
+            font-size: 45px;
+
+            &:before {
+              content: '';
+              height: 5px;
+              background: orange;
+              position: absolute;
+              bottom: -20px;
+              width: 100px;
+
+            }
+          }
+        }
+
+      }
+
+      &-overlay {
+        background-color: #2EC4B6;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        height: 460px;
+      }
+    }
+  }
+}

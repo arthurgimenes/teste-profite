@@ -1,0 +1,42 @@
+[  
+  {  
+     "title":" TÊNIS COURO PUMA R698 Q4 V2 ",
+     "img":"./tenis.png",
+     "oldPrice":399.00,
+     "currentPrice":299.00,
+     "finance":133.00,
+     "ratings":0
+  },
+  {  
+    "title":" TÊNIS COURO PUMA R698 Q4 V2 ",
+    "img":"./tenis.png",
+    "oldPrice":399.00,
+    "currentPrice":299.00, 
+    "finance": 133.00,
+    "ratings":0
+ },
+ {  
+  "title":" TÊNIS COURO PUMA R698 Q4 V2 ",
+  "img":"./tenis.png",
+  "oldPrice":399.00,
+  "currentPrice":299.00,
+  "finance":133.00,
+  "ratings":0
+  },
+   {  
+    "title":" TÊNIS COURO PUMA R698 Q4 V2 ",
+    "img":"./tenis.png",
+    "oldPrice":399.00,
+    "currentPrice":299.00,
+    "finance":133.00,
+    "ratings":0
+  },
+  {  
+    "title":" TÊNIS COURO PUMA R698 Q4 V2 ",
+    "img":"./tenis.png",
+    "oldPrice":399.00,
+    "currentPrice":299.00,
+    "finance":133.00,
+    "ratings":0
+  }
+]
