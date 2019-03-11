@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './Components/Header/Header'
 import Banner from './Components/Banner/Banner'
-
+import Shelf from './Components/Shelf/Shelf'
+import Footer from './Components/Footer/Footer'
 class App extends Component {
   render() {
     return (
@@ -12,6 +13,8 @@ class App extends Component {
             <Header link='/' alt='PROFIT STORE'/> 
         </div>
           <Banner />
+          <Shelf/>
+          <Footer /> 
       </div>
     );
   }

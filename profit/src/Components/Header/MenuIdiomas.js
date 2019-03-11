@@ -8,7 +8,6 @@ const MenuIdiomas = (props) => {
              {name: 'Español', link: '/', icon: es },
              {name: 'English', link: '/', icon:  gb}
           ]
-    console.log(idiomas);
     return (
        <div className="header-languages col-md-2">
           <ul className="header-languages-menu">

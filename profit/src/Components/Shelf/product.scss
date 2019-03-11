@@ -1,0 +1,97 @@
+.productShelf {
+  cursor: pointer;
+  margin: 15px 0;
+  padding: 0 0 25px 0;
+  &-img {
+    padding: 25px 18px;
+    margin: auto;
+    text-align: center;
+    img {
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  &-content {
+
+    h3 {
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      font-size: 12px;
+      text-align: center;
+      color: #7A7A7A;
+    }
+
+    &-rating {
+      text-align: center;
+
+      svg {
+        margin: 0 3px;
+
+        path {
+          &:hover {
+            fill: #FF9F1C;
+          }
+        }
+      }
+    }
+
+    &-price {
+      text-align: center;
+
+      &-old,
+      &-finance {
+        color: #7A7A7A;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 11px;
+      }
+      &-old {
+        text-decoration: line-through;
+      }
+      &-current {
+        font-weight: 500;
+        line-height: normal;
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+        color: #2EC4B6;
+      }
+    }
+    &-button{
+    width: 125.28px;
+    height: 32.42px;
+    left: 425.36px;
+    top: 895.17px;
+    background: #2EC4B6;
+    border: none;
+    border-radius: 5px;
+    color : #fff;
+    display: none;
+    margin: 10px auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+    img {
+      display: inline-block;
+    }
+    &:focus{
+      outline: none;
+    }
+    @media screen and(max-width: 480px) {
+        display: block;
+        opacity: 1;
+    }
+    }
+  }
+
+  &:hover {
+    background: #F2F2F2;
+    transition: opacity 0.5s;
+    .productShelf-content-button{
+      display: block;
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+  }
+}
