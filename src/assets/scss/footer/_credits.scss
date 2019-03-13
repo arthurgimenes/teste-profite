@@ -1,0 +1,24 @@
+.credits {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__credit {
+    @media (min-width: $medium-breakpoint) {
+      margin-left: 15px;
+    }
+  }
+
+  &__small {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}

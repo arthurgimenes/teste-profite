@@ -1,0 +1,69 @@
+.shelf {
+  padding-top: 15px;
+  padding-bottom: 40px;
+
+  &__heading {
+    margin: 0;
+    color: $tertiary;
+
+    &:after {
+      @include yellow-bar(10px, 10px, 10px, 15%, 10%, 6%);
+    }
+
+    @media (min-width: $medium-breakpoint) {
+      margin-top: 15px;
+    }
+  }
+
+  &__slider {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    padding-bottom: 20px;
+  }
+}
+
+.shelf .slick-track {
+  align-items: flex-start;
+}
+
+.slick-active {
+  .product {
+    animation-name: fade-in, zoom-right;
+    animation-timing-function: ease;
+  }
+
+  @for $i from 1 through 4 {
+    &:nth-child(4n+#{$i}) {
+      .product {
+        animation-duration: #{$i*0.25}s;
+      }
+    }
+  }
+}
+
+.shelf .slick-slider {
+  .slick-list {
+    @media (min-width: $large-breakpoint) {
+      @include container(40px, 40px);
+    }
+  }
+
+  .slick-dots {
+    height: 20px;
+    bottom: -30px;
+
+    @media (min-width: $medium-breakpoint) {
+      bottom: 0;
+    }
+  }
+
+  .slick-prev:before {
+    background-image: url('./assets/img/shelf/arrow-left.svg');
+  }
+
+  .slick-next:before {
+    background-image: url('./assets/img/shelf/arrow-right.svg');
+  }
+}

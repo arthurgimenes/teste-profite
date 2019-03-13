@@ -1,0 +1,15 @@
+{
+  "short_name": "Agência Profite",
+  "name": "Agência Profite (glaubernm@gmail.com)",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "96x96 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#FF9F1C",
+  "background_color": "#ffffff"
+}

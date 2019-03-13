@@ -1,0 +1,47 @@
+@mixin container($paddingX, $mediumPaddingX) {
+  width: 100%;
+  padding-left: $paddingX;
+  padding-right: $paddingX;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+
+  @media (min-width: $medium-breakpoint) {
+    padding-left: $mediumPaddingX;
+    padding-right: $mediumPaddingX;
+  }
+}
+
+@mixin header-y() {
+  padding-top: 0;
+  padding-bottom: 5px;
+
+  @media (min-width: $medium-breakpoint) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@mixin yellow-bar($marginTop, $mediumMarginTop, $largeMarginTop, $width, $mediumWidth, $largeWidth) {
+  position: relative;
+  content: '';
+  display: block;
+  width: $width;
+  height: 4px;
+  left: 0;
+  text-align: left;
+  background-color: $primary;
+  margin-top: $marginTop;
+
+  @media (min-width: $medium-breakpoint) {
+    width: $mediumWidth;
+    height: 5px;
+    margin-top: $mediumMarginTop;
+  }
+
+  @media (min-width: $large-breakpoint) {
+    width: $largeWidth;
+    height: 5px;
+    margin-top: $largeMarginTop;
+  }
+}

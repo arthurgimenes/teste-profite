@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+// Vendor
+@import "../node_modules/normalize.css/normalize.css";
+@import "../node_modules/slick-carousel/slick/slick.scss";
+
+// Base
+@import "./assets/scss/base/variables";
+@import "./assets/scss/base/mixins";
+@import "./assets/scss/base/animations";
+@import "./assets/scss/base/slick-theme"; // Aqui mesmo?
+@import "./assets/scss/base/base";
+@import "./assets/scss/base/grid";
+
+// Header
+@import "./assets/scss/header/header";
+@import "./assets/scss/header/menu";
+@import "./assets/scss/header/logo";
+@import "./assets/scss/header/cart";
+@import "./assets/scss/header/search";
+@import "./assets/scss/header/account";
+@import "./assets/scss/header/language";
+
+// Banner
+@import "./assets/scss/banner/banner";
+
+// Shelf
+@import "./assets/scss/shelf/shelf";
+@import "./assets/scss/shelf/product";
+@import "./assets/scss/shelf/rating";
+@import "./assets/scss/shelf/star";
+@import "./assets/scss/shelf/buy";
+
+// Footer
+@import "./assets/scss/footer/footer";
+@import "./assets/scss/footer/address";
+@import "./assets/scss/footer/contact";
+@import "./assets/scss/footer/credits";

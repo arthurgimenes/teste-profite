@@ -1,0 +1,17 @@
+<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="translate(0.600006)" fill="white"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="18">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="translate(0.600006)" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.8H25.2V0H0V4.8Z" transform="translate(0.600006)" fill="#DD172C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.8H25.2V0H0V4.8Z" transform="translate(0.600006 13.2)" fill="#DD172C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 8.4H25.2V0H0V8.4Z" transform="translate(0.600006 4.79999)" fill="#FFD133"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.2H1.2V1.8H0V1.2Z" transform="translate(7.2 7.20001)" fill="#FFEDB1"/>
+<path d="M0.392351 0.694349C0.376156 0.500009 0.52952 0.333333 0.724533 0.333333H2.27547C2.47048 0.333333 2.62384 0.500009 2.60765 0.694349L2.46747 2.37646C2.42554 2.87963 2.00492 3.26667 1.5 3.26667C0.995084 3.26667 0.574458 2.87963 0.532527 2.37646L0.392351 0.694349Z" transform="translate(5.7 7.79999)" stroke="#A41517" stroke-width="0.666667"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2.4V0.6H1.8L1.2 1.8L0.6 0.6H0V0Z" transform="translate(6 9)" fill="#A41517"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.6C0 0.268629 0.268629 0 0.6 0C0.931371 0 1.2 0.268629 1.2 0.6V3.6C1.2 3.93137 0.931371 4.2 0.6 4.2C0.268629 4.2 0 3.93137 0 3.6V0.6Z" transform="translate(4.2 7.20001)" fill="#A41517"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.6C0 0.268629 0.268629 0 0.6 0C0.931371 0 1.2 0.268629 1.2 0.6V3.6C1.2 3.93137 0.931371 4.2 0.6 4.2C0.268629 4.2 0 3.93137 0 3.6V0.6Z" transform="translate(9 7.20001)" fill="#A41517"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.96C0 0.429807 0.429807 0 0.96 0H1.44C1.97019 0 2.4 0.429807 2.4 0.96C2.4 1.09255 2.29255 1.2 2.16 1.2H0.24C0.107452 1.2 0 1.09255 0 0.96Z" transform="translate(6 6)" fill="#A41517"/>
+</g>
+</svg>

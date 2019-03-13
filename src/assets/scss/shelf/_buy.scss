@@ -1,0 +1,40 @@
+.buy {
+  &__button {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 5px;
+    background-color: $secondary;
+    width: 100%;
+    padding: 8px 15px;
+    transition: opacity 0.333s ease, background-color 0.333s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: 0;
+      background-color: darken($secondary, 12.5%);
+    }
+
+    @media (min-width: $medium-breakpoint) {
+      opacity: 0;
+  
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__icon {
+    display: inline-flex;
+    margin-right: 8px;
+  }
+
+  &__span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

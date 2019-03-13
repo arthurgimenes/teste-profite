@@ -1,0 +1,53 @@
+.cart {
+  display: inline-flex;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    @include header-y();
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: 0;
+
+      .cart-icon {
+        fill: $primary;
+      }
+    }
+
+    .cart-icon {
+      transition: fill 0.333s;
+      fill: $tertiary;
+    }
+  }
+
+  &__icon {
+    display: inline-flex;
+    margin-right: 5px;
+  }
+
+  &__label {
+    width: 16px;
+    height: 16px;
+    font-size: 0.65rem;
+    background-color: $secondary;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-span {
+      color: $white;
+    }
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    order: 3;
+    flex: 0 1 auto;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-right: 1px solid $dark-gray;
+  }
+}

@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: $white;
+
+  &__row {
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $medium-breakpoint) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__offset {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $white;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  
+    &-button {
+      display: flex;
+  
+      @media (min-width: $medium-breakpoint) {
+        display: none;
+      }
+    }
+
+    &--active {
+      transform: translateX(0);
+
+      .account {
+        &__button {
+          animation-duration: 0.5s;
+          animation-name: fade-in, big-slide-in-bottom;
+          animation-timing-function: ease;
+        }
+      }
+
+      .language {
+        &__img {
+          animation-duration: 0.5s;
+          animation-name: fade-in, big-zoom-in;
+          animation-timing-function: ease;
+        }
+      }
+    }
+
+    &--inactive {
+      transform: translateX(-100%);
+    }
+  
+    @media (min-width: $medium-breakpoint) {
+      order: 3;
+      align-items: center;
+      position: static;
+      top: unset;
+      left: unset;
+      width: unset;
+      height: unset;
+      padding: unset;
+      background-color: transparent;
+    }
+  }
+}

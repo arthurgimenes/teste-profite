@@ -1,0 +1,27 @@
+.logo {
+  display: inline-flex;
+  @include header-y();
+
+  &__heading {
+    margin: 0;
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+  }
+
+  &__img {
+    color: $primary;
+    height: 20px;
+
+    @media (min-width: $medium-breakpoint) {
+      height: auto;
+    }
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    order: 0;
+    flex: 1 1 auto;
+  }
+}

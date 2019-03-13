@@ -1,0 +1,12 @@
+.menu {
+  display: inline-flex;
+  @include header-y();
+
+  &__button {
+    display: flex;
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    display: none;
+  }
+}

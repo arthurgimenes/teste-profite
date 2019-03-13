@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "image": "product-1.png",
+    "title": "Tênis Couro Puma R698 Q4 V2",
+    "rating": 1,
+    "oldPrice": 399,
+    "price": 299,
+    "instalments": 3
+  },
+  {
+    "id": 2,
+    "image": "product-1.png",
+    "title": "Id sunt reprehenderit quis enim adipisicing",
+    "rating": 3,
+    "price": 199,
+    "instalments": 10
+  },
+  {
+    "id": 3,
+    "image": "product-1.png",
+    "title": "Eu excepteur ipsum proident",
+    "rating": 5,
+    "oldPrice": 299,
+    "price": 229
+  },
+  {
+    "id": 4,
+    "image": "product-1.png",
+    "title": "Incididunt voluptate",
+    "rating": 4,
+    "price": 89,
+    "instalments": 2
+  },
+  {
+    "id": 5,
+    "image": "product-1.png",
+    "title": "Nostrud consectetur esse veniam",
+    "rating": 3,
+    "price": 2000
+  },
+  {
+    "id": 6,
+    "image": "product-1.png",
+    "title": "Minim labore ad laboris ipsum",
+    "rating": 5,
+    "oldPrice": 299,
+    "price": 149
+  },
+  {
+    "id": 7,
+    "image": "product-1.png",
+    "title": "Laborum ex mollit eiusmod velit deserunt enim",
+    "rating": 4,
+    "price": 99
+  },
+  {
+    "id": 8,
+    "image": "product-1.png",
+    "title": "Ad qui exercitation cillum culpa enim",
+    "rating": 3,
+    "price": 199
+  }
+]

@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./assets/fonts/ubuntu-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./assets/fonts/ubuntu-medium-webfont.woff2") format("woff2"),
+    url("./assets/fonts/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./assets/fonts/ubuntu-bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/ubuntu-bold-webfont.woff") format("woff");
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+input,
+button {
+  color: $dark-gray;
+}
+
+input,
+button {
+  background-color: transparent;
+}
+
+button {
+  border: 0 none;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+small {
+  font-size: 11px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+
+  &__span {
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    text-transform: uppercase;
+    padding-top: 2px;
+  }
+}

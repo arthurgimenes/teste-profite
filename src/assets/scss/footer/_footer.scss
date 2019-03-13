@@ -1,0 +1,25 @@
+.footer {
+  background-color: $tertiary;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 6px solid $secondary;
+  color: $white;
+
+  &__row {
+    @media (min-width: $medium-breakpoint) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+
+    &:after {
+      @include yellow-bar(10px, 10px, 10px, 15%, 10%, 6%);
+    }
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    padding-bottom: 30px;
+  }
+}

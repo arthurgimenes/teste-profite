@@ -1,0 +1,28 @@
+.address {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+
+  &__address {
+    font-style: normal;
+
+    @media (min-width: $medium-breakpoint) {
+      margin-right: 40px;
+    }
+  }
+
+  &__span {
+    display: block;
+    line-height: 18px;
+  }
+
+  &__city {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    justify-content: flex-start;
+  }
+}
