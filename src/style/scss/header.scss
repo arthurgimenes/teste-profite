@@ -1,0 +1,154 @@
+  header {
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 2;
+ 
+
+  & h1 {
+    padding: 10px 0 0 10px;
+  }
+  
+  & h1 label {
+    color: #333;
+  }
+  
+  & ul {
+    padding: 15px 10px 0 0;
+  }
+  
+  header li {
+    border-left: 1px solid #ccc;
+  }
+  
+  & li:first-child {
+    border: none;
+  }
+  
+  & li label {
+    display: block;
+    padding: 0 10px;
+    color: #999;
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    
+  }
+
+  & label:hover{
+    color: #333;
+  }
+}
+  
+
+.logo{
+  width: 250px;
+  float: left;
+  margin-top: 10px;
+  & img {
+    width: 150px;
+  }
+}
+
+  #control-nav:checked ~ .control-nav-close {
+    transform: translate(0, 0);
+  }
+  
+  #control-nav:checked ~ nav {
+    transform: translate(0, 0);
+  }
+
+  .search{
+    width: 500px;
+    margin-top: 15px;
+    float: left;
+    & input{
+      background-image:url(../../img/lupa.png);
+      background-repeat:no-repeat;
+      background-position: right; 
+      background-size: 30px;
+      width: 400px;
+      height: 35px;
+      border: none;
+      border-bottom: 0.2em solid;
+      border-bottom-color: #b0b0b0;
+    }
+  }
+
+  .account{
+    float: left;
+    width: 200px;
+    text-align: right;
+    margin-top: 20px;
+    & img {
+      width: 1.3em;
+      margin-right: 10px;
+    }
+    & label{
+      color: #484848;
+      font-size: 0.9em;
+    }
+  }
+  
+  .account-user, .account-name{
+    float: left;
+  }
+
+  .market{
+    float: left;
+    width: 100px;
+    text-align: right;
+    margin-top: 20px;
+    position: relative;
+    & img{
+      height: 25px;
+      margin: 0px 10px 0px 10px;
+    }
+  
+  } 
+
+  .market-img{
+    float: left;
+    margin-left: 20px;
+
+  }
+  .market-num{
+    float: left;
+    color:#fff;
+    width: 20px;
+    background-color: #2ec4b6;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .car-number{
+    width: 30px;
+    
+  }
+
+  .language{
+    position: relative;
+    width: 120px;
+    height: 60px;
+    float: right;
+    & img{
+      height: 1em;
+      margin: 0px 0px 0px 10px;
+    }
+    & hr {
+      margin-top: 15px;
+    }
+  }
+
+  .language-band{
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+  }
+
+  
