@@ -1,0 +1,184 @@
+  $htotc:400px;
+ 
+  .itens{
+    width: $width;
+    height: 500px;
+    margin: 0px auto;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  /* Slider de Produtos */
+  .conteiner-prod, .conteiner-slide{
+    width: $width - 60;
+    height: $htotc;
+    position: relative;
+    overflow: hidden;
+    float: left;
+  }
+  
+  .slide-imp{
+    width: 50%;
+    float: left;
+    height: $htotc;
+  }
+  .slide-par{
+    width: 50%;
+    height: $htotc;
+    float: left;
+    background-image:url(../../img/slide/par.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+
+  .slide-previous{
+      width: 30px;
+      height: $htotc;
+      float: left;
+      background-color: #fff;
+  }
+  
+  .slide-next{
+    width: 30px;
+    height: $htotc;
+    position: relative;
+    float: left;
+    background-color: #fff;
+    
+  }
+
+  .slide-next, .slide-previous{
+      & button{
+          background-color: transparent;
+          border: none;
+          width: 30px;
+          & :hover{
+            
+            fill: rgb(70, 146, 245);
+        }
+      }
+  }
+
+.seta, .seta-slide{
+    top: 30%;
+    margin-top: $htotc / 2;
+    
+}
+
+
+.previous{
+  width: 30px;
+  height: $htotc;
+  float: left;
+  background-color: transparent;
+}
+
+.next{
+width: 30px;
+height: $htotc;
+position: relative;
+float: left;
+background-color: transparent;
+
+}
+
+.next, .previous{
+  & img { width: 40px;}
+  & button{
+      background-color: transparent;
+      border: none;
+      width: 30px;
+  }
+}
+
+  .slider-itens{
+    width: 1110px;
+    height: $htotc;
+    float: left;
+    position: relative;
+    & svg{
+      color: #fff;
+      fill: currentColor;
+    }
+  }
+  
+
+  .cards-slider-wrapper {
+    display: flex;
+    position: absolute;
+    max-width: 1000px;
+    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+
+
+/*Slide itens*/
+.slideshow{
+    width: 100%;
+    height: 400px;
+    background-color: $azulEsc;
+  }
+  
+  .slideitens{
+    width: $width;
+    margin: 0px auto;
+    position: relative;
+  }
+  
+  .slideitens-b{
+    width: $width;
+    position: absolute;
+  }
+
+  /* Itens */
+  
+  
+  
+  .itens_cols{
+    width: 200px;
+    height: 400px;
+    margin-left: 20px;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+    & button{
+      background-color: #2ec4b6;
+      width: 80%;
+      height: 40px;
+    }
+    & img{
+      width: 90%;
+    }
+    &:hover{
+      background-color: #204a5f17;
+    }
+    & label{
+      color: $corLabel;
+      font-size: 0.9em;
+    }
+    & p{
+      margin: 0;
+    }
+  }
+  
+  .stars {
+    width: 100px !important;
+  }
+  
+  .priceIni{
+    font-size: 0.7em !important;
+    text-decoration: line-through;
+  }
+  
+  .parclb{
+    font-size: 0.7em !important;
+  }
+  
+  .priceTot{
+    font-size: 1.3em !important;
+    color: #2ec4b6 !important; 
+  }
+  
+  
+

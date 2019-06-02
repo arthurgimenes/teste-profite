@@ -1,0 +1,92 @@
+/* FOOTER */
+
+footer {
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $azulEsc;
+    color: white;
+    text-align: center;
+    border-bottom: 10px solid;
+    border-bottom-color: #2ec4b6;
+    & p {
+        margin-top: 10px;
+    }
+  }
+  
+  $hfoo:220px;
+  
+  .footerall{
+    width: $width;
+    height: $hfoo + 20;
+    margin: 0px auto;
+  }
+  
+  .location{
+    float: left;
+    text-align: left;
+    width: 35%;
+    height: $hfoo;
+    position: relative;
+
+& h2{
+    margin-top: 10px;
+}
+
+  & .SP, .RJ{
+    float: left;
+    font-size: 0.8em;
+    margin-right: 50px;
+  }
+  
+  }
+  
+  .address{
+    position: absolute;
+    bottom: 0;
+  }
+
+  
+  .center-button{
+    width: 30%;
+    height: $hfoo;
+    float: left;
+    position: relative;
+    
+  
+    & img{
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+    & svg{
+        height: 30px;
+        width: 30px;
+        vertical-align: top;
+        margin-left: 15px;
+    }
+    & button{
+      background-color: $corLaranja;
+    }
+  
+  }
+  
+  .button-position{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin: 0px auto;
+  }
+  
+  .developer{
+    width: 35%;
+    height: $hfoo;
+    float: left;
+    text-align: right; 
+  
+    & img {
+      margin-top: $hfoo - 30;
+    }
+  }
+  

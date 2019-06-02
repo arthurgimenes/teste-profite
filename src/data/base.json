@@ -1,0 +1,94 @@
+{ "count":10,
+  "products":[
+    { 
+      "index":0,
+      "name":"Tênis Kappa Impact Masculino - Preto e Grafite",
+      "price":149.99,
+      "setoff":90,
+      "sale":1,
+      "code":"D24-1738-304",
+      "stars":4
+    },
+    {
+      "index":1,
+      "name":"Tênis Mizuno Strike 2 N Masculino - Preto",
+      "price":229.90,
+      "setoff":0,
+      "sale":0,
+      "code":"D16-2924-006",
+      "stars":5
+    },
+    {
+      "index":2,
+      "name":"Tênis Tryon Storm Masculino - Grafite e Preto",
+      "price":79.99,
+      "setoff":0,
+      "sale":0,
+      "code":"C89-0205-180",
+      "stars":3
+    },
+    {
+      "index":3,
+      "name":"Tênis Nike Air Max Advantage 2 Feminino - Preto e Branco",
+      "price":379.90,
+      "setoff":134.91,
+      "sale":1,
+      "code":"D12-9974-026",
+      "stars":4
+    },
+    {
+      "index":4,
+      "name":"Tênis Olympikus Contrast Masculino - Marinho",
+      "price":179.90,
+      "setoff":0,
+      "sale":0,
+      "code":"D22-1776-012",
+      "stars":3
+    },
+    {
+      "index":5,
+      "name":"Tênis Olympikus Colleen Feminino - Rosa",
+      "price":169.90,
+      "setoff":0,
+      "sale":0,
+      "code":"D22-2025-018",
+      "stars":5
+    },
+    {
+      "index":6,
+      "name":"Tênis Adidas Cosmic 2 Feminino - Cinza e Rosa",
+      "price":299.99,
+      "setoff":150,
+      "sale":1,
+      "code":"COL-1541-252",
+      "stars":4
+    },
+    {
+      "index":7,
+      "name":"Tênis Fila Duo Masculino - Preto e Cinza",
+      "price":299.99,
+      "setoff":0,
+      "sale":0,
+      "code":"D29-2488-172",
+      "stars":4
+    },
+    {
+      "index":8,
+      "name":"Tênis Adidas Duramo Lite 2.0 Feminino - Cinza e Branco",
+      "price":229.99,
+      "setoff":0,
+      "sale":0,
+      "code":"COL-6228-226",
+      "stars":3
+    },
+    {
+      "index":9,
+      "name":"Tênis Under Armour Rocket 3 Masculino - Azul e Branco",
+      "price":599.99,
+      "setoff":190,
+      "sale":1,
+      "code":"B78-3197-058",
+      "stars":5
+    }
+  ]
+}
