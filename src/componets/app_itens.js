@@ -15,9 +15,21 @@ const Itens = ({ catalago, countCar }) => {
                 <p><label className='parclb'>ou em 3x de ${moeda((price - setoff) / 3)}</label></p>
                 <p><button className='btn' onClick={countCar}>COMPRAR</button></p>
             </div>
-
+            {sale===1 && divOFF()} 
+            
+            
         </div>
     )
+}
+
+function divOFF(props){
+
+    return (
+            <div className='itens-off'>
+                <img src={require(`../data/img/off.png`)} alt='off' />
+            </div>
+    );
+
 }
 
 function moeda(valor) {

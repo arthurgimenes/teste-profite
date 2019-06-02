@@ -363,6 +363,10 @@ header label:hover {
   color: #2ec4b6 !important;
 }
 
+.itens-off {
+  position: absolute;
+}
+
 /* FOOTER */
 footer {
   /*position: fixed;*/
