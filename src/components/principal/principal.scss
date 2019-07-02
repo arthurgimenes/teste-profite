@@ -1,0 +1,60 @@
+.principal{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 80px;
+    .section1{
+        .left{
+            position: absolute;
+            width: 50%;
+            background: #011627;
+            height: 430px;
+            .titulo{
+                padding-top: 130px;
+                padding-left: 450px;
+                font-size: 45px;
+                color: #ffffff
+            }
+            .btn{
+                position: absolute;
+                background: transparent;
+                border: none;
+                top: 40%;
+                left: 40%;
+            }
+            .line{
+                position: absolute;
+                width: 65px;
+                height: 0px;
+                left: 47%;
+                top: 65%;
+                border-top: 6px solid #FF9F1C;
+            }
+        }
+        .right{
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 430px;
+            background: url('../../assets/imgs/bg.png');
+            background-size: 140%;
+            background-repeat: no-repeat;
+            background-position: -380px;
+        }
+        .right-opacity{
+            background: rgba(46, 196, 182, .7);
+            z-index: 5;
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 430px;
+            .btn{
+                position: absolute;
+                background: transparent;
+                border: none;
+                top: 40%;
+                right: 40%;
+            }
+        }
+    }
+}
