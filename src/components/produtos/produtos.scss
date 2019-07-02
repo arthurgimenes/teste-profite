@@ -1,0 +1,92 @@
+.produtos{
+    margin-top: 510px;
+    height:  500px;
+    background: #FFFFFF;
+    margin-left: 20%;
+    margin-right: 20%;
+    .text{
+        position: relative;
+        height: 10px;
+        left: 3%;
+        top: 5%;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #011627;
+    }
+    .line{
+        position: relative;
+        width: 65px;
+        height: 0px;
+        left: 3%;
+        top: 5%;
+        border-top: 4.29723px solid #FF9F1C;
+    }
+    .listItem{
+        display: flex;
+        .item{
+            width: 216px;
+            height: 370px;
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            background: #F2F2F2;
+            border: 1.44041px solid #F2F2F2;
+            box-sizing: border-box;
+            .img{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-top: 10%;
+                width: 80%;
+            }
+            .tituloProduto{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                color: #7A7A7A;
+            }
+            .valorAntigo{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                text-decoration-line: line-through;
+                color: #7A7A7A;
+            }
+            .estrelas{
+                text-align: center;
+            }
+            .valorNovo{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                color: #2EC4B6;
+            }
+            .valorParcelado{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 13px;
+                text-align: center;
+                color: #7A7A7A;
+            }
+            .btn{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                border:none;
+                color: white;
+                width: 125.28px;
+                height: 32.42px;
+                background: #2EC4B6;
+                border-radius: 5px;
+            }
+        }
+    }
+}

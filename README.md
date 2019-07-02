@@ -1,53 +1,68 @@
-# SP Desenvolvedor Front-end - Pleno/Sênior
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.
+## Available Scripts
 
-###### Estamos procurando um(a) Desenvolvedor(a) Front-end, com sólidos conhecimentos em HTML. CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
+In the project directory, you can run:
 
-###### O perfil que procuramos é de uma pessoa ligada no 220v, que respire a cultura mobile first e que seja capaz de defender ideias e apresentá-las de forma clara e objetiva. De fácil relacionamento, organizado(a) e comprometido(a) com prazos e qualidade das entregas.
+### `npm start`
 
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Requisitos:
-* HTML e HTML5
-* CSS
-* Javascript e Jquery
-* GIT
-* Sites responsivos
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-#
+### `npm test`
 
-### Diferenciais
-* Vtex
-* React
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Benefícios
-*  Vale-refeição
-*  Vale-alimentação
-*  Plano de saúde
-*  Plano odontológico
-*  Vale-transporte
-*  Folga de aniversário
+### `npm run build`
 
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Como concorrer a vaga:
-* Forka esse projeto;
-* No seu fork, codifique o [layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1) seguindo as instruções abaixo;
-* Faça um pull request.
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-### Instruções para o teste:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-##### [Link do layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1)
-#
-##### Obrigatório
-* HTML5 e CSS3
-* Não usar Framework :(
-* Interação com JSON para renderizar os produtos
+### `npm run eject`
 
-##### Bônus
-* Javascript sem plugins e modular
-* Grunt, Gulp ou similar
-* Responsividade
-* REACT
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Final:
-Quando finalizar enviar o teste para: arthur@profite.com.br
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
