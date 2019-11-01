@@ -1,0 +1,65 @@
+@import "../shared";
+
+.footer {
+  background-color: $color-lighter;
+
+  &__wrap {
+    @include clearfix;
+    padding-top: $spacing-xl;
+    padding-bottom: $spacing-xl;
+  }
+
+  &__address,
+  &__contact a {
+    background-repeat: no-repeat;
+  }
+
+  &__address {
+    @include grid-column(4);
+
+    @include type-s;
+    padding-left: $spacing-xl;
+    color: $color-medium;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media (max-width: $breakpoints-medium) {
+      @include grid-column(12);
+      margin-bottom: 60px;
+    }
+
+    strong {
+      display: block;
+      color: $color-darker;
+    }
+  }
+
+  &__contact {
+    @include grid-column(4);
+
+    @media (max-width: $breakpoints-medium) {
+      @include grid-column(12);
+    }
+
+    a {
+      @include type-s;
+      background-color: $color-brand;
+      display: block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: $color-darker;
+      padding: 5px 60px;
+      background-position: 20px 10px;
+      min-height: 40px;
+      vertical-align: middle;
+      text-transform: uppercase;
+
+      &:first-child {
+        margin-top: 0;
+        padding-top: 10px;
+      }
+
+    }
+  }
+}

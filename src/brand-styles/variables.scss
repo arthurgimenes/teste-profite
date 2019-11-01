@@ -1,0 +1,43 @@
+// Colors
+$color-brand: #ffc51c;
+
+$color-skype: #00aff0;
+
+// Greys
+$color-darker: #000;
+$color-medium: #a7aeba;
+$color-light: #d0d0d0;
+$color-lighter: #eaeaea;
+$color-white: #fff;
+
+// Typography
+$font-size-base: 16px;
+
+$font-size-l: 20px;
+$font-size-m: 14px;
+$font-size-s: 12px;
+
+$font-weight-regular: 500;
+$font-weight-medium: 700;
+
+$font-family: Arial, sans-serif;
+
+// Spacings
+$spacing-xs: 6px;
+$spacing-s: 12px;
+$spacing-m: 18px;
+$spacing-l: 24px;
+$spacing-xl: 60px;
+
+// Breakpoints
+$breakpoints-small: 600px;
+$breakpoints-medium: 900px;
+$breakpoints-large: 1014px;
+
+// Grid
+$gutter: 24px;
+$neat-grid: (
+  columns: 12,
+  gutter: $gutter,
+  direction: ltr,
+);

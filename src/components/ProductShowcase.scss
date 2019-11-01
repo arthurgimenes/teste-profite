@@ -1,0 +1,88 @@
+@import "../shared";
+
+.productShowcase {
+  @include grid-column(3);
+  width: calc(25% - 0px);
+
+  text-align: center;
+  border-left: 1px solid $color-medium;
+  padding: 20px 30px 20px;
+  margin-left: 0;
+  margin-right: 0;
+
+  &:first-child {
+    border: 0;
+  }
+
+  @media (max-width: $breakpoints-medium) {
+    @include grid-column(12);
+    border-left: 0;
+    border-top: 1px solid $color-medium;
+    margin-bottom: 30px;
+  }
+
+  &:hover {
+    background-color: $color-brand;
+    border-color: $color-white;
+  }
+
+  &__image {
+    width: 100%;
+    padding: $spacing-xs;
+
+    img {
+      max-width: 172px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    @include type-m;
+    font-weight: $font-weight-medium;
+  }
+
+  &__score {
+    img {
+      max-width: 105px;
+      margin: 0 auto;
+    }
+  }
+
+  &__price {
+    @include type-s;
+    text-align: center;
+    line-height: 20px;
+
+    span {
+      color: $color-medium;
+      display: block;
+      font-size: $font-size-s;
+      text-decoration: line-through;
+      text-decoration-color: $color-medium;
+    }
+  }
+
+  &__button {
+    @include type-s;
+    display: inline-block;
+    background-color: $color-darker;
+    background-repeat: no-repeat;
+    background-position: 11px;
+    background-size: 20px;
+    color: $color-white;
+    text-transform: uppercase;
+    padding: 12px;
+    padding-left: 35px;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+
+  &__discount {
+    background-color: $color-white;
+    border: 1px solid $color-medium;
+    font-size: 10px;
+    display: inline-block;
+    padding: 5px;
+  }
+}

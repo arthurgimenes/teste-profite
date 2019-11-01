@@ -1,0 +1,9 @@
+@mixin container {
+  @include grid-container;
+
+  margin: 0 auto;
+  max-width: $breakpoints-large;
+
+  padding-right: $gutter;
+  padding-left: $gutter;
+}
