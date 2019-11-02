@@ -1,0 +1,17 @@
+<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.600006 2C0.600006 0.895431 1.49544 0 2.60001 0H23.8C24.9046 0 25.8 0.895431 25.8 2V16C25.8 17.1046 24.9046 18 23.8 18H2.60001C1.49544 18 0.600006 17.1046 0.600006 16V2Z" fill="white"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="18">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.600006 2C0.600006 0.895431 1.49544 0 2.60001 0H23.8C24.9046 0 25.8 0.895431 25.8 2V16C25.8 17.1046 24.9046 18 23.8 18H2.60001C1.49544 18 0.600006 17.1046 0.600006 16V2Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.600006 4.8H25.8V0H0.600006V4.8Z" fill="#DD172C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.600006 18H25.8V13.2H0.600006V18Z" fill="#DD172C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.600006 13.2H25.8V4.79999H0.600006V13.2Z" fill="#FFD133"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.2 8.40001H8.4V9.00001H7.2V8.40001Z" fill="#FFEDB1"/>
+<path d="M6.09235 8.49434C6.07615 8.3 6.22952 8.13332 6.42453 8.13332H7.97546C8.17048 8.13332 8.32384 8.3 8.30765 8.49434L8.16747 10.1765C8.12554 10.6796 7.70491 11.0667 7.2 11.0667C6.69508 11.0667 6.27446 10.6796 6.23252 10.1765L6.09235 8.49434Z" stroke="#A41517" stroke-width="0.666667"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 9H8.4V9.6H7.8L7.2 10.8L6.6 9.6H6V9Z" fill="#A41517"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.2 7.80001C4.2 7.46864 4.46863 7.20001 4.8 7.20001C5.13137 7.20001 5.4 7.46864 5.4 7.80001V10.8C5.4 11.1314 5.13137 11.4 4.8 11.4C4.46863 11.4 4.2 11.1314 4.2 10.8V7.80001Z" fill="#A41517"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 7.80001C9 7.46864 9.26863 7.20001 9.6 7.20001C9.93137 7.20001 10.2 7.46864 10.2 7.80001V10.8C10.2 11.1314 9.93137 11.4 9.6 11.4C9.26863 11.4 9 11.1314 9 10.8V7.80001Z" fill="#A41517"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 6.96C6 6.42981 6.42981 6 6.96 6H7.44C7.97019 6 8.4 6.42981 8.4 6.96C8.4 7.09255 8.29255 7.2 8.16 7.2H6.24C6.10745 7.2 6 7.09255 6 6.96Z" fill="#A41517"/>
+</g>
+</svg>
