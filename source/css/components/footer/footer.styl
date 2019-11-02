@@ -1,0 +1,45 @@
+.footer
+    padding 25px 0
+    font-size 0
+    background-color $dark_blue
+    border-bottom 10px solid $green
+
+    .footer__left
+    .footer__center
+    .footer__right
+        width 100%
+    
+    .footer__center
+        margin 20px 0 0
+        text-align center
+    
+    .footer__right
+        margin 40px 0 0
+        text-align center
+    
+    .footer__title
+        margin 0 0 20px
+        font-size 20px
+        font-weight 700
+        color $white
+
+        &:after
+            content ''
+            display block
+            width 65px
+            height 4px
+            margin 10px 0 0
+            background-color $orange
+
++above(940px)
+    .footer
+        .footer__left
+        .footer__center
+        .footer__right
+            display inline-block
+            vertical-align bottom
+            margin 0
+            width 33.33%
+        
+        .footer__right
+            text-align right

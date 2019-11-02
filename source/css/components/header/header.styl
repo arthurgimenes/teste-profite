@@ -1,0 +1,44 @@
+.header
+    padding 15px 0
+    font-size 0
+    background-color $white
+
+    .wrapper
+        padding 0 40px 40px
+
+    .header__left
+    .header__center
+    .header__right
+        display inline-block
+        vertical-align middle
+    
+    .header__left
+        width 80%
+    
+    .header__center
+        position absolute
+        left 40px
+        bottom 0
+        width calc(100% - 80px)
+        text-align center
+    
+    .header__right
+        width 20%
+        text-align right
+
++above(940px)
+    .header
+        padding 25px 0
+
+        .wrapper
+            padding 0 40px
+
+        .header__left
+            width 17%
+
+        .header__center
+            position relative
+            width 40%
+
+        .header__right
+            width 43%
