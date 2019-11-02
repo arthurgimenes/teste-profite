@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "5db832c50e89bc2e405fd242",
+        "name": "SET ROUND PUFE",
+        "price": 120,
+        "current_price": 105,
+        "max_installments": 2,
+        "rating": 3,
+        "flag": "",
+        "image": "https://tokstok.vteximg.com.br/arquivos/ids/1860543-850-850/Round-Pufe-Terracota-Set.jpg"
+    },
+    {
+        "_id": "5db832c50e89bc2e405fd242",
+        "name": "KABUKI CESTO ROUPA",
+        "price": 140,
+        "current_price": 93,
+        "max_installments": 3,
+        "rating": 2,
+        "flag": "off",
+        "image": "https://tokstok.vteximg.com.br/arquivos/ids/1990729-850-850/cesto-roupa-60-cm-x-40-cm-x-30-cm-natural-cream-kabuki_ST0.jpg"
+    },
+    {
+        "_id": "5db832c50e89bc2e405fd242",
+        "name": "PÉ NA AREIA ARARA",
+        "price": 69,
+        "current_price": 49,
+        "max_installments": 2,
+        "rating": 1,
+        "flag": "",
+        "image": "https://tokstok.vteximg.com.br/arquivos/ids/1898878-850-850/arara-poas-prato-raso-multicor-p-na-areia_ST0.jpg"
+    },
+    {
+        "_id": "5db832c50e89bc2e405fd242",
+        "name": "HIPFIX ZIG CANECA",
+        "price": 18,
+        "current_price": 12,
+        "max_installments": 1,
+        "rating": 5,
+        "flag": "",
+        "image": "https://tokstok.vteximg.com.br/arquivos/ids/1850777-850-850/Zig-Caneca-Espresso-80-Ml-Preto-ouro-Hipfix.jpg"
+    },
+    {
+        "_id": "5db832c50e89bc2e405fd242",
+        "name": "PÉ NA AREIA ARARA",
+        "price": 69,
+        "current_price": 59,
+        "max_installments": 2,
+        "rating": 4,
+        "flag": "off",
+        "image": "https://tokstok.vteximg.com.br/arquivos/ids/1898884-850-850/arara-prato-raso-multicor-p-na-areia_ST0.jpg"
+    },
+    {
+        "_id": "5db832c50e89bc2e405fd242",
+        "name": "CRATES CRIADO-MUDO",
+        "price": 299,
+        "current_price": 269,
+        "max_installments": 6,
+        "rating": 3,
+        "flag": "off",
+        "image": "https://tokstok.vteximg.com.br/arquivos/ids/1817432-850-850/Criado-mudo-2-Prateleiras-C-rodizios-Castanho-Crates.jpg"
+    },
+    {
+        "_id": "5db832c50e89bc2e405fd242",
+        "name": "NATIVE MESA CENTRO",
+        "price": 419,
+        "current_price": 369,
+        "max_installments": 8,
+        "rating": 2,
+        "flag": "",
+        "image": "https://tokstok.vteximg.com.br/arquivos/ids/1791288-850-850/Mesa-Centro-1gv-80x45-Amendoa-Native.jpg"
+    }
+]

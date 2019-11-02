@@ -1,0 +1,36 @@
+.user-menu
+    display inline-block
+    vertical-align middle
+    
+    li
+        display none
+
+        a
+            font-size 13px
+            color $gray
+
+            span
+            svg
+                display inline-block
+                vertical-align middle
+        
+        &.user-menu__cart
+            display inline-block
+        
+    .user-menu__badge
+        padding 2px 4px
+        font-size 10px
+        line-height 10px
+        color $white
+        background-color $green
+        border-radius 50%
+
++above(940px)
+    .user-menu
+        li
+            display inline-block
+            vertical-align middle
+            margin-right 20px
+
+            &.user-menu__cart
+                margin-right 0

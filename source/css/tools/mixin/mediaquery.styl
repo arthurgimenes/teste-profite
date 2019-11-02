@@ -1,0 +1,11 @@
+below(breakpoint)
+  @media all and (max-width: breakpoint)
+    {block}
+
+above(breakpoint)
+  @media all and (min-width: breakpoint)
+    {block}
+
+between(breakpoint_a, breakpoint_b)
+  @media all and (min-width: breakpoint_a) and (max-width: breakpoint_b)
+    {block}

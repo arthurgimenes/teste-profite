@@ -1,0 +1,43 @@
+.slide
+    position relative
+    display inline-block
+    width 100%
+    height 100%
+    background-color $dark_blue
+
+    .slide__background
+        position absolute
+        top 0
+        right 0
+        width 100%
+        height 100%
+        background-image url('../img/slider.jpg')
+        opacity .5
+    
+    .slide__text
+        position absolute
+        top 50%
+        left 40px
+        width 80%
+        font-size 30px
+        line-height 1.4em
+        color $white
+        transform translate(0, -50%)
+
+        &:after
+            content ''
+            display block
+            width 65px
+            height 4px
+            margin 10px 0 0
+            background-color $orange
+
++above(940px)
+    .slide
+        .slide__background
+            width 50%
+            opacity .75
+
+        .slide__text
+            width 40%
+            font-size 45px
