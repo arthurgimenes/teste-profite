@@ -1,0 +1,12 @@
+root = true
+
+[*.{js,sass}]
+charset = utf-8
+
+[*.pug]
+indent_style = tab
+indent_size = 2
+
+[*.sass]
+indent_style = tab
+indent_size = 2
