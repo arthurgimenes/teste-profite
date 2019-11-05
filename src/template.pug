@@ -1,0 +1,44 @@
+doctype html
+html(lang="pt")
+	block head
+		head
+			block meta
+				meta(charset="UTF-8")
+				meta(name="viewport" content="width=device-width, initial-scale=1.0")
+				meta(http-equiv="X-UA-Compatible" content="ie=edge")
+			block title	
+				title Profit-e teste
+			block style-resource
+				link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Ubuntu&display=swap")
+				link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+			block style
+				link(type="text/css" rel="stylesheet" href="./assets/style/css/main.css")
+	block body
+		body
+			block wrap 
+				div(class="bl-wrap")
+					//- HEADER SECTION
+					block header
+						header(class="bl-header")
+							include components/bc-bar
+					//- HERO SECTION			
+					block hero							
+						aside(class="bl-hero")
+							include components/bc-hero
+					//- MAIN SECTION
+					block main
+						main(class="bl-main")
+							include components/bc-bread
+							include components/bc-featured__prod
+					//- FOOTER SECTION
+					block footer
+						footer(class="bl-footer")
+							div(class="bc-footer")
+								section(class="bc-footer__address")
+									include components/bc-address
+								section(class="bc-footer__contact")
+									include components/bc-contact
+								section(class="bc-footer__copyright")
+									include components/bc-copyright
+			block sripts
+				script(src="./assets/js/main.js")

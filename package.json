@@ -1,0 +1,22 @@
+{
+  "name": "teste-profite",
+  "version": "1.0.0",
+  "description": "* HTML e HTML5\r * CSS\r * Javascript e Jquery\r * GIT\r * Sites responsivos",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --style compressed --watch src/assets/style/sass/main.sass src/assets/style/css/main.css",
+    "start": "parcel server --port 3000 watch src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen-zhenn/teste-profite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.23.3"
+  }
+}

@@ -1,0 +1,116 @@
+.bc
+	&-bar,
+	&-hero,
+	&-prod__list,
+	&-footer
+		display: flex
+	&-bar,
+	&-hero,
+	&-footer
+		flex-wrap: wrap
+	&-lang,
+	&-prod,
+	&-brand
+		&__link
+			display: block
+	//- #BAR COMPONENT
+	&-bar
+		justify-content: space-between	
+	//- #BRAND COMPONENT
+	&-brand
+		width: percentage(.75)
+		&__link
+			max-width: 107px
+	//- #SEARCH COMPONENT
+	&-search
+		flex-grow: 1
+		order: 2
+		text-align: center
+	//- #SIGNIN COMPONENT
+	&-signin
+		&__link
+			display: flex
+			align-items: center
+			text-decoration: none
+			color: initial
+	//- #LANG COMPONENT
+	&-lang
+		display: none
+		width: percentage(.0625)
+		&__list
+			display: flex
+			justify-content: space-between
+		&__link
+			max-width: 21px
+	//- #HERO COMPONENT
+	&-hero
+		&__heading
+			color: rgba(255, 255, 255, 1)
+			background: rgba(1, 22, 39, 1)
+		&__container-image
+			position: relative
+			flex-grow: 1
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				width: percentage(1)
+				height: percentage(1)
+				mix-blend-mode: multiply
+				background: rgba(46, 196, 182, 1)
+	//- #BREAD COMPONENT
+	&-bread
+		&__link
+			font-weight: 500
+			font-size: 20px	
+	//- #PROD COMPONENT		
+	&-prod
+		&__list,
+		&__item
+			justify-content: space-between		
+		&__list
+			overflow-x: auto
+			padding: 3rem 0
+		&__item
+			display: flex
+			flex-flow: column
+			min-height: 300px
+			margin: 0 3rem
+			padding: 0 3rem
+			border: solid 1px rgba(128, 128, 128, .25)
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
+		&__link
+			width: 50vw
+			max-width: 181px
+	//- #FOOTER COMPONENT
+	&-footer
+		justify-content: space-between
+		color: white
+		background: rgba(1, 22, 39, 1)
+		&__contact
+			display: flex
+			flex-flow: column
+			justify-content: space-around
+	&-address
+		font-style: initial		
+	&-copyright
+		color: white
+		&__image
+			object-fit: scale-down
+@media (min-width: 959px)
+	.bc
+		&-lang
+			display: initial			
+@media (min-width: 1019px)
+	.bc
+		&-brand
+			width: auto
+		&-search
+			order: 0	
+	
+	

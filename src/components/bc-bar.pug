@@ -1,0 +1,25 @@
+block bc-bar
+div(class="bc-bar")
+	section(class="bc-brand")
+		a(class="bc-brand__link" href="#")
+			img(class="bc-brand__logo" src="./assets/media/image/logo-profite.png" alt="Profit-e" title="Profit-e logo")
+	section(class="bc-search")
+		form(class="bc-search__form" method="POST" action="/")
+			div(class="bc-search__field")
+				label(class="bc-search__label" for="search")
+				input(class="bc-search__controller" id="search" type="text" placeholder="o que está procurando?" )
+				i(class="bc-search__ico  material-icons") search
+	section(class="bc-signin")
+		a(class="bc-signin__link" href="#")
+			i(class="bc-signin__ico  material-icons") account_circle
+			span(class="bc-signin__label") Minha conta
+	section(class="bc-cart")
+		i(class="bc-cart__ico  material-icons") shopping_cart
+		span(class="bc-cart__counter") 1
+	section(class="bc-lang")
+		ul(class="bc-lang__list")
+			- const lang_collection = [{type:'pt'}, {type:'es'}, {type:'gb'}]
+			each item,ind in lang_collection
+				li(class="bc-lang__item")
+					a(class="bc-lang__link")
+						img(class="bc-lang__ico" src=`./assets/media/image/icon/flag__${item.type}.png` height="21" alt=`idioma ${item.type}` title="idioma do site")
