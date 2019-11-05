@@ -9,7 +9,7 @@ html(lang="pt")
 			block title	
 				title Profit-e teste
 			block style-resource
-				link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap")
+				link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Ubuntu&display=swap")
 				link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
 			block style
 				link(type="text/css" rel="stylesheet" href="./assets/style/css/main.css")
@@ -33,9 +33,12 @@ html(lang="pt")
 					//- FOOTER SECTION
 					block footer
 						footer(class="bl-footer")
+							div(class="bc-footer")
 								section(class="bc-footer__address")
 									include components/bc-address
 								section(class="bc-footer__contact")
 									include components/bc-contact
 								section(class="bc-footer__copyright")
 									include components/bc-copyright
+			block sripts
+				script(src="./assets/js/main.js")

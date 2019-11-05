@@ -56,7 +56,7 @@ const mountProductItemsList = (el, ind) => {
     prod_item.insertAdjacentElement('beforeend', prod_title)
     prod_item.insertAdjacentElement('beforeend', prod_rating)
     prod_item.insertAdjacentElement('beforeend', prod_price)
-    prod_item.insertAdjacentElement('beforeend', prod_btn)
+    prod_item.insertAdjacentElement('beforeend', prod_call_to_action)
 
 	insertProductItemToParentNode(prod_item)
 
