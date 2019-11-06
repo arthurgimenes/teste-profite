@@ -1,11 +1,22 @@
-# SP Desenvolvedor Front-end - Pleno/Sênior
+###teste-profite
+A construção do layout foi baseada estrutura de componentes feita com react.js cada componente foi feito para facilitar a forma de compreensão e manutenção. Foi feito uso de scss para dar melhor desempenho ao codificar e manter coeso com o restante da estrutura.
+Para o carrossel usei a propria dependência do react, deixando mais otimizado. 
 
-###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.
+Para os banners e os produtos fiz um json para cada e só importo os componentes em "Main.js". 
 
-###### Estamos procurando um(a) Desenvolvedor(a) Front-end, com sólidos conhecimentos em HTML. CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
+### dependências 
 
-###### O perfil que procuramos é de uma pessoa ligada no 220v, que respire a cultura mobile first e que seja capaz de defender ideias e apresentá-las de forma clara e objetiva. De fácil relacionamento, organizado(a) e comprometido(a) com prazos e qualidade das entregas.
+## npm install react-slick --save
+Carousel em react
 
+## npm install node-sass --save
+Para usar sass no react
+
+## npm i
+Para node modulos
+
+##npm install --save react-router
+Instalar Router
 
 ### Requisitos:
 * HTML e HTML5
