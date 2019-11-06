@@ -4,10 +4,10 @@ Para o carrossel usei a propria dependência do react, deixando mais otimizado.
 
 Para os banners e os produtos fiz um json para cada e só importo os componentes em "Main.js". 
 
-### dependências 
+## dependências 
 
 ## npm install react-slick --save
-Carousel em react
+componente carousel em react
 
 ## npm install node-sass --save
 Para usar sass no react
@@ -15,7 +15,7 @@ Para usar sass no react
 ## npm i
 Para node modulos
 
-##npm install --save react-router
+## npm install --save react-router
 Instalar Router
 
 ### Requisitos:
