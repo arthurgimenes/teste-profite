@@ -1,0 +1,137 @@
+.navbar {
+    height: 80px;
+    display: flex;
+    
+    .logo {
+        width:20%;
+        float: left;
+    }
+    .menu-mobile{
+        display: none;
+    }
+    .items {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        font-family: $font;
+        .search {
+            width: 65%;
+            input {
+                width: 480px;
+                border: none;
+                border-bottom: 1px solid #7A7A7A;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .btn-search {
+                border: none;
+                background: inherit;
+                border-bottom: 1px solid #7A7A7A;
+            }
+        }
+        .icons {
+            display: flex;
+            width: 37%;
+            justify-content: flex-end;
+            .login {
+                a {
+                    display: flex;
+                    svg {
+                        margin-right: 7px;
+                    }
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 1px;
+                        height: 25px;
+                        background: #7A7A7A;
+                        position: relative;
+                        margin-left: 13px;
+                        top: -4px;
+                    }
+                }
+            }
+            .cart {
+                margin:0 5%;
+                margin-left: 4%;
+            }
+            .countries {
+                display: flex;
+                width: 38%;
+                justify-content: space-around;
+                .country {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .nav-mob {
+            display: flex;
+            flex-direction: column;
+            .centralize-mob {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 70%;
+                justify-content: space-around;
+                .logo {
+                    width: 30%;
+                    a {
+                        svg {
+                            width: 66px;
+                        }
+                    }
+                }
+                .menu-mobile{
+                    display: block;
+                    width: 30%;
+                    position: relative;
+                    left: -6%;
+                    .line {
+                        background: #000;
+                        width: 32px;
+                        height: 3px;
+                        display: block;
+                        margin: 0px 21px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .items {
+                width: 100%;
+                .search {
+                    width: 100%;
+                    left: 28px;
+                    position: relative;
+                    display: flex;
+                    input {
+                        width: 280px;
+                    }
+                }
+                .icons {
+                    display: flex;
+                    width: 30%;
+                    justify-content: flex-end;
+                    position: relative;
+                    top: -28px;
+                    right: 13%;
+                    .login {
+                        display: none;
+                    }
+                    .cart {
+                        .cart-icons {
+                            svg {
+                                height: 25px;
+                                width: 25px;
+                            }
+                        }
+                    }
+                    .countries {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+  }
