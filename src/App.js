@@ -23,12 +23,13 @@ class App extends React.Component {
  
 
   render() {
+    
     return (
       <div className="App">
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Navbar language={this.languages} active_language={this.state.active_language} />
-            <Main/>
-            <Footer />
+            <Main active_language={this.state.active_language}/>
+            <Footer active_language={this.state.active_language}/>
         </BrowserRouter>
       </div>
     )

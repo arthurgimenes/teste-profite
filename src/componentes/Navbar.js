@@ -4,15 +4,23 @@ import Languages from './languages/Languages'
 
 
 class Navbar extends React.Component {
-    constructor(){
-        super()
 
-        this.state = {
-            
-        }
-    }
 
     render() {
+        const placeholderV = Languages.map((place, index) => {
+           if(place.ID_LINGUA == this.props.active_language) {
+            return (
+                <div key={index}>
+                     <input placeholder={place.Placeholder}/>
+                     <button className="btn-search">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8645 11.3208H12.0515L11.7633 11.0429C12.7719 9.86964 13.3791 8.34648 13.3791 6.68954C13.3791 2.99485 10.3842 0 6.68954 0C2.99485 0 0 2.99485 0 6.68954C0 10.3842 2.99485 13.3791 6.68954 13.3791C8.34648 13.3791 9.86964 12.7719 11.0429 11.7633L11.3208 12.0515V12.8645L16.4666 18L18 16.4666L12.8645 11.3208ZM6.68954 11.3208C4.12693 11.3208 2.05832 9.25214 2.05832 6.68954C2.05832 4.12693 4.12693 2.05832 6.68954 2.05832C9.25214 2.05832 11.3208 4.12693 11.3208 6.68954C11.3208 9.25214 9.25214 11.3208 6.68954 11.3208Z" fill="#011627"/>
+                        </svg>
+                    </button>
+                </div>
+            )
+           }
+        })
         return (
             <div>
                 <div className="navbar">
@@ -35,12 +43,7 @@ class Navbar extends React.Component {
                         </div>
                         <div className="items">
                             <div className="search">
-                                <input placeholder="O que está procurando?"/>
-                                <button className="btn-search">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8645 11.3208H12.0515L11.7633 11.0429C12.7719 9.86964 13.3791 8.34648 13.3791 6.68954C13.3791 2.99485 10.3842 0 6.68954 0C2.99485 0 0 2.99485 0 6.68954C0 10.3842 2.99485 13.3791 6.68954 13.3791C8.34648 13.3791 9.86964 12.7719 11.0429 11.7633L11.3208 12.0515V12.8645L16.4666 18L18 16.4666L12.8645 11.3208ZM6.68954 11.3208C4.12693 11.3208 2.05832 9.25214 2.05832 6.68954C2.05832 4.12693 4.12693 2.05832 6.68954 2.05832C9.25214 2.05832 11.3208 4.12693 11.3208 6.68954C11.3208 9.25214 9.25214 11.3208 6.68954 11.3208Z" fill="#011627"/>
-                                    </svg>
-                                </button>
+                                {placeholderV}
                             </div>
                             <div className="icons">
                                 <div className="login">
@@ -48,9 +51,9 @@ class Navbar extends React.Component {
                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C4.032 0 0 4.032 0 9C0 13.968 4.032 18 9 18C13.968 18 18 13.968 18 9C18 4.032 13.968 0 9 0ZM9 2.70001C10.494 2.70001 11.7 3.90601 11.7 5.40001C11.7 6.89401 10.494 8.10001 9 8.10001C7.506 8.10001 6.3 6.89401 6.3 5.40001C6.3 3.90601 7.506 2.70001 9 2.70001ZM9 15.48C6.75 15.48 4.761 14.328 3.6 12.582C3.627 10.791 7.2 9.81 9 9.81C10.791 9.81 14.373 10.791 14.4 12.582C13.239 14.328 11.25 15.48 9 15.48Z" fill="#011627"/>
                                         </svg>
-                                        {Languages.map((idioma) => {
+                                        {Languages.map((idioma, index) => {
                                             return (
-                                                <div>
+                                                <div key={index}>
                                                 {console.log(idioma.ID_LINGUA == this.props.active_language ? idioma.TEXT_MY_ACCOUNT: '')}
                                                 {/* {idioma.EN == this.props.active_language ? idioma.EN.TEXT_MY_ACCOUNT : 'Minha conta'} */}
                                                 {idioma.ID_LINGUA == this.props.active_language ? idioma.TEXT_MY_ACCOUNT: ''}
@@ -85,7 +88,7 @@ class Navbar extends React.Component {
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6 13.2C14.9196 13.2 16.8 11.3196 16.8 8.99999C16.8 6.68039 14.9196 4.79999 12.6 4.79999C10.2804 4.79999 8.39999 6.68039 8.39999 8.99999C8.39999 11.3196 10.2804 13.2 12.6 13.2Z" fill="white"/>
                                             </mask>
                                             <g mask="url(#mask1)">
-                                            <path d="M7.90196 7.90227C8.56139 7.36828 10.6893 7.87414 12.6757 8.40401C14.662 8.93388 16.7337 10.0445 17.2612 10.6959" stroke="white" stroke-width="1.33333" strokeLinecap="square"/>
+                                            <path d="M7.90196 7.90227C8.56139 7.36828 10.6893 7.87414 12.6757 8.40401C14.662 8.93388 16.7337 10.0445 17.2612 10.6959" stroke="white" strokeWidth="1.33333" strokeLinecap="square"/>
                                             </g>
                                             </g>
                                         </svg>
