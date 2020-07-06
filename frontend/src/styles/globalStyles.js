@@ -16,8 +16,7 @@ html{
 body{
     text-rendering:optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    background:#E5E5E5;
-    font-family:'Ubunto', sans-serif;
+    font-family:"Ubunto", sans-serif;
 }
 
 code {

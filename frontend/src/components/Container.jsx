@@ -6,11 +6,10 @@ const SContainer = styled.div`
 margin:0;
 padding:0;
 display:flex;
-flex-direction:row;
-justify-content: space-between;
+justify-content: center;
 align-items:center;
-width:1200px;
-
+width:100%;
+background: #fff;
 `;
 
 const Container = ({ children }) => {

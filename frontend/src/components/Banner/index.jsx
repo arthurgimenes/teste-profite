@@ -1,18 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import SliderImg from './SliderImg';
+import SliderBody from './SliderBody';
 
 
-const SBanner = styled.div`
+const SBanner = styled.section`
 height:430px;
 background:red;
 width:100%;
-
+position:relative;
 `;
+
+
 
 const Banner = () => {
     return (
         <SBanner>
-            banner
+
+            <SliderImg />
+            <SliderBody />
+
         </SBanner>
     );
 }

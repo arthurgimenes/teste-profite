@@ -6,17 +6,17 @@ import Menu from './Menu';
 import Container from '../Container';
 
 const SHeader = styled.header`
-background: #fff;
 display:flex;
 flex-direction:row;
-justify-content: center;
+justify-content: space-between;
 align-items:center;
-width:100%;
+width:1200px;
 height:80px;
 `;
 
 const SImg = styled.img`
     height:30px;
+    padding-left:15px;
 `;
 
 
@@ -24,13 +24,13 @@ const SImg = styled.img`
 
 const Header = () => {
     return (
-        <SHeader>
-            <Container>
-                <SImg src={logo} />
+        <Container>
+            <SHeader>
+                <SImg src={logo} alt="Logo Profite" />
                 <Search />
                 <Menu />
-            </Container>
-        </SHeader>
+            </SHeader>
+        </Container>
 
     )
 }
