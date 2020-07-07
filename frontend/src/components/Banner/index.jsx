@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import SliderImg from './SliderImg';
 import SliderBody from './SliderBody';
+import Pagination from './Pagination';
 
 
 const SBanner = styled.section`
@@ -24,33 +25,46 @@ const imgs = [
     {
         nome: 'img3',
         url: 'https://images.pexels.com/photos/1684149/pexels-photo-1684149.jpeg'
+    },
+    {
+        nome: 'img4',
+        url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf'
     }
 ]
 
 const Banner = () => {
-    const time = 5000;
-
+    const timeSec = 5;
     const [currentSlide, setCurrentSlide] = useState(0);
+    let time;
 
     useEffect(() => {
-        setTimeout(() => {
-            console.log('length ', imgs.length)
+        console.log("slider count", currentSlide, imgs.length - 1)
+        time = setInterval(() => {
+            console.log('eae ?')
             if (currentSlide < imgs.length - 1) {
-                setCurrentSlide(currentSlide + 1);
-
+                setSlider(currentSlide + 1);
             } else {
-                setCurrentSlide(0);
+                setSlider(0);
             }
-            console.log('weae')
-        }, time)
+        }, timeSec * 1000);
+
+
         console.log('current img ', currentSlide)
-    }, [currentSlide])
+    }, [currentSlide]);
+
+    function setSlider(n) {
+        clearInterval(time);
+        setCurrentSlide(n);
+    }
+
+
+
     return (
         <SBanner>
 
             <SliderImg imgs={imgs} currentImg={currentSlide} />
             <SliderBody />
-
+            <Pagination postsPerPage={1} totalPosts={imgs.length} setPage={setSlider} currentPage={currentSlide} />
         </SBanner>
     );
 }

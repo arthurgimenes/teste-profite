@@ -15,10 +15,7 @@ position:absolute;
 height:100%;
 object-fit:cover;
 transition: all 1250ms linear 0s;
-opacity:${({ active }) => {
-        console.log(active)
-        return active
-    }} ;
+opacity:${({ active }) => active} ;
 `;
 
 
