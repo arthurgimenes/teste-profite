@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from '../components/Header'
 import Banner from '../components/Banner';
-import Prateleira from './../components/Prateleira';
+import Shop from './../components/Shop';
 import Footer from './../components/Footer';
 import Container from './../components/Container';
 
@@ -23,7 +23,7 @@ const Home = () => {
                 <Header />
                 <Banner />
             </Container>
-            <Prateleira />
+            <Shop />
             <Footer />
         </SHome>
     )

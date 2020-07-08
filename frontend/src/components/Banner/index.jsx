@@ -33,27 +33,23 @@ const imgs = [
 ]
 
 const Banner = () => {
-    const timeSec = 5;
     const [currentSlide, setCurrentSlide] = useState(0);
+    const timeSec = 5;
     let time;
 
     useEffect(() => {
-        console.log("slider count", currentSlide, imgs.length - 1)
-        time = setInterval(() => {
-            console.log('eae ?')
+        time = setTimeout(() => {
             if (currentSlide < imgs.length - 1) {
                 setSlider(currentSlide + 1);
             } else {
                 setSlider(0);
             }
         }, timeSec * 1000);
-
-
-        console.log('current img ', currentSlide)
+        console.log('-[mainBanner]-current index img >', currentSlide)
     }, [currentSlide]);
 
     function setSlider(n) {
-        clearInterval(time);
+        clearTimeout(time);
         setCurrentSlide(n);
     }
 
