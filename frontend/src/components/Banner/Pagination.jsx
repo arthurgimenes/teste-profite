@@ -5,6 +5,7 @@ import arrowLeftIco from '../../assets/img/icon_arrow_left.svg';
 
 
 
+
 const SNav = styled.nav`
     position:relative;
     bottom:10%;

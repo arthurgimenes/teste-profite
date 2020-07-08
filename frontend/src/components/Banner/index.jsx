@@ -35,6 +35,7 @@ const imgs = [
 const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const timeSec = 5;
+
     let time;
 
     useEffect(() => {
@@ -60,7 +61,10 @@ const Banner = () => {
 
             <SliderImg imgs={imgs} currentImg={currentSlide} />
             <SliderBody />
+
             <Pagination postsPerPage={1} totalPosts={imgs.length} setPage={setSlider} currentPage={currentSlide} />
+
+
         </SBanner>
     );
 }

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Prateleira from './Prateleira';
-
+import Pagination from './Pagination';
+import { getProductList } from '../../services/getData';
 
 const SShop = styled.div`
 height:auto;
@@ -29,13 +30,44 @@ width: 6rem;
 `;
 
 const Shop = () => {
+    const [listProducts, setListProducts] = useState([]);
+    const [loadData, setLoadData] = useState(true);
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(4);
+
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = listProducts.slice(indexOfFirstPost, indexOfLastPost);
+
+    // Change page
+    const paginar = (pageNumber) => setCurrentPage(pageNumber);
+
+    useEffect(() => {
+        (async () => {
+            const productListFetch = await getProductList();
+            console.log('-[Prateleira ProductList]- fetch >', productListFetch);
+            setListProducts(productListFetch)
+            setLoadData(false);
+        })();
+    }, [])
+
+
     return (
         <SShop>
 
             <Text>Produtos</Text>
             <DashStyle />
-            <Prateleira />
-
+            <Prateleira
+                listProducts={currentPosts}
+                producstPerPage={postsPerPage}
+                loadData={loadData}
+            />
+            <Pagination
+                postsPerPage={postsPerPage}
+                totalPosts={listProducts.length}
+                setPage={paginar} currentPage={currentPage}
+                currentPosts={currentPosts} />
         </SShop>
     );
 }

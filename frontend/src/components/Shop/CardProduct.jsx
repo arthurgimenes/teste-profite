@@ -1,8 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import addCartIco from '../../assets/img/icon_add_cart.svg';
 
+const Grow = keyframes`
+from{
+        transform: scale(0.9,0.9);
+    opacity:0.3;
+}to{
+        transform: scale(1,1);
+    opacity:1;
+}
+`;
+
 const SCardProduct = styled.div`
+animation: ${Grow} 500ms;
+animation-delay: ${props => ((Math.random() * 5) * 50)}ms;
+animation-fill-mode:backwards;
 position:relative;
 width: 220px;
 min-height:355px;
@@ -15,10 +28,11 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-
+transition: all 0.3s ease 0s;
 &&:hover{
     background: #F2F2F2; 
     cursor:pointer;
+    box-shadow: 4px 5px 3px #777575d0;
 }
 `;
 
@@ -104,7 +118,9 @@ margin:15px 0 0 0;
 background: #2EC4B6;
 border-radius: 5px;
 border:0;
-display:${({ isVisible }) => isVisible ? "flex" : "none"};
+display:flex;
+opacity:${({ isVisible }) => isVisible ? "1" : "0"};
+transition: all 0.5s ease 0s;
 &&:hover{
     background:#2beddb;
     cursor:pointer;
