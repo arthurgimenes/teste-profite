@@ -45,7 +45,7 @@ const Banner = () => {
                 setSlider(0);
             }
         }, timeSec * 1000);
-        console.log('-[mainBanner]-current index img >', currentSlide)
+        //console.log('-[mainBanner]-current index img >', currentSlide)
     }, [currentSlide]);
 
     function setSlider(n) {

@@ -1,28 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import addCartIco from '../../assets/img/icon_add_cart.svg';
 
 const SCardProduct = styled.div`
+position:relative;
 width: 220px;
+min-height:355px;
+overflow:hidden;
 padding: 17px;
-margin:15px;
+margin:15px 30px 0 30px;
 align-self: baseline;
 text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
 &&:hover{
-  background: #F2F2F2; 
-  cursor:pointer;
-}
-&&:hover::after {
-   content: "teste";
-    padding:5px 35px 5px 35px;
-    margin:25px 0 25px 0;
-    background: #2EC4B6;
-    border-radius: 5px;
-    &&:hover{
-        background: #231232;
-    }
+    background: #F2F2F2; 
+    cursor:pointer;
 }
 `;
-
 
 const Title = styled.h4`
 font-family: 'Ubuntu',sans-serif;
@@ -39,14 +37,12 @@ direction: rtl;
 justify-content: center;
 display:flex;
 flex-direction:row;
-
 && > span:hover:before, span:hover ~ span:before {
    content: "★";
    position: absolute;
    left: 0; 
    color: gold;
 }
-
 `;
 
 const Star = styled.span`
@@ -60,7 +56,6 @@ position: relative;
     left: 0;
     color: gold;
 }
-
 `;
 
 const LastPrice = styled.p`
@@ -88,9 +83,55 @@ object-fit: cover;
 `;
 
 
+const SIco = styled.img`
+width: 19.31px;
+height: 20px;
+margin-right:3px;
+`;
+
+const SButton = styled.button`
+width: 130px;
+height: 32.42px;
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF;
+justify-content:center;
+align-items:center;
+margin:15px 0 0 0;
+background: #2EC4B6;
+border-radius: 5px;
+border:0;
+display:${({ isVisible }) => isVisible ? "flex" : "none"};
+&&:hover{
+    background:#2beddb;
+    cursor:pointer;
+}
+`;
+
+const EtiquetaOff = styled.div`
+position: absolute;
+top: 0;
+right:0;
+width: 75px;
+height: 75px;
+text-align:right;
+padding:15px;
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 1.2rem;
+color: #FFFFFF;
+background: linear-gradient(to top right, #ffffff00 0%, #ffffff00 50%, #FF9F1C 50%, #FF9F1C 100%);
+display:${({ isVisible }) => isVisible ? "block" : "none"};
+`;
+
 
 function CardProduct({ product }) {
     const [rank, setRank] = useState([]);
+    const [visibleBtn, setVisibleBtn] = useState(false);
 
     useEffect(() => {
         let rank = [];
@@ -100,11 +141,16 @@ function CardProduct({ product }) {
         }
         setRank(rank);
         console.log('eae stars ?', rank)
-    }, []);
+    }, [product.rank]);
+
+
 
 
     return (
-        <SCardProduct>
+
+        <SCardProduct
+            onMouseOver={() => setVisibleBtn(true)}
+            onMouseOut={() => setVisibleBtn(false)}>
             <SImg src={product.imgUrl} alt={product.name} />
             <Title>{product.name}</Title>
             <StarsRank>
@@ -113,9 +159,15 @@ function CardProduct({ product }) {
                 }
             </StarsRank>
             <LastPrice>{product.offerPrice ? "R$ " + String(product.price).replace('.', ',') : null}</LastPrice>
-            <Price>{product.offerPrice ? "por R$ " + String(product.offerPrice).replace('.', ',') :
-                "R$ " + String(product.price).replace('.', ',')}</Price>
+            <Price>
+                {product.offerPrice ? "por R$ " + String(product.offerPrice).replace('.', ',') :
+                    "R$ " + String(product.price).replace('.', ',')}
+            </Price>
+            <SButton isVisible={visibleBtn}><SIco src={addCartIco} alt="botao adicionar carrinho ico" />COMPRAR</SButton>
+            <EtiquetaOff isVisible={product.isOffer}>Off</EtiquetaOff>
         </SCardProduct>
+
+
     );
 }
 

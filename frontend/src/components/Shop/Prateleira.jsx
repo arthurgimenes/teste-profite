@@ -7,7 +7,7 @@ import loadImg from '../../assets/img/loading.svg'
 
 
 const SPrateleira = styled.div`
-height:auto;
+min-height:430px;
 width:100%;
 display:flex;
 justify-content: center;
@@ -31,6 +31,7 @@ const Prateleira = () => {
 
     return (
         <SPrateleira>
+
             {
                 loadData ? <img src={loadImg} alt="Load" /> :
                     listProducts.map((product, ind) => ind < productPerPage ? <CardProduct key={product.name} product={product} /> : null)

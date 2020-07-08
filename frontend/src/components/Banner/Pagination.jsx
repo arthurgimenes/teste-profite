@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import arrowRightIco from '../../assets/img/icon_arrow_right.svg';
 import arrowLeftIco from '../../assets/img/icon_arrow_left.svg';
@@ -22,11 +22,17 @@ const SLiBack = styled.li`
 position: absolute;
 bottom: 20rem;
 left: 5%;
+&&:hover{
+    cursor:pointer;
+}
 `;
 const SLiNext = styled.li` 
 position: absolute;
 bottom: 20rem;
 right: 5%;
+&&:hover{
+    cursor:pointer;
+}
 `;
 
 
@@ -55,27 +61,25 @@ border-radius:100%;
 
 
 const Pagination = ({ postsPerPage, totalPosts, setPage, currentPage }) => {
-    const [paginationInd, setPageInd] = useState(0);
     const pageNumbers = [];
 
-    for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+    for (let i = 1; i <= Math.ceil(totalPosts); i++) {
         pageNumbers.push(i);
     }
 
-    const indexOfLastList = 10 + paginationInd;
-    const indexOfFirstList = 0 + paginationInd;
-    const currentList = pageNumbers.slice(indexOfFirstList, indexOfLastList);
+
+    const currentList = pageNumbers;
 
 
 
 
     function handDownPageInd() {
-        if (currentPage <= (indexOfFirstList + 2) && paginationInd >= 1) setPageInd(paginationInd - 1);
-        setPage(currentPage - 1);
+        if (currentPage <= 0) setPage(totalPosts - 1);
+        else setPage(currentPage - 1);
     }
     function handUpPageInd() {
-        if (currentPage >= (indexOfLastList - 1)) setPageInd(paginationInd + 1)
-        setPage(currentPage + 1);
+        if (currentPage >= (totalPosts - 1)) setPage(0)
+        else setPage(currentPage + 1);
     }
 
     return (
@@ -83,7 +87,7 @@ const Pagination = ({ postsPerPage, totalPosts, setPage, currentPage }) => {
             <SUl >
 
                 <SLiBack>
-                    <img src={arrowLeftIco} onClick={handDownPageInd} alt="Prevent Slider" />
+                    <img src={arrowLeftIco} onClick={handDownPageInd} alt="Prev Slider" />
 
                 </SLiBack>
 
