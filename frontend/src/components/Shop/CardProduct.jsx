@@ -21,7 +21,7 @@ width: 220px;
 min-height:355px;
 overflow:hidden;
 padding: 17px;
-margin:15px 30px 0 30px;
+margin:15px 30px 25px 30px;
 align-self: baseline;
 text-align:center;
 display:flex;
@@ -64,7 +64,8 @@ color:#FF9F1C;
 font-size:2rem;
 display: inline-block;
 position: relative;
-&&::before{
+
+&&::after{
     content: "${({ cheked }) => cheked ? '★' : ''}";
     position: absolute;
     left: 0;
@@ -81,6 +82,16 @@ line-height: 1.8rem;
 text-decoration-line: line-through;
 color: #7A7A7A;
 `;
+const Installments = styled.p`
+font-family: Ubuntu;
+font-style: normal;
+font-weight: normal;
+font-size: 1.1rem;
+line-height: 1.3rem;
+text-align: center;
+
+color: #7A7A7A;
+`;
 
 const Price = styled.p`
 font-family: Ubuntu;
@@ -93,6 +104,8 @@ color: #2EC4B6;
 
 const SImg = styled.img`
 width: 100%;
+height:15rem;
+margin-bottom:0.5rem;
 object-fit: cover;
 `;
 
@@ -148,39 +161,53 @@ display:${({ isVisible }) => isVisible ? "block" : "none"};
 function CardProduct({ product }) {
     const [rank, setRank] = useState([]);
     const [visibleBtn, setVisibleBtn] = useState(false);
+    const installments = 3;
 
     useEffect(() => {
         let rank = [];
-        for (let ind = 5; ind >= 0; ind--) {
-            console.log(ind, 5)
-            ind < product.rank ? rank.push(true) : rank.push(false)
+        for (let ind = 5; ind > 0; ind--) {
+            ind <= product.rank ? rank.push(true) : rank.push(false)
         }
         setRank(rank);
-        console.log('eae stars ?', rank)
     }, [product.rank]);
 
 
 
-
+    console.log(">>>", String(Number(product.offerPrice) / installments))
     return (
 
         <SCardProduct
             onMouseOver={() => setVisibleBtn(true)}
             onMouseOut={() => setVisibleBtn(false)}>
+
             <SImg src={product.imgUrl} alt={product.name} />
+
             <Title>{product.name}</Title>
+
             <StarsRank>
                 {
                     rank.map((star, ind) => <Star key={ind} cheked={star}>☆</Star>)
                 }
             </StarsRank>
+
             <LastPrice>{product.offerPrice ? "R$ " + String(product.price).replace('.', ',') : null}</LastPrice>
+
             <Price>
-                {product.offerPrice ? "por R$ " + String(product.offerPrice).replace('.', ',') :
-                    "R$ " + String(product.price).replace('.', ',')}
+                {product.offerPrice
+                    ? "por R$ " + String(product.offerPrice).replace('.', ',')
+                    : "R$ " + String(product.price).replace('.', ',')}
             </Price>
+
+            <Installments>
+                {product.offerPrice
+                    ? "ou em 3x de R$ " + String(Number(product.offerPrice / installments).toFixed(2)).replace('.', ',')
+                    : "ou em 3x de R$ " + String(Number(product.price / installments).toFixed(2)).replace('.', ',')}
+            </Installments>
+
             <SButton isVisible={visibleBtn}><SIco src={addCartIco} alt="botao adicionar carrinho ico" />COMPRAR</SButton>
+
             <EtiquetaOff isVisible={product.isOffer}>Off</EtiquetaOff>
+
         </SCardProduct>
 
 

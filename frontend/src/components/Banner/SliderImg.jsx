@@ -26,9 +26,9 @@ const SliderImg = ({ imgs, currentImg }) => {
     return (
         <SSliderImg>
             {
-                imgs.map((item, index) => index === currentImg ?
-                    <SliderIMG active={1} key={item.nome} name={item.nome} src={item.url} /> :
-                    <SliderIMG active={0} key={item.nome} name={item.nome} src={item.url} />
+                imgs.map((item, index) => index === currentImg
+                    ? <SliderIMG active={1} key={item.nome} name={item.nome} src={item.url} />
+                    : <SliderIMG active={0} key={item.nome} name={item.nome} src={item.url} />
                 )
             }
 

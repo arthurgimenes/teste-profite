@@ -2,11 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import icoMail from '../assets/img/icon_mail.svg'
 import icoPhone from '../assets/img/icon_phone.svg'
+import logosFooter from '../assets/img/logos_footer.svg'
 
 
 const SFooter = styled.footer`
-height:213px;
+height:auto;
 background:#011627;
+padding-bottom:2rem;
+padding-top:2rem;
 width:100%;
 border-bottom: 10px solid #2EC4B6;
 display:flex;
@@ -19,37 +22,34 @@ width:100%;
 height:100%;
 display:flex;
 justify-content:space-between;
-background:red;
 `;
 const ContainerGeral = styled.div`
 width:1200px;
 height:100%;
 display:flex;
 flex-direction:column;
-background:red;
 padding: 0 7rem 0 7rem;
 `;
 
 const Box = styled.div`
-background: grey;
 margin:10px 0 5px 0;
+width:${({ wd }) => wd ? wd : "auto"};
+margin:${({ mg }) => mg ? mg : "unset"};
+display:flex;
 `;
 
-const Text = styled.h1`
-color:#fff;
-font-size:2rem;
+const Text = styled.p`
+font-family: Ubuntu;
 font-style: normal;
-font-weight: 500;
-font-size:2.4rem;
-line-height: 2.6rem;
-margin-bottom:0.5rem;
-font-family:"Ubuntu";
-align-self:start;
+font-weight: normal;
+font-size: 1.3rem;
+line-height: 2rem;
+color: #FFFFFF;
 `;
 
 const Title = styled.h1`
 color:#fff;
-font-size:3rem;
+font-size:2rem;
 font-style: normal;
 font-weight: bold;
 font-size:2.4rem;
@@ -76,7 +76,7 @@ line-height: 1.6rem;
 color: #FFFFFF;
 justify-content:center;
 align-items:center;
-margin:1.5rem 0 0 0;
+margin:1rem 0 1rem 0;
 background: #FF9F1C;
 border-radius: 0.5rem;
 border:0;
@@ -92,6 +92,12 @@ width: 2rem;
 height: 2rem;
 margin-right:0.5rem;
 `;
+const SLogosFooter = styled.img`
+width: 100%;
+margin-right:0.5rem;
+`;
+
+
 
 const Footer = () => {
     return (
@@ -100,39 +106,42 @@ const Footer = () => {
                 <Title>Localização</Title>
                 <DashStyle />
                 <BoxGeral>
-                    <Box>
-                        <Text>São Paulo</Text>
-                        <p>
-                            Rua do Rócio, 423/1801
-                            Vila Olímpia - SP
-                            04552-000
+                    <div style={{ "display": "flex" }}>
+                        <Box wd="16.4rem" mg="10px 15px 0 0">
+                            <Text>
+                                <b>São Paulo</b><br />
+                        Rua do Rócio, 423/1801
+                            Vila Olímpia - SP<br />
+                            04552-000<br />
                             +55 11  3333 3333
-                        </p>
-                    </Box>
-                    <Box>
-                        <Text>Rio de Janeiro</Text>
-                        <p>
+                            </Text>
+
+                        </Box>
+                        <Box wd="16.4rem" mg="10px 0 0 0">
+                            <Text>
+                                <b>Rio de Janeiro</b><br />
                             Vol. da Pátria, 301/702
-                            Botafogo - RJ
-                            22270-000
+                            Botafogo - RJ<br />
+                            22270-000<br />
                             +55 21  3333 3333
-                        </p>
+                        </Text>
+
+                        </Box>
+                    </div>
+                    <Box mg="10px 0 0 0">
+                        <div>
+                            <SButton><SIco src={icoMail} alt="ENTRE EM CONTATO" />ENTRE EM CONTATO</SButton>
+                            <SButton><SIco src={icoPhone} alt="ENTRE EM CONTATO" />ENTRE EM CONTATO</SButton>
+                        </div>
                     </Box>
                     <Box>
-                        <SButton><SIco src={icoMail} alt="ENTRE EM CONTATO" />ENTRE EM CONTATO</SButton>
-                        <SButton><SIco src={icoPhone} alt="ENTRE EM CONTATO" />ENTRE EM CONTATO</SButton>
-                    </Box>
-                    <Box>
-                        <Text>Localização</Text>
+                        <SLogosFooter src={logosFooter} alt="Create By profite e produzido por Vtex" />
 
                     </Box>
-                    <Box>
-                        <Text>Localização</Text>
 
-                    </Box>
                 </BoxGeral>
             </ContainerGeral>
-        </SFooter>
+        </SFooter >
     );
 }
 

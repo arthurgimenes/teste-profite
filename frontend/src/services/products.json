@@ -1,0 +1,68 @@
+{
+    "products": [
+        {
+            "name": "Bota Couro Democrata Liso Marrom",
+            "price": 219.99,
+            "offerPrice": 119.99,
+            "isOffer": true,
+            "imgUrl": "https://t-static.dafiti.com.br/CYU24373jrCDK1FHv5p08wMSySc=/fit-in/430x623/static.dafiti.com.br/p/democrata-bota-couro-democrata-liso-marrom-5283-8522994-1-zoom.jpg",
+            "rank": 3
+        },
+        {
+            "name": "Sapato Conforto Social SapatoFran com Relógio Masculino - Preto",
+            "price": 119.90,
+            "offerPrice": 249.90,
+            "isOffer": true,
+            "imgUrl": "https://static.zattini.com.br/produtos/sapato-conforto-social-sapatofran-com-relogio-masculino/06/HAP-0380-006/HAP-0380-006_zoom1.jpg",
+            "rank": 5
+        },
+        {
+            "name": "SAPATO SOCIAL COURO DEMOCRATA ASPEN MASCULINO - PRETO",
+            "price": 219.90,
+            "offerPrice": "",
+            "isOffer": false,
+            "imgUrl": "https://static.shoestock.com.br/produtos/sapato-social-couro-democrata-aspen-masculino/06/D83-1058-006/D83-1058-006_zoom1.jpg",
+            "rank": 1
+        },
+        {
+            "name": "SAPATO MASCULINO TALLINN FORRADO EM LÃ SINTÉTICA REF.:557 - PRETO - 37",
+            "price": 298.00,
+            "offerPrice": "",
+            "isOffer": false,
+            "imgUrl": "https://fieroshop.vteximg.com.br/arquivos/ids/161224-1400-1400/sapato-masculino-forrado.jpg",
+            "rank": 2
+        },
+        {
+            "name": "Sapato Social Estilo Italiano Em Couro Legítimo Café / Marrom Com Cadarço - 41",
+            "price": 179.99,
+            "offerPrice": "",
+            "isOffer": false,
+            "imgUrl": "https://fkvcalcados.vteximg.com.br/arquivos/ids/156523-1000-1000/Sapato-Social-Estilo-Italiano-em-Couro-Cafe-307-2.jpg?",
+            "rank": 1
+        },
+        {
+            "name": "Bota Garage Rust Café-Café-42",
+            "price": 197.91,
+            "offerPrice": 219.90,
+            "isOffer": true,
+            "imgUrl": "https://democrata.vteximg.com.br/arquivos/ids/158114-700-884/bota-garange-rust-119101-015-democrata1-copy.jpg",
+            "rank": 4
+        },
+        {
+            "name": "Sapato Masculino 1850 em Couro Floater Preto Doctor Shoes-Preto-44",
+            "price": 279.90,
+            "offerPrice": 239.90,
+            "isOffer": false,
+            "imgUrl": "https://doctorshoes.vteximg.com.br/arquivos/ids/218653-1000-1000/ae24e791-b7ef-488f-9dd7-8f157eb19153.jpg",
+            "rank": 4
+        },
+        {
+            "name": "Sapatênis Couro Wakalbout - Café",
+            "price": 199.99,
+            "offerPrice": 59.99,
+            "isOffer": false,
+            "imgUrl": "https://static.netshoes.com.br/produtos/sapatenis-couro-wakalbout/03/H25-0928-003/H25-0928-003_zoom1.jpg",
+            "rank": 4
+        }
+    ]
+}

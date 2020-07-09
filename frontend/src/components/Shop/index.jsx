@@ -46,7 +46,7 @@ const Shop = () => {
     useEffect(() => {
         (async () => {
             const productListFetch = await getProductList();
-            console.log('-[Prateleira ProductList]- fetch >', productListFetch);
+            console.log('-[Shop ProductList]- fetch >', productListFetch);
             setListProducts(productListFetch)
             setLoadData(false);
         })();
