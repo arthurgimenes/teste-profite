@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+##### [Link do layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1)
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+# Considerações Desenvolvedor
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Olá Arthur eu sou Rafael Costa e estou participando de um processo seletivo com vocês. 
 
-### `yarn build`
+Aqui deixarei considerações de como foi desenvolver o layout proposto.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para rodar esse projeto basta fazer um clone para sua maquina e dentro da pasta /frontend rodar o comando `npm start`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### 1 - Tecnologias
+##### HTML5 CSS3
+Utilizei ReactJs para construir os elementos com a biblioteca Styled-Components para estilizar. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Não usar Framework :(
+Essa parte eu até perguntei pra Mauren e ela disse q seria nao usar frameworks como bootstrap, materialize, etc.
+Eu já gosto de fazer meu propio css mesmo rs.
 
-### `yarn eject`
+##### Interação com JSON para renderizar os produtos
+Eu deixei um arquivo modelo do Json q eu carrego dos produtos, porem o json esta hospedado como exemplo de requisição http para carregar os dados. Fiz a requisição utilizando o Axios e resgatando a url do ambiente.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### Javascript sem plugins e modular
+Essa parte confesso nao ter entendido oque vc quiz dizer com "sem plugins e modular". Interpretei que seria sem utilizar plugins para criar os components como um plugin para prateleira ou um plugin separado para construir e controlar o banner. Assim eu criei esse components utilizando somente os recursos do React do CSS e do JavaScript. Só acabei utilizando de um plugin para trabalhar a responsividade da prateleira, mas explico melhor abaixo.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### Grunt, Gulp ou similar
+Hj em dia eu quase nao me preocupo muito com esses cara, porque com o auxilio do create-react-app vc consegue simplesmente ter todo ambiente de Uglify, Minify, rotinas de teste todos ja preconfigurados, oque é uma mao na roda em relação a gente configurar tudo isso manualmente antigamente. Mesmo assim eu posso dar um npm `run eject` e posso remodelar essas configurações, mas deixo claro q tenho o conhecimento de configurar esses caras sem a utilização do `create-react-app`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### Responsividade
+Aqui eu fui usando `@media` "media query do css" em cada componente adaptando ao breakpoint, isso direto com Styled-Components. 
+A unica ressalva aqui é que a responsividade da prateleira alterava a quantidade de produtos com o meu component de paginação eu precisaria redenrizar o component denovo e pra recuperar esse evento de responsividade eu utilizei um hook do "react-media". 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Considerações Gerais
+Eu comcei executar esse layout segunda-feira dia 6/7 e encerrei para entrega agora sexta-feira dia 10/7
 
-## Learn More
+Nesse tempo eu nao comecei implementar as funcionalidades do layout como a troca de idioma, uma simulação de usuario para logar e descologar e carregar produtos do storage para ver quantos tem no carrinho a parte da pesquisa e as funcionalidades dos botoes do rodapé.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+No mais o layout eu considero pronto para homologação e refatoraçao.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+##### redes sociais
+GitHub: https://github.com/Stramp
+linkedin: https://linkedin.com/rafaelcostart2
+### Obrigado
+Rafael Costa (Stramp)
+11 9 3286-0501 
+rafaelcostart2@gmail.com
