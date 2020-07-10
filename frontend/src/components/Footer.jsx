@@ -11,10 +11,11 @@ background:#011627;
 padding-bottom:2rem;
 padding-top:2rem;
 width:100%;
-border-bottom: 10px solid #2EC4B6;
+border-bottom: 1rem solid #2EC4B6;
 display:flex;
 flex-direction:column;
 align-items:center;
+
 `;
 
 const BoxGeral = styled.div`
@@ -22,9 +23,13 @@ width:100%;
 height:100%;
 display:flex;
 justify-content:space-between;
+@media(max-width:426px){
+    flex-direction:column;
+}
 `;
 const ContainerGeral = styled.div`
-width:1200px;
+max-width:1200px;
+width:95%;
 height:100%;
 display:flex;
 flex-direction:column;
@@ -32,10 +37,11 @@ padding: 0 7rem 0 7rem;
 `;
 
 const Box = styled.div`
-margin:10px 0 5px 0;
+margin:1rem 0 0.5rem 0;
 width:${({ wd }) => wd ? wd : "auto"};
 margin:${({ mg }) => mg ? mg : "unset"};
 display:flex;
+justify-content: center;
 `;
 
 const Text = styled.p`
@@ -95,6 +101,10 @@ margin-right:0.5rem;
 const SLogosFooter = styled.img`
 width: 100%;
 margin-right:0.5rem;
+@media(max-width:426px){
+    width: 40%;
+    margin-top:0.5rem;
+}
 `;
 
 

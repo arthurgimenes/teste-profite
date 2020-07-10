@@ -1,25 +1,134 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react';
+import styled, { keyframes } from 'styled-components';
 import NavigationConta from './NavigationConta';
 import NavigationIdiomas from './NavigationIdiomas';
-
+import logo from './../../assets/img/logo.svg';
+import AccountIco from '../../assets/img/my_account.svg';
 
 const SMenu = styled.div`
 display:flex;
-justify-content: center;
+justify-content: space-between;
 align-items:center;
+width:100%;
 
 `;
 
 const SDivisor = styled.div`
-    height:30px;
-    border-left:solid 1px #000;
-    margin:0 15px 0 15px;
+height:30px;
+border-left:solid 1px #000;
+margin:0 15px 0 15px;
+@media(max-width:426px){
+    display:none;
+}
 `;
 
+const Hamburguer = styled.div`
+display: none;
+&:hover{
+    cursor: pointer;
+}
+@media(max-width: 426px) {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+`;
+const SDash1 = styled.div`
+background:black;
+height: 3px;
+width: 100%;
+margin: 3px auto;
+border-radius:25%;
+${props => {
+        if (props.xToggle) return { "transform": "rotate(-45deg) translate(0px,4px)" };
+        return { "transform": "rotate(0)" };
+    }};
+`;
+
+const SDash2 = styled.div`
+    background:black;
+    height: 3px;
+    width: 100%;
+    margin: 3px auto;
+    display:${props => props.xToggle};
+    border-radius:25%;
+`;
+const SDash3 = styled.div`
+background:black;
+height: 3px;
+width: 100%;
+margin: 3px auto;
+${props => {
+        if (props.xToggle) return { "transform": "rotate(45deg) translate(0px,-4px)" };
+        return { "transform": "rotate(0)" };
+    }};
+    border-radius:25%;
+`;
+
+const SImg = styled.img`
+    height:30px;
+    padding-left:15px;
+`;
+const Grow = keyframes`
+from{
+    height: 0vh;
+    opacity:0.3;
+}to{
+    height: 45vh;
+    opacity:1;
+}
+`;
+const SNav = styled.nav`
+animation: ${Grow} 500ms;
+animation-fill-mode:forwards;
+display:${({ booToggle }) => booToggle};
+position:fixed;
+background:white;
+width:100vw;
+height: 45vh;
+left: 0;
+z-index: 1;
+top: 45px;
+transition: all 0.3s ease 0s;
+border-bottom: 1rem solid #2EC4B6;
+`;
+const Image = styled.img`
+width:2.5rem;
+padding-right:5px;
+`;
+
+const Text = styled.div`
+font-style: normal;
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 1.6rem;
+color: #7A7A7A;
+font-family:"Ubuntu";
+white-space: nowrap;
+
+`;
 const Menu = () => {
+    const [booToggle, setBooToggle] = useState(false);
+    function handToggle() {
+
+        return setBooToggle(!booToggle);
+    }
     return (
         <SMenu>
+            <Hamburguer onClick={handToggle}>
+                <SDash1 xToggle={booToggle ? true : false} />
+                <SDash2 xToggle={booToggle ? "none" : "block"} />
+                <SDash3 xToggle={booToggle ? true : false} />
+            </Hamburguer>
+            <SNav booToggle={booToggle ? "block" : "none"}>
+
+
+                <Image src={AccountIco} alt="Account Ico" /> <Text>Minha Conta</Text>
+
+
+
+            </SNav>
+            <SImg src={logo} alt="Logo Profite" />
             <NavigationConta />
             <SDivisor />
             <NavigationIdiomas />

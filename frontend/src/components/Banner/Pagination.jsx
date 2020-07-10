@@ -26,6 +26,9 @@ left: 5%;
 &&:hover{
     cursor:pointer;
 }
+@media(max-width:426px){
+    display:none;
+}
 `;
 const SLiNext = styled.li` 
 position: absolute;
@@ -33,6 +36,9 @@ bottom: 20rem;
 right: 5%;
 &&:hover{
     cursor:pointer;
+}
+@media(max-width:426px){
+    display:none;
 }
 `;
 

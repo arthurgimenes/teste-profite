@@ -31,15 +31,21 @@ flex-direction:column;
 justify-content: center;
 align-items:flex-end;
 padding-right:4rem;
+@media(max-width:800px){
+    padding-right:unset;
+    padding-left:10%;
+    background:unset;
+    width: 60%;
+    align-items:flex-start;
+}
 `;
 
 const Text = styled.h1`
 color:white;
-font-size:3rem;
 font-style: normal;
 font-weight: bold;
-font-size: 45px;
-line-height: 52px;
+font-size: 4.5rem;
+line-height: 5.2rem;
 margin-bottom:2rem;
 font-family:"Ubuntu";
 `;
@@ -47,7 +53,10 @@ font-family:"Ubuntu";
 const DashStyle = styled.div`
 border-bottom: 1rem solid #FF9F1C;
 width: 7rem;
-margin-right: 40rem;
+margin-right: 42rem;
+@media(max-width:800px){
+    margin-right:unset;
+}
 `;
 
 

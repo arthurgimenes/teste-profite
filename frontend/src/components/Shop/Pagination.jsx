@@ -5,10 +5,13 @@ import arrowLeftIco from '../../assets/img/icon_arrow_left_black.svg';
 
 
 const SNav = styled.nav`
-    position:relative;
-    bottom:10%;
-    display:flex;
-    justify-content: center;
+position:relative;
+display:flex;
+justify-content: center;
+bottom:20px;
+@media(max-width:426px){
+    bottom:5px;
+}
 `;
 const SUl = styled.ul`
     list-style:none;
@@ -25,7 +28,7 @@ display:block;
 &&:hover{
     cursor:pointer;
 }
-@media(max-width: 987px){
+@media(max-width: 1000px){
     display:none;
 }
 `;
@@ -37,7 +40,7 @@ display:block;
 &&:hover{
     cursor:pointer;
 }
-@media(max-width: 987px){
+@media(max-width: 1000px){
     display:none;
 }
 `;
@@ -55,14 +58,14 @@ border-bottom: solid 1px #000;
 font-size:1.4rem;
 background: ${props => Number(props.index) === Number(props.tabIndex) ? '#FF9F1C' : '#BDBDBD'};
 transition: all 0.3s ease 0s;
-width:10px;
-height:10px;
+width:15px;
+height:15px;
 border-radius:100%;
 display:none;
 &&:hover{
     cursor:pointer;
 }
-@media(max-width: 987px){
+@media(max-width: 1000px){
     display:block;
 }
 `;

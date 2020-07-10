@@ -7,9 +7,9 @@ import loadImg from '../../assets/img/loading.svg'
 
 
 const SPrateleira = styled.div`
-min-height:420px;
 width:100%;
 display:flex;
+min-height:200px;
 justify-content: center;
 align-items:center;
 `;

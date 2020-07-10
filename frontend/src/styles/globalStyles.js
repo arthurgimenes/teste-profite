@@ -10,7 +10,10 @@ export default createGlobalStyle`
 }
 
 html{
-    font-size:64.5%
+    font-size:64.5%;
+    @media(max-width:1100px){
+        font-size:50%;
+    }
 }
 
 body{

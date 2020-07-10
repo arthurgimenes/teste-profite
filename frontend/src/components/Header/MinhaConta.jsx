@@ -9,6 +9,9 @@ display:flex;
 justify-content: center;
 align-items: center;
 margin-right:10px;
+@media(max-width:426px){
+    display:none;
+}
 `;
 
 const Image = styled.img`
@@ -24,6 +27,7 @@ line-height: 1.6rem;
 color: #7A7A7A;
 font-family:"Ubuntu";
 white-space: nowrap;
+
 `;
 
 const MinhaConta = () => {

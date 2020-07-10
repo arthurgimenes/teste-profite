@@ -17,11 +17,11 @@ animation: ${Grow} 500ms;
 animation-delay: ${props => ((Math.random() * 5) * 50)}ms;
 animation-fill-mode:backwards;
 position:relative;
-width: 220px;
-min-height:355px;
+width: 20%;
+min-width:200px;
 overflow:hidden;
-padding: 17px;
-margin:15px 30px 25px 30px;
+padding: 1.7%;
+margin:1.5% 2% 2.5% 2%;
 align-self: baseline;
 text-align:center;
 display:flex;
@@ -34,14 +34,20 @@ transition: all 0.3s ease 0s;
     cursor:pointer;
     box-shadow: 4px 5px 3px #777575d0;
 }
+@media(max-width:426px){
+    min-width:170px;
+}
+@media(max-width:326px){
+    min-width:130px;
+}
 `;
 
 const Title = styled.h4`
 font-family: 'Ubuntu',sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 1.4rem;
-line-height: 1.7rem;
+font-size: 2rem;
+line-height: 2.2rem;
 color: #7A7A7A;
 `;
 
@@ -104,7 +110,7 @@ color: #2EC4B6;
 
 const SImg = styled.img`
 width: 100%;
-height:15rem;
+height:20rem;
 margin-bottom:0.5rem;
 object-fit: cover;
 `;
@@ -137,6 +143,9 @@ transition: all 0.5s ease 0s;
 &&:hover{
     background:#2beddb;
     cursor:pointer;
+}
+@media(max-width:1000px){
+    opacity:1;
 }
 `;
 

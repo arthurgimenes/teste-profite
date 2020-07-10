@@ -4,13 +4,16 @@ import { FiSearch } from 'react-icons/fi'
 
 
 const SSearch = styled.div`
-width:100%;
+width:35%;
 display:flex;
 justify-content: space-between;
+justify-self:flex-end;
 align-items:center;
 border-bottom:solid 1px grey;
-margin: 0 10%;
 padding:5px;
+@media(max-width:426px){
+    width:95%;
+}
 `;
 
 const SInput = styled.input`

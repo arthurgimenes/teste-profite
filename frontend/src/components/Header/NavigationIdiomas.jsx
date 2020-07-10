@@ -7,6 +7,9 @@ import BandeiraUkIco from '../../assets/img/band/band_uk.svg'
 
 const SNavIdiomas = styled.div`
 display:flex;
+@media(max-width:426px){
+    display:none;
+}
 `;
 
 const Image = styled.img`
