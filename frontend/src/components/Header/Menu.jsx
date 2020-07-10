@@ -3,14 +3,27 @@ import styled, { keyframes } from 'styled-components';
 import NavigationConta from './NavigationConta';
 import NavigationIdiomas from './NavigationIdiomas';
 import logo from './../../assets/img/logo.svg';
-import AccountIco from '../../assets/img/my_account.svg';
+import BandeiraBrasilIco from '../../assets/img/band/band_brasil.svg'
+import BandeiraEspanhaIco from '../../assets/img/band/band_espanha.svg'
+import BandeiraUkIco from '../../assets/img/band/band_uk.svg'
+
+
+const SNavIdiomas = styled.div`
+
+`;
+
+const Image = styled.img`
+padding-right:15px;
+`;
 
 const SMenu = styled.div`
 display:flex;
 justify-content: space-between;
 align-items:center;
-width:100%;
-
+width:auto;
+@media(max-width:426px){
+    width:100%;
+}
 `;
 
 const SDivisor = styled.div`
@@ -33,6 +46,7 @@ display: none;
     height: 25px;
 }
 `;
+
 const SDash1 = styled.div`
 background:black;
 height: 3px;
@@ -44,7 +58,6 @@ ${props => {
         return { "transform": "rotate(0)" };
     }};
 `;
-
 const SDash2 = styled.div`
     background:black;
     height: 3px;
@@ -66,15 +79,20 @@ ${props => {
 `;
 
 const SImg = styled.img`
-    height:30px;
-    padding-left:15px;
+height:30px;
+padding-left:15px;
+display:none;
+@media(max-width:426px){
+   display:block;
+}
 `;
+
 const Grow = keyframes`
 from{
     height: 0vh;
     opacity:0.3;
 }to{
-    height: 45vh;
+    height: 15vh;
     opacity:1;
 }
 `;
@@ -85,28 +103,27 @@ display:${({ booToggle }) => booToggle};
 position:fixed;
 background:white;
 width:100vw;
-height: 45vh;
+height: 15vh;
 left: 0;
 z-index: 1;
 top: 45px;
 transition: all 0.3s ease 0s;
 border-bottom: 1rem solid #2EC4B6;
-`;
-const Image = styled.img`
-width:2.5rem;
-padding-right:5px;
+flex-direction:column;
+justify-content: center;
+align-items: center;
 `;
 
 const Text = styled.div`
 font-style: normal;
 font-weight: normal;
-font-size: 1.4rem;
-line-height: 1.6rem;
+font-size: 3rem;
 color: #7A7A7A;
+margin-bottom:3rem;
 font-family:"Ubuntu";
 white-space: nowrap;
-
 `;
+
 const Menu = () => {
     const [booToggle, setBooToggle] = useState(false);
     function handToggle() {
@@ -115,16 +132,21 @@ const Menu = () => {
     }
     return (
         <SMenu>
+
             <Hamburguer onClick={handToggle}>
                 <SDash1 xToggle={booToggle ? true : false} />
                 <SDash2 xToggle={booToggle ? "none" : "block"} />
                 <SDash3 xToggle={booToggle ? true : false} />
             </Hamburguer>
-            <SNav booToggle={booToggle ? "block" : "none"}>
+            <SNav booToggle={booToggle ? "flex" : "none"}>
 
 
-                <Image src={AccountIco} alt="Account Ico" /> <Text>Minha Conta</Text>
-
+                <Text>Minha Conta</Text>
+                <SNavIdiomas>
+                    <Image src={BandeiraBrasilIco} alt="Pt-Br" />
+                    <Image src={BandeiraEspanhaIco} alt="Pt-Br" />
+                    <Image src={BandeiraUkIco} alt="Pt-Br" />
+                </SNavIdiomas>
 
 
             </SNav>

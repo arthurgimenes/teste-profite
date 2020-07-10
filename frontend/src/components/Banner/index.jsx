@@ -6,10 +6,11 @@ import Pagination from './Pagination';
 
 
 const SBanner = styled.section`
-height:430px;
+height:43rem;
 background:red;
 width:100%;
 position:relative;
+
 `;
 
 
