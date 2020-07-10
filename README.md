@@ -44,8 +44,8 @@ No mais o layout eu considero pronto para homologação e refatoraçao.
 
 
 ##### redes sociais
-GitHub -> https://github.com/Stramp
-linkedin -> https://linkedin.com/rafaelcostart2
+GitHub: https://github.com/Stramp
+linkedin: https://linkedin.com/rafaelcostart2
 ### Obrigado
 Rafael Costa (Stramp)
 11 9 3286-0501 
