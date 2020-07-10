@@ -7,32 +7,30 @@
 
 # Considerações Desenvolvedor
 
-Olá Arthur eu sou Rafael Costa e estou participando de um processo seletivo com vocês. 
+Olá Arthur, me chamo Rafael e estou participando do processo seletivo da Profite para a cargo de Desenvolvedor FrontEnd.
+Para rodar esse projeto basta fazer um clone para sua maquina e dentro da pasta /frontend rodar o comando `npm start`
 
-Aqui deixarei considerações de como foi desenvolver o layout proposto.
+Segue abaixo considerações de como foi desenvolver o layout proposto.
 
-Para rodar esse projeto basta fazer um clone para sua maquina e dentro da pasta /frontend rodar o comando `npm start`
 
 ### 1 - Tecnologias
 ##### HTML5 CSS3
-Utilizei ReactJs para construir os elementos com a biblioteca Styled-Components para estilizar. 
+Para a construção dos elementos foi utilizado ReactJs/JSX que constroi minha DOM com base em uma Virtual DOM onde ele trabalha as alterações antes de renderiza-las como html no navegador. 
 
 ##### Não usar Framework :(
-Essa parte eu até perguntei pra Mauren e ela disse q seria nao usar frameworks como bootstrap, materialize, etc.
-Eu já gosto de fazer meu propio css mesmo rs.
+Conforme informado pela Sra. Mauren anteriormente, para não utilizar frameworks como Bootstrap, Materialize, dentro outros, particularmente tenho preferência por desenvolver meu próprio código CSS.
 
 ##### Interação com JSON para renderizar os produtos
-Eu deixei um arquivo modelo do Json q eu carrego dos produtos, porem o json esta hospedado como exemplo de requisição http para carregar os dados. Fiz a requisição utilizando o Axios e resgatando a url do ambiente.
+Foi deixado um arquivo modelo do Json onde os produtos são carregados, embora o Json esteja hospedado como exemplo de requisição http para carregar os dados, e já na requisição, foi utilizado o Axios para resgatar a url que foi setada como variavel de ambiente. 
 
 ##### Javascript sem plugins e modular
-Essa parte confesso nao ter entendido oque vc quiz dizer com "sem plugins e modular". Interpretei que seria sem utilizar plugins para criar os components como um plugin para prateleira ou um plugin separado para construir e controlar o banner. Assim eu criei esse components utilizando somente os recursos do React do CSS e do JavaScript. Só acabei utilizando de um plugin para trabalhar a responsividade da prateleira, mas explico melhor abaixo.
+Eu interpretei que seria sem utilizar plug-ins para criar os componentes como por exemplo um plug-in para prateleira ou um outro separado para construir e controlar o banner. Desta forma criei os componentes utilizando somente recursos do React, do CSS e JavaScript. Somente para trabalhar a responsividade da prateleira que foi utilizado um plug-in, conforme esclarecido melhor abaixo.
 
 ##### Grunt, Gulp ou similar
-Hj em dia eu quase nao me preocupo muito com esses cara, porque com o auxilio do create-react-app vc consegue simplesmente ter todo ambiente de Uglify, Minify, rotinas de teste todos ja preconfigurados, oque é uma mao na roda em relação a gente configurar tudo isso manualmente antigamente. Mesmo assim eu posso dar um npm `run eject` e posso remodelar essas configurações, mas deixo claro q tenho o conhecimento de configurar esses caras sem a utilização do `create-react-app`.
+Com o auxílio do `create-react-app` é possível ter todo ambiente de configuração de Uglify, Minify, rotinas de teste todos já pré-configurados, o que simplifica bastante o processo de configuração levando em conta todo o processo manual e trabalhoso que era feito antigamente mas, mesmo assim posso fazer um `npm run eject` e remodelar as configurações conforme desejado. Contudo deixo claro que posso fazer a configuração sem utilizar do create-react-app normalmente. 
 
 ##### Responsividade
-Aqui eu fui usando `@media` "media query do css" em cada componente adaptando ao breakpoint, isso direto com Styled-Components. 
-A unica ressalva aqui é que a responsividade da prateleira alterava a quantidade de produtos com o meu component de paginação eu precisaria redenrizar o component denovo e pra recuperar esse evento de responsividade eu utilizei um hook do "react-media". 
+Nesta parte segui utilizando `@media` (media query do css) em cada componente adaptando-o ao breakpoint diretamente com Styled-Components. A única ressalva aqui é que a responsividade da prateleira, que alterava a quantidade de produtos a serem exibidos, com o meu componente de paginação foi preciso resgatar o evento de mudança de viewrport para rendenrizar o componente com a quantidade certa de produtos a serem exibidos. E para recuperar esse evento de responsividade utilizei o hook do "react-media".
 
 ### Considerações Gerais
 Eu comcei executar esse layout segunda-feira dia 6/7 e encerrei para entrega agora sexta-feira dia 10/7
@@ -43,10 +41,10 @@ No mais o layout eu considero pronto para homologação e refatoraçao.
 
 
 
-##### redes sociais
-GitHub: https://github.com/Stramp
-linkedin: https://linkedin.com/rafaelcostart2
+#### redes sociais
+##### GitHub: https://github.com/Stramp
+##### linkedin: https://linkedin.com/rafaelcostart2
 ### Obrigado
-Rafael Costa (Stramp)
+##### Rafael Costa (Stramp)
 11 9 3286-0501 
 rafaelcostart2@gmail.com
