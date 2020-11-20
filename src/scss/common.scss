@@ -1,0 +1,378 @@
+@import './_general';
+@import './_slick';
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* header */
+.header {
+  height: 80px;
+  padding: 15px 20px 0;
+
+  @include respond-above(md) {
+    margin: 0 auto;
+  }
+
+  &__components {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-above(md) {
+      transform: translate(10px, 15px);
+      justify-content: space-around;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: left;
+
+      @include respond-above(md) {
+        display: none;
+      }
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+
+      @include respond-above(md) {
+        order: -1;
+      }
+    }
+
+    .cart {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      span {
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        background: $color-4;
+        display: inline-block;
+        text-align: center;
+        font-size: 10px;
+        color: $white;
+        line-height: 14px;
+        margin-left: 4px;
+      }
+    }
+
+    .search {
+      display: none;
+
+      @include respond-above(md) {
+        display: block;
+        order: -1;
+      }
+    }
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+
+    .account {
+      display: none;
+
+      @include respond-above(md) {
+        display: block;
+        margin-right: 20px;
+
+        span {
+          display: inline-block;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .separator {
+      display: none;
+
+      @include respond-above(md) {
+        display: block;
+
+        span {
+          height: 30px;
+          width: 1px;
+          display: inline-block;
+          background: $black;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .flags {
+      display: none;
+
+      @include respond-above(md) {
+        display: block;
+      }
+    }
+  }
+
+  &__search {
+    border-bottom: 1px solid $color-2;
+    line-height: 2;
+    position: relative;
+    margin: 0 auto;
+
+    input {
+      width: 100%;
+      border: 0;
+    }
+
+    .btn-search {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      border: none;
+      background: none;
+      font-size: 18px;
+    }
+
+    &.desktop {
+      width: 450px;
+    }
+
+    &.mobile {
+      display: block;
+
+      @include respond-above(md) {
+        display: none;
+      }
+    }
+  }
+}
+
+/* footer */
+.footer {
+  background-color: $color-5;
+  border-bottom: 10px solid $color-4;
+  padding: 25px 15px;
+
+  h2 {
+    @extend %title;
+    padding-left: 0;
+  }
+
+  &__components {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    @include respond-above(sm) {
+      align-items: flex-end;
+      flex-direction: row;
+    }
+
+    &--item {
+      margin: 1em;
+      color: $white;
+
+      &.company {
+        text-align: center;
+        display: table;
+
+        .row {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+
+        .column {
+          display: flex;
+          flex-direction: column;
+          flex-basis: 100%;
+          flex: 1;
+          padding: 10px;
+
+
+          small {
+            display: block;
+            font-size: 10px;
+            padding-bottom: 5px;
+          }
+        }
+      }
+
+      p {
+        line-height: 22px;
+        font-size: 11px;
+        @include respond-above(md) {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  &__button {
+    @extend %common-button;
+
+    >svg {
+      padding-right: 10px;
+      font-size: 20px;
+      transform: translate(0, 0);
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 280px;
+
+    @include respond-above(md) {
+      width: 100%;
+    }
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+}
+
+/* Shelf */
+
+.shelf {
+  padding-top: 25px;
+  padding-bottom: 32px;
+
+  h2 {
+    @extend %title;
+    color: $color-5;
+  }
+
+  &__container {
+    @include respond-above(md) {
+      width: 90%;
+      max-width: 1200px;
+      min-width: 1170px;
+      margin: 0 auto;
+    }
+  }
+
+  &__box {
+    background: $white;
+    margin: 0 auto;
+    position: relative;
+
+    @include respond-above(md) {
+      padding: 10px;
+    }
+
+    @include respond-above(md) {
+      transform: translate(40px, 0);
+      width: 200px !important;
+    }
+
+    
+    &:hover,
+    &:focus {
+      @include respond-above(md) {
+        background: $color-6;
+      }
+    }
+  }
+
+  &__flag {
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+    @include respond-above(md) {
+      right: 0;
+    }
+  }
+
+  &__rating {
+    img {
+      margin: 5px auto;
+    }
+  }
+
+  &__image {
+    margin: 28px auto;
+    display: block;
+
+     img {
+       margin: 0 auto;
+       display: block;
+       width: auto;
+       max-width: 100%;
+       height: auto;
+     }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-12;
+    line-height: 14px;
+    text-align: center;
+    color: $color-2;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__old-price {
+    font-size: $font-size-12;
+    line-height: 14px;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: $color-2;
+    display: block;
+    margin-top: 8px;
+  }
+
+  &__best-price {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: $color-4;
+    display: block;
+    margin-top: 2px;
+  }
+
+  &__installment {
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: $color-2;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  &__button {
+    @extend %buy-button;
+  }
+
+  .slick-dots {
+    bottom: auto;
+  }
+
+  .slick-arrow {
+      @include respond-above(md) {
+      filter: invert(1);
+
+      &.slick-prev{
+        left: 0;
+      }
+
+      &.slick-next{
+        right: 0;
+      }
+    }
+  }
+}

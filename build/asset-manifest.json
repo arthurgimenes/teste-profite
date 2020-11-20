@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a3e4560d.chunk.css",
+    "main.js": "/static/js/main.ea72b1fd.chunk.js",
+    "main.js.map": "/static/js/main.ea72b1fd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3b2060b3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3b2060b3.js.map",
+    "static/js/2.e0186d34.chunk.js": "/static/js/2.e0186d34.chunk.js",
+    "static/js/2.e0186d34.chunk.js.map": "/static/js/2.e0186d34.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a3e4560d.chunk.css.map": "/static/css/main.a3e4560d.chunk.css.map",
+    "static/js/2.e0186d34.chunk.js.LICENSE.txt": "/static/js/2.e0186d34.chunk.js.LICENSE.txt",
+    "static/media/Fullbaner_mobile.81541166.jpg": "/static/media/Fullbaner_mobile.81541166.jpg",
+    "static/media/Fullbanner.3da02edb.jpg": "/static/media/Fullbanner.3da02edb.jpg",
+    "static/media/common.scss": "/static/media/cart-button.bdd02ca2.svg",
+    "static/media/cart.0afcab09.svg": "/static/media/cart.0afcab09.svg",
+    "static/media/flag-promotion.0f1f1405.svg": "/static/media/flag-promotion.0f1f1405.svg",
+    "static/media/flags.8586b19f.svg": "/static/media/flags.8586b19f.svg",
+    "static/media/logo.6a80d088.svg": "/static/media/logo.6a80d088.svg",
+    "static/media/profite-footer.7e26524f.svg": "/static/media/profite-footer.7e26524f.svg",
+    "static/media/rating.b4c8213a.svg": "/static/media/rating.b4c8213a.svg",
+    "static/media/vtex-footer.2200ee7c.svg": "/static/media/vtex-footer.2200ee7c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b2060b3.js",
+    "static/js/2.e0186d34.chunk.js",
+    "static/css/main.a3e4560d.chunk.css",
+    "static/js/main.ea72b1fd.chunk.js"
+  ]
+}
