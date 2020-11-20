@@ -1,10 +1,10 @@
 import React from 'react';
-import './scss/home.scss';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import BannerDesktop from './components/Banners/BannerDesktop';
 import BannerMobile from './components/Banners/BannerMobile';
 import Stock from './components/Product/Stock';
+import './scss/home.scss';
 
 const Home = () => {
   return (
