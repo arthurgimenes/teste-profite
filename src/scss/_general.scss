@@ -1,0 +1,14 @@
+@import './#variables/colors';
+@import './#variables/media-queries';
+@import './#variables/fonts';
+/* Extends */
+@import './#extends/common-button';
+@import './#extends/buy-button';
+@import './#extends//title';
+
+@import './_reset';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}

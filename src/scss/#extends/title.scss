@@ -1,0 +1,24 @@
+%title{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: $white;
+  display: block;
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 15px;
+
+  @include respond-above(md) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
+  &:before {
+    content: '';
+    width: 44px;
+    border-bottom: 5px solid $color-3;
+    position: absolute;
+    top: 30px;
+  }
+}

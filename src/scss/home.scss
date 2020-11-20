@@ -1,0 +1,37 @@
+@import './_general';
+
+.slider {
+  position: relative;
+
+  &.slider--desktop {
+    display: block;
+
+    @include respond-below(md) {
+      display: none;
+    }
+  }
+
+  &.slider--mobile {
+    display: block;
+
+    @include respond-above(md) {
+      display: none;
+    }
+
+    .slick-arrow {
+      &.slick-next,
+      &.slick-prev {
+        display: none !important;
+      }
+    }
+  }
+
+  .box-banner {
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+    }
+  }
+}

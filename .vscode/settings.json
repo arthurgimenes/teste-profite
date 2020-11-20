@@ -1,0 +1,18 @@
+{
+  "git.enabled": false,
+  "files.exclude": {
+    "node_modules": true,
+    ".vscode": true,
+    ".gitignore": true,
+    "package-lock.json": true,
+    "build": true,
+    "gulpfile.js": true,
+    "client-rules.farx": true,
+    "charles_rules.xml": true,
+    "bluecycle.json": true,
+    "bluefishing.json": true,
+    ".DS_Store": true,
+    ".gitattributes": true,
+    "README.md": true
+  }
+}
