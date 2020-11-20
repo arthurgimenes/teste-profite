@@ -267,12 +267,9 @@ body {
     position: relative;
 
     @include respond-above(md) {
-      padding: 10px;
-    }
-
-    @include respond-above(md) {
-      transform: translate(40px, 0);
       width: 200px !important;
+      transform: translate(40px);
+      padding: 10px;
     }
 
     
@@ -280,17 +277,32 @@ body {
     &:focus {
       @include respond-above(md) {
         background: $color-6;
+
+        .shelf__button {
+          visibility: visible;
+          opacity: 1;
+        }
       }
     }
   }
 
   &__flag {
-    position: absolute;
-    right: 10px;
-    top: 0;
+    .flag {
+      background: url('./../images/flag-discount.png') no-repeat right top;
+      width: 81.36px;
+      height: 72.04px;
+      position: absolute;
+      right: 10px;
+      top: 0;
+      font-size: 0;
 
-    @include respond-above(md) {
-      right: 0;
+      @include respond-above(md) {
+        right: 0;
+      }
+
+      &:empty {
+        display: none;
+      }
     }
   }
 
@@ -356,6 +368,11 @@ body {
 
   &__button {
     @extend %buy-button;
+
+    @include respond-above(md) {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 
   .slick-dots {

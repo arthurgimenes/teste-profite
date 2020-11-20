@@ -1,7 +1,6 @@
 import React from 'react';
 import { stockData } from "./../../data";
 import rating from '../../images/rating.svg';
-import promotion from '../../images/flag-promotion.svg';
 import Slider from "react-slick";
 import Buttons from '../../components/Common/Buttons';
 
@@ -51,12 +50,12 @@ const Stock = () => {
       <div className="shelf__container">
       <h2>Produtos</h2>
       <Slider {...settings}>
-        {stockData.map((data, key) => {
+        {stockData.map((data, index) => {
           return (
-            <div key={key} className="shelf__box">
-              <span className="shelf__flag">
-                <img src={promotion} alt="Flag de desconto" />
-              </span>
+            <div key={index} className="shelf__box">
+              <div className="shelf__flag">
+                <span className="flag">{data.promotion}</span>
+              </div>
 
               <span className="shelf__image">
                 <img src={data.image} alt="Imagem do produto"/>
